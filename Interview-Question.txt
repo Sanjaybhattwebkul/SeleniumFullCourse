@@ -22,4 +22,9 @@
 
 
 Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDriver interface k ander define gonge un sab ko ham webdriver class se access kr skte h 
-					      driver object ka use kr k. 
+					      driver object ka use kr k.
+
+
+=>  DIFFERENT BETWEEEN driver.close() AND driver.quite();   ?
+	-> driver.close(); will close only the current tab.
+	-> driver.quit(); will close all tabs which opened by selenium
