@@ -1,0 +1,14 @@
+
+public class JavaBrushUp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a = 12;
+		String name = "Welcome Sanju In Java";
+		Float number = (float) 2.2;
+		char b = 'S';
+		Boolean D = true; 
+	}
+
+}
