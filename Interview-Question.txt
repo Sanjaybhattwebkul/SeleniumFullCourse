@@ -63,3 +63,7 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 	   }
 
 
+=> DIFFERENT BETWEEN Public void FunctionName()  and Public Static functionName()  ?
+
+	-> We cal call a STATIC  method without creating a object of the class . 
+	-> we can call a nonStatic function only create a object of the calss .
