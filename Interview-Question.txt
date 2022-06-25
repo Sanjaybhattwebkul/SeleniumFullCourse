@@ -28,3 +28,38 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 =>  DIFFERENT BETWEEEN driver.close() AND driver.quite();   ?
 	-> driver.close(); will close only the current tab.
 	-> driver.quit(); will close all tabs which opened by selenium
+
+
+=> WHAT IS Strin IN JAVA ?
+
+	-> String is a Object that Represent the sequance of the charactrs.
+
+=>  HOWMANY WAYS WE CAN DEFINE String?
+
+	-> We can Decleare String in 2 Ways.
+
+		1. Literal string.  [  String name = "Sanju ji"; ]
+
+		2. Useing new newKeyword  [ String name = new String("Sanju ji"); ]
+
+
+=>  DIFFERENT BETWEEN  DEFINE String USING Literal way and USING new keyword ?
+
+	-> If we are defineing String Like this [ String name ="Sanju"; ] 
+           In this case if we are defining the 2  string variables with the same vale then java will not create 2 different-2 mamory for both variables.
+	   Java will Create Only one memory allocation and denote the value of 1st variable for the 2nd variable.
+
+
+	   
+
+=> HOW TO PRINT A GIVEN STRING IN REVERS ORDER ?
+	
+	String S = "Selenium";
+
+
+	**-> for(int i=s.length()-1; i>=0; i--)
+	   {
+		System.out.println(s.charAt(i));
+	   }
+
+

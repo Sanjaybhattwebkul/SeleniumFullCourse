@@ -15,7 +15,7 @@ public class JavaBrushUp {
 		System.out.println("My Number is"+number);
 		System.out.println("This Is"+D);
 		
-		// Arrays In Java
+		// -------  Arrays In Java --------------
 		
 		int[] arrayName = new int [3]; // int[3] means length of array will be 3
 		
@@ -28,7 +28,22 @@ public class JavaBrushUp {
 		// Second Method for Define array
 		
 		int[] arr = {1,2,3,4,5,6};
-		System.out.println(arr[1]);
+		// --------------- JAVA LOOPS ------------------
+		
+		for(int i=0; i<arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+				
+		
+		String[] Array = {"sanju","Abhay","Naresh"};	
+		
+		for(String s:Array) {
+			System.out.println(s);
+		}
+				
+		
+		
+		
 		
 	}
 

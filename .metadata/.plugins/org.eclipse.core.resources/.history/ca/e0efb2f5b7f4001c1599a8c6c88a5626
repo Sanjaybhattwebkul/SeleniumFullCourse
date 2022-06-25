@@ -1,0 +1,14 @@
+
+public class Strings {
+
+	public static void main(String[] args) {
+		//  In java String is an object
+		String s = "Selenium"; //Literal way to define string
+		
+		String s = new String("Selenium"); // Using new keyword
+		s.charAt(0); // Will Print 0 index of the string
+		
+
+	}
+
+}
