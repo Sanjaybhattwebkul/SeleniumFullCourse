@@ -1,0 +1,19 @@
+
+public class functions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void Print()
+	{
+		System.out.println("Hello Selenium");
+	}
+	
+	public static String  GetData()
+	{
+		return "Sanju";
+	}
+
+}

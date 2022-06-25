@@ -1,0 +1,7 @@
+
+public class AllFunctions {
+	public function GetUserData()
+	{
+		System.out.println("Hello World");
+	}
+}
