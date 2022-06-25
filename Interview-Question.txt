@@ -3,7 +3,7 @@
 
 		-------------- SELENIUM INTERVIEW QUESTIONS - -----------------
 
-=>	   Webdriver driver = new ChromeDriver()                            v/s         ChromeDriver driver = new ChromDriver()
+=> DIFFERENCE BETWEEN  Webdriver driver = new ChromeDriver(); AND ChromeDriver driver = new ChromDriver(); ?
 
 
 
@@ -15,17 +15,19 @@
 	    Like: WebDriver driver = new FireFoxDriver();				 ChromeDriver class ko denote kr re hai.	
 		  WebDriver driver = new ChromeDriver();
 
-	  Yha par hm WebDriver Class k ethods ko use kr skte hai                         Yha pa only ChromeDriver class k methods ko use kr skte hai. 
+	  Yha par hm WebDriver Class k methods ko use kr skte hai                         Yha pa only ChromeDriver class k methods ko use kr skte hai. 
 											 or code only chrome m chlega
 
 	  WebDriver Class hai or ChromeDriver Interface					ChromeDriver Class hai or ChromeDriver Interface
 
 
-Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDriver interface k ander define gonge un sab ko ham webdriver class se access kr skte h 
-					      driver object ka use kr k.
+Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDriver interface k ander define honge.
+	un sab ko ham webdriver class ka object bana kar  access kr skte h 
+
 
 
 =>  DIFFERENT BETWEEEN driver.close() AND driver.quite();   ?
+
 	-> driver.close(); will close only the current tab.
 	-> driver.quit(); will close all tabs which opened by selenium
 
