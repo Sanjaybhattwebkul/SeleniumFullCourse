@@ -69,3 +69,12 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 
 	-> We cal call a STATIC  method without creating a object of the class . 
 	-> we can call a nonStatic function only create a object of the calss .
+
+
+
+=> WHAT IS MEANS OF element intercepted exception in selenium ?
+
+	-> Ye error tb aati h jb hm koi operation perform krte h . or vo page load hone se phle hi perform ho jata h .
+	-> Iske liye hme [ Thread.sleep(1000) ]  ya [ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); ]  ka use krna hota h .
+	-> Is method ka use krne se jb tk page load ni ho jata tb tk selenium koi action persorm ni krega
+
