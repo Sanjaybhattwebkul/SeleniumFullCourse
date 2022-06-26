@@ -22,10 +22,10 @@ public class Locators {
 		driver.findElement(By.cssSelector("input[placeholder='Email']")).clear();
 		
 		// Find element by index value, if we have multiple input with same attribute then we use indexing
-		driver.findElement(By.xpath("//input[@type='text'][2]")).sendKeys("john@text.com");
-		driver.findElement(By.xpath("//input[@type='text'][2]")).clear();		
+		driver.findElement(By.xpath("//input[@type='text'][2]")).sendKeys("john@gmail.com");
+		
 		// Index selector using CSS
-		driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("John@gmail.com");
+		driver.findElement(By.cssSelector("input[@type='text']:nth-child(1)")).sendKeys("John@gmail.com");
 		
 		
 

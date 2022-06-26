@@ -25,7 +25,7 @@ public class Locators {
 		driver.findElement(By.xpath("//input[@type='text'][2]")).sendKeys("john@text.com");
 		driver.findElement(By.xpath("//input[@type='text'][2]")).clear();		
 		// Index selector using CSS
-		driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("John@gmail.com");
+		driver.findElement(By.cssSelector("input[@type='text']:nth-child(3)")).sendKeys("John@gmail.com");
 		
 		
 
