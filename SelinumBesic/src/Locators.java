@@ -17,7 +17,13 @@ public class Locators {
 		driver.findElement(By.className("signInBtn")).click();
 		System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
 		driver.findElement(By.linkText("Forgot your password?")).click(); // Click on text of <a> tag
-		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("rahul");
+		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("john");
+		driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("john@gmail.com");
+		driver.findElement(By.cssSelector("input[placeholder='Email']")).clear();
+		
+		// Find element by index value, if we have multiple input with same attribute then we use indexing
+		driver.findElement(By.xpath("//input[@type='text'][2]")).sendKeys("sanju@gmail.com");
+		
 
 	}
 
