@@ -27,8 +27,22 @@ public class Locators {
 		// Index selector using CSS
 		driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("John@gmail.com");
 		
+		// X-Path using parent-Child tags
+		
+		driver.findElement(By.xpath("//form/input[3]")).sendKeys("7894561230");
+		
+		// When we have multiple class with the same name, use   tagName.className
+		driver.findElement(By.className("input.reset-pwd-btn")).click();
+	   
+		// Parent child locators with css /
+		System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+		
+	
 		
 
 	}
 
 }
+
+
+
