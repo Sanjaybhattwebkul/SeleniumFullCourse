@@ -12,6 +12,10 @@ public class Locators {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
+		
+		driver.manage().window().maximize(); //Mazimize current window
+		Thread.sleep(2000);    //Delay execution for 5 seconds to view the maximize operation	
+		
 		driver.findElement(By.id("inputUsername")).sendKeys("Rahul");
 		driver.findElement(By.name("inputPassword")).sendKeys("Rahul@123");
 		driver.findElement(By.className("signInBtn")).click();
@@ -39,8 +43,20 @@ public class Locators {
 		// Parent child locators with css /
 		System.out.println(driver.findElement(By.cssSelector("form p")).getText());
 		
-	
+		// if we have 2 button with same attr use it . 
+		driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();
 		
+		// Login again 		
+		driver.findElement(By.cssSelector("#inputUsername")).sendKeys("Rahul");
+		
+		//<input type="password">
+		driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
+		driver.findElement(By.id("chkboxOne")).click();
+		
+		// <input class='submit btn btn-success'>
+		driver.findElement(By.xpath("//button[contains(@class,'submit ')]")).click();
+		
+
 
 	}
 

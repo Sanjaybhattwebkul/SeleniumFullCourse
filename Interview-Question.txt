@@ -78,3 +78,28 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 	-> Iske liye hme [ Thread.sleep(1000) ]  ya [ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); ]  ka use krna hota h .
 	-> Is method ka use krne se jb tk page load ni ho jata tb tk selenium koi action persorm ni krega
 
+
+=> DIFFERENT BETWEEN implicitlyWait()  AND  Thread.sleep(1000) FUNCTION ? 
+
+	-> implilityWaite() tab use kr krte h jab hme kisi object ko page m load hone k liye waite krna ho h.
+	-> Thread.sleep(); tab use krte h jb koi object page m pahle se h or vo show ni hora h . to use show hone tk waite krne k liye ise use krte h 
+
+
+=> WHAT IS  REgular expression CSSselector in selenium ?
+
+	-> We can select the element by some words
+	Example: driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("hello");
+
+	-> button[contains(@class,'btn btn-submit')]  // agr 1 element 2 class h to 1 hi likhni hoti h .
+
+=> If WE HAVE 2 SAME BUTTON WITH THE SAME CLASS. HOW DID WE INENTIFY WHICH ONE Y=WE NEED ?
+	
+	<div class="forgot-pwd-btn-conainer">
+		<button class="go-to-login-btn">Go to Login</button>
+		<button class="reset-pwd-btn">Reset Login</button>
+	</div>
+
+ -> In this case we need to use indexing of the element
+ -> //div[@class='forgot-pwd-btn-conainer']/button[1]
+
+
