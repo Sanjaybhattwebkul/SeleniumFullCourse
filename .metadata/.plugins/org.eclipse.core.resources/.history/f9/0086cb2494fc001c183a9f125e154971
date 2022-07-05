@@ -28,8 +28,8 @@ public class TestNg {
 		Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(),"Hello "+name+",");
 		
 		// <button classs="demo">Log Out</button>
-		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
-		//driver.findElement(By.xpath("//button[text()='Log out']")).click();
+		//driver.findElement(By.xpath("//*[text()='Log Out']")).click();
+		driver.findElement(By.xpath("//button[text()='Log out']")).click();
 		driver.close();
 		
 	}

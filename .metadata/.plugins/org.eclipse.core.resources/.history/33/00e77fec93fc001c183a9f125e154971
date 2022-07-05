@@ -28,9 +28,9 @@ public class TestNg {
 		Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(),"Hello "+name+",");
 		
 		// <button classs="demo">Log Out</button>
-		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
-		//driver.findElement(By.xpath("//button[text()='Log out']")).click();
-		driver.close();
+		//driver.findElement(By.xpath("//*[text()='Log Out']")).click();
+		// driver.findElement(By.xpath("//button[text()='Log out']")).click();
+		//driver.close();
 		
 	}
 	
@@ -47,15 +47,26 @@ public class TestNg {
 		
 		String passwordText =driver.findElement(By.cssSelector("form p")).getText();
 		
+		//Please use temporary password 'rahulshettyacademy' to Login.
+		
 		String[] passwordArray = passwordText.split("'");
 		
-		return  passwordArray[1].split("'")[0];	
+		// String[] passwordArray2 = passwordArray[1].split("'");
 		
-		//0th index - Please use temporary password		
+		// passwordArray2[0]
+		
+		String password = passwordArray[1].split("'")[0];
+		
+		return password;
+		
+		//0th index - Please use temporary password
+		
 		//1st index - rahulshettyacademy' to Login.
 		
 		
-		//0th index - rahulshettyacademy		
+		
+		//0th index - rahulshettyacademy
+		
 		//1st index - to Login.
 
 	}

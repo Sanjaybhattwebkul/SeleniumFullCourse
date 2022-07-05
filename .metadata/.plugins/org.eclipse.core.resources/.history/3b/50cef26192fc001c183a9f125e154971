@@ -13,7 +13,8 @@ public class TestNg {
 		System.setProperty("webdriver.chrome.driver", "C:\\chrome-exe\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		String password = getPassword(driver); // Call getPassword Function		
+		String password = getPassword(driver); // Call getPassword Function
+		
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");		
 		driver.manage().window().maximize();
 		Thread.sleep(2000);    			
@@ -29,35 +30,20 @@ public class TestNg {
 		
 		// <button classs="demo">Log Out</button>
 		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
-		//driver.findElement(By.xpath("//button[text()='Log out']")).click();
+		// driver.findElement(By.xpath("//button[text()='Log out']")).click();
 		driver.close();
 		
 	}
 	
-	public static String getPassword(WebDriver driver) throws InterruptedException
+	public static String getPassword(WebDriver driver)
 	{
-
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
-		
 		driver.findElement(By.linkText("Forgot your password?")).click();
+		driver.findElement(By.className("reset-pwd-btn")).click();
+		String PasswordText = driver.findElement(By.cssSelector("form p")).getText();
+		String[] passwordArray= PasswordText.split("'");
+		return   passwordArray[1].split("'")[0];
 		
-		Thread.sleep(1000);
-		
-		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
-		
-		String passwordText =driver.findElement(By.cssSelector("form p")).getText();
-		
-		String[] passwordArray = passwordText.split("'");
-		
-		return  passwordArray[1].split("'")[0];	
-		
-		//0th index - Please use temporary password		
-		//1st index - rahulshettyacademy' to Login.
-		
-		
-		//0th index - rahulshettyacademy		
-		//1st index - to Login.
-
 	}
 
 }

@@ -28,36 +28,21 @@ public class TestNg {
 		Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(),"Hello "+name+",");
 		
 		// <button classs="demo">Log Out</button>
-		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
-		//driver.findElement(By.xpath("//button[text()='Log out']")).click();
-		driver.close();
+		//driver.findElement(By.xpath("//*[text()='Log Out']")).click();
+		// driver.findElement(By.xpath("//button[text()='Log out']")).click();
+		//driver.close();
 		
 	}
 	
-	public static String getPassword(WebDriver driver) throws InterruptedException
+	public static String getPassword(WebDriver driver)
 	{
-
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
-		
 		driver.findElement(By.linkText("Forgot your password?")).click();
-		
-		Thread.sleep(1000);
-		
 		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
+		String PasswordText = driver.findElement(By.cssSelector("form p")).getText();
+		String[] passwordArray= PasswordText.split("'");
+		return   passwordArray[1].split("'")[0];
 		
-		String passwordText =driver.findElement(By.cssSelector("form p")).getText();
-		
-		String[] passwordArray = passwordText.split("'");
-		
-		return  passwordArray[1].split("'")[0];	
-		
-		//0th index - Please use temporary password		
-		//1st index - rahulshettyacademy' to Login.
-		
-		
-		//0th index - rahulshettyacademy		
-		//1st index - to Login.
-
 	}
 
 }
