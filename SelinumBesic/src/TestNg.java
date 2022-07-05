@@ -22,12 +22,15 @@ public class TestNg {
 		driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
 		driver.findElement(By.id("chkboxOne")).click();
 		driver.findElement(By.xpath("//button[contains(@class,'submit ')]")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		System.out.println(driver.findElement(By.tagName("p")).getText());
+		driver.findElement(By.className("class='logout-btn'")).click();
 		// Using testNG check expected and actual result
 		Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in");
-		Assert.assertEquals(driver.findElement(By.cssSelector("//div[class='login-container'] h2")).getText(), "Hello "+name+",");
-		driver.findElement(By.xpath("//*[text()='Log out']")).click();
+		//Assert.assertEquals(driver.findElement(By.cssSelector("//div[class='login-container'] h2")).getText(), "Hello "+name+",");
+		
+		// <button classs="demo">Log Out</button>
+		//driver.findElement(By.xpath("//*[text()='Log out']")).click();
 		
 		
 		
