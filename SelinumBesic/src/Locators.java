@@ -45,6 +45,7 @@ public class Locators {
 		
 		// if we have 2 button with same attr use it . 
 		driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();
+		Thread.sleep(1000);
 		
 		// Login again 		
 		driver.findElement(By.cssSelector("#inputUsername")).sendKeys("Rahul");
@@ -56,6 +57,10 @@ public class Locators {
 		// <input class='submit btn btn-success'>
 		driver.findElement(By.xpath("//button[contains(@class,'submit ')]")).click();
 		
+		/* <button classs="demo">Log Out</button> */
+		
+			//driver.findElement(By.xpath("//*[text()='Log Out']")).click();
+			// driver.findElement(By.xpath("//button[text()='Log out']")).click();
 
 
 	}
