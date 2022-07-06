@@ -103,3 +103,10 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
  -> //div[@class='forgot-pwd-btn-conainer']/button[1]
 
 
+=> DIFFERENCE BETWEEN ABSLUTE AND RELATIVE X-PATH ?
+	-> Abslute X-path m hm DOM k root se child element ko likhte h one-by-one
+	  * EXAMPLE: /html/head/body/div/h2/p/span
+	  * or is m / ka hi use krte h.
+
+	-> Relative X-path m hm DOM se kisi bhi element ko direct access kr skte  hai.
+	  * EXAMPLE: //Div/p/span
