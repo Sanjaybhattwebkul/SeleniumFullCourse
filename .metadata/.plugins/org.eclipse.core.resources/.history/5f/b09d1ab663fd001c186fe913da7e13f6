@@ -16,8 +16,6 @@ public class advanceLocators {
 		System.out.println(Text); // OUTPUT = Login
 
 		// CHIELD TO PARENT
-		String  Text1 = driver.findElement(By.xpath("//header/div/button[1]/parent::div/button[2]")).getText();
-		System.out.println(Text1); // OUTPUT = Login
 		
 	}
 

@@ -110,3 +110,33 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 
 	-> Relative X-path m hm DOM se kisi bhi element ko direct access kr skte  hai.
 	  * EXAMPLE: //Div/p/span
+
+
+=> HOW CAN WE TRAVEL FROM CHIELD TO PARENT LOCTORS ? if we want to find <a> tag and we are in lOGIN  button
+	-> <header>
+			<a href="#">click</a>
+			<div>
+				<button class='btn-lOGIN'>HOME</button>
+				<button class='btn-lOGIN'>PRACTICE</button>
+				<button class='btn-lOGIN'>LOGIN</button>
+			</div>
+		</header>
+	-> WE ARE ON LOGIN BUTTON NOW. 
+	    ->Like: driver.findElement(By.xpath("//header/div/button[3]"))
+
+	*ANSWER*-->driver.findElement(By.xpath("//header/div/button[3]/parent::div/parent::header/a")) 
+
+
+=> HOW CAN WE TRAVEL FROM PARENT TO CHIELD LOCTORS ?We want to find Login Button and we are in Home nutton
+	-> <header>
+			<a href="#">click</a>
+			<div>
+				<button class='btn-lOGIN'>Home</button>
+				<button class='btn-lOGIN'>Practice</button>
+				<button class='btn-lOGIN'>LOGIN</button>
+			</div>
+		</header>
+	-> WE ARE ON Home BUTTON NOW. 
+	    ->Like: driver.findElement(By.xpath("//header/div/button[1]"))
+
+	*ANSWER*--> driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[2]")).getText();
