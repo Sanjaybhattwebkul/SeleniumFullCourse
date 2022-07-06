@@ -140,3 +140,12 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 	    ->Like: driver.findElement(By.xpath("//header/div/button[1]"))
 
 	*ANSWER*--> driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[2]")).getText();
+
+
+
+=> DIFFERENCE BETWEEN driver.get();  AND driver.navigate();  ?
+	-> driver.get(); ye function tab tk action perform nahi karega jab tak complete page load nahi ho jata.
+			-> Jb tak complete page load nahi hoga tab tk waite krta hai bina kisi extra method call kiye.
+
+	-> driver.navigate(); ye function page open hote hi action perform krna start kr deta h . complate page load hone tk waite nahi krta hai.
+	   -> isi liye hm first time jb browser open krte hai to driver.get() ka usse krte hai. 
