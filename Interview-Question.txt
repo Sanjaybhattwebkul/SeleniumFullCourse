@@ -104,6 +104,8 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 
 
 => DIFFERENCE BETWEEN ABSLUTE AND RELATIVE X-PATH ?
+
+
 	-> Abslute X-path m hm DOM k root se child element ko likhte h one-by-one
 	  * EXAMPLE: /html/head/body/div/h2/p/span
 	  * or is m / ka hi use krte h.
@@ -149,3 +151,44 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 
 	-> driver.navigate(); ye function page open hote hi action perform krna start kr deta h . complate page load hone tk waite nahi krta hai.
 	   -> isi liye hm first time jb browser open krte hai to driver.get() ka usse krte hai. 
+
+
+
+=> What are the new features of Selenium 4.5 ?
+   
+	1. 
+
+=> Difference between @factory and @ Dataprovido annotation ?
+
+=> Types of test Annotation in testng ?
+
+=> How can we switch into the frame ?
+
+=> What is the scrum ceremonies ?    // Ajaild ethology
+
+=> Difference between abstraction and encapsulation ?  // JAVA  
+
+
+=>  Difference between relative and absolute xPath ?
+
+
+=> Write a program in JAVA  to count the repeted the similar alpabets in given string ?
+
+=> Why we use Static  keyword in void main()  function ?
+
+=> Difference between findElement  and findElements ?
+
+=> How can we heighlight and element in selenium ?
+
+=> What is the dataDriven framework ?
+
+=> Difference between hard asssersion and soft assersion ?
+
+=> Can we run the testNg testcases through command promt ?
+
+=> What is the key component of maven ?
+
+=> Why we use selenium ?
+
+
+
