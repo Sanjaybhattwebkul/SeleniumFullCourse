@@ -188,7 +188,4 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 
 => What is the key component of maven ?
 
-=> Why we use selenium ?
-
-
-
+=> Why we use selenium  ?
