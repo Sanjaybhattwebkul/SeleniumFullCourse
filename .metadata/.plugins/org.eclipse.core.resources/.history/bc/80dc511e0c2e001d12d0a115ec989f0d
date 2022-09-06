@@ -1,0 +1,28 @@
+
+public class String {
+
+	public static void main(java.lang.String[] args) {
+		// TODO Auto-generated method stub
+		String string = "Sanjay Bhatt";
+		 int count=0;
+		
+		  //Counts each character except space    
+        for(int i = 0; i < string.length(); i++) {    
+           
+			if(string.charAt(i) != ' ')    
+                count++;    
+        }    
+
+	}
+
+	private int length() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private char charAt(int i) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

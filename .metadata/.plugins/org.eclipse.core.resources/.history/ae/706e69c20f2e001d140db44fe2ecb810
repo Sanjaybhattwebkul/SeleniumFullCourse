@@ -1,0 +1,20 @@
+
+public class String {
+
+	public static void main(java.lang.String[] args) {
+		// TODO Auto-generated method stub
+		
+		java.lang.String myText = "Hello";
+		int count =0;
+		
+		System.out.println(myText);
+		   for(int i = 0; i < myText.length(); i++) {    
+	            if(myText.charAt(i) != ' ')    
+	                count++;    
+	        }    
+	            
+	        //Displays the total number of characters present in the given string    
+	        System.out.println("Total number of characters in a string: " + count);    
+	}
+
+}

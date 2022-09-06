@@ -1,0 +1,27 @@
+import java.util.HashMap;
+
+public class String {
+
+	public static void main(java.lang.String[] args) {
+		// TODO Auto-generated method stub
+		
+		java.lang.String myText = "Sanjay Bhatt";
+		
+		// Remove all space from string
+		myText = myText.replaceAll("\\s", "");		
+		int count=0;		
+		System.out.println(myText);		
+	        for (int i=0; i<myText.length(); i++)
+	        {
+	            // checking character in string
+	            if (myText.charAt(i) == count)
+	            count++;
+	        }
+	        System.out.println(count);
+		   
+		    
+	}
+	
+	
+
+}
