@@ -173,6 +173,7 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 
 
 => Write a program in JAVA  to count the repeted the similar alpabets in given string ?
+		-> ANSWER: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/SelinumBesic/src/String.java
 
 => Why we use Static  keyword in void main()  function ?
 
