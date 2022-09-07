@@ -1,0 +1,20 @@
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class dynamicDropdowns {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\chrome-exe\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.get("https://www.spicejet.com/");
+		
+		driver.manage().window().maximize(); //Mazimize current window
+		Thread.sleep(2000); 
+
+	}
+
+}
