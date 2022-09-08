@@ -194,4 +194,20 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 => What is Parent-Child x-Path ?
 	->Is m hme phle paren element ka xPath dena hona h then child Element ka xPath
 	  => Example: driver.findElement(By.xpath("//div[@id='ParentElemet-Ki-Id'] //a[@value='Child-ka-Xpath']")).click();
-	  
+
+=> Types of waites in selenium ?
+	-> implicitlyWait
+	-> explicityWaite
+	-> Thread.sleep   // Ye JAVA  ka part h selinum ka ni h ye function
+	->Flueant aite
+
+=> Difference Beetween implicitlyWait and ExplicityWaite ?
+	-> implicitlyWait  globally declear hota h , 1 bar declear krne se vo complete page k liye work krega
+	-> ExplicityWaite alag-2 elements k liye lgana padhta h .
+
+=> Difference between Thread.sleep AND  implicitlyWait ?
+	-> Thread.sleep m hm jitna time set krte h vo utne time page tk waite krta h chahe page load m time kam bhi lg ra .
+	-> implilityWaite only utna hi waite krega jitna loading m lgega chahe time hne jada bhi diya h tb bhi.
+	-> implicitlyWait tb page load hone m time lgta h tb waite krta h or thread.sleep agr pagr load hone k bad koi responce ya dynamic data load hota h us time use hota h 
+	
+	
