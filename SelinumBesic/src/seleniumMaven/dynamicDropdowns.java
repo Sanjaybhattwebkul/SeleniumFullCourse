@@ -22,6 +22,13 @@ public class dynamicDropdowns {
 		
 		driver.findElement(By.id("ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1_CTXT")).click();
 		driver.findElement(By.xpath("(//a[@value='GOP'])[2]")).click();
+		
+		// PARENT-CHILD XPATH
+		
+		driver.findElement(By.xpath("//div[@id='glsControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1_CTNR'] //a[@value='BLR']")).click();
+		
+		driver.findElement(By.xpath("//div[@id='glsControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1_CTNR'] //a[@value='GOP']")).click();
+		
 	}
 
 }

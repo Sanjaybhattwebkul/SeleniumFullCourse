@@ -190,3 +190,8 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 => What is the key component of maven ?
 
 => Why we use selenium  ?
+
+=> What is Parent-Child x-Path ?
+	->Is m hme phle paren element ka xPath dena hona h then child Element ka xPath
+	  => Example: driver.findElement(By.xpath("//div[@id='ParentElemet-Ki-Id'] //a[@value='Child-ka-Xpath']")).click();
+	  
