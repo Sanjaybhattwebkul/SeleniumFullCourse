@@ -156,20 +156,34 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 
 => What are the new features of Selenium 4.5 ?
    
-	1. 
+	1.  // TODO
 
 => Difference between @factory and @ Dataprovido annotation ?
 
+	// TODO
+
 => Types of test Annotation in testng ?
+
+	// TODO
 
 => How can we switch into the frame ?
 
+	// TODO
+
 => What is the scrum ceremonies ?    // Ajaild ethology
+	// TODO
 
 => Difference between abstraction and encapsulation ?  // JAVA  
 
+	// TODO
 
 =>  Difference between relative and absolute xPath ?
+
+	-> jb hm ABSLUTE xPath  bnate h to hm head element se bottem tk jate h .
+		-> LIKE: head/body/div/div/div/span/b
+
+	-> OR jb hm Relative xPath bnate h tb hm elemt ko middle se bhi target kr skte h 
+		-> Like :  head/div/b
 
 
 => Write a program in JAVA  to count the repeted the similar alpabets in given string ?
@@ -177,19 +191,36 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 
 => Why we use Static  keyword in void main()  function ?
 
+	// TODO
+
 => Difference between findElement  and findElements ?
+	// TODO
+
 
 => How can we heighlight and element in selenium ?
 
+	// TODO
+
 => What is the dataDriven framework ?
+	// TODO
+
 
 => Difference between hard asssersion and soft assersion ?
+	-> Hard assersion m agr hm koi script run krte h to agr koi testCse fail hota h to script ka excution stop ho jata h .
+	-> Soft assersion m hme script ka output last m milta h ki kitne case pass or kitne fail hue, script ka excution ni rukta hai. 
 
 => Can we run the testNg testcases through command promt ?
 
+	// TODO
+
 => What is the key component of maven ?
 
+	// TODO
+
 => Why we use selenium  ?
+
+	// TODO
+
 
 => What is Parent-Child x-Path ?
 	->Is m hme phle paren element ka xPath dena hona h then child Element ka xPath
@@ -211,3 +242,20 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 	-> implicitlyWait tb page load hone m time lgta h tb waite krta h or thread.sleep agr pagr load hone k bad koi responce ya dynamic data load hota h us time use hota h 
 	
 	
+=> Differecne between xPath And cssSelector  ?
+	-> xPath m hm forword or backword donu way m move kr skte h.  [ fowrod-> parent to child, backword-> child to parent ]
+	-> cssSelector m hm only fordword move krte h mtlb parent to child ?
+
+=> How can we import excel file into selenium ?
+	-> We can import excel file in selenium by Using Apache POI API librery .
+
+=> Difference between testNG and Junit ?
+	-> We can do only unit testin in Junit. 
+	-> And by using the testNg we can do aprox alltype of testing. 
+
+=> Difference between senity and smoke testing ?
+	->  Jb hm kisi module ya software ko Rest krte h use Senity testing khte h .
+	-> Smoke testing m  hm softeare ki functionality ya critical functionality test krte h 
+
+=> How can we handel windows based functionality using selenium ?
+	-> By using AutoIT tool . 
