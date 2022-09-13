@@ -259,3 +259,18 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 
 => How can we handel windows based functionality using selenium ?
 	-> By using AutoIT tool . 
+
+
+=> TYPES OF Hard Assertion in selenium ?
+	-> assert.assertTrue();
+	-> assert.assertFalse();
+	-> assert.assertEquals();
+
+	1. assertTrue only TRUE result accept rta hai. jese  if($disabled == true) { } //
+	  -> assert.assertTrue(driver.findElement(By.id("checkbox").isSelected()));  // agre ye true hua to TestCase  PASS
+
+	2. assert.assertFalse();  only FALSE result accept rta hai. jese  if($disabled == false) { } //
+	-> assert.assertFalse(driver.findElement(By.id("checkbox").isSelected()));  // agre ye false hua to testCase PASS
+
+	3. assert.assertEquals();  only FALSE result accept rta hai. jese  if($a == $b) { } //
+	-> assert.assertEquals(driver.findElement(By.id("checkbox").isSelected()));  // agre ye equals hua testCase PASS
