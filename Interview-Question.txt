@@ -336,7 +336,55 @@ ANSWER
 		ChromeOptions o = new ChromeOptions();
 		o.addArguments("--disable-notifications");
 
+Question :
+	WHAT IS FLUENT WAITE IN SELENIUM ?
+
+ANSWER:
+	1. Fluent waite find the webElemet in repeatly on regular interval of time  until the timeout or till the object found.
+	2. Fluent waite hm time k sath 1 pooling time bhi pass krte h , for Example hm tome 30sec or polling time 3sec  diya h to 
+	   . selenium har 3sec bad element ko found krega. 30sec tk.
+	
+	3. Fluent waite Waite_interface ko use krta h . or implecit or explict wate WebDriver interface ko use krte h .
+
+	SYNTAX: 
+	 	Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+       	.withTimeout(Duration.ofSeconds(30s))
+       	.pollingEvery(Duration.ofSeconds(5s))
+       	.ignoring(NoSuchElementException.class);
+
+	1. Waite interface h Or FluentWaite class hai.
+	2. poolingEvery  mtlb ki selenium har 5sec bad webelement ko find krega
+	3. ignoring  mtlb agr 30sec se phle NoSuchElementException ki exception ayegi to selenium  use ignor krega  
+
+	Example code: https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/support/ui/FluentWait.html
+	VIDEO NO. 84
+
+Question 1:
+How to achieve synchronization in Selenium WebDriver?
+.
+ANSWER: implicit and Explict waite
+
+Question 2:
+Identify the incorrect statement about implicit wait in Selenium WebDriver.
+
+ANSWER:
+	If the maximum implicit wait time is 10 seconds, the web driver waits for the entire 10 seconds even if the object is available at the 3rd sec.
+
+Question 4:
+	Identify the correct syntax for declaring implicit wait in Selenium WebDriver.
+
+Answer:
+	driver.manage().timeouts().implictlyWait(5,TimeUnit.MILLISECONDS)
 
 
+Question 5:
+	Which class is responsible to achieve explicit wait in Selenium WebDriver?
 
+ANSWER
+		WebDriverWait w = new WebDriverWait(driver,5)
 
+Question 6:
+	Identify the incorrect method to implement explicit wait in Selenium WebDriver.
+
+ANSWER:
+	frameToBeAvailable
