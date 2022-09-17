@@ -42,7 +42,6 @@ public class AddtoCart {
 				if (j == itemsNeeded.length) {
 					break;
 				}
-
 			}
 		}
 	}
