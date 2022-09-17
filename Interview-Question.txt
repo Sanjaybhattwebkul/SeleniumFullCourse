@@ -276,7 +276,7 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 	-> assert.assertEquals(driver.findElement(By.id("checkbox").isSelected()));  // agre ye equals hua testCase PASS
 
 
-=> HOW CAN WE CLICK ON ALERT IN SELENIUM ?
+=> HOW CAN WE CLICK ON JS  ALERT IN SELENIUM ?
 
 	-> by using switchTo().clert(); method. 
 
@@ -326,6 +326,15 @@ Question 7:
 
 ANSWER:
 	Boolean; 
+
+Question 8:
+	How to handle chrome browser notifications in selenium ?
+
+ANSWER
+	By using ChromeOptions() CLASS.
+	EXAMPLE: 
+		ChromeOptions o = new ChromeOptions();
+		o.addArguments("--disable-notifications");
 
 
 
