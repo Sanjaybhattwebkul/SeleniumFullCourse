@@ -274,3 +274,60 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 
 	3. assert.assertEquals();  only FALSE result accept rta hai. jese  if($a == $b) { } //
 	-> assert.assertEquals(driver.findElement(By.id("checkbox").isSelected()));  // agre ye equals hua testCase PASS
+
+
+=> HOW CAN WE CLICK ON ALERT IN SELENIUM ?
+
+	-> by using switchTo().clert(); method. 
+
+		FOR EXAMPLE: 
+		1 IF we ant to click OK , YES OR CONFIRM ?  //  driver.switchTo.alert().accept();
+		2. IF we ant to click Cancel , No   //  driver.switchTo.alert().dismis();
+
+Question 1:
+	In order to identify static dropdowns, what class and methods are used in Selenium Web Driver?
+
+ANSWER:
+	CLASS :  select
+	METHOD: deselectByVisibleText , deselectByindex   Etc.
+
+Question 2:
+	In a webpage, if there are three elements with same xpath value,
+ 	how do we explicitly identify the third element on the page with the help of index. Let us consider,
+  	the matching xpath be //input[@name=’Selenium’]
+
+ANSWER: (//input[@name=’Selenium’])[3]
+
+Question 3:
+	How do count number of checkboxes on a webpage?
+
+ANSWER: driver.findElements(By.cssSelector(“input[type=’checkbox’]”)).size();
+
+Question 4:
+	How do we capture the message visible on the alerts?
+
+ANSWER: 
+	(driver.switchTo().alert().getText()
+
+Question 5:
+	Identify the method used in Selenium WebDriver to get the status of the radio buttons or checkboxes (selected or not).
+
+ANSWER: 
+	By usine isSelected();  method.
+
+Question 6:
+	Identify the method used in Selenium WebDriver to verify the presence of a web element within the web page.
+
+ANSWER:
+	By using isDesplayed(); method.
+
+Question 7:
+	What is the return type of the isEnabled () method?
+
+ANSWER:
+	Boolean; 
+
+
+
+
+
