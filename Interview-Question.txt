@@ -418,4 +418,98 @@ ANSWER:
 	4. iterator() class ka object bna k hm obj.next(); function se hm next tab/windos m switch kr skte hai.
   VIDEO NO. 88 in udemy
 
+QUESTION:
+	HOWCAN WE SWITCH INSIDE A Iframe IN SELENIUM?
+
+ANSWER:
+	By using switchTo.frame('framePath');  function.
+
+QUESTION:
+	HOW CAN WE Go OUTSIDE OF THE Iframe IN SELENIUM ?
+
+ANSWER:
+	By using switchTO.defaultContent();
+
+QUESTION:
+	WHO CAN WE PERFORM Drag and Drop action in SELENIUM?
+
+ANSWER:
+	By  using dragAndDrop() function of  Actions class. // We need to pass the path of source and destination 
+	Example: actionObject.dragAndDrop(sourcePath,targetPath).build.perform();
+
+QUESTION:
+	Which class is responsible for the performing mouse and keyboard interactions with Selenium?
+
+ANSWER:
+	Actions.
+
+QUESTION:
+	How to perform right click with the help of actions class in Selenium?
+
+ANSWER:
+	Actions a = new Actions(driver)
+	a.moveToElement (driver.findElement(By.id(“name”))).contextClick().build().perform()
+
+QUESTION:
+	How to enter text ‘Hello’ in capital letters help of actions class in Selenium?
+
+ANSWER:
+	Actions a = new Actions(driver)
+	a.moveToElement (driver.findElement(By.id(“name”))).click().keyDown(Keys.SHIFT).sendKeys(“Hello”).build().
 	
+QUESTION:
+	Which method is used to store multiple child windows in Selenium?
+
+ANSWER:
+	getWindowHandles();
+
+QUESTION:
+	How to navigate to the parent window when there are multiple windows?
+
+ANSWER:
+	Set<String> windows = driver.getWindowHandles(); //[parentid,childid,subchildId]
+		java.util.Iterator<String> it=windows.iterator();
+		String parentId = it.next();
+		driver.switchTo().window(parentId);
+QUESTION:
+	How can we identify frames in Selenium?
+
+ANSWER:
+	By its ID,INDEX,webElemet.
+
+QUESTION:
+	How to switch to a specific frame in Selenium?
+
+ANSWER:
+	driver.switchTo.frame(frameId);
+
+QUESTION:
+	Name the Java collection framework used to store window ids.?
+
+ANSWER:
+	set.
+
+QUESTION:
+	Differecne between BlackBox And WhiteBox testing?
+
+ANSWER:
+	1. BlackBox testing ko Behavioral Testing. bhi kahte hai.
+	2. BlackBoxtesting m hm software applications k input or output m focus krte h.is m hme code or structure se koi mtlb ni hota.
+	    [ mtlb hm performance testing and loading testing ye sab ni krte only UI of functionality dekhte hai. ]
+
+	1. Whitebox testing m hm software k internalpart ko bhi test krte hai, like performance loading etc.
+
+QUESTION:
+	What are the component of selenium?
+	
+ANSWER:
+	1. selinum IDE.
+	2. SELENIUM WEBdriver.
+	3. selenium rce.
+	4. selenium grid.
+
+QUESTION:
+	HOW CAN WE COUNT THE LINKS IN THE WEB PAGE?
+
+ANSWER:
+	By using thedriver.findElements(By.tagName("a")).size(); function.
