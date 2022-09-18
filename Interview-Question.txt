@@ -388,3 +388,34 @@ Question 6:
 
 ANSWER:
 	frameToBeAvailable
+
+QUESTION:
+	 How can we handle mouse/keyboard events in selenium ?
+
+ANSWER:
+	By using the actions class?  // Actions a = new Actions();  // a.functionName();
+
+QUESTION:
+	WHOE CAN WE PRESS ANY KEYBOARD KEY IN SELENIUM ?
+
+ANSWER:
+	By using keyDown(key.SHIFT); // SHIFT is key name
+
+QUESTION:
+	HOW CAN RIGHTCLICK ON ANY ELEMENT IN SELENIUM ?
+
+ANSWER:
+	By using contexClic();
+
+Question:
+	How can we handle multiple windows/tabs in selenium?
+
+ANSWER:
+	By using getWindowHandles(); method.
+	1. getWindowHandles(); ki help se hm 1 tab/window se dusre window/tab m shotch kr skte h .
+	2. Iske liye hme iterator(); function ka use krna hota hai.
+	3. iterator(); function hme sari chile window ki id deeta hai.
+	4. iterator() class ka object bna k hm obj.next(); function se hm next tab/windos m switch kr skte hai.
+  VIDEO NO. 88 in udemy
+
+	
