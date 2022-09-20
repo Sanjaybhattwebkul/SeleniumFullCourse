@@ -513,3 +513,46 @@ QUESTION:
 
 ANSWER:
 	By using thedriver.findElements(By.tagName("a")).size(); function.
+
+Question :
+	In a web table, which could be valid syntax below to get row count?
+
+ANSWER:
+	driver.findElements(By.cssSelector("table-row").size();
+
+Question:
+	Can we determine the xpath of an element in the fourth column from the xpath of the element in the first column in the same row?
+
+ANSWER:
+	Yes, With the help of following-sibling method. xPath.
+
+Question:
+	Guess the valid syntax below to get the columns in a table with xpath.
+
+ANSWER:
+	List<WebElement> tblCol = driver.findElements(By.xpath("//table[@id='product']/tbody/tr/th"));
+
+Question:
+	How to perform arrow key down operation in Selenium?
+
+ANSWER:
+	driver.findElement(By.id(“text-id”)).sendKeys(Keys.DOWN)
+
+Question:
+	Why Javascript Executor is important in Selenium?
+
+ANSWER:
+	Identifies objects which has hidden elements.
+
+Question:
+	Why Javascript Executor is important in Selenium?
+
+ANSWER:
+	Identifies objects which has hidden elements.
+
+Question1:
+	How to extract value from a field with help of Javascript Executor?
+
+ANSWER:
+	String val = "return document.getElementById(\"hiddentext\").value;";
+	String text=(String) js.executeScript(val);
