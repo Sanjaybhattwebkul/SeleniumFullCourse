@@ -1,0 +1,13 @@
+package seleniumMaven;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Amazon {
+	
+	WebDriver driver= new ChromeDriver();
+	System.setProperty("webdriver.chrome.driver", "C:\\chrome-exe\\chromedriver.exe");
+	
+	
+
+}
