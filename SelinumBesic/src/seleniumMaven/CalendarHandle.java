@@ -20,22 +20,24 @@ public class CalendarHandle {
 		js.executeScript("window.scrollBy(0,950)");
 		// April 23
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id='form-field-travel_comp_date']")).click();
+		driver.findElement(By.xpath("//*[@id='form-field-travel_comp_date']")).click(); //click on date inputBox
+		
+		// check if October month selected on calendar
 		while (!driver.findElement(By.xpath("//div[@class='flatpickr-month']")).getText().contains("October")) {
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//span[@class='flatpickr-next-month']")).click();
+			driver.findElement(By.xpath("//span[@class='flatpickr-next-month']")).click(); // click on next arrow
 		}
 
-		int count = driver.findElements(By.xpath("//span[@class='flatpickr-day ']")).size();
+		int count = driver.findElements(By.xpath("//span[@class='flatpickr-day ']")).size(); // count total dates on caalendar
 		for (int i = 0; i < count; i++)	{
-			String text = driver.findElements(By.xpath("//span[@class='flatpickr-day ']")).get(i).getText();
+			String text = driver.findElements(By.xpath("//span[@class='flatpickr-day ']")).get(i).getText(); // get text of datebox
 			if (text.equalsIgnoreCase("26")) {
-				driver.findElements(By.xpath("//span[@class='flatpickr-day ']")).get(i).click();
+				driver.findElements(By.xpath("//span[@class='flatpickr-day ']")).get(i).click(); // click on dateBox
 				System.out.println(text);
 				break;
 			}
 		}
-		System.out.println(driver.findElement(By.xpath("//*[@id='form-field-travel_comp_date']")).getAttribute("value"));
+		System.out.println(driver.findElement(By.xpath("//*[@id='form-field-travel_comp_date']")).getAttribute("value")); // print selected date
 
 	}
 
