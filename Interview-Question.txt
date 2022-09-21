@@ -563,9 +563,28 @@ QUESTION:
 ANSWER:
 	By using the ChromeOptions class.  ChromeOptions option = new ChromeOptions();
 
+VIDEO N0. 104:->
 => ChromeOption class se hm chrome k behivior ko change kr skte h [ chrome browser behivior ko customize kr skte h ]
 	1. Windows popUp disable
 	2. ByPass SSL // unsecure URL
 	3. Set proxt
 	4. Download path set [ ki file download hone k bad kha p save hogi ]
 	5. Download extensions
+
+QUESTION:
+	 What is regular expression ?
+
+ANSWER:
+	input[name*='pas'] // jb hm is type ka Locator use krte h  to ise regular exresiion khte h  [regular expression locator m mtlb * ka use hoga]
+
+QUESTION:
+	WOH CAN WE DELETE COOKIES OF BROWSER ?
+
+ANSWER:
+	By using [ driver.manage().deleteAllCookies(); ]
+
+QUESTION :
+	HOW CAN HIT URL AND GET STATUS CODE OF THE SAME?
+
+ANSWER:
+	By using HttpURLconnection() method.
