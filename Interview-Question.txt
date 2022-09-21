@@ -588,3 +588,35 @@ QUESTION :
 
 ANSWER:
 	By using HttpURLconnection() method.
+
+Question 1:
+	Name the class to customize the Chrome browser.?
+
+ANSWER:
+	By iseing ChromeOptions(). class. 
+
+Question 1:
+	Identify the method to maximize the browser window.
+
+ANSWER:
+	driver.manage().window().maximize(); 
+
+Question :
+	How to delete cookies in Selenium Web Driver?
+	
+ANSWER:
+	1. driver.manage().deleteCookieNamed(“sessionId”)
+	2. driver.manage().deleteAllCookies() 
+
+Question :
+	How to capture screenshots with Selenium Web driver?
+	
+ANSWER:
+	File s = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	FileUtils.copyFile(s, new File (“C:\\Users\\Screenshots\\screenshot.png”));
+
+Question :
+	How to identify broken links in Selenium Webdriver?
+
+ANSWER:
+	Get Status codes of links to decide if they are broken
