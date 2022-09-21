@@ -21,8 +21,7 @@ public class ScreenShot {
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		
 		// Screenshot of Full webPagr
-		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); // get the type of screenshot like type will FILE here.
-		//copy file from src to given path
+		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); // get the type of screenshot
 		FileUtils.copyFile(src,new File("D:\\SeleniumScreenshots\\logo.png"));
 		
 		// Screenshot of specific element
