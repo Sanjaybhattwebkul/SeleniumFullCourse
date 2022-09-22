@@ -1,0 +1,25 @@
+package JavaCode;
+
+public class FibonacciNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int first=0,second=1;
+		System.out.print(first+"\t"+second);
+		
+		for(int i=0; i<=6;i++) {
+			int k=first+second;
+			System.out.println(k);
+			first=second;
+			second=k;
+			
+		}
+			
+			
+			
+		
+
+	}
+
+}
