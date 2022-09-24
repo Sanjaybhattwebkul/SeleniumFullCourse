@@ -631,7 +631,9 @@ ANSWER:
 	  	price = rows.stream().map(s.s->getText).collect(Collectors.toList());
 
 		{
-			Is code m hm rows m jitne bhi element aa rhe hai un sab ko map kr k every element ka price list m store kr rhe hai . 
+			* Is code m hm rows m jitne bhi element aa rhe hai un sab ko map kr k every element ka price list m store kr rhe hai . 
+			* rows m jitne bhi element aa rhe h vo sab s m store ho rhe h fir hm us element ka text list m store kr rhe hai.
+
 
 		}
 			
