@@ -12,9 +12,9 @@ public class Dimension {
 		System.setProperty("webdriver.chrome.driver","C:\\\\chrome-exe\\\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
-		org.openqa.selenium.Dimension ele=driver.findElement(By.cssSelector("a.blinkingText")).getSize();
-		org.openqa.selenium.Dimension dm=((WebElement) ele).getSize();
-		System.out.println(dm);
+		WebElement ele=driver.findElement(By.cssSelector("a.blinkingText"));
+		System.out.println(ele.getRect().getDimension().getHeight());
+		System.out.println(ele.getRect().getDimension().getWidth());
 
 	}
 
