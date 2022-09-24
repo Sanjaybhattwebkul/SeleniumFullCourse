@@ -620,3 +620,18 @@ Question :
 
 ANSWER:
 	Get Status codes of links to decide if they are broken
+
+@ => WHAT IS JAVA STREAM ?
+   
+    -> JAVA stream m helper function hote h. jin ka use kr k hm looping consept ko avoide kr skte h.
+     > jese map(); filter(); etc.
+	-> Agar hme kisi elemtnts m loop chalana  h to hm java stream ka use kr Without loop k bhi logic likh skte h .
+	SYNTAX:
+		List<WebElement> rows = driver.findElements(By.xpath("//tr/td[1]"));
+	  	price = rows.stream().map(s.s->getText).collect(Collectors.toList());
+
+		{
+			Is code m hm rows m jitne bhi element aa rhe hai un sab ko map kr k every element ka price list m store kr rhe hai . 
+
+		}
+			
