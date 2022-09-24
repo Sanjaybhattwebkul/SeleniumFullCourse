@@ -14,10 +14,11 @@ public class HandleHTTP {
 		Proxy proxy = new Proxy();
 		proxy.setHttpProxy("ipaddress:4444");
 		options.setCapability("proxy", proxy);
+		
+		
 		Map<String, Object> prefs = new HashMap<String, Object>();
-		prefs.put("download.default_directory", "/directory/path"); // set download path
-
-		options.setExperimentalOption("prefs", prefs);
+		prefs.put("download.default_directory", "D:\\SeleniumScreenshots"); // set download path		
+		options.setExperimentalOption("prefs", prefs); 
 
 		// FirefoxOptions options1 = new FirefoxOptions();
 		// options1.setAcceptInsecureCerts(true);
