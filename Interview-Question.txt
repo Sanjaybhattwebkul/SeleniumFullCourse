@@ -637,3 +637,21 @@ ANSWER:
 
 		}
 			
+
+QUESTION:
+	 WHAT ARE Relative Locators IN SELENIUM ?
+
+ANSWER:
+	1. Relative Locators Selenium 4 m introduce hue the.
+	2. Relative locators tb use hote h jb kisi element k tagName k alava koi or attribute ni hota h. 
+	  -> is case m hme element ka path search krna thoda hard hota h to hm Relative Locators ka use kr lete h .
+	3. Relative locators Only tagName k sath kaam krta h .
+	4. Relative Locators m 4 function hote h. 1. above, 2. blew, 3.toRightOf, 4. toLeftOf.
+
+	Syntax:
+
+	WebElement nameEditBox =driver.findElement(By.cssSelector("[name='name']")); // find the name input field.
+	System.out.println(driver.findElement(with(By.tagName("label")).above(nameEditBox)).getText());//find label which is above the name inputBox
+		
+
+

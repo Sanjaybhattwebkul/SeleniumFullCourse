@@ -18,16 +18,18 @@ public class FilterJavaStream {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 
-		driver.get("https://rahulshettyacademy.com/greenkart/#/offers");
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
 		driver.findElement(By.id("search-field")).sendKeys("Rice");
+		
+		// Get all the records after search Rice  as A
 		List<WebElement> veggies = driver.findElements(By.xpath("//tr/td[1]"));
-		// 1 results
-
+	
+		// Collect all data which contain Rice AS B
 		List<WebElement> filteredList = veggies.stream()
 				.filter(veggie -> veggie.getText().contains("Rice")).collect(Collectors.toList());
-		// 1 result
-
-		Assert.assertEquals(veggies.size(), filteredList.size());
+		
+		// Check A== B 
+		Assert.assertEquals(veggies.size(), filteredList.size()); 
 
 	}
 

@@ -16,7 +16,7 @@ public class JavaStreams {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
-		driver.get("https://rahulshettyacademy.com/greenkart/#/offers");
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
 
 		// click on column
 		driver.findElement(By.xpath("//tr/th[1]")).click();
