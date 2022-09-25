@@ -653,5 +653,11 @@ ANSWER:
 	WebElement nameEditBox =driver.findElement(By.cssSelector("[name='name']")); // find the name input field.
 	System.out.println(driver.findElement(with(By.tagName("label")).above(nameEditBox)).getText());//find label which is above the name inputBox
 		
+QUESTION:
+	HOW CAN GET Height and Width of element ?
+
+ANSWER:
+	WebElement name = driver.findElements(By.className("name"));
+	name.getRect().getDimension().getHeight();
 
 
