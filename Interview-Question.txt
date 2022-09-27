@@ -679,8 +679,8 @@ QUESTION ?
 	4. @aftersuite  -> jis function m ye annotation lgega vo function suite suite k bad run hoga.
 	5. @beforeclass  -> jis function m ye annotation lgega vo function us class k sabhi functions se phle run hoga.
 	6. @afterclass  -> jis function m ye annotation lgega vo function us class k sabhi functions k bad run hoga. 
-	7. @aftermethod -> Jjis function m ye annotation lgega vo function us class k every function k bad run hoga. [ har functionk bad run hoga ]
-	8. @beforemethod -> Jjis function m ye annotation lgega vo function us class k every function se phle run hoga. [ har functionkse phle run hoga ]
+	7. @aftermethod -> jis function m ye annotation lgega vo function us class k every function k bad run hoga. [ har functionk bad run hoga ]
+	8. @beforemethod -> jis function m ye annotation lgega vo function us class k every function se phle run hoga. [ har functionkse phle run hoga ]
 	9. @Test -> ye annotation class m alfabetic order m run hote h .
 	 
 QUESTIONS :
