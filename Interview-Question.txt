@@ -661,3 +661,42 @@ ANSWER:
 	name.getRect().getDimension().getHeight();
 
 
+=> WHAT IS TESTNG ?
+	-> testNG 1 automation framework h jiks use kr k hm testCses ko handle kr skte h. ( ki knsa tes case kb run krna h .ya kitne test case run krne ki tne ni krne h ye sab .)
+	-> TestNG m testcase testng.xml file se run hote h .
+
+** => testng.xml file info
+	-> <suite name="Suite">   is tag k ander set of packages hote h . iske ander multiple packages hote h.
+	-> <test thread-count="5" name="Test"> is tag k ander multiple class hoti h.
+	-> <class name="TestNG.test">  iske ander methods ko include or exclude krte h .
+
+
+QUESTION ?
+	WHAT ARE TESTNG Annotation ?
+	1. @BeforeTest  -> jis function m ye annotation lgega vo function us class k  every testcase (function) se phle run hoga. 
+	2. @AfterTest  -> jis function m ye annotation lgega vo function us class k  every testcase (function) k bad run hoga. 
+	3. @beforesuite -> jis function m ye annotation lgega vo function suite se phle run hoga
+	4. @aftersuite  -> jis function m ye annotation lgega vo function suite suite k bad run hoga.
+	5. @beforeclass  -> jis function m ye annotation lgega vo function us class k sabhi functions se phle run hoga.
+	6. @afterclass  -> jis function m ye annotation lgega vo function us class k sabhi functions k bad run hoga. 
+	 
+QUESTIONS :
+	What are testng xml label annotation ?
+
+ANSWER:
+	1. @beforesuite.
+	2. @aftersuite
+
+QUESTIONS :
+	What are class label annotation ?
+
+ANSWER:
+	1. @beforeclass.
+	2. @afterclass
+
+QUESTIONS :
+	What are method label annotation ?
+
+ANSWER:
+	1. @beforetest.
+	2. @aftertest
