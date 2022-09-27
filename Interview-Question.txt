@@ -673,19 +673,23 @@ ANSWER:
 
 QUESTION ?
 	WHAT ARE TESTNG Annotation ?
-	1. @BeforeTest  -> jis function m ye annotation lgega vo function us class k  every testcase (function) se phle run hoga. 
-	2. @AfterTest  -> jis function m ye annotation lgega vo function us class k  every testcase (function) k bad run hoga. 
+	1. @BeforeTest  -> jis function m ye annotation lgega vo function xml suite k test se phle run hoga. 
+	2. @AfterTest  -> jis function m ye annotation lgega vo function xml suite k test k bad run hoga. 
 	3. @beforesuite -> jis function m ye annotation lgega vo function suite se phle run hoga
 	4. @aftersuite  -> jis function m ye annotation lgega vo function suite suite k bad run hoga.
 	5. @beforeclass  -> jis function m ye annotation lgega vo function us class k sabhi functions se phle run hoga.
 	6. @afterclass  -> jis function m ye annotation lgega vo function us class k sabhi functions k bad run hoga. 
+	7. @aftermethod -> Jjis function m ye annotation lgega vo function us class k every function k bad run hoga. [ har functionk bad run hoga ]
+	7. @beforemethod -> Jjis function m ye annotation lgega vo function us class k every function se phle run hoga. [ har functionkse phle run hoga ]
 	 
 QUESTIONS :
 	What are testng xml label annotation ?
 
 ANSWER:
 	1. @beforesuite.
-	2. @aftersuite
+	2. @aftersuite.
+	1. @beforetest.
+	2. @aftertest
 
 QUESTIONS :
 	What are class label annotation ?
@@ -698,5 +702,13 @@ QUESTIONS :
 	What are method label annotation ?
 
 ANSWER:
-	1. @beforetest.
-	2. @aftertest
+	1. @beforemethod.
+	2. @aftermethod
+
+QUESTION:
+	Difference between @beforeMethod and @beforeClass annotation ?
+
+ANSWER:
+	@beforeClass annotation jis function m lgega vo  function class m sabs phle run hoga
+	@beforemethod annotation jis function m lgega vo function sabhi function k run hone se phle run hoga , 
+	   LIKE :  1-method-annotation then functionOne , methon-annotation then functionTwo .....
