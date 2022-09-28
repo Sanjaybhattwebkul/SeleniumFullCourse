@@ -1,31 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-26T11:56:58 PDT" name="Suite" finished-at="2022-09-26T11:56:58 PDT" duration-ms="178">
+  <suite started-at="2022-09-28T08:13:07 PDT" name="Default suite" finished-at="2022-09-28T08:13:25 PDT" duration-ms="17375">
     <groups>
     </groups>
-    <test started-at="2022-09-26T11:56:58 PDT" name="Test" finished-at="2022-09-26T11:56:58 PDT" duration-ms="178">
-      <class name="TestNG.test">
-        <test-method signature="test1()[pri:0, instance:TestNG.test@130161f7]" started-at="2022-09-26T11:56:58 PDT" name="test1" finished-at="2022-09-26T11:56:58 PDT" duration-ms="6" status="PASS">
+    <test started-at="2022-09-28T08:13:07 PDT" name="Default test" finished-at="2022-09-28T08:13:25 PDT" duration-ms="17375">
+      <class name="other.DataProvider">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:other.DataProvider@7ed7259e]" started-at="2022-09-28T08:13:07 PDT" name="login" data-provider="ob" finished-at="2022-09-28T08:13:19 PDT" duration-ms="11484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9759565345]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9997802929]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:0, instance:TestNG.test@130161f7]" started-at="2022-09-26T11:56:58 PDT" name="test2" finished-at="2022-09-26T11:56:58 PDT" duration-ms="5" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:other.DataProvider@7ed7259e]" started-at="2022-09-28T08:13:19 PDT" name="login" data-provider="ob" finished-at="2022-09-28T08:13:25 PDT" duration-ms="5715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9759566345]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[99978062929]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- TestNG.test -->
-      <class name="TestNG.adminLogin">
-        <test-method signature="demo1()[pri:0, instance:TestNG.adminLogin@481a996b]" started-at="2022-09-26T11:56:58 PDT" name="demo1" finished-at="2022-09-26T11:56:58 PDT" duration-ms="32" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo1 -->
-        <test-method signature="demo2()[pri:0, instance:TestNG.adminLogin@481a996b]" started-at="2022-09-26T11:56:58 PDT" name="demo2" finished-at="2022-09-26T11:56:58 PDT" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo2 -->
-      </class> <!-- TestNG.adminLogin -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- login -->
+      </class> <!-- other.DataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

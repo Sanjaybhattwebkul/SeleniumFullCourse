@@ -713,3 +713,14 @@ ANSWER:
 	@beforeClass annotation jis function m lgega vo  function class m sabs phle run hoga
 	@beforemethod annotation jis function m lgega vo function sabhi function k run hone se phle run hoga , 
 	   LIKE :  1-method-annotation then functionOne , methon-annotation then functionTwo .....
+
+=> Agr hmare pass 1000 test case h or hme 10 function run krne h to kese krenge ?
+	1.  grouping kr dete  h testcases ki .
+	  syntax: @test({"loginGroup"}) 
+
+=> TYPES OF HELPER FUNCTION IN TESTNG ?
+ANSWER:
+    1. timeout =500
+    2. enabled = false
+    3. depandsonMethod({"method"}, {"method"});
+
