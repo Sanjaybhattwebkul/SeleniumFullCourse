@@ -718,7 +718,7 @@ ANSWER:
 	1.  grouping kr dete  h testcases ki .
 	  syntax: @test({"loginGroup"}) 
 
-=> TYPES OF HELPER FUNCTION IN TESTNG ?
+=> TYPES OF ANNOTATION HELPER FUNCTION IN TESTNG ?
 ANSWER:
     1. timeout =500
     2. enabled = false
@@ -739,3 +739,13 @@ ANSWER:
 2* timeOut	 :
 	if we want to waite some time before execute any method in that case we will use @timeout=400 over that function.
 
+QUESTION:
+	 What is parameterization in TESTNG ?
+
+ANSWER:
+	if we want to set any global variables, then we can set that on our testng.xml file. 
+	LIKE : <parameter name="URL" value="https://www.facebook.com/"/>
+	ANd can access this URL variable on any function of suite. 
+	before function use this keyword:   @Parameters({ "URL" })   and accessit as a argument. 
+
+	*. <parameter/>  ko hm suite , test ya class  kisi base p bhi set kr skte hai. 
