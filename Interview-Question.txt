@@ -772,5 +772,20 @@ QUESTION:
 
 ANSWER:
 	1. agr data small amount h to array bna k send kr dete h /
-	2. agr data midium h amount m h to hasMap [ array]  ka use kr skte h.
+	2. agr data midium h amount m h to HashMap [ array]  ka use kr skte h.
 	3. agr data larg amount m h mtlb bhut jada  data hai to json format m send krte h . [ json ki file bna k use call krte h]
+
+QUESTION:
+	WHAT ARE LISTENER IN testNG ?
+
+ANSWER:
+	* jb hm kisi testcase ko run krte h or hm testcase k execute hone pr koi action perform krna chahte hai to hm LITENER ka use krte hai.
+	* ITestLISTENER ka use krne k liye hm ITestLISTENER  interface ko apni class m implement kr k uske function ko implement krte hai.
+	* ITestLISTENER  i interface hota h usme sare function define hote h or hm unko apne according implement krte h .
+	* Like agr testCase fail hua to uska screenshot lena pass hone pr koi message dena ECT. 
+	* ITestLISTENER k ande 1. onTestCsePass 2. onTestCseFiler 3. onTestCseSkip  ect ye sab function hote h .
+	* ITestLISTENER  ko use krne k liye use testNG.xml file m regester krna hota h . below code <suite k neeche aayega *
+	<listeners>
+		<listener class-name="TestNG.Listener"></listener>
+	</listeners>
+
