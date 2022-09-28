@@ -749,3 +749,28 @@ ANSWER:
 	before function use this keyword:   @Parameters({ "URL" })   and accessit as a argument. 
 
 	*. <parameter/>  ko hm suite , test ya class  kisi base p bhi set kr skte hai. 
+
+
+QUESTION.:
+	 Agr hme kisi test case m multiple set of test data send krna h to kese kr kste h ?
+
+ANSWER:
+
+	testNG DataProvider ka use kr k , or  testng.xml file se bhi send kr skte h .
+	LIKE:  login test case m multiple userName or Password k sath test krna h to DataProvider annotation  ka use kr k  send krte hai.
+
+Question:
+	Parameterization kite type se kr skte hai ?
+
+ANSWER:
+
+	1. DataProvider 2.  testNG.xml 
+
+QUESTION:
+
+	Parameterization DataProvider ka use kr k kite type se kr skte h ?
+
+ANSWER:
+	1. agr data small amount h to array bna k send kr dete h /
+	2. agr data midium h amount m h to hasMap [ array]  ka use kr skte h.
+	3. agr data larg amount m h mtlb bhut jada  data hai to json format m send krte h . [ json ki file bna k use call krte h]
