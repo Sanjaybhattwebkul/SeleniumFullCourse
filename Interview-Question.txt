@@ -722,5 +722,20 @@ ANSWER:
 ANSWER:
     1. timeout =500
     2. enabled = false
-    3. depandsonMethod({"method"}, {"method"});
+    3. depandsonMethod({"method", "method"});
+
+
+1* depandsOnMethod	 :
+	if we have method A and method B . and we are trying to excute method A  and method A is depends on method B in this case we will
+	Use depandsOnMethod over method A. then the testNG excute method B first. we can pass multiple methods inside the depandsOnMethod
+	liek:  depandsonMethod({"method", "method"});
+
+
+2* enabled	 :
+	if we want to skip ant particular methos while running testng.xml file in that case we will use enabled helper function.
+	LIKE:  disable=true  or  disable=false;
+
+
+2* timeOut	 :
+	if we want to waite some time before execute any method in that case we will use @timeout=400 over that function.
 
