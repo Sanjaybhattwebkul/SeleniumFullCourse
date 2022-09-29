@@ -716,7 +716,11 @@ ANSWER:
 
 => Agr hmare pass 1000 test case h or hme 10 function run krne h to kese krenge ?
 	1.  grouping kr dete  h testcases ki .
-	  syntax: @test({"loginGroup"}) 
+	
+	1.	Function k upar ye aayega ->
+			*syntax: @test({"loginGroup"}) 
+	2.	Or testNg.xml file m use define krna hoga jis group ko run krna h ya ni krna h .->
+	   		* <groups><run><include name =”Login”/></run>
 
 => TYPES OF ANNOTATION HELPER FUNCTION IN TESTNG ?
 ANSWER:
@@ -790,3 +794,182 @@ ANSWER:
 	</listeners>
 
 * . NOTE :  Agr imterface k methods ni milte h to . rightClick on listeners.java file  and click on source-> overridemethods.
+
+Questionh :
+	Whow can we run testCases paralllely using testNG?
+
+ANSWER:
+	1. iske liye mne testNG.xml file m <suite> tag m define knra hota h ki kitne methods parallely run krne h or parrally test run krna h ya class.
+	   *   <suite name="Suite" paralllel="test" thread-count="6"> // test k 6-6 method parallely run honge.
+
+	2. Hm class base pr bhi testCases ko paarallel run kr skte hai.
+	   *	<suite name="Suite" paralllel="test" thread-count="6">
+
+------------------------------  TESTNG  QUESTIONS ----------------------------
+
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 2:
+	
+	Identify the incorrect statement about TestNG.
+
+Answer:
+	TestNg allowes a single test from a single class file.
+
+Question 3:
+	
+	If there are three test cases in a class, method having @BeforeMethod annotation shall be executed how many times?
+
+Answer:
+	three times.
+
+Question 4:
+
+Which helper attribute skips a particular test from execution in TestNG?
+
+Answer:
+	* enabled.
+
+Question 5:
+
+	How to retrieve a global variable defined in the TestNG xml (xml code snippet given below) to the test method?
+
+Answer:
+	@Parameters({ "URL" })
+	@Test
+	public static void demo1(String siteURL) {
+		System.out.println("Admin login  ONE parameter="+siteURL);
+	}
+
+Question 6:
+
+	How many ways test methods can be run in parallel mode using TestNG?
+
+Answer:
+	* Tests  label  *  class label.
+
+Question 7:
+
+		How to achieve parameterization with multiple data sets with multiple combinations in TestNG?
+
+Answer:
+	@DataProvider
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+	
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+	
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+	
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+	
