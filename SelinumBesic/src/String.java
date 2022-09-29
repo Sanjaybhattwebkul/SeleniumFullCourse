@@ -18,13 +18,16 @@ public class String {
         	// checking character in string
         	for (int j=1; j< myText.length(); j++) {
         		 if (myText.charAt(i) == myText.charAt(j)) {
-        			 count++; 
+        			 count++;
         		 }
                  	
         		// System.out.println(myText.charAt(j));
         	}       	
-           
         	 System.out.println(myText.charAt(i)+"-"+count);
+        	 char a = myText.charAt(i);
+        	//java.lang.String newstr  = myText.replaceAll(myText.charAt(i) , "");
+        	 //System.out.println("new str="+newstr);      	
+        	 
         	 count=0;
         	// System.out.println(count);
         }
@@ -32,7 +35,5 @@ public class String {
 		   
 		    
 	}
-	
-	
 
 }
