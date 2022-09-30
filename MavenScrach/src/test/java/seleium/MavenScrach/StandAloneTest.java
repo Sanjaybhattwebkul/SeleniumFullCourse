@@ -17,6 +17,9 @@ public class StandAloneTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		// ISE RUN KRNE K LIYE JAVA COMPILER 1.8 HONA CHAHIYE NIMIMUM. property->java-compiler m click kr k change krna hota h.
+		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
