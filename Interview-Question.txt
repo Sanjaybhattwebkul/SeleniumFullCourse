@@ -973,3 +973,23 @@ How to run tests with TestNG framework?
 Answer:
 	@Test annotation followed by method name.
 	
+QUESTION:
+	WHAT IS PAGE OBJECT MODEL ?
+
+ANSWER:
+	 "Page object model" 1 'methology' hai , is  m hm sabhi locators k liye differenct class bna lete h or in class ko hm "Page object classes" kahte hai.
+	 "Page object classes" ko hm reuse kr skte hai. or "page object methology" use krne se maintance problem resolve hoti h .
+	 "Maintanance problem"  mtlb agr hm 1 hi class m sare locators lihk de to un m changes krne h kaafi issues aate hai. hme locators find krne m problem hoti h .
+
+* => "Page object class" m hm 'driver.findElement(By.id("userID"));'   ko hm PageFactory ka use kr k likh skte h .
+	-> @PageFactory 1 type ka annotation hota hai. 
+	-> Syntax: @FindBy(id="userId"); // is ka mtlb [ driver.findElement(By.id("userID")) hi hota hai. ]
+	->  @FindBy(id="userId"); iske liye hme  @PageFactory m driver pass krna hota h. kyu ki is syntax  m driver khi ni h .
+	-> PageFactory.initElements(driver,driverValue) ->
+	// ye syntax hm construct k ander krte hai. kyu ki driver ki value hm duri class se pass krte hai or contructor m likhne se class ka koi bhi @PageFactory call hone se phle use driver initilize hoga. 
+
+Question:
+	CAN WE APPLY @PageFactory WITH WebElement.findElement. like this ?
+
+ANSWER:
+	NO, it is not possible.

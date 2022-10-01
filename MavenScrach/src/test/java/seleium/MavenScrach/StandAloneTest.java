@@ -18,7 +18,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class StandAloneTest {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
 		
 		// ISE RUN KRNE K LIYE JAVA COMPILER 1.8 HONA CHAHIYE NIMIMUM. property->java-compiler m click kr k change krna hota h.
 		
@@ -31,13 +30,17 @@ public class StandAloneTest {
 		driver.findElement(By.id("userEmail")).sendKeys("tom@example.com");
 		driver.findElement(By.id("userPassword")).sendKeys("Tom@1234");
 		driver.findElement(By.id("login")).click();
+		
 		WebDriverWait waite = new WebDriverWait(driver,Duration.ofSeconds(5)); 
 		waite.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
+		
 		// ADD Item to cart.
-		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));	
+		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
+		
 		WebElement actualProduct = products.stream().filter(product->
 		product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst().orElse(null);		
 		actualProduct.findElement(By.cssSelector(".card-body button:last-of-type")).click(); // agr 2 button h to 2 vala find hoga.
+		
 		// Check if flash message showing or not after add product  into cart
 		waite.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
 		// check the loader is invisible or not
@@ -63,7 +66,7 @@ public class StandAloneTest {
 		js.executeScript("window.scrollBy(0,500)");		
 		waite.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".action__submit")));
 		driver.findElement(By.cssSelector(".action__submit")).click();
-		String successMessage = driver.findElement(By.cssSelector(".hero-prime")).getText(); // get text of thanku page
+		String successMessage = driver.findElement(By.cssSelector(".hero-primary")).getText(); // get text of thanku page
 		Assert.assertTrue(successMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER.")); // check if thankyiu message received or not.
 		// agr console m text small m h or DOM m capital  m to  equalsIgnoreCase use kr skte h .
 		
