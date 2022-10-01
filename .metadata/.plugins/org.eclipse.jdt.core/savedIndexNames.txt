@@ -62,8 +62,8 @@ INDEX VERSION 1.131+C:\Users\DELL\SeliniumFullCourse\.metadata\.plugins\org.ecli
 4055369855.index
 2169933745.index
 665725326.index
-155408884.index
 3986797028.index
+155408884.index
 540140080.index
 2756637718.index
 1548434132.index
@@ -84,8 +84,8 @@ INDEX VERSION 1.131+C:\Users\DELL\SeliniumFullCourse\.metadata\.plugins\org.ecli
 3642448163.index
 2074315078.index
 112372685.index
-1425018669.index
 297534234.index
+1425018669.index
 3334267008.index
 3191115743.index
 1745974064.index
