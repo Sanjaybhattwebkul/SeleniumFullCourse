@@ -39,7 +39,7 @@ public class CatalogProduct extends AbstractComponent {
 		//System.out.print(getProductsList().stream().map(data->data.findElement(By.cssSelector("b")).getText()).findFirst());
 	}
 	
-	public void addProductToCart(String ProductName) {
+	public void addProductToCart(String ProductName) throws InterruptedException {
 		System.out.println(ProductName);
 		WebElement ProName = getProductByName(ProductName);
 		ProName.findElement(addToCart).click();

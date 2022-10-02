@@ -28,9 +28,10 @@ public class AbstractComponent {
 		waite.until(ExpectedConditions.visibilityOfElementLocated(findBy));
 	}
 	
-	public void waiteForElementToDisAppear(WebElement element) {
-		WebDriverWait waite = new WebDriverWait(driver,Duration.ofSeconds(5)); 
-		waite.until(ExpectedConditions.invisibilityOf(element));
+	public void waiteForElementToDisAppear(WebElement element) throws InterruptedException {
+		Thread.sleep(1000);
+		//WebDriverWait waite = new WebDriverWait(driver,Duration.ofSeconds(5)); 
+		//waite.until(ExpectedConditions.invisibilityOf(element));
 	}
 	
 	public CartPage goToCartPage()

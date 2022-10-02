@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StandAlone {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -35,7 +35,7 @@ public class StandAlone {
 		confirmMessagePage confirmMessagePage = checkoutPage.submitOrder();
 		String message = confirmMessagePage.getConfirmMessage();
 		Assert.assertTrue(message.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
-		
+		driver.close();
 	}
 
 }

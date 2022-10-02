@@ -20,7 +20,7 @@ public class checkoutPage extends AbstractComponent {
 	@FindBy(xpath="(//button[contains(@class,'ta-item')])[2]")
 	WebElement selectCountry;
 	
-	@FindBy(css="action__submit")
+	@FindBy(css=".action__submit")
 	WebElement placeorder;
 	
 	By searchResult = By.cssSelector(".ta-results");
@@ -41,7 +41,7 @@ public class checkoutPage extends AbstractComponent {
 	}
 	
 	public confirmMessagePage submitOrder() {
-		waitForElementToAppear(ckeckoutButton);
+		//waitForElementToAppear(ckeckoutButton);
 		placeorder.click();		
 		return new confirmMessagePage(driver);
 	}
