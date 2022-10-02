@@ -49,7 +49,3 @@ public class CatalogProduct extends AbstractComponent {
 		
 	}
 }
-
-
-
-

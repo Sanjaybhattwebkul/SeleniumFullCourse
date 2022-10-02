@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 public class LandingPage {
 	
 	WebDriver driver;
+	// Conductor creation
 	public LandingPage(WebDriver driver) {
 		this.driver = driver; // Ab WebDriver driver = driver ho gya. or driver ki value dusri class se pass hogi.
 		
@@ -29,10 +30,13 @@ public class LandingPage {
 	
 
 	
-	public void loginApplication(String email,String password) {
+	public CatalogProduct loginApplication(String email,String password) {
 		userEmail.sendKeys(email);
 		passwordEle.sendKeys(password);
 		submit.click();
+		
+		//create object of CatalogProduct class and can access by calling any function of LandingPage class. 
+		return  new CatalogProduct(driver);
 	}
 	
 	public void goTo()

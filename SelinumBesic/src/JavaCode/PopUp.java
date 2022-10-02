@@ -10,7 +10,7 @@ public class PopUp {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver","C:\\\\chrome-exe\\\\chromedriver.exe");
 		ChromeOptions option=new ChromeOptions();
-		option.setExperimentalOption("excludeSwitches",Arrays.asList("disable-popup-blocking"));
+		option.addArguments("--disable-notifications");
 		WebDriver driver= new ChromeDriver(option);
 		driver.get("https://www.spicejet.com/");
 	}

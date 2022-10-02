@@ -993,3 +993,13 @@ Question:
 
 ANSWER:
 	NO, it is not possible.
+
+QUESTION:
+	HOW CAN DISABLE WINDOWS ALERT/NOTIFICATIONS USING SELENIUM ?
+
+ANSWER:
+	By using addArgument(); method of chromeOptions class.
+	SYNTAX: 
+
+		ChromeOptions option=new ChromeOptions();
+		option.addArguments("--disable-notifications");
