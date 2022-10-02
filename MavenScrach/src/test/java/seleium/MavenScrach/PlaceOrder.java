@@ -1,29 +1,25 @@
 package seleium.MavenScrach;
-
-import java.time.Duration;
+import java.io.IOException;
 import java.util.List;
-
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import testComponents.baseTest;
 
-public class PlaceOrder {
-	public static void main(String[] args) throws InterruptedException {
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		driver.manage().window().maximize();
-		String productName = "ZARA COAT 3";
+public class PlaceOrder extends baseTest {
+	
+	@Test
+	public void submitOrder() throws InterruptedException, IOException {
 		
-		LandingPage LandingPage = new LandingPage(driver);
-		LandingPage.goTo();  // open browser/site
+		String productName = "ZARA COAT 3";	
+		
+		LandingPage LandingPage = launchApplication();			
 		CatalogProduct CatalogProduct= LandingPage.loginApplication("tom@example.com","Tom@1234"); // customer login and return obj of CatalogProduct class
 		List<WebElement>cartProducts = CatalogProduct.getProductsList(); // get all products list in home page
-		CatalogProduct.addProductToCart(productName); // Add product to cart		
+		CatalogProduct.addProductToCart(productName); // Add product to cart
+		
 		//goToCartPage function abstractComponenet class m or abstractComponenet class CatalogProduct m extend h   
 		CartPage CartPage = CatalogProduct.goToCartPage(); // goToCartPage function CartPage ka object return kr ra h .		
 		boolean isProductMatch = CartPage.veryfyDisplayProductToCart(productName);
