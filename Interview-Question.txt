@@ -1003,3 +1003,13 @@ ANSWER:
 
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("--disable-notifications");
+
+Question:
+	How can we change browserNameon run time.?
+
+ANSWER:
+	1*. Uske liye hmne 1 " .properties " extensions ki file bnani hoti h . like : "GlobalData.properties".
+	2*. Fir us file ko Basetest class m access kr lete hai [ prop.load(filesName); : ka use kr k ]. "Properties();" class ka object bna k 
+	3*. Fir us file ko FileInputStream m convert krna hota hai.  kyu ki "prop.load()" function "FileInputStream" ko accept krta h .
+	4*. prop.getProperty("browser"); ka use kr k browser ka name get kr lete h .
+
