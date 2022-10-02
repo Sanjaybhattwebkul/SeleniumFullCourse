@@ -191,18 +191,22 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 
 => Why we use Static  keyword in void main()  function ?
 
-	// TODO
+	*.function m  Static lgane se hme class ka object ni bnana padhta hai. direct function call ho jayega
 
 => Difference between findElement  and findElements ?
-	// TODO
+	*. findElement will is use to findElement on the DOM.
+	*. findElements is use to get the list of the elements in DOM
 
 
-=> How can we heighlight and element in selenium ?
+=> How can we heighlight any element in selenium ?
 
-	// TODO
+	*. By add custom css on element using JavascriptExecutor.
+	// JavascriptExecutor js=(JavascriptExecutor)driver;
+	// js.executeScript("arguments[0].setAttribute('style','background: red; border:2px solid blue;')",h1);
 
 => What is the dataDriven framework ?
-	// TODO
+
+	*. Send data on runtime using dataProvideo in testNG is call dataDriven framework
 
 
 => Difference between hard asssersion and soft assersion ?
@@ -211,7 +215,7 @@ Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDri
 
 => Can we run the testNg testcases through command promt ?
 
-	// TODO
+* YES
 
 => What is the key component of maven ?
 
@@ -1009,7 +1013,8 @@ Question:
 
 ANSWER:
 	1*. Uske liye hmne 1 " .properties " extensions ki file bnani hoti h . like : "GlobalData.properties".
-	2*. Fir us file ko Basetest class m access kr lete hai [ prop.load(filesName); : ka use kr k ]. "Properties();" class ka object bna k 
+	2*. Fir us file ko "Basetest class"  m access kr lete hai [ prop.load(filesName); : ka use kr k ]. "Properties();" class ka object bna k 
 	3*. Fir us file ko FileInputStream m convert krna hota hai.  kyu ki "prop.load()" function "FileInputStream" ko accept krta h .
 	4*. prop.getProperty("browser"); ka use kr k browser ka name get kr lete h .
+	5*. baseTest class ko hm  mainTest class  m extends kr lete h .
 
