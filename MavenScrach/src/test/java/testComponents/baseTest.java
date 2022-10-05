@@ -1,19 +1,23 @@
 package testComponents;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import seleium.MavenScrach.LandingPage;
 
 public class baseTest {
+	
 	public WebDriver driver;
+	public LandingPage LandingPage;
+	
 	public WebDriver initlizeBrowser() throws IOException {
 		
 		// Get GlobalData using Properties class
@@ -39,12 +43,17 @@ public class baseTest {
 		driver.manage().window().maximize();
 		return driver;
 	}
-
-	public LandingPage launchApplication() throws IOException {
-		
+	
+	@BeforeMethod
+	public LandingPage launchApplication() throws IOException {		
 		driver = initlizeBrowser();
-		LandingPage LandingPage = new LandingPage(driver);
+		LandingPage = new LandingPage(driver);
 		LandingPage.goTo();  // open browser/site
 		return LandingPage; // LandingPage object ko is liye return kiya kyuki loginApplication() function bhi call  ho ra hai.
+	}
+	
+	@AfterTest
+	public  void closeBrowser() {
+		driver.close();
 	}
 }

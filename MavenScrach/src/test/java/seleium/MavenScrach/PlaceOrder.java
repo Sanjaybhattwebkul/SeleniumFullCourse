@@ -1,11 +1,11 @@
 package seleium.MavenScrach;
 import java.io.IOException;
 import java.util.List;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import testComponents.baseTest;
 
 public class PlaceOrder extends baseTest {
@@ -14,8 +14,7 @@ public class PlaceOrder extends baseTest {
 	public void submitOrder() throws InterruptedException, IOException {
 		
 		String productName = "ZARA COAT 3";	
-		
-		LandingPage LandingPage = launchApplication();			
+		//launchApplication method call hoga phle kyu ki us m @BeforeMethod annotation  lgaya h
 		CatalogProduct CatalogProduct= LandingPage.loginApplication("tom@example.com","Tom@1234"); // customer login and return obj of CatalogProduct class
 		List<WebElement>cartProducts = CatalogProduct.getProductsList(); // get all products list in home page
 		CatalogProduct.addProductToCart(productName); // Add product to cart
@@ -31,6 +30,6 @@ public class PlaceOrder extends baseTest {
 		confirmMessagePage confirmMessagePage = checkoutPage.submitOrder();
 		String message = confirmMessagePage.getConfirmMessage();
 		Assert.assertTrue(message.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
-		driver.close();
+		//closeBrowser() call hoga kyu ki us m @AfterTest lgaya h
 	}
 }

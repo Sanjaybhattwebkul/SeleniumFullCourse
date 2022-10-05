@@ -23,6 +23,11 @@ public class AbstractComponent {
 	@FindBy(css="[routerlink*='cart']")
 	WebElement cart;
 	
+	public  void waitForWebElementToAppear(WebElement findBy) {
+		WebDriverWait waite = new WebDriverWait(driver,Duration.ofSeconds(5)); 
+		waite.until(ExpectedConditions.visibilityOf(findBy));
+	}
+	
 	public  void waitForElementToAppear(By findBy) {
 		WebDriverWait waite = new WebDriverWait(driver,Duration.ofSeconds(5)); 
 		waite.until(ExpectedConditions.visibilityOfElementLocated(findBy));
