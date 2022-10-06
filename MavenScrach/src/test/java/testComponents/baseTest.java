@@ -44,7 +44,7 @@ public class baseTest {
 		return driver;
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public LandingPage launchApplication() throws IOException {		
 		driver = initlizeBrowser();
 		LandingPage = new LandingPage(driver);
@@ -52,7 +52,7 @@ public class baseTest {
 		return LandingPage; // LandingPage object ko is liye return kiya kyuki loginApplication() function bhi call  ho ra hai.
 	}
 	
-	@AfterTest
+	@AfterTest(alwaysRun=true)
 	public  void closeBrowser() {
 		driver.close();
 	}

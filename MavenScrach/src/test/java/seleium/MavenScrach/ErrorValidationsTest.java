@@ -24,7 +24,7 @@ public class ErrorValidationsTest extends baseTest {
 	public void ProductErrorValidation() throws InterruptedException {
 		String productName = "ZARA COAT 3";	
 		//launchApplication method call hoga phle kyu ki us m @BeforeMethod annotation  lgaya h
-		CatalogProduct CatalogProduct= LandingPage.loginApplication("tom@example.com","Tom@1234"); // customer login and return obj of CatalogProduct class
+		CatalogProduct CatalogProduct= LandingPage.loginApplication("sanjay@qa.com","Admin@123"); // customer login and return obj of CatalogProduct class
 		List<WebElement>cartProducts = CatalogProduct.getProductsList(); // get all products list in home page
 		CatalogProduct.addProductToCart(productName); // Add product to cart
 		

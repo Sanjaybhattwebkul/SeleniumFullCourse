@@ -1018,3 +1018,10 @@ ANSWER:
 	4*. prop.getProperty("browser"); ka use kr k browser ka name get kr lete h .
 	5*. baseTest class ko hm  mainTest class  m extends kr lete h .
 
+QUESTION:
+	How can we un tests PAARALLELY?
+
+ANSWER:
+	Iske liye hmne "testng.xml" file m. <suite> tag  m [ parallel="test" ]  lihkna hoga. [ise likhne se jitne testCse honge utne browser 1sath open ho jayenge ]
+	Agr hm chahte h ki 1 bar 2 ya3 browser hi open ho . to uske liye hm [ thread-count="3"  ]de skte h . <suite> tag m 
+	
