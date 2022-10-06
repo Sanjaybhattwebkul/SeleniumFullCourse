@@ -1,7 +1,6 @@
 package seleium.MavenScrach;
 import java.io.IOException;
 import java.util.List;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -10,10 +9,11 @@ import testComponents.baseTest;
 
 public class PlaceOrder extends baseTest {
 	
+	String productName = "ZARA COAT 3";
+	
 	@Test
 	public void submitOrder() throws InterruptedException, IOException {
-		
-		String productName = "ZARA COAT 3";	
+			
 		//launchApplication method call hoga phle kyu ki us m @BeforeMethod annotation  lgaya h
 		CatalogProduct CatalogProduct= LandingPage.loginApplication("tom@example.com","Tom@1234"); // customer login and return obj of CatalogProduct class
 		List<WebElement>cartProducts = CatalogProduct.getProductsList(); // get all products list in home page
@@ -31,5 +31,14 @@ public class PlaceOrder extends baseTest {
 		String message = confirmMessagePage.getConfirmMessage();
 		Assert.assertTrue(message.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		//closeBrowser() call hoga kyu ki us m @AfterTest lgaya h
+	}
+	
+	@Test(dependsOnMethods= {"submitOrder"})
+	public void OrderHistoryTest() {
+		CatalogProduct CatalogProduct= LandingPage.loginApplication("tom@example.com","Tom@1234"); // customer login and return obj of CatalogProduct class
+		orderPage ordersPageObj = CatalogProduct.goToOrdersPage();
+		Assert.assertTrue(ordersPageObj.VerifyOrderDisplay(productName));
+		
+		
 	}
 }

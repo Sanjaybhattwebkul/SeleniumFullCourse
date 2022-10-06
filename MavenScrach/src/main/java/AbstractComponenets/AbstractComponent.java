@@ -1,5 +1,4 @@
 package AbstractComponenets;
-
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import seleium.MavenScrach.CartPage;
+import seleium.MavenScrach.orderPage;
 
 public class AbstractComponent {
 	WebDriver driver;
@@ -22,6 +21,9 @@ public class AbstractComponent {
 	//driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
 	@FindBy(css="[routerlink*='cart']")
 	WebElement cart;
+	
+	@FindBy(css = "[routerlink*='myorders']")
+	WebElement orderHeader;
 	
 	public  void waitForWebElementToAppear(WebElement findBy) {
 		WebDriverWait waite = new WebDriverWait(driver,Duration.ofSeconds(5)); 
@@ -43,5 +45,11 @@ public class AbstractComponent {
 	{
 		cart.click();
 		return  new CartPage(driver);
+	}
+	
+	public orderPage goToOrdersPage() {
+		orderHeader.click();
+		orderPage orderPage = new orderPage(driver);
+		 return orderPage;
 	}
 }
