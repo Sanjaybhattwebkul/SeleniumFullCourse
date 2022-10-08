@@ -5,7 +5,10 @@
     <classes>
       <class name="seleium.MavenScrach.PlaceOrder">
         <methods>
-          <include name="submitOrder"/>
+          <include name="closeBrowser"/>
+          <include name="launchApplication"/>
+          <include name="submitOrder" invocation-numbers="0"/>
+          <include name="OrderHistoryTest"/>
         </methods>
       </class> <!-- seleium.MavenScrach.PlaceOrder -->
     </classes>

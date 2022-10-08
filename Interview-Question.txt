@@ -1030,3 +1030,34 @@ ANSWER:
 
 => JB hme gunction bnate time data ka pta nahi hota h ki kis type ka data return hoga. tb hm data type "object" lete hai.
    -> Kyu ki "object" data type  sare type k data ko accpet krta hai.
+
+=> 'DataProvidor' ka use kr k hm testcase ko multiple sest of data k sath test kr skte hai.
+	EXAMPLE: 
+	@DataProvider
+	public Object[][] getTestData(){
+		
+		return new Object[][] {{"tom@example.com","Tom@1234","ZARA COAT 3"},{"sanjay@qa.com","Admin@123","ADIDAS ORIGINAL"}};
+	}
+
+	Access data ->  public void submitOrder(String email,String password,String productName) {
+		/// logic
+	 }
+
+=> Jab hmate pass data jada hota h to hm Object se send nahi karte h kyuki object m jitne data hota h un sab ko
+	-> access krne k liye function m utne hi argument pass krne hote h . line no. 1042 m example h. 
+-> jada data send krne k liye hm HashMap ka use krte h .HashMap 1 array hota h JAVA M 
+	Example:
+		public Object[][] getTestData() {
+		HashMap<String,String> map = new HashMap<String,String>();
+		map.put("email","tom@example.com");
+		map.put("password","Tom@123");
+		
+		HashMap<String,String> map1 = new HashMap<String,String>();
+		map1.put("email","sanjay@qa.com");
+		map1.put("password","Admin@123");
+		
+		return new Object[][] {{map},{map1}};
+	}
+
+-> For access : HashMap<String,String> input
+		1. input.get("email); 2. input.get("password);, input.get("productName");
