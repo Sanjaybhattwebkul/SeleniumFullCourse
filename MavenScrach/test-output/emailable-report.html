@@ -9,16 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">ErrorValidation</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37,325</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">PlaceOrder</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">39,472</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">76,797</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">PlaceOrder</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">152</td><td>ErrorHandling</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">ErrorValidation</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,996</td><td>ErrorHandling</td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">10,148</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ErrorValidation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">seleium.MavenScrach.ErrorValidationsTest</td><td><a href="#m0">LoginErrorValidation</a></td><td rowspan="1">1665079058212</td><td rowspan="1">1827</td></tr><tr class="passedeven"><td><a href="#m1">ProductErrorValidation</a></td><td rowspan="1">1665079070123</td><td rowspan="1">9974</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">PlaceOrder &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">seleium.MavenScrach.PlaceOrder</td><td><a href="#m2">OrderHistoryTest</a></td><td rowspan="1">1665079079778</td><td rowspan="1">3567</td></tr><tr class="passedeven"><td><a href="#m3">submitOrder</a></td><td rowspan="1">1665079058692</td><td rowspan="1">9579</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PlaceOrder &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">seleium.MavenScrach.PlaceOrder</td><td><a href="#m0">closeBrowser</a></td><td rowspan="1">1665240677693</td><td rowspan="1">41</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">ErrorValidation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">seleium.MavenScrach.ErrorValidationsTest</td><td><a href="#m1">LoginErrorValidation</a></td><td rowspan="1">1665240686333</td><td rowspan="1">951</td></tr></tbody>
 </table>
-<h2>ErrorValidation</h2><h3 id="m0">seleium.MavenScrach.ErrorValidationsTest#LoginErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">seleium.MavenScrach.ErrorValidationsTest#ProductErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>PlaceOrder</h2><h3 id="m2">seleium.MavenScrach.PlaceOrder#OrderHistoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">seleium.MavenScrach.PlaceOrder#submitOrder</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>PlaceOrder</h2><h3 id="m0">seleium.MavenScrach.PlaceOrder#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null
+	at testComponents.baseTest.closeBrowser(baseTest.java:57)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ErrorValidation</h2><h3 id="m1">seleium.MavenScrach.ErrorValidationsTest#LoginErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

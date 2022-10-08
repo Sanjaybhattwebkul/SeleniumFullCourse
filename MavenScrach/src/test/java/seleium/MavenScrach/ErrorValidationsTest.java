@@ -10,7 +10,7 @@ import testComponents.baseTest;
 
 public class ErrorValidationsTest extends baseTest {
 	
-	@Test
+	@Test(groups={"ErrorHandling"})
 	public void LoginErrorValidation() throws InterruptedException, IOException {	
 		//launchApplication method call hoga phle kyu ki us m @BeforeMethod annotation  lgaya h
 		
