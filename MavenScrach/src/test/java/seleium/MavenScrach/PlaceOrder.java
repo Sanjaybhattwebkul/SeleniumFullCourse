@@ -4,18 +4,19 @@ import java.util.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import testComponents.baseTest;
 
 public class PlaceOrder extends baseTest {
 	
-	String productName = "ZARA COAT 3";
+	String productsName = "ZARA COAT 3";
 	
-	@Test
-	public void submitOrder() throws InterruptedException, IOException {
+	@Test(dataProvider="getTestData",groups="customerCheckout")
+	public void submitOrder(String email,String password,String productName) throws InterruptedException, IOException {
 			
 		//launchApplication method call hoga phle kyu ki us m @BeforeMethod annotation  lgaya h
-		CatalogProduct CatalogProduct= LandingPage.loginApplication("tom@example.com","Tom@1234"); // customer login and return obj of CatalogProduct class
+		CatalogProduct CatalogProduct= LandingPage.loginApplication(email,password); // customer login and return obj of CatalogProduct class
 		List<WebElement>cartProducts = CatalogProduct.getProductsList(); // get all products list in home page
 		CatalogProduct.addProductToCart(productName); // Add product to cart
 		
@@ -30,15 +31,25 @@ public class PlaceOrder extends baseTest {
 		confirmMessagePage confirmMessagePage = checkoutPage.submitOrder();
 		String message = confirmMessagePage.getConfirmMessage();
 		Assert.assertTrue(message.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
-		//closeBrowser() call hoga kyu ki us m @AfterTest lgaya h
+		//closeBrowser(); //call hoga kyu ki us m @AfterTest lgaya h
 	}
 	
 	@Test(dependsOnMethods= {"submitOrder"})
 	public void OrderHistoryTest() {
 		CatalogProduct CatalogProduct= LandingPage.loginApplication("tom@example.com","Tom@1234"); // customer login and return obj of CatalogProduct class
 		orderPage ordersPageObj = CatalogProduct.goToOrdersPage();
-		Assert.assertTrue(ordersPageObj.VerifyOrderDisplay(productName));
+		Assert.assertTrue(ordersPageObj.VerifyOrderDisplay(productsName));
 		
 		
 	}
+	
+	@DataProvider
+	public Object[][] getTestData(){
+		
+		return new Object[][] {{"tom@example.com","Tom@1234","ZARA COAT 3"},{"sanjay@qa.com","Admin@123","ADIDAS ORIGINAL"}};
+	}
+	
 }
+
+
+

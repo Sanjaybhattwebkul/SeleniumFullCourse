@@ -7,6 +7,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
@@ -52,7 +53,7 @@ public class baseTest {
 		return LandingPage; // LandingPage object ko is liye return kiya kyuki loginApplication() function bhi call  ho ra hai.
 	}
 	
-	@AfterTest(alwaysRun=true)
+	@AfterMethod(alwaysRun=true)
 	public  void closeBrowser() {
 		driver.close();
 	}

@@ -1027,3 +1027,6 @@ ANSWER:
 	
 => Agr hmne test cases ki grouping ki or kuchh methods m @BeforeMethod lga h to to vha p " alwaysRun=true" krna hotah.
    @beforeTest/@beforeMethods vale test ki grouping ni krte h is case m .
+
+=> JB hme gunction bnate time data ka pta nahi hota h ki kis type ka data return hoga. tb hm data type "object" lete hai.
+   -> Kyu ki "object" data type  sare type k data ko accpet krta hai.
