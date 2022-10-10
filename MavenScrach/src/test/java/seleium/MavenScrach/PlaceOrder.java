@@ -48,6 +48,14 @@ public class PlaceOrder extends baseTest {
 	
 	
 	@DataProvider
+	public Object[][] getTestData() throws IOException {
+		List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\testData\\checkoutTestData.json");
+		return new Object[][]  {{data.get(0)}, {data.get(1) } };
+	}
+	
+/* 
+ // DataProvider using HahMap
+	@DataProvider
 	public Object[][] getTestData() {
 		HashMap<String,String> map = new HashMap<String,String>();
 		map.put("email","tom@example.com");
@@ -60,9 +68,11 @@ public class PlaceOrder extends baseTest {
 		map1.put("productName", "ADIDAS ORIGINAL");
 		
 		return new Object[][] {{map},{map1}};
-	}
+	}*/
+	
 	
 	// DataProvider using object
+	
 	/*@DataProvider
 	public Object[][] getTestData(){
 		

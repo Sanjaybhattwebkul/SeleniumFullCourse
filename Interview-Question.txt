@@ -1061,3 +1061,22 @@ ANSWER:
 
 -> For access : HashMap<String,String> input
 		1. input.get("email); 2. input.get("password);, input.get("productName");
+
+QUESTION:
+	HOW CAN WE SEND DATA USING JSONN FILE ?
+
+ANSWER:
+	iske liye below steps follow krne ohhte hai .
+	
+	1. Phle hm 1 json file m sara testData likh lete hai.
+	2. Phle hm JSON data ko string m convert krenge. "FileUtils.readFileToString()" ka use kr k.
+	 Like: String jsonContent = 	FileUtils.readFileToString(new File(filePath),StandardCharsets.UTF_8);
+
+	2. Fir String ko HashMap convert krenge "Jackson Databind" ka use kr k.
+	   *. iske liye phle iski dependancy add krenge POM.XML file m  maven repo. se.
+			[https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.13.4]
+		-> iske liye phle "ObjectMapper()" class ka object bnayenge.
+		   -:  ObjectMapper mapper = new ObjectMapper();
+		List<HashMap<String, String>> data = mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>() {
+	    });
+	3.  return data; [ ye data variable hme alag alag HashMap return krega like: //{map, map}  fir ise retun kr ]	

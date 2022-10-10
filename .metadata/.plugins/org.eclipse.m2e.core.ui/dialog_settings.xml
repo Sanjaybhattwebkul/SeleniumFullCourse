@@ -47,19 +47,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="ExtentReport.Report"/>
-			<item value="seleium.MavenScrach"/>
-			<item value="sanjuTech.seleniumBesic"/>
 		</list>
 		<list key="groupId">
-			<item value="ExtentReport"/>
-			<item value="seleium"/>
-			<item value="sanjuTech"/>
 		</list>
 		<list key="artifactId">
-			<item value="Report"/>
-			<item value="MavenScrach"/>
-			<item value="seleniumBesic"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
