@@ -979,6 +979,8 @@ Answer:
 	
 QUESTION:
 	WHAT IS PAGE OBJECT MODEL ?
+	OR
+	WHAT IS POM [Page Object Model] ?
 
 ANSWER:
 	 "Page object model" 1 'methology' hai , is  m hm sabhi locators k liye differenct class bna lete h or in class ko hm "Page object classes" kahte hai.
@@ -1080,3 +1082,44 @@ ANSWER:
 		List<HashMap<String, String>> data = mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>() {
 	    });
 	3.  return data; [ ye data variable hme alag alag HashMap return krega like: //{map, map}  fir ise retun kr ]	
+
+QUESTION:
+	DIFFERENCE BETWEEEN "Assert" and "verify" comand ?
+
+ANSWER:
+	Assert : Jb bhi kois test case fail hoga to sctipt ka execution ruk jayega  
+	Verify : Jb bhi kois test case fail hoga to script ka execution ni rukega.
+
+QUESTION:
+	Difference Beetween "Final" and "Static" key ?
+
+ANSWER:
+
+QUESTION:
+	How many tools we can use with selenium ?
+
+ANSWER:
+	1. github
+	2. Jankins
+	3. Quabernet
+	4. testNG  ECT.............
+
+
+QUESTION
+	WHAT IS ExtendRport?
+
+ANSWER:
+	ExtendRport is graphical Representation of result of test casees.
+	
+		---[CONFIGURATION ]  OR STEPS FOR IMPLEMENT -----
+
+	1. Sabse phle iski dependancy import hoti h pom.XML file m :
+		LINK:-: https://mvnrepository.com/artifact/com.aventstack/extentreports/5.0.9
+	2. 	ExtendRport bnane k liye hme [ExtentReports OR ExtentSparkReporter ] class ka use krna hota h.
+	3. ExtentSparkReporter() is class se hm reprtName or page title set krte h .
+	4. ExtentReports() is class se main report generate hoti h. IS m hm  "ExtentSparkReporter" class ka obj as a parameter pass krte h. jise ki hm reprtName or page title get ke skte hai.
+	5. ExtentReports() se hm tester ka name bhi set kr skte hai.
+	6. Jis test case ki extentReport bnani hoti h us k starting "ExtentReports" class k  " createTest("Test-Name"); " function use krte h ExtentReports class k ovj. ka use kr k.
+	7. or last m ExtentReports() class k obj se flush(); function ko use krteh last test k bad. is se ye pta chl jata h ki ye last test case h
+	
+Example:
