@@ -47,10 +47,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="core.ExtentRport"/>
 		</list>
 		<list key="groupId">
+			<item value="core"/>
 		</list>
 		<list key="artifactId">
+			<item value="ExtentRport"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

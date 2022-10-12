@@ -16,7 +16,7 @@ public class ErrorValidationsTest extends baseTest {
 		
 		LandingPage.loginApplication("tom@exaple.com","om@1234"); // Login with Invali UserName or Password
 		
-		Assert.assertEquals("Incorrect email or password.", LandingPage.GetLoginErrorMessage());
+		Assert.assertEquals("Incorrect email  password.", LandingPage.GetLoginErrorMessage());
 		
 	}
 	
