@@ -1123,3 +1123,18 @@ ANSWER:
 	7. or last m ExtentReports() class k obj se flush(); function ko use krteh last test k bad. is se ye pta chl jata h ki ye last test case h
 	
 Example:  https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/ExtentRport/src/test/java/core/ExtentRport/ExtentReportDemo.java
+
+QUESTION:
+	How can impement Extendt with testNG  ITestLISTENER?
+
+ANSWER:
+	1. Sabse ple hm 1 class bna lenge jiske ander 1 static function bnayenge jis m ectentReport bnane ka code hoga.
+		Or is function m hm ExtentReports() Class ka object return krengge. kyu ki hm is object ko listeners m get krte h.
+	EXAMPLE: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/main/java/resources/ExtentReporterNG.java
+
+	2. Fir hm 1 Class or bnayenge is m ITestLISTENER  interface ko implement kr lenge. 
+	  ITestLISTENER interface m sare function hote h like :onTestStart() ,onTestSuccess()... ect..
+	
+	3. Fir hm onTestStart() function m ExtentReports k abject ko get kr k createTest() function ka use kr report bna lenge.
+
+		EXAMPLE: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/testComponents/Listeners.java#L18
