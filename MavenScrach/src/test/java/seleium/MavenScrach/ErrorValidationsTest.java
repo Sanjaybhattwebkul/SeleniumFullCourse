@@ -5,12 +5,13 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
+import testComponents.Retry;
 import testComponents.baseTest;
 
 public class ErrorValidationsTest extends baseTest {
 	
-	@Test(groups={"ErrorHandling"})
+	//@Test(groups={"ErrorHandling"},retryAnalyzer=Retry.class)
+	@Test(groups= {"ErrorHandling"},retryAnalyzer=Retry.class)
 	public void LoginErrorValidation() throws InterruptedException, IOException {	
 		//launchApplication method call hoga phle kyu ki us m @BeforeMethod annotation  lgaya h
 		

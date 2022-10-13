@@ -1158,3 +1158,17 @@ Example:
 -> SeleniumFrameworkDesign\src\test\java\rahulshettyacademy\TestComponents\Listeners.java  [IS M H ]
 ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>(); //Thread safe	test = extent.createTest(result.getMethod().getMethodName());
 extentTest.set(test);//unique thread id(ErrorValidationTest)->test
+
+
+QUESTION:
+	HOW TO RERUN THEFAILED TEST CASE:
+
+ANSWER:
+	By implement the "IRetryAnalyzer" interface.
+
+	1. hm 1 calss retry.java name se bna lenge. or Is class m IRetryAnalyzer interface ko implement kr lenge. 
+	2. isme retry() function hota h jo testcase ko rerun krta h . 
+	3. jb tk ye funtion true return krega tk tk test case rerun hoga.
+	4. ByDefault isme false return hota h .
+	5. Hm if condition lga k jitni bar test case rerun krana h utni bar true return kra denge.
+	6. Fir jis test case ko rerun krana h us m [ retryAnalyzer=Retry.class]  lga denge.
