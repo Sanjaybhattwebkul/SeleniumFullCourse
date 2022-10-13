@@ -1172,3 +1172,7 @@ ANSWER:
 	4. ByDefault isme false return hota h .
 	5. Hm if condition lga k jitni bar test case rerun krana h utni bar true return kra denge.
 	6. Fir jis test case ko rerun krana h us m [ retryAnalyzer=Retry.class]  lga denge.
+
+	EXAMPLE:
+		LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/testComponents/Retry.java
+		LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/seleium/MavenScrach/ErrorValidationsTest.java#L14
