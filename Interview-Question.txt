@@ -1138,3 +1138,23 @@ ANSWER:
 	3. Fir hm onTestStart() function m ExtentReports k abject ko get kr k createTest() function ka use kr report bna lenge.
 
 		EXAMPLE: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/testComponents/Listeners.java#L18
+
+
+--> WHAT ARE CONCURRENCY ISSUES  ?
+	* Jb Hm Listeners ka use kr k extentReport bnate h or testCases ko parallely run krte h to . 
+	-> TestCase ki report kbhi kabhi wrong aati h jo pass hota h vo fail show hota h or jo fail vo pass.
+	-> KYU ki hm Hm extentreports ka 1 object get krte h listeners.java class m . m listeners m multiple testcase 
+	->  sat h aate h . jb 1 test casee executehora h tb 2nd bhi aa jata h to extentReport confuse ho jati h
+	-> ki knsa pass h or knsa fail kyuki object ki valuchange ho jati h . kyu ki object onTest Start m get krte h
+	-> hm. jb tk 1st test case onFinish() vale function m pahuchta h tb tk object 2nd test case ko assign ho jata h
+	-> to extenet report ko lgta h ki 2nd vala fail ho gya kyu ki usi time 2nd testcase OntestStart() function m
+	->  hota h or use extentReport ka object assign ho jata h
+	-> Is type k issue ko hi Cuncurrency issue khte h.
+
+* Is problem ko fix krne k liye hm ThreadLocal() ka use krte h .
+-> Iska use kr k hm hr 1 test case ko 1 usique ID dete h or fir listener sare function usi ID k throught execute hote h.
+-> Ab  Listener m jo case phle aayega use uski ID milegi or vo fir 2nd vale ko uski ID or usi ID se baki listener k function execute hoge.
+Example:
+-> SeleniumFrameworkDesign\src\test\java\rahulshettyacademy\TestComponents\Listeners.java  [IS M H ]
+ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>(); //Thread safe	test = extent.createTest(result.getMethod().getMethodName());
+extentTest.set(test);//unique thread id(ErrorValidationTest)->test
