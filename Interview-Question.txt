@@ -1176,3 +1176,25 @@ ANSWER:
 	EXAMPLE:
 		LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/testComponents/Retry.java
 		LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/seleium/MavenScrach/ErrorValidationsTest.java#L14
+
+
+=> Why we use MAVEN ?
+-> Maven se hm test cases ko command se run kr skte h .
+
+QUESTION:
+	HOW CAN WE RUN TESTCASE USING COMMAND:
+
+	1. sabse phle hme apne system maven install krna hota h :
+	
+	  link: https://www.qamadness.com/knowledge-base/how-to-install-maven-and-configure-environment-variables/
+
+	2. USKE BAD POM.XML file m dependancy add krni hoti h .
+		LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/pom.xml#L19-L37
+		LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/pom.xml#L15-L16
+		
+	3. fir local system m project k root m ja kr . command run ni krni hoti h .
+	
+	 1. Agr sare test case 1 sath run krne h to 
+	 	-> mvn test
+	2. Agr koi perticula testNG file run krni h to 
+		-> mvn test -PPrifileName [JO name <id><ProfileName<id> m hota h vo vala]
