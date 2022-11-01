@@ -1198,3 +1198,12 @@ QUESTION:
 	 	-> mvn test
 	2. Agr koi perticula testNG file run krni h to 
 		-> mvn test -PPrifileName [JO name <id><ProfileName<id> m hota h vo vala]
+============================= INTERVIEW QUESTIONS =================
+
+1.  Write syntax of implicit wait and explicit wait ?
+2.  Write syntax of Take screenshot ?
+3.  What is 202 http status code ?
+4.  Difference between http and https ?
+5.  Difference between data abstraction [Abstract class]  and encapsulation ?
+6.  Write a progran to print second Height occoring word in a given string ?
+7. How can import data from excel file in selenium ?
