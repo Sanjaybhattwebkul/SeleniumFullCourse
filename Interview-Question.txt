@@ -1198,6 +1198,19 @@ QUESTION:
 	 	-> mvn test
 	2. Agr koi perticula testNG file run krni h to 
 		-> mvn test -PPrifileName [JO name <id><ProfileName<id> m hota h vo vala]
+
+QUESTION:
+	HOW CAN WE INTEGRATE JENKINS ?
+
+ANSWER:
+	1. 1st install jenkins on your system
+	    [ https://www.jenkins.io/download/ ]  Yha se Generic java package ko download kro 
+		Fir downloaded file ki location m ja kr comd open kro
+		java -jar jenkins.war -httpPort-8080   ye command run kro
+		fir browser m localhost::8080 hit kro
+
+
+
 ============================= INTERVIEW QUESTIONS =================
 
 1.  Write syntax of implicit wait and explicit wait ?
