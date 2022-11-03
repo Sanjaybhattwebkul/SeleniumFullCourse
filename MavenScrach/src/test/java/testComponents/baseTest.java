@@ -1,5 +1,6 @@
 package testComponents;
 
+import java.awt.Dimension;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,6 +15,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -22,6 +24,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import seleium.MavenScrach.LandingPage;
+import org.openqa.selenium.Dimension;
 
 public class baseTest {
 	
@@ -36,9 +39,14 @@ public class baseTest {
 		prop.load(files); // load the GlobalData.properties file.
 		String browserName = prop.getProperty("browser"); // get the browser name from GlobalData.properties file
 		
-		if(browserName.equalsIgnoreCase("chrome")) {
+		if(browserName.contains("chrome")) {
+			ChromeOptions options = new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			if(browserName.contains("headless")){
+			options.addArguments("headless");
+			}		
+			driver = new ChromeDriver(options);
+			//driver.manage().window().setSize(new Dimension(1440,900));//full screen
 		} else if(browserName.equalsIgnoreCase("fireFox")) {
 			//WebDriverManager.chromedriver().setup();
 			//WebDriver driver = new fireFox();

@@ -1216,6 +1216,20 @@ ANSWER:
 	frame.  kyu ki hm hm frame m multiple way se value send kr skte h [ indexing , frame name or WebElement  k througt]
 
 
+QUESTION:
+	How can you run testCase in headless mode ?
+
+ANSWER:
+	ChromeOptions options = new ChromeOptions();
+	options.addArguments("headless");
+	driver = new ChromeDriver(options);
+
+QUESTION:
+	HOW CAN YOU RUN TESTCASE IN FULLSCREEN  size ?
+
+ANSWER:
+	driver.manage().window().setSize(new Dimension(1440,900));//full screen
+
 ============================= INTERVIEW QUESTIONS =================
 
 1.  Write syntax of implicit wait and explicit wait ?
