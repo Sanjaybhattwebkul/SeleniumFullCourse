@@ -1242,6 +1242,15 @@ ANSWER:
 	5. Find screenshot for 5 arguments for time scheduling :	https://prnt.sc/iB-Z269_VugG
 
 
+--------------- CUCUMBER ----------
+
+=> Cucumber m hm Gherkin language m test case lihkte h .
+ * Gherkin m test case kosteps m likha jata h . 
+    1. given : Pre condition -> customer should be on products list page
+	2. When : Action ->  When click on add to cart button.
+	3. Then :  Product should be added to cart.
+
+
 ============================= INTERVIEW QUESTIONS =================
 
 1.  Write syntax of implicit wait and explicit wait ?
