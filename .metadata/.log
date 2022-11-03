@@ -9433,3 +9433,115 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2022-11-03 10:55:57.604
+!MESSAGE Exception while reading last build state for: P/SelinumBesic
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error reading last build state for project SelinumBesic
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4120)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4096)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2264)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:450)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:190)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Failed to init ct.sym for C:\Program Files\Java\jdk-18.0.1.1\lib\jrt-fs.jar
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:79)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:157)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:419)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:306)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:161)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4115)
+	... 17 more
+Caused by: java.io.FileNotFoundException: File C:\Program Files\Java\jdk-18.0.1.1\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:127)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:121)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(ConcurrentHashMap.java:1908)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	... 22 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 2 2022-11-03 10:55:57.606
+!MESSAGE Error reading last build state for project SelinumBesic
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to init ct.sym for C:\Program Files\Java\jdk-18.0.1.1\lib\jrt-fs.jar
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:79)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:157)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:419)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:306)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:161)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4115)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4096)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2264)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:450)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:190)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: File C:\Program Files\Java\jdk-18.0.1.1\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:127)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:121)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(ConcurrentHashMap.java:1908)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	... 22 more
+!SUBENTRY 2 org.eclipse.jdt.core 4 0 2022-11-03 10:55:57.609
+!MESSAGE Failed to init ct.sym for C:\Program Files\Java\jdk-18.0.1.1\lib\jrt-fs.jar
+!STACK 0
+java.io.FileNotFoundException: File C:\Program Files\Java\jdk-18.0.1.1\lib\ct.sym does not exist
+	at org.eclipse.jdt.internal.compiler.util.CtSym.init(CtSym.java:127)
+	at org.eclipse.jdt.internal.compiler.util.CtSym.<init>(CtSym.java:121)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.lambda$1(JRTUtil.java:136)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(ConcurrentHashMap.java:1908)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getCtSym(JRTUtil.java:133)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:77)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:157)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:419)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:306)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:161)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4115)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4096)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2264)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:450)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:190)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-03 10:56:00.555
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-03 10:56:00.563
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

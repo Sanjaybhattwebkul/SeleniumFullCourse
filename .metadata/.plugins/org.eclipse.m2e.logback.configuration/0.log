@@ -8533,3 +8533,51 @@ org.eclipse.core.runtime.CoreException: Launch configuration report references n
 2022-11-03 10:46:57,011 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\main\resources
 2022-11-03 10:46:57,015 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-11-03 10:46:57,016 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\test\resources
+2022-11-03 10:52:34,297 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:52:34,310 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\ExtentRport\src\main\resources
+2022-11-03 10:52:34,322 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:52:34,323 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\ExtentRport\src\test\resources
+2022-11-03 10:52:35,886 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:52:35,886 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\main\resources
+2022-11-03 10:52:35,891 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:52:35,892 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\test\resources
+2022-11-03 10:54:29,436 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:54:29,437 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\main\resources
+2022-11-03 10:54:29,448 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:54:29,450 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\test\resources
+2022-11-03 10:55:29,043 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:55:29,044 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\main\resources
+2022-11-03 10:55:29,047 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:55:29,049 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\test\resources
+2022-11-03 10:56:00,552 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-03 10:56:00,557 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\SelinumBesic\src\main\resources
+2022-11-03 10:56:00,561 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-03 10:56:00,564 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\SelinumBesic\src\test\resources
+2022-11-03 10:56:27,411 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:56:27,411 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\main\resources
+2022-11-03 10:56:27,416 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:56:27,417 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\test\resources
+2022-11-03 10:56:46,831 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:56:46,833 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\main\resources
+2022-11-03 10:56:46,836 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:56:46,837 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\test\resources
+2022-11-03 10:57:14,107 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-11-03 10:57:15,898 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: seleium:MavenScrach:0.0.1-SNAPSHOT @ C:\Users\DELL\SeliniumFullCourse\MavenScrach\pom.xml.
+2022-11-03 10:57:18,432 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MavenScrach/src/main/java
+2022-11-03 10:57:18,436 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MavenScrach/src/test/java
+2022-11-03 10:57:19,769 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 5 sec
+2022-11-03 10:57:28,566 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:57:28,567 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\main\resources
+2022-11-03 10:57:28,572 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 10:57:28,572 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\test\resources
+2022-11-03 11:03:42,535 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 11:03:42,552 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\main\resources
+2022-11-03 11:03:42,559 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 11:03:42,560 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\test\resources
+2022-11-03 11:03:42,777 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 11:03:42,777 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\main\resources
+2022-11-03 11:03:42,782 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 11:03:42,783 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\test\resources
+2022-11-03 11:05:26,488 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-03 11:05:26,489 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\SeliniumFullCourse\MavenScrach\src\main\resources
+2022-11-03 11:05:26,492 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.

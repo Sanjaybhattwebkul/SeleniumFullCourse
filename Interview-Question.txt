@@ -1230,6 +1230,18 @@ QUESTION:
 ANSWER:
 	driver.manage().window().setSize(new Dimension(1440,900));//full screen
 
+QUESTION:
+	HOW CAN SCHEDULE THE TESCASE RUN USING JENKINS?
+
+ANSWER:
+	. Iake liye kenkins m configure k ander build trigger m setting krni hoti h 
+	1. click on build priodically
+	2. Add five  as ***** [minutes hours date month weekday {15 6 31 12 1} => mtlb monday 31 december 6:15 bj test run hoga ]
+	3. Agr hme in 5 values m se koi value pass ni krni h to hm vha 8 hi rhne dete h . 
+	4. Agr time k sath koi minutes ni h to hm [ H 6 => mtlb 6bj build bnegi]  ese likhte h . agr hm only 6 likh denge to jimkins use date samajh skta h to hm H lga dete h . [H->hours]
+	5. Find screenshot for 5 arguments for time scheduling :	https://prnt.sc/iB-Z269_VugG
+
+
 ============================= INTERVIEW QUESTIONS =================
 
 1.  Write syntax of implicit wait and explicit wait ?

@@ -24,7 +24,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import seleium.MavenScrach.LandingPage;
-import org.openqa.selenium.Dimension;
 
 public class baseTest {
 	
@@ -38,12 +37,11 @@ public class baseTest {
 		FileInputStream files = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\GlobalData.properties");
 		prop.load(files); // load the GlobalData.properties file.
 		String browserName = prop.getProperty("browser"); // get the browser name from GlobalData.properties file
-		
-		if(browserName.contains("chrome")) {
+		if(browserName.contains("chrom")) {
 			ChromeOptions options = new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
-			if(browserName.contains("headless")){
-			options.addArguments("headless");
+			if(browserName.contains("chromeheadless")){
+				options.addArguments("--headless");
 			}		
 			driver = new ChromeDriver(options);
 			//driver.manage().window().setSize(new Dimension(1440,900));//full screen
