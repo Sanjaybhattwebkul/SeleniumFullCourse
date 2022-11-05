@@ -2,22 +2,22 @@
 <testng-results retried="1" ignored="0" total="6" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-13T11:13:05 PDT" name="Suite" finished-at="2022-10-13T11:13:54 PDT" duration-ms="49353">
+  <suite started-at="2022-11-05T03:07:54 PDT" name="Suite" finished-at="2022-11-05T03:08:47 PDT" duration-ms="53228">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:seleium.MavenScrach.ErrorValidationsTest@448c8166]" name="LoginErrorValidation" class="seleium.MavenScrach.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" name="LoginErrorValidation" class="tests.ErrorValidationsTest"/>
       </group> <!-- ErrorHandling -->
       <group name="customerCheckout">
-        <method signature="PlaceOrder.submitOrder(java.util.HashMap)[pri:0, instance:seleium.MavenScrach.PlaceOrder@7e990ed7]" name="submitOrder" class="seleium.MavenScrach.PlaceOrder"/>
+        <method signature="PlaceOrder.submitOrder(java.util.HashMap)[pri:0, instance:tests.PlaceOrder@42039326]" name="submitOrder" class="tests.PlaceOrder"/>
       </group> <!-- customerCheckout -->
     </groups>
-    <test started-at="2022-10-13T11:13:05 PDT" name="ErrorValidation" finished-at="2022-10-13T11:13:48 PDT" duration-ms="43107">
-      <class name="seleium.MavenScrach.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleium.MavenScrach.ErrorValidationsTest@448c8166]" started-at="2022-10-13T11:13:05 PDT" name="launchApplication" finished-at="2022-10-13T11:13:20 PDT" duration-ms="15294" status="PASS">
+    <test started-at="2022-11-05T03:07:54 PDT" name="ErrorValidation" finished-at="2022-11-05T03:08:40 PDT" duration-ms="45635">
+      <class name="tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:07:54 PDT" name="launchApplication" finished-at="2022-11-05T03:08:12 PDT" duration-ms="17925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:seleium.MavenScrach.ErrorValidationsTest@448c8166]" started-at="2022-10-13T11:13:20 PDT" name="LoginErrorValidation" finished-at="2022-10-13T11:13:23 PDT" duration-ms="3144" status="SKIP">
+        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:12 PDT" name="LoginErrorValidation" finished-at="2022-11-05T03:08:16 PDT" duration-ms="3802" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect email or password.] but found [Incorrect email  password.]]]>
@@ -30,9 +30,11 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
-at seleium.MavenScrach.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -41,31 +43,31 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:806)
 at org.testng.TestRunner.run(TestRunner.java:601)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
 at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
 at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleium.MavenScrach.ErrorValidationsTest@448c8166]" started-at="2022-10-13T11:13:23 PDT" name="closeBrowser" finished-at="2022-10-13T11:13:24 PDT" duration-ms="1114" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:16 PDT" name="closeBrowser" finished-at="2022-11-05T03:08:18 PDT" duration-ms="1979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleium.MavenScrach.ErrorValidationsTest@448c8166]" started-at="2022-10-13T11:13:24 PDT" name="launchApplication" finished-at="2022-10-13T11:13:32 PDT" duration-ms="8130" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:18 PDT" name="launchApplication" finished-at="2022-11-05T03:08:25 PDT" duration-ms="6885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:seleium.MavenScrach.ErrorValidationsTest@448c8166]" started-at="2022-10-13T11:13:32 PDT" name="LoginErrorValidation" finished-at="2022-10-13T11:13:35 PDT" duration-ms="3004" status="FAIL">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:25 PDT" name="LoginErrorValidation" finished-at="2022-11-05T03:08:27 PDT" duration-ms="2367" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect email or password.] but found [Incorrect email  password.]]]>
@@ -78,9 +80,11 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
-at seleium.MavenScrach.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
@@ -89,47 +93,47 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:806)
 at org.testng.TestRunner.run(TestRunner.java:601)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
 at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
 at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleium.MavenScrach.ErrorValidationsTest@448c8166]" started-at="2022-10-13T11:13:37 PDT" name="closeBrowser" finished-at="2022-10-13T11:13:37 PDT" duration-ms="548" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:29 PDT" name="closeBrowser" finished-at="2022-11-05T03:08:29 PDT" duration-ms="509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleium.MavenScrach.ErrorValidationsTest@448c8166]" started-at="2022-10-13T11:13:37 PDT" name="launchApplication" finished-at="2022-10-13T11:13:43 PDT" duration-ms="5876" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:30 PDT" name="launchApplication" finished-at="2022-11-05T03:08:35 PDT" duration-ms="5655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:seleium.MavenScrach.ErrorValidationsTest@448c8166]" started-at="2022-10-13T11:13:43 PDT" name="ProductErrorValidation" finished-at="2022-10-13T11:13:47 PDT" duration-ms="3905" status="PASS">
+        <test-method signature="ProductErrorValidation()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:35 PDT" name="ProductErrorValidation" finished-at="2022-11-05T03:08:39 PDT" duration-ms="3874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleium.MavenScrach.ErrorValidationsTest@448c8166]" started-at="2022-10-13T11:13:47 PDT" name="closeBrowser" finished-at="2022-10-13T11:13:48 PDT" duration-ms="486" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:39 PDT" name="closeBrowser" finished-at="2022-11-05T03:08:40 PDT" duration-ms="572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- seleium.MavenScrach.ErrorValidationsTest -->
+      </class> <!-- tests.ErrorValidationsTest -->
     </test> <!-- ErrorValidation -->
-    <test started-at="2022-10-13T11:13:05 PDT" name="PlaceOrder" finished-at="2022-10-13T11:13:54 PDT" duration-ms="49353">
-      <class name="seleium.MavenScrach.PlaceOrder">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleium.MavenScrach.PlaceOrder@7e990ed7]" started-at="2022-10-13T11:13:05 PDT" name="launchApplication" finished-at="2022-10-13T11:13:19 PDT" duration-ms="13550" status="PASS">
+    <test started-at="2022-11-05T03:07:54 PDT" name="PlaceOrder" finished-at="2022-11-05T03:08:47 PDT" duration-ms="53228">
+      <class name="tests.PlaceOrder">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:07:55 PDT" name="launchApplication" finished-at="2022-11-05T03:08:12 PDT" duration-ms="16885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:seleium.MavenScrach.PlaceOrder@7e990ed7]" started-at="2022-10-13T11:13:19 PDT" name="submitOrder" data-provider="getTestData" finished-at="2022-10-13T11:13:31 PDT" duration-ms="12015" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:12 PDT" name="submitOrder" data-provider="getTestData" finished-at="2022-11-05T03:08:24 PDT" duration-ms="12119" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -140,15 +144,15 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleium.MavenScrach.PlaceOrder@7e990ed7]" started-at="2022-10-13T11:13:31 PDT" name="closeBrowser" finished-at="2022-10-13T11:13:31 PDT" duration-ms="417" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:24 PDT" name="closeBrowser" finished-at="2022-11-05T03:08:25 PDT" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleium.MavenScrach.PlaceOrder@7e990ed7]" started-at="2022-10-13T11:13:31 PDT" name="launchApplication" finished-at="2022-10-13T11:13:38 PDT" duration-ms="6005" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:25 PDT" name="launchApplication" finished-at="2022-11-05T03:08:31 PDT" duration-ms="6564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:seleium.MavenScrach.PlaceOrder@7e990ed7]" started-at="2022-10-13T11:13:38 PDT" name="submitOrder" data-provider="getTestData" finished-at="2022-10-13T11:13:46 PDT" duration-ms="8763" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:31 PDT" name="submitOrder" data-provider="getTestData" finished-at="2022-11-05T03:08:38 PDT" duration-ms="7074" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -159,23 +163,23 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleium.MavenScrach.PlaceOrder@7e990ed7]" started-at="2022-10-13T11:13:46 PDT" name="closeBrowser" finished-at="2022-10-13T11:13:47 PDT" duration-ms="411" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:38 PDT" name="closeBrowser" finished-at="2022-11-05T03:08:39 PDT" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleium.MavenScrach.PlaceOrder@7e990ed7]" started-at="2022-10-13T11:13:47 PDT" name="launchApplication" finished-at="2022-10-13T11:13:52 PDT" duration-ms="5557" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:39 PDT" name="launchApplication" finished-at="2022-11-05T03:08:45 PDT" duration-ms="6397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:seleium.MavenScrach.PlaceOrder@7e990ed7]" started-at="2022-10-13T11:13:52 PDT" name="OrderHistoryTest" finished-at="2022-10-13T11:13:54 PDT" depends-on-methods="seleium.MavenScrach.PlaceOrder.submitOrder" duration-ms="1367" status="PASS">
+        <test-method signature="OrderHistoryTest()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:45 PDT" name="OrderHistoryTest" finished-at="2022-11-05T03:08:47 PDT" depends-on-methods="tests.PlaceOrder.submitOrder" duration-ms="1546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleium.MavenScrach.PlaceOrder@7e990ed7]" started-at="2022-10-13T11:13:54 PDT" name="closeBrowser" finished-at="2022-10-13T11:13:54 PDT" duration-ms="248" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:47 PDT" name="closeBrowser" finished-at="2022-11-05T03:08:47 PDT" duration-ms="495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- seleium.MavenScrach.PlaceOrder -->
+      </class> <!-- tests.PlaceOrder -->
     </test> <!-- PlaceOrder -->
   </suite> <!-- Suite -->
 </testng-results>

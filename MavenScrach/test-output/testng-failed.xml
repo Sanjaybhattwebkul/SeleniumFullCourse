@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" parallel="tests" name="ErrorValidation(failed)">
     <classes>
-      <class name="seleium.MavenScrach.ErrorValidationsTest">
+      <class name="tests.ErrorValidationsTest">
         <methods>
-          <include name="LoginErrorValidation"/>
           <include name="closeBrowser"/>
+          <include name="LoginErrorValidation"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- seleium.MavenScrach.ErrorValidationsTest -->
+      </class> <!-- tests.ErrorValidationsTest -->
     </classes>
   </test> <!-- ErrorValidation(failed) -->
 </suite> <!-- Failed suite [Suite] -->

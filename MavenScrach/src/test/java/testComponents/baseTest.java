@@ -23,7 +23,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import seleium.MavenScrach.LandingPage;
+import pageobjects.LandingPage;
 
 public class baseTest {
 	
@@ -56,7 +56,7 @@ public class baseTest {
 		}
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		return driver;
 	}
 	

@@ -8,12 +8,12 @@
 	</groups>
   <test thread-count="5" name="PlaceOrder">
     <classes>
-      <class name="seleium.MavenScrach.PlaceOrder"/>
+      <class name="tests.PlaceOrder"/>
     </classes>
     </test> <!-- Test -->
      <test thread-count="5" name="ErrorValidation">
     <classes>
-      <class name="seleium.MavenScrach.ErrorValidationsTest"/>
+      <class name="tests.ErrorValidationsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

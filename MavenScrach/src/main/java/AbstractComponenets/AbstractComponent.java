@@ -7,8 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import seleium.MavenScrach.CartPage;
-import seleium.MavenScrach.orderPage;
+
+import pageobjects.CartPage;
+import pageobjects.orderPage;
 
 public class AbstractComponent {
 	WebDriver driver;

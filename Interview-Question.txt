@@ -1244,11 +1244,82 @@ ANSWER:
 
 --------------- CUCUMBER ----------
 
-=> Cucumber m hm Gherkin language m test case lihkte h .
- * Gherkin m test case kosteps m likha jata h . 
-    1. given : Pre condition -> customer should be on products list page
-	2. When : Action ->  When click on add to cart button.
-	3. Then :  Product should be added to cart.
+QUESTION :
+	WHAT IS CUCUMBER ?
+
+ANSWER:
+	Cucumber is one BDD framework which help us to design test Automation framework.
+
+	*  Cucumber m hm vo sari cheej kr skte h jo testNG k through krte h . like : grouping, retry,  reports, runne, files ect.
+
+******** HOW CAN INTEGRATE CUCUMBER **************
+	1. POM.xml m dependancy add krni h.
+	2. scr/test/java  k ander 1 new package bnana h fir us m featur file banegi [ feature file m testcase likhe hote h.]
+	3. Fir 1 or package bnayenge stepDefination ka uske ander feature file m jo test case the uski script likhenge.
+	4. Fir Jha pr featur file h vhi pr 1 TestNGRunner.java class bnayenge. [ yr file POM.XML m call hogi]
+	5. Fir POM.xml m testNGRunner.java class ki profiling krenge.
+
+=> CUCUMBER INTEGRATE Krne k liye sabse phle POM.XML file m cucumber dependancy use krni hoti h maven repository se.
+	EXAMPLE:  <include>**/TestNGTestRunner.java</include> [**/ mtlb project m jhap bhi "TestNGTestRunner.java" class hogi use use krega ]
+	LINK : https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/SeleniumFrameworkDesign/pom.xml#L29-L41
+
+
+=> Cucumber test ko maven command/jenkins se run krne k liye  POM.XML m profili m <suiteXmlFiles> ki jgh <include> ka use krte h
+	LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/SeleniumFrameworkDesign/pom.xml#L29-L41
+
+
+=> keywords used in gerkin language are :
+	1. scenario 
+	2. feature
+	3. feature file
+	4. scenario outline
+	5. step defination.
+
+
+QUESTION:
+	WHAT IS SCENARIO IN CUCUMBER ?
+
+ANSWER:
+	In cucumber testcases represeented as scenario.
+	 [jb hm cucumber use krte h to Test case ko scenario bolte h , or te test case Gherkin language m likhe hote h . ]
+ 		* Gherkin m test case in steps m likha jata h . 
+			0 . scenario:  Add pruduct to cart.
+			1. given : Pre condition -> customer should be on products list page
+			2. When : Action ->  When click on add to cart button.
+			3. Then :  Product should be added to cart.
+
+QUESTION:
+	What is feature in cucumber?
+
+ANSWER:
+	Test caase ko feature bolte h cucumber m .
+
+QUESTION:
+	Whatis feature filte in cucumber?
+
+ANSWER:
+	Cucumber m 1 file hoti h, .feature extendion ki jis file m sare scenario/testcase likhte hai.
+
+QUESTION:
+	Waht is Scenarion OutLine ?
+
+ANSWER:
+	Jb hm testCas m data parameterization use krte h to use scenarion Outline bolte h .
+	Mtlb ki 1 test ko multiple set of data k sath run krna h to testOutline keyword ka use krte h .
+
+QUESTION:
+	What is stepDefination ?
+
+ANSWER:
+	StepDefination 1 java class hoti h jis m hm scenarios/testcase ki script likhte h .
+	> StepDefination file ko hm  "TIDI"  extenstion ka use kr bhi create kr skte h. 
+
+QUESTION:
+	What runner should use for run cucumber feature file ?
+
+ANSWER:
+	I is depends on our assersion. if we are using testNg assersion in out project then we will use testNG runner.
+	And if we are using the Junit assersion then we will use Junit runner.
 
 
 ============================= INTERVIEW QUESTIONS =================
