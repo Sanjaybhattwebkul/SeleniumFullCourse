@@ -1321,10 +1321,152 @@ ANSWER:
 	I is depends on our assersion. if we are using testNg assersion in out project then we will use testNG runner.
 	And if we are using the Junit assersion then we will use Junit runner.
 
+************************ SELENIUM FRAMEWORK INTERVIEWQUESTION ******************
+
+ALL QUESTIONS : https://prnt.sc/EYVq0_wMB3-k
+
+QUESTION:
+
+What design parten you used for design a framework ?
+
+ANSWER:
+	POM [Page Object Model]  design parten  and PageFactory is the subset of POM.
+
+Question:
+	What is PageFactory ?
+
+ANSWER:
+	PageFactory is is class by which we can initilize the elements. like @FindBy(css='.className');
+
+Question:
+	How can create object in POM ?
+
+ANSWER:
+	Is m hm objects  action method m hin= bna k return kra dete h .
+	Like: 
+
+QUESTION:
+	How can you use PageFactory for list Products ?
+
+ANSWER:
+	We will use findElements  not findElement. // phle find elements lga k list nikal lenge fir us m loop lga k print kr skte h data.
+
+QUESTION:
+	What are reusable methods in selenium OR How can reuse the methods in selenium ?
+ANSWER:
+	Selenium m  hmre pass 2 types k reusable methods hote h .
+ 	1. Selenium core method [predefined methods ] in ko abstract class m bna k use kr lete h .
+ 	2. Custome testMetod jo hme all testCase m use krne hote h , inko m Base test m likhte h .
+
+
+QUESTION:
+	HOW can you use TestData from external file in selenium ?
+
+Answer:
+	By useing the @DataProvider.  data DataProvider HashMap or object data parten krta h  accept krta h 
+	1. Hm testData k liye 1 json file bna skte h or use DataProvider ka use kr k test m pass kr skte h .
+	2. JSON data ko "Jackson DataBind" class ka use kr k HashMap m convert krte h fir use test m pass krte h .
+
+QUESTIONS:
+	Do you user Interface in selenium ?
+
+ANSWER:
+	YES, 1. WebDriver 2. ITestLISTENER 3. IRetryAnalyzer
+	1 ITestLISTENER ko is liye use krte h kyu ki isko use krne hm testcase ko handle kr skte h .
+	Like : agr hm testcase failhone pr ss lena h to iske liye listener  ki need hoti h .
+
+Question:
+	Where did you use encapsulation in selenium ?
+
+ANSWER:
+	In PageFactory elements. 
+	Example:
+		@FindBy(CSS='className')
+		Private WebElement submit; // encapsulation
+
+	1. Hmne PageFactory element ko private bna diya ab jo bhi is class ko inherite krega vo only methonds ko access kr payega.
+	   submit WebElement element ko access ni kr payega. hmne submit WebElement ko hinde kr diya.
+	   [ encapsulation ka example hota h ki methods 1 class m bna lo or fir us calss ko inherite kr object se onmy method call kr lo . method ka logic hide rhega.]		
+
+QUESTION:
+	Do your framework support  run parallel test ? How can you write Thread safe code ?
+
+ANSWER:
+	Yes, Our framework support parallely run test. 
+	For Thread safe code . hm ThreadLocale class ka use krte h .
+	Thread Safe code hm tb use krte h jb all testCase ki 1 single extent report bnate h . 
+	Thread safe m hm every object ko unique Thread Id dete h . getter and setter methods ka use kr k. Jis se object overide nahi hote or CONCURRENCY issue nii ata h .
+	1. Hm pom.xml file m every class ko 1 saperate <test> k ander likhte hai. or <suite> m Parallel="Test> kilh dete h .
+
+QUESTION:
+	HOW CAN YOU SOLVE CONCURRENCY ISSUE ? 
+
+ANSWER:
+	By uing ThreadLocale method. 
+	CONCURRENCY issue tb aata h jb hm every test case ki a sigle report bnate h parallely run rk k to ItestListener class m WhentestStart method.
+	Variable ki value override ho jati h . fir ThreadLocale class ka use kr k variable ko saparaly identifiy kra dete h.
+
+
+Question:
+	Do you have static keywords in your framework. ?
+
+ANSWER:
+	Yes we can mark static only  thoes varialbes which are common for all test case. like Properties object [Properties object se .properties file ko read krte h ] 
+	1. HME driver object ko static nahi mark krna hota h kyu ki agr driver ko static mark kr denge to every test case k liye smae driver kaam krege or test cases m issue aayenge
+	2. Agr driver object static mark kr denge to Cuncurrency issue aayega.
+
+QUESTION:
+	How are you sending the global properties to your test at run time ?
+
+ANSWER:
+
+	1. By using the Properties() class. properties class kisi bhi ecternal file ko read kr skti h . 
+	Hm 1 .properties file bna lete h or us m global dataset kr lete . like browserName, URL, timeOut waite ect. 
+	2. Hm MAVEN  terminal se bhi global dataa send kr skte h . Like mvn test -Dbrowser=chrome.
+	Or maven se send kiye hue variable ko deriver.getProperty() class se access kr lete h .
+
+QUESTION:
+	What is mechanism you use to run only selected set of tests in your framework ?
+
+ANSWER:
+	For this we can use testNg groups helper ka use krte h . [groups= {"Purchase"} ]
+	1. Hm @Test m group name define ke dete h 
+	2. Fie testNg.xml file m <groups> tag k ander only usi group ko class krte h jisko run krna h .
+		<groups><run><include name="groupName"/></run></groups>
+
+	3. POM.xml file m testng.xml file ki alag profiling kr dete h .
+
+QUESTION:
+
+	HOW ARE YOU HANDLING THE FLAKY TEST IN FRAMEWORK ?
+
+ANSWER:
+
+	Flaky test mtlb jo 1 time fail ho jate h or second time pass ho jate h .
+	1. iske lye hm IRetryAnalyzer interface ka use krte h .
+	2. Iske liye hm 1 retry.java class bna lete h is m logic likhte h jitni bar rerun krna h uske liye.
+	3. Fir test m "IRetryAnalyzer" [IRetryAnalyzer=retry.class]  helper ka use kr k test ko rerun krte h. 
+
+QUESTION:
+	Does your framework takes screenhot on test fail ? How do you implementthis ?
+
+ANSWER:
+	Yes we can take screenshot for failer test,
+	1. Ike liye hm "ItestListener" interface ka use krte h .
+	2. ItestListener k "onTestCseFiler" function k ander "TakesScreenshot" class ka use kr k screenshot lete h .
+
+QUESTION:
+	MAKE A SeleniumFrameworkDesign DIGRAM ?
+
+
+ANSWE:
+	Please gothrough this screenshot :   https://prnt.sc/mv2oYQZ3Ecwn
+
+
 
 ============================= INTERVIEW QUESTIONS =================
 
-1.  Write syntax of implicit wait and explicit wait ?
+1.  Write syntax of implicit wait and explicit wait ? 
 2.  Write syntax of Take screenshot ?
 3.  What is 202 http status code ?
 4.  Difference between http and https ?
