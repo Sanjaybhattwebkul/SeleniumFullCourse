@@ -1479,6 +1479,21 @@ Answer:
 
 
 ** > COMPLETE CODE FOR GET DATA FROM EXCEL :  https://prnt.sc/ZybXTD1b0E7g
+** > https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/ExcelDrivern/dataDriven.java
+
+
+	============ **************** SELENIUM GRID STARTED ********************
+
+QUESTION:
+	What is selenium grid?
+
+ANSWER:
+	Selenium grid is a smat proxy server that is used to run test cases PAARALLELY on different-2 machines.
+
+SELENIUM GRID ARCHITECTURE: https://prnt.sc/B1ASzdfDjUwX
+
+
+
 
 ============================= INTERVIEW QUESTIONS =================
 
