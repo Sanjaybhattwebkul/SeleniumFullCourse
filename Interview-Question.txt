@@ -3,7 +3,7 @@
 
 		-------------- SELENIUM INTERVIEW QUESTIONS - -----------------
 
-=> DIFFERENCE BETWEEN  Webdriver driver = new ChromeDriver(); AND ChromeDriver driver = new ChromDriver(); ?
+=> DIFFERENCE BETWEEN   Webdriver driver = new ChromeDriver(); AND ChromeDriver driver = new ChromDriver(); ?
 
 
 
@@ -421,6 +421,13 @@ ANSWER:
 	3. iterator(); function hme sari chile window ki id deeta hai.
 	4. iterator() class ka object bna k hm obj.next(); function se hm next tab/windos m switch kr skte hai.
   VIDEO NO. 88 in udemy
+
+QUESTION:
+	WHAT ARE iterator()  ?
+
+ANSWER:
+	iterator class ka use kr k hm next artical ko read kr skte h. 
+	Next artical means next tab in browser ya next row in exel or any next data  ect 
 
 QUESTION:
 	HOWCAN WE SWITCH INSIDE A Iframe IN SELENIUM?
@@ -1462,7 +1469,16 @@ QUESTION:
 ANSWE:
 	Please gothrough this screenshot :   https://prnt.sc/mv2oYQZ3Ecwn
 
+QUESTION:
+	HOw can get data from excel sheet ?
 
+Answer:
+	By using apache POI API. 
+	Iske liye hme pom.xml file m maven repository se  "poi" or "poi-ooxml" dependancy add krni hoti h 
+	Apacche POI API m 1 "XSSFWorkBook"  class hoti h uska use krte h ecel sheet ko access krne k liye.
+
+
+** > COMPLETE CODE FOR GET DATA FROM EXCEL :  https://prnt.sc/ZybXTD1b0E7g
 
 ============================= INTERVIEW QUESTIONS =================
 
