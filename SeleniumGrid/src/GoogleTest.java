@@ -22,7 +22,7 @@ public class GoogleTest {
 //		caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 //		caps.setCapability(CapabilityType.BROWSER_NAME, "chrome");
 		
-		
+		//http://192.168.1.139:4444 HUB SYSTEM KA IP //java -jar downloadJarFile.jar hub is commad ko run krne se milega`
 		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.1.139:4444"), caps);
 		driver.get("http://google.com");
 		System.out.println(driver.getTitle());
