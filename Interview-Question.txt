@@ -1511,3 +1511,25 @@ SELENIUM GRID ARCHITECTURE: https://prnt.sc/B1ASzdfDjUwX
 12. How can you identify any frame. [ Inspact kr k check kr lenge agr <Iframe> tag hoga to mtlb frame h ya rightClick kr dekh lenge us m frame ka option aa jata h agr frame hoga to.]
 13. How can you Automate Multi Factor Authentication [MFA] ?  [aerogear java OTP dependancy ka use kr k.]
 14. How can you handle any submit button if the button is not showing in don.?  [phle page ko scroll krenge jha pr button h vha tk fir click krenge ]
+15. New feature of selenim4 ?
+	1. Take screenshot of any element.
+	2. Get height and width of any element
+	3. Can open multiple application on a single browser at a time
+		// chrome browser  m multiple tabs ya multiple windows open ho jati h
+	4. Relative locators. 
+	5.
+	6.
+
+16. Difference between @factory annotation and DataProvider ?
+	1. DataProvider every Test[function] ko each set of data k satn alag alag run krta h .
+		[ agr hmre pass 2 userName or password h to DataProvider every function ko 2 bar run krega. ]	
+	2. factory annotation  each set of data k sath complete class ko run krta h 
+		[ agr hmre pass 2 userName or password h to factory annotation only us class ko 2 bar run krega.]
+
+17. Can we run testng.xml file by command promt ?
+	// YES    [ Phle apne project k jar files ka path do cmd m fir enter press k testng file ka path]
+
+18. Hard assersion and soft assersion difference ?
+	/// agr kisis test m hard assersion lga h or test fail ho gya to program ka execution ruk jata h with error
+	// agr kisis test m soft assersion lga h or test fail ho gya to selenium us test k liye error through kr  baki k test run kr dega.
+
