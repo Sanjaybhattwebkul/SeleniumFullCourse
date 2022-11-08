@@ -1557,7 +1557,7 @@ QUESTION:
 What are v in selenium grid ?
 
 ANSWEr:
-	DesiredCapabilities class ka use kr k hm rowser name, BROWSER_NAME, ACCEPT_SSL_CERTS, SYSTEM OS ect set kr skte h  for a node system.
+	DesiredCapabilities class ka use kr k hm , BROWSER_NAME, ACCEPT_SSL_CERTS, SYSTEM Plateform  ect set kr skte h  for a node system.
 	DesiredCapabilities caps = new DesiredCapabilities();
 	 //caps.setBrowserName("chrome");
 	//caps.setPlatform(Platform.);
