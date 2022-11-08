@@ -1537,7 +1537,7 @@ For start selenium grid:
 	3. Can open multiple application on a single browser at a time
 		// chrome browser  m multiple tabs ya multiple windows open ho jati h
 	4. Relative locators. 
-	5.
+	5. Chrome devtool integration
 	6.
 
 16. Difference between @factory annotation and DataProvider ?
@@ -1553,3 +1553,13 @@ For start selenium grid:
 	/// agr kisis test m hard assersion lga h or test fail ho gya to program ka execution ruk jata h with error
 	// agr kisis test m soft assersion lga h or test fail ho gya to selenium us test k liye error through kr  baki k test run kr dega.
 
+QUESTION:
+What are v in selenium grid ?
+
+ANSWEr:
+	DesiredCapabilities class ka use kr k hm rowser name, BROWSER_NAME, ACCEPT_SSL_CERTS, SYSTEM OS ect set kr skte h  for a node system.
+	DesiredCapabilities caps = new DesiredCapabilities();
+	 //caps.setBrowserName("chrome");
+	//caps.setPlatform(Platform.);
+	//caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+	//caps.setCapability(CapabilityType.BROWSER_NAME, "chrome");
