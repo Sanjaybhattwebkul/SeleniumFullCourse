@@ -1512,8 +1512,23 @@ For start selenium grid:
  ->  RemoteWebDrivr(HUB-URL,browser-capabilities) // 2 arguments accept krta h .
        [ Url mtlb hmra IP and  capabilities mtlb browser settings like browser name , sslsccepr true ect..]
 
+******************** CHOMEDEVTOOLS *****************
 
+=>structure : https://prnt.sc/BckKtgYjT_of
 
+WHAT IS CHROMEDEVTOOL:  inspect the DOM . and all the tabs on insept asre part of CHROMEDEVTOOL.
+What is CDP : Chrome DevTool Protocol.
+
+QUESTION:
+	Is it possible to localization test by CDP ?
+
+ANSWER:
+	YES.
+
+// driver.findElement(By.LinkText("clickme")).click() // kisi <a> tag  m click krne k liye.
+
+> Afr hmre pass 1 search bob h withoout search button k to hm value search kr k search kese krenge .?
+	> drive.findElement(By.name("q")).sendKeys("peorductName",Keys.ENTER);
 
 ============================= INTERVIEW QUESTIONS =================
 
@@ -1537,7 +1552,7 @@ For start selenium grid:
 	3. Can open multiple application on a single browser at a time
 		// chrome browser  m multiple tabs ya multiple windows open ho jati h
 	4. Relative locators. 
-	5. Chrome devtool integration
+	5. Chrome devtool integration  [CDP ->Chrome devtool potocol  //driver.getDevTool(); is function ka use krte h ]
 	6.
 
 16. Difference between @factory annotation and DataProvider ?
@@ -1553,8 +1568,10 @@ For start selenium grid:
 	/// agr kisis test m hard assersion lga h or test fail ho gya to program ka execution ruk jata h with error
 	// agr kisis test m soft assersion lga h or test fail ho gya to selenium us test k liye error through kr  baki k test run kr dega.
 
-QUESTION:
-What are v in selenium grid ?
+19. Test case for Cofee machine ?
+20.  Teall any 1 feature request for flipkart or amazom site ?
+
+21.  What are v in selenium grid ?
 
 ANSWEr:
 	DesiredCapabilities class ka use kr k hm , BROWSER_NAME, ACCEPT_SSL_CERTS, SYSTEM Plateform  ect set kr skte h  for a node system.
