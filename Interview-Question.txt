@@ -1520,6 +1520,18 @@ WHAT IS CHROMEDEVTOOL:  inspect the DOM . and all the tabs on insept asre part o
 What is CDP : Chrome DevTool Protocol.
 
 QUESTION:
+	HOW CAN YOU EMULATE YOUR INTERNET SPEEED USUNIG SELENIUM ?  // internet speed kese check kr skte h .ya kese control kr skye h ?
+
+ANSWER:
+	By using selenium dev tools . 
+	// iske liye  chrome dev tool ka latency method ka use krte h , is method se hme pta chljata h ki page lad hone m kitna time lg rah. fir hm us hisab se waites lga lete h .
+QUESTION:
+	What is frequenty issue ?
+	
+ANSWER:
+	Internet speed km hone ki vjh se aate . jb page load hone m tme lgta h or test case phle execute ho jata h .
+
+QUESTION:
 	Is it possible to localization test by CDP ?
 
 ANSWER:
@@ -1529,6 +1541,14 @@ ANSWER:
 
 > Afr hmre pass 1 search bob h withoout search button k to hm value search kr k search kese krenge .?
 	> drive.findElement(By.name("q")).sendKeys("peorductName",Keys.ENTER);
+
+
+QUESTION:
+	Agr browser m ulr hit krte hi usename or password ka alert box aata h to use kese handle krenge CDP M  ?  // how to halde Browser authentication ?
+
+ANSWER:
+	By using uriPridicate  method.
+
 
 ============================= INTERVIEW QUESTIONS =================
 
@@ -1580,3 +1600,14 @@ ANSWEr:
 	//caps.setPlatform(Platform.);
 	//caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 	//caps.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+
+22. HOW CAN WEW RUN ONLY FAILED TEST CASE USING TESTNG ?
+	
+ANSWER: Jb hm testng se testcase run krte h to failed tests k liye testOutput k folder k ander 1 testng-gailed.xml file generate hoti h. us m only failed tests hote h . hm direct us file ko run krenge to only failed test run honge.
+
+23. Where you use method overloading in selenium ?
+ANSWER: 1. implicit waite -> kyu ki hm isme different-2 methods pass kr skte h . [ same method with different-2 parameter.]
+	2. AAction class [ is m bhi different-2 parameter pass hote h according to usr need .
+	
+24. What is preority is testng ?
+answer: Mtlb ki hm phle kis test ko run krna chahte h . jis ko preority jada denge vo phle chlega , agr kisi testcase ki  preority 0 h to vo phle chlega..
