@@ -1549,6 +1549,12 @@ QUESTION:
 ANSWER:
 	By using uriPridicate  method.
 
+QUESTION:
+	HOW TO PRINT THE CONSOLE ERRORS USING SELENIUM ?
+
+NSWER:
+   By using [ LogEntries entrydriver.manage.logs.get(logType=BROWSER); ]
+	EXAMPLE: https://prnt.sc/4s2IR48z-0Ug
 
 ============================= INTERVIEW QUESTIONS =================
 
@@ -1611,3 +1617,5 @@ ANSWER: 1. implicit waite -> kyu ki hm isme different-2 methods pass kr skte h .
 	
 24. What is preority is testng ?
 answer: Mtlb ki hm phle kis test ko run krna chahte h . jis ko preority jada denge vo phle chlega , agr kisi testcase ki  preority 0 h to vo phle chlega..
+
+
