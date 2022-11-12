@@ -1604,6 +1604,15 @@ ANSWER:
 	Url m https:/   k  bad userName:Password@google.com   is type se dedenge. 
 	example: http://userName:Password@URL
 
+=========================== RUN TEST CASE IN  SAUCELABS  [CLOUD] ====================
+
+=> PHLE  iske liye configuration krni hoti h :
+1.  https://wiki.saucelabs.com/display/DOCS/Platform+Configurator#/
+
+2.  https://wiki.saucelabs.com/display/DOCS/Getting+Started+with+Selenium+for+Automated+Website+Testing
+
+
+
 
 ================= HTTP RESONCE CODE =================
 
