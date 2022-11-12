@@ -1556,6 +1556,13 @@ NSWER:
    By using [ LogEntries entrydriver.manage.logs.get(logType=BROWSER); ]
 	EXAMPLE: https://prnt.sc/4s2IR48z-0Ug
 
+
+
+====> HOW TO CONNECT MYSQL DATABSE IN SENELIUN JAVA ?
+	By using the my sql connector jar files:   > 
+	1. First Download the jar files : https://jar-download.com/artifacts/mysql/mysql-connector-java
+	2. And import this on your project
+
 ============================= INTERVIEW QUESTIONS =================
 
 1.  Write syntax of implicit wait and explicit wait ? 
