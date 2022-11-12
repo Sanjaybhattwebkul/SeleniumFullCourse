@@ -1563,6 +1563,48 @@ NSWER:
 	1. First Download the jar files : https://dbschema.com/jdbc-driver/MySql.html
 	2. And import this on your project
 
+
+=====================  AUTO IT START =================
+QUESTION:
+	HOW TO SETUP AUTOIT ?
+
+ANSWER:
+
+	*. AUTOIT  use krne k liye phle hme autoIT download krna hota h .
+		DOWNLOAD LINK:  https://www.autoitscript.com/site/autoit/downloads/
+	*. Fir hme auto it m script likhni hoti h.jo action hme perform krna hota h uske liye. [ Like agr hme file upload krni h to uske liye]	 
+	*. C:\Program Files (x86)\AutoIt3\SciTE[ is location m code likhte h. SciTE.exe  file hoti ]
+	*. Auto it se hm file upload system ko bhi automate kr skte h .
+
+QUESTION:
+	HOW CAN YOU UPLOAD FILE USING AUTOIT TOOL ?
+
+ANSWER:
+	Au3Info_x64.exe file ka use kr k hm, file upload k liye jo window open hoti us input ka path nikal skte h .
+	* Au3Info_x64.exe ko open krenge to findup tool ko drag and drop kr k opened window n k input box m le jana hotah .
+	*. esa kr k hm us input box k , title clas and instance mil jata h .
+	*. fir hm autoIT k editer m us k liye script likhte h .
+	*. ControlFocus("title","text","Instance"); // is method ka use krte h file upload k krne k liye.
+	*. title-> title , text->optional, instance->class+Instance [ like class1 ]
+	*. Fir hme script file ko same k us m right click kr k use compile krna hota h . [compile script]
+	*. Fir 1 exe file generate hogi . us file ko hm apne test script m use krenge
+	*. Runtime.getRuntime().exec("exec file ka path");  // is method se Autoit ki script ko call krte h . ye jaa ka function h .
+	*. JB auto it script ko use kr k hm test run kte h to us time mose ka use ni krna h otherwise auto it kaam ni krta h . auto it confuse ho jata h .
+	
+=> COMPLETE CODE OF AUTOIT :
+	*. https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/AutoITCode.txt
+
+
+
+QUESTION:
+	AUTO IT  se windown base alert kese handle honge? agr alert m uerName or Password send alert m send krna h to kese hoga?
+
+ANSWER:
+
+	Url m https:/   k  bad userName:Password@google.com   is type se dedenge. 
+	example: http://userName:Password@URL
+
+
 ============================= INTERVIEW QUESTIONS =================
 
 1.  Write syntax of implicit wait and explicit wait ? 
@@ -1604,7 +1646,7 @@ NSWER:
 19. Test case for Cofee machine ?
 20.  Teall any 1 feature request for flipkart or amazom site ?
 
-21.  What are v in selenium grid ?
+21.  What are DesiredCapabilities in selenium grid ?
 
 ANSWEr:
 	DesiredCapabilities class ka use kr k hm , BROWSER_NAME, ACCEPT_SSL_CERTS, SYSTEM Plateform  ect set kr skte h  for a node system.
@@ -1625,4 +1667,9 @@ ANSWER: 1. implicit waite -> kyu ki hm isme different-2 methods pass kr skte h .
 24. What is preority is testng ?
 answer: Mtlb ki hm phle kis test ko run krna chahte h . jis ko preority jada denge vo phle chlega , agr kisi testcase ki  preority 0 h to vo phle chlega..
 
-
+25. How can you change the chrome default download path ?  [ crome m files /data download folders k ander  downpoad hota h use kese change krenge]
+Answer:  by useing setExprementalOpton() method  of chromeOptions class.
+	
+26. Hhow can get file from your locale system ?
+Answer:
+	By using exists method of File() class   // File() java ki calss h 
