@@ -1560,7 +1560,7 @@ NSWER:
 
 ====> HOW TO CONNECT MYSQL DATABSE IN SENELIUN JAVA ?
 	By using the my sql connector jar files:   > 
-	1. First Download the jar files : https://jar-download.com/artifacts/mysql/mysql-connector-java
+	1. First Download the jar files : https://dbschema.com/jdbc-driver/MySql.html
 	2. And import this on your project
 
 ============================= INTERVIEW QUESTIONS =================
