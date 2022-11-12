@@ -1605,6 +1605,23 @@ ANSWER:
 	example: http://userName:Password@URL
 
 
+================= HTTP RESONCE CODE =================
+
+	
+200 -> Successfull request
+201 -> Successfull request and data creted
+202 -> request has bess acccepted for process and process is not completed
+204 -> Empty responsible
+
+400 -> Bad request
+401 -> Unautorize access
+403 -> Forbdden OR access denei.
+404 -> Page not foound / Data not found
+
+500 -> IInternel server error
+503 -> Service unavailable
+
+
 ============================= INTERVIEW QUESTIONS =================
 
 1.  Write syntax of implicit wait and explicit wait ? 
@@ -1673,3 +1690,4 @@ Answer:  by useing setExprementalOpton() method  of chromeOptions class.
 26. Hhow can get file from your locale system ?
 Answer:
 	By using exists method of File() class   // File() java ki calss h 
+
