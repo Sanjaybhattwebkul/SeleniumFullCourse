@@ -1770,3 +1770,99 @@ Answer:  by useing setExprementalOpton() method  of chromeOptions class.
 26. Hhow can get file from your locale system ?
 Answer:
 	By using exists method of File() class   // File() java ki calss h 
+
+
+QUESTIONS:
+	Difference between Abstract class aand interface ?
+
+ANSWER:
+
+	1. Abstract class hm abstract function or normal function donu bna skte h .
+		[ Mtlb function ko only define bhi kr skte h or function ko implement bhi kr skte h .]
+	
+	*> Interface m  hm function ko only define kr skte hai. implement ni kr skte.
+
+	2. Interface m variabs on functions PUBLIC hone chahiye.
+
+	*> Abstract calss m variables or function PUBLIC or Private kuchh bhi ho skte h .
+
+	3. Abstract class m atleast 1 function abstract hona chahiye. // mtlb function m abstract keyword use ho.
+		= public abstract void main(){ }  // like this.
+
+	*. Interface m abstract keywors ka use nahi hota.
+
+	4. Abstract class ka object nahi banta hai.
+
+	*. Interface ka object ban jata h .
+
+	5. Abstract class ko extends kre h or interface ko implement krte h .
+
+QUESTION:
+	Can class A extends class B C  ?
+
+ANSWER:
+	NO, Because JAVA  is not support the multiple inheritance. we are using interface in the place of multiple inheritance.
+
+QUESTION:
+	WHAT IS THE OUTPUT OF THE GIVEN CODE ?
+
+	public classA{
+		int i =10;
+	}
+
+	public class B extends A {
+		int i=20;
+	}
+	pubic class C{
+		public void main(Strin[] args){
+			A a = new B()
+			System.out.println(a.i);
+		}
+	}
+
+ANSWER:
+
+	10; // kyu ki hm A a = new B() likha h  [A a => Accessing the variables and functions of class A ]
+		// B a = new B(); // is se output m 20 aayega.
+
+
+QUESTION:
+	WHAT ISFUNCTION OVERLOADING ?
+
+ANSWER:
+		Function overloading is same functoin name with different paarameter or different datatype 
+			[Mtlb function name sameho unke ander logic alag alag hoga. or number of argumenr or datatype of argument bhi alag alag hoga.]
+
+QUESTION:
+	WHAT IS FUNCTION OVERRIDING?
+
+ANSWER:
+	Function overriding m same function name with same number of argument and data typr of argument hote h .
+	Agr koi function class A m h or class A Class B m extends h, Hmne same vo hi function class B m bhi bnaya h to object bnane pr jo logic class B k method m likha h vo kaam krega.
+
+QUESTION:
+	WHAT IS ARRAY ?
+
+ANSWER:
+	A container that store multiple values of same datatypes.
+	int[] a = new int[5]; // 5 size of array h. or int data type of values in a Arrat.
+	a[0] =1;  // add value on a integer array
+
+	inrt[] a = {1,2,3,4,5,50}; // phle value assign hogi fir mamory allocate hogi.
+	int[] a = new int[5]; // phle memory allocate hogi fir value assign hogi.
+
+QUESTION :
+	WHAT IS MULTI Dimension ARRAY ?
+
+ANSWER:
+	Array into array . // in the form of rows and column.
+	Example 1:
+		int a[][] = new int[2][3]; // is array m 2 rows or 3 column h .
+		1 2 4
+		2 3 5
+
+	Example2:
+		int a[][] = {{1,2,3,4},{2,4,5,6}}
+
+QUESTION:
+	Find minimun number from a 3*3 matrix  ?
