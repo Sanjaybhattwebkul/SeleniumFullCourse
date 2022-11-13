@@ -1866,3 +1866,6 @@ ANSWER:
 
 QUESTION:
 	Find minimun number from a 3*3 matrix  ?
+
+ANSWER:
+	LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/Core-java/src/MatrixInterview.java
