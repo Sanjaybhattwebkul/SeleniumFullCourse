@@ -1631,6 +1631,77 @@ ANSWER:
 503 -> Service unavailable
 
 
+=> WHAT IS MAVEN ? WHY SHOUL WE USE MAVEN ?
+	1. Maven Apache maven is a software project management and build manaement tool.
+	2. Apache maven m 1 centrlize repository hoti h jaha se hm sari sependancy download kr skte h .
+	3. Pache MAVEN KA USE KR K HM KISI BHI CI TOOL ko integrate kr skte h . like  Jenkins.
+		[ Bina maven k jenkins intergrate nahi kr skte h , jenkins m hm maven ki commands deni hoti h  test run krne k liye.]
+
+	4. Maven ka use krne se hme Jar files import nahi krne hot i  h  . hm POM.xml m dependancy dal dete h fir project ko jo bhi access krega us k system m dependancy automatic download ho jati h use alag se download nahi krni hoti h .
+		[ Agr hm maven ka use nahi krenge to hme jar files download krni  hogi. or hmre project koi or access kr rah to use bhi jar import krni hot i h.]
+
+
+QUESTION:
+	WHAT IS GROUPID IS MAVEN ? <GroupID> selenium.io.ori....</GroupID>
+
+ANSWER:
+	GroupID hmre selenium project ko uniquely identify krti h .  // hm pom.xml m dependancy dalte h to us m group id hoti h, group id se hme ye pta chl jata h ki hn si dependancy download krni h
+	ArtifectID group id ki sub child hoti h . us se ye pta chlta h ki hme kn si jar download krni h  
+	ArtifectID ka name hi hota h . vo hi  Project ka name bhi hota h  
+
+=> MAVEN KO USE KRNE K  LIYE HME HME. MAVEN SOR DEPENDANCY KO POM.XML FILE M DALNA HOTA H . <plugin></plugin>
+
+=>Maven se test ko run krne k liye hme apni file ke name k last m Test lgana complesary h like . loginTest.java.
+	[ Mave algorithem  m  ye define g  agr file k name k last m Tes nahi hoga to maven us filse ko run nahi kregea]
+	maven.apache.org/surefire/maven-surefire-plugin/  yha se testng or maven ki dependancies mil jati h
+
+=> MAVEN M hm test case ki profiling bhi kr skte h. testng.xml file  or profile m ander test file ka name hota h.. [ fir commands se jis test ko run krna chahte h us profile ka name send kr denge command m .]
+=> mvn -Dtest=loginTest test  // IF we want to run only 1 single test file.
+
+
+**************** MAVEN QUESTIONS ***************
+
+QUESTION:
+	1. Identify the correct statement about Maven.
+
+ANSWER:
+	*. build manaement tool ffor java framework.
+	*. repository for getting the dependancies for java framework.
+	*. can be integrate with CI tool  easily Like: jenkins
+
+
+QUESTION:
+	2. Which plugin helps to execute test cases from test folder in Maven project?
+
+ANSWER:
+	*. Surefire plugin
+
+QUESTION :
+	3. Suppose your test suite contains Regression and Sanity test cases having two profiles in pom.xml. Each of them is integrated with TestNG and having separate TestNG xml file. How will you trigger only the Sanity test cases?
+
+ANSWER:
+	*. mvn test -PSanity 
+
+QUESTION :
+	4. Once Maven reads the pom.xml, first were does it search for the dependencies?
+
+ANSWER:
+	*. Local repository.
+
+QUESTION:
+	5. Suppose we want to publish our project in Maven, what is the mandatory piece of information that is needed for doing that?
+
+ANSWER:
+	*. GroupID
+	*. ArtifectID
+	*. Version
+
+QUESTION:
+	6. Which maven command does the compilation and identifies if there are any syntax errors in the code?
+
+ANSWER:
+	mvn compile.
+
 ============================= INTERVIEW QUESTIONS =================
 
 1.  Write syntax of implicit wait and explicit wait ? 
@@ -1699,4 +1770,3 @@ Answer:  by useing setExprementalOpton() method  of chromeOptions class.
 26. Hhow can get file from your locale system ?
 Answer:
 	By using exists method of File() class   // File() java ki calss h 
-
