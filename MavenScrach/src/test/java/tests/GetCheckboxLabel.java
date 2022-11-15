@@ -40,7 +40,7 @@ String productsName = "ZARA COAT 3";
 			// Get Current checkBox Div   ////div[@id='discount-checkbox']/div[4]
 			WebElement checkBoxContainer = driver.findElement(By.xpath("//div[@id='discount-checkbox']/div["+i+"]"));
 			boolean isChecked = checkBoxContainer.findElement(By.cssSelector("input[type='checkbox']")).isSelected();
-			WebElement CurrentCheckBox = checkBoxContainer.findElement(By.cssSelector("input[type='checkbox']"));
+			
 			if(isChecked) {
 				System.out.println(i+ "=> This CheckBox IS Checked");
 				
@@ -48,9 +48,8 @@ String productsName = "ZARA COAT 3";
 				String CheckBoxLabel = checkBoxContainer.findElement(By.tagName("label")).getText();
 				System.out.println(i+ "=> CheckBox Is Checked And It's  Label is =>"+CheckBoxLabel);
 				
-				
 			}else {
-				System.out.println(i+ "=> This CheckBox IS Not Checked");
+				continue;
 			}
 			
 		}

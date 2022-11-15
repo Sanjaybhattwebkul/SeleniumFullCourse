@@ -23,5 +23,21 @@
 	<classpathentry kind="lib" path="C:/Users/DELL/Downloads/commons-io-2.11.0/commons-io-2.11.0-tests.jar"/>
 	<classpathentry kind="lib" path="C:/Users/DELL/Downloads/commons-io-2.11.0/commons-io-2.11.0-test-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/DELL/Downloads/mysql-connector-java-8.0.30.jar"/>
+	<classpathentry kind="src" path="target/generated-sources/annotations">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

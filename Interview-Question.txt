@@ -1966,3 +1966,12 @@ QUESTION:
 
 ANSWER:
 	LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/Core-java/src/MatrixInterview.java
+
+QUESTION:
+	Differencr between PUBLIC, PROCTED ,PRIVATE AND DEFAUTL   AccessModifure IN JAVA ?
+
+ANSWER:
+	 Public -> Can accesss any package 
+	 Protected -> Can access only child class  by extends the parent class [ agr class A m koi variable Protected h to use class B m access  krne k liye phle Class A ko extends krna padekga]
+	 Default -> Can access only within The package  [package k ander khi bhi access kr skte h ]
+	 Private -> Only access in the class 
