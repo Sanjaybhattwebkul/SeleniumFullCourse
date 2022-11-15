@@ -1,36 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="0" total="6" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-05T03:07:54 PDT" name="Suite" finished-at="2022-11-05T03:08:47 PDT" duration-ms="53228">
+  <suite started-at="2022-11-15T08:46:59 PST" name="Default suite" finished-at="2022-11-15T08:47:17 PST" duration-ms="18226">
     <groups>
-      <group name="ErrorHandling">
-        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" name="LoginErrorValidation" class="tests.ErrorValidationsTest"/>
-      </group> <!-- ErrorHandling -->
-      <group name="customerCheckout">
-        <method signature="PlaceOrder.submitOrder(java.util.HashMap)[pri:0, instance:tests.PlaceOrder@42039326]" name="submitOrder" class="tests.PlaceOrder"/>
-      </group> <!-- customerCheckout -->
     </groups>
-    <test started-at="2022-11-05T03:07:54 PDT" name="ErrorValidation" finished-at="2022-11-05T03:08:40 PDT" duration-ms="45635">
-      <class name="tests.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:07:54 PDT" name="launchApplication" finished-at="2022-11-05T03:08:12 PDT" duration-ms="17925" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:12 PDT" name="LoginErrorValidation" finished-at="2022-11-05T03:08:16 PDT" duration-ms="3802" status="SKIP">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2022-11-15T08:46:59 PST" name="Default test" finished-at="2022-11-15T08:47:17 PST" duration-ms="18226">
+      <class name="tests.GetCheckboxLabel">
+        <test-method signature="getLabel()[pri:0, instance:tests.GetCheckboxLabel@69e153c5]" started-at="2022-11-15T08:46:59 PST" name="getLabel" finished-at="2022-11-15T08:47:17 PST" duration-ms="17689" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email  password.]]]>
+              <![CDATA[Cannot locate an element using [unknown locator]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-VM14F0U', ip: '192.168.1.119', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email  password.]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:23)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using [unknown locator]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-VM14F0U', ip: '192.168.1.119', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.By.findElement(By.java:124)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:80)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at tests.GetCheckboxLabel.getLabel(GetCheckboxLabel.java:47)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,139 +44,25 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:806)
 at org.testng.TestRunner.run(TestRunner.java:601)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:16 PDT" name="closeBrowser" finished-at="2022-11-05T03:08:18 PDT" duration-ms="1979" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:18 PDT" name="launchApplication" finished-at="2022-11-05T03:08:25 PDT" duration-ms="6885" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:25 PDT" name="LoginErrorValidation" finished-at="2022-11-05T03:08:27 PDT" duration-ms="2367" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email  password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email  password.]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:29 PDT" name="closeBrowser" finished-at="2022-11-05T03:08:29 PDT" duration-ms="509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:30 PDT" name="launchApplication" finished-at="2022-11-05T03:08:35 PDT" duration-ms="5655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:35 PDT" name="ProductErrorValidation" finished-at="2022-11-05T03:08:39 PDT" duration-ms="3874" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.ErrorValidationsTest@32f232a5]" started-at="2022-11-05T03:08:39 PDT" name="closeBrowser" finished-at="2022-11-05T03:08:40 PDT" duration-ms="572" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- tests.ErrorValidationsTest -->
-    </test> <!-- ErrorValidation -->
-    <test started-at="2022-11-05T03:07:54 PDT" name="PlaceOrder" finished-at="2022-11-05T03:08:47 PDT" duration-ms="53228">
-      <class name="tests.PlaceOrder">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:07:55 PDT" name="launchApplication" finished-at="2022-11-05T03:08:12 PDT" duration-ms="16885" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:12 PDT" name="submitOrder" data-provider="getTestData" finished-at="2022-11-05T03:08:24 PDT" duration-ms="12119" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Tom@1234, email=tom@example.com, productName=ZARA COAT 3}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:24 PDT" name="closeBrowser" finished-at="2022-11-05T03:08:25 PDT" duration-ms="320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:25 PDT" name="launchApplication" finished-at="2022-11-05T03:08:31 PDT" duration-ms="6564" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:31 PDT" name="submitOrder" data-provider="getTestData" finished-at="2022-11-05T03:08:38 PDT" duration-ms="7074" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Admin@123, email=sanjay@qa.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:38 PDT" name="closeBrowser" finished-at="2022-11-05T03:08:39 PDT" duration-ms="423" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:39 PDT" name="launchApplication" finished-at="2022-11-05T03:08:45 PDT" duration-ms="6397" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:45 PDT" name="OrderHistoryTest" finished-at="2022-11-05T03:08:47 PDT" depends-on-methods="tests.PlaceOrder.submitOrder" duration-ms="1546" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.PlaceOrder@42039326]" started-at="2022-11-05T03:08:47 PDT" name="closeBrowser" finished-at="2022-11-05T03:08:47 PDT" duration-ms="495" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- tests.PlaceOrder -->
-    </test> <!-- PlaceOrder -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- getLabel -->
+      </class> <!-- tests.GetCheckboxLabel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleium.MavenScrach.PlaceOrder">
+      <class name="tests.GetCheckboxLabel">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="launchApplication"/>
-          <include name="submitOrder" invocation-numbers="0"/>
-          <include name="OrderHistoryTest"/>
+          <include name="getLabel"/>
         </methods>
-      </class> <!-- seleium.MavenScrach.PlaceOrder -->
+      </class> <!-- tests.GetCheckboxLabel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
