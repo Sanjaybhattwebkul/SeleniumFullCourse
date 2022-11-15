@@ -18,19 +18,19 @@ public class JavaStreams {
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
 
-		// click on column
+		// click on column   // <th> m click kr k short kiya table ko phle
 		driver.findElement(By.xpath("//tr/th[1]")).click();
 
-		// capture all webelements into list
+		// capture all webelements into list  [sare ,<td> ko get kr liya  // jo sort krne k bad aaye h
 		List<WebElement> elementsList = driver.findElements(By.xpath("//tr/td[1]"));
 
-		// capture text of all webelements into new(original) list
+		// capture text of all webelements into new(original) list  // ab get kiye gye <td> ka text get kr liya .
 		List<String> originalList = elementsList.stream().map(s -> s.getText()).collect(Collectors.toList());
 
-		// sort on the original list of step 3 -> sorted list
+		// sort on the original list of step 3 -> sorted list   // ab us text ko  mne sort() function ka use kr short kr liya
 		List<String> sortedList = originalList.stream().sorted().collect(Collectors.toList());
 
-		// compare original list vs sorted list
+		// compare original list vs sorted list  // check kiya ki <th>se short krne k bad or short() function se short krne k bad data same h ya ni 
 		Assert.assertTrue(originalList.equals(sortedList));
 
 		List<Object> price;

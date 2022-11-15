@@ -1799,6 +1799,14 @@ ANSWER:
 	If we mark any function as final then we are not able to overload and override that method.
 
 
+QUESTION:
+	What are collections in java ?
+
+ANSWER:
+	collection in java are a framework that framework contains different classes and interfaces.
+	1. HashMap  -> map interface ko implement krta h ,   2. ArrayList -> List Interface ko implement krta h   3. Set
+
+
 ============================= INTERVIEW QUESTIONS =================
 
 1.  Write syntax of implicit wait and explicit wait ? 
@@ -2021,3 +2029,4 @@ Question:
 Answer:
 	Only in that case when will stop the jvm execution forcefully.
 	[ Mtlb jb tk hm script k execution ko manually stop nahi krte h , eclips se ]
+
