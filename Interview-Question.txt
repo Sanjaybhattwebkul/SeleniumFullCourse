@@ -1975,3 +1975,49 @@ ANSWER:
 	 Protected -> Can access only child class  by extends the parent class [ agr class A m koi variable Protected h to use class B m access  krne k liye phle Class A ko extends krna padekga]
 	 Default -> Can access only within The package  [package k ander khi bhi access kr skte h ]
 	 Private -> Only access in the class 
+
+	QUESTION:
+
+		What is the means of error Array index out of bound ?
+
+	ANSWER:
+		Array m se hm jis index ko access kr rhe h vo index array m h hi nahi .
+		[ Mtlb array m total 5 index h or hm 6th index ko aaccess kr re h ]
+
+QUESTION :
+	Tell me some type of exception in java ?
+
+ANSWER:
+	1. EXCEPTION E  -> Default exception
+	2. IndexOutOfBoundsException  -> If array index in invalid
+	3. ArithematicException  -> Mathematical calcution m jb issu h tb aat h 
+
+	QUESTION:
+		How many cath block can we write for a try block  for exception handling in java ?
+
+	ANSWER:
+		We can write multiple catch block for a try bloc in a function 
+
+QUESTION:
+	Why we use finally in java ?
+
+ANSWER:
+	finally tb use krte h jb hm koi action perform krana hi ho, chahe test fail ho ya pass.
+	Jese hm script run hone k bad brodser close rate h , chate test case fail ho ya pass .
+	finally  keyword only try pr catch k sath kaam krta h .
+	EXAMPLE:
+	try{
+		//run script
+	} catch{
+		// error if failed
+	}
+	finally{ 
+		// driver.close();
+	 }
+
+Question:
+	When Will the finally keyword will not work?
+
+Answer:
+	Only in that case when will stop the jvm execution forcefully.
+	[ Mtlb jb tk hm script k execution ko manually stop nahi krte h , eclips se ]
