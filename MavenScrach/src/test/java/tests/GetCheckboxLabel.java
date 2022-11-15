@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-import org.openqa.selenium.support.locators.RelativeLocator.*;
+//import org.openqa.selenium.support.locators.RelativeLocator.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
@@ -44,8 +44,9 @@ String productsName = "ZARA COAT 3";
 			if(isChecked) {
 				System.out.println(i+ "=> This CheckBox IS Checked");
 				
-				String CheckBoxLabel = driver.findElement(with(By.tagName("label")).below(CurrentCheckBox)).getText();
-				System.out.println(i+ "=> CheckBox Is Checked And It's  Label is =>" + CheckBoxLabel);
+				//String CheckBoxLabel = checkBoxContainer.findElement(with(By.tagName("label")).below(CurrentCheckBox)).getText();
+				String CheckBoxLabel = checkBoxContainer.findElement(By.tagName("label")).getText();
+				System.out.println(i+ "=> CheckBox Is Checked And It's  Label is =>"+CheckBoxLabel);
 				
 				
 			}else {
