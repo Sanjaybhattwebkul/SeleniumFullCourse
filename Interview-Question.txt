@@ -1798,7 +1798,6 @@ ANSWER:
 	If we are mark any variable final then we are not able to change that variables values.
 	If we mark any function as final then we are not able to overload and override that method.
 
-
 QUESTION:
 	What are collections in java ?
 
