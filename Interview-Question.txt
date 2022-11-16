@@ -2029,3 +2029,85 @@ Answer:
 	Only in that case when will stop the jvm execution forcefully.
 	[ Mtlb jb tk hm script k execution ko manually stop nahi krte h , eclips se ]
 
+QUESTION:
+	 What is PageFactory ?
+
+ANSWER:
+	PageFactory 1 class() hoti h jo Page Object Model design parten ko ko support kri h .
+	iska use kr k  hm webelemrnts ko get kr skte h . Lkie 
+	@FindBy(css='input[name=san']');
+	WebElement inputbox;     // inputbox.sendkey("userName");
+
+Question:
+	Whta will the flow of execute testcases if all the annotation are applyes on the testNG testscript ?
+	// annotation mtlb [ beforeSuite,beforeclass,before method  ect..]
+
+ANSWER:
+	TestNg m 3 type ki annotation hoti h .
+	1. PreCondition annotation // @BeforeMethod ect..
+	2. Testannotayion  @TEST ...  ect
+	3. Post Condition annotation// @AfterTest .. ect..
+	
+	Phle pre annotation conditions run hongi.
+		1. Before suite
+		2. Before class
+		3. Before test
+		4. Before method
+	Fir post annotation conditions run hongi.
+		1.  after method
+		2.  after test
+		3.  after class
+		4.  after suite
+
+QUESTION:
+	What is user story is Ajaild methology ?
+
+ANSWER:
+	Jb koi project banta h to dev team DA team and QAteam 1 schema ready krte h ki kitne din m kya kaam krna h H  is schema ko userStory khte h .
+
+QUESTION:
+	Agr hmre pass 5 user story h or hm 5th user story m kaam kr rhe h to testscript hm kis story tk likh dengr.
+
+QUESTION:
+	4th tk,  kyu ki jis userStory m hm working hote h us m manual testing hoti h or us se 1 phle step tk automation script likhte h.
+
+QUESTION:
+	How can we use fina {  }	 block in java ?
+
+ANSWER:
+	try{ } k bina finally{ }  ko call nahi kr skte h .
+
+QUESTION:
+	What is pre request in postmen ?
+
+ANSWER:
+	// TODO
+
+QUESTION:
+	https code 301 AND  504 , 503 ?
+
+ANSWER:
+	// TODO
+
+QUESTIO:
+	Write a java rogram to get only alphabet from a given string if there are number and string are in the string ?
+
+ANSWER:
+	//
+
+QUESTION:
+	hoe can we take a screenshot of failed testcase in a framework ?
+
+ANSWER:
+	We can implement the ITest Listener interfacce in a java java clas and  inside of ontestFail() method of ITestLISTENER interface we can write the code of task screeshot.
+
+QUESTION:
+	which methology you are using in project ?
+
+ANSWER:
+	Ajild  methology.
+
+QUESTION:
+
+
+
