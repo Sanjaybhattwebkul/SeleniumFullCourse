@@ -1806,6 +1806,197 @@ ANSWER:
 	1. HashMap  -> map interface ko implement krta h ,   2. ArrayList -> List Interface ko implement krta h   3. Set
 
 
+QUESTION:
+	Difference between ARRAY AND ArrayList ?
+
+ANSWER:
+	ArrayList ka size dynamic hota h  or array ka size static hota h . mtlb array bnate time hme array ka size define krna padhta hai. and arraylist bnate time hme arraylist ka size nahi define krna padhta.
+	example:
+		ArrayList<Strin> ar = new ArrayList<String>();
+		int[] a = new int[5];	
+
+QUESTIONS:
+	HOW CAN REMOVE/ADD ANY EEMENT IN 1 INDEX OF ARRAYLIST ?
+
+ANSWER:
+	array.add(1,"value");   // for remove -> array.remote(1); // check if value -> array.contains("value");
+
+QUESTIO:
+	WHAT IS ITRATOR INJAVA ? HOW ITRATOR HELP TO TRAVER TO SET INTERFACE ?
+
+ANSWE:
+	itrator 1 1 java ka interface h jiska use kr k hm arraylist ki each every index m travera kr skte h .
+	Iterator<Sring> i = arraylist.itrator; // here we are creating object of itrator interface.
+	i.next(); // iska use kr k hm array ki 0 index ko rint kr skte h .
+	i.next(); // 1 index of arralist.
+	i.next(); // 2 index of arralist    [ i.next() kr hm every index ko print kr skte h]
+	AGR Hme complete array ko print krna h to hm ise loop m dal denge.
+	while(i.hasNext()){
+		System.print(i.next());
+	}
+
+
+QUESTIO:
+	NAME OF ANY 2 INTERFACE OF JAVA?
+
+ANSWER:
+	1. set , itrator.
+=> list interface duplcate values ko accept krta h or set interface Duplicate value ko accept krta h . 
+	=> set m order sequance hota h or List m order sequance nahi hota. [ order of elements fix nahi hota]
+
+QUESTION:
+	What is HashMap ?
+
+ANSWER:
+	HashMap m data key and values k pare m hota h .
+	Agr hme HashMap k sath  itrator user krna h to iske liye .Map.Entery obj = (Map.Entry)hamp.next()  // class ka use krna hota h .
+	Itrator hsmp = sn.itrator;  // sn HashMap ka name h 
+	.Map.Entery obj = (Map.Entry)hamp.next()
+	obj.getKey()  // is se krry mil jati h 
+
+QUESTION;
+	Difference between HashMap and HashTable ?
+
+ANSWER:
+	1. HashMap  is non synchronized  and HashTable is synchronized 
+	// mtlb 1 HashMap ko hm 1 bar m 1 multiple programs se access kr skte h . or HashTable ko 1 bar 1 hi program se access kr skte h .
+	
+	2. HashMap m hm null key ot valuse bhi dal skte h oe HashTable m Null key/valuse nahi dal skte h . 
+
+	3. HashMap m hm Itrator a use kr skte h or HashTable m hm itrator kause kr skte h is m vector ka use krte h jo ki enumerator interface ko implement krta h
+
+
+	---------  OOPS Interview questions  --------
+
+1. What are the core concepts of OOPS?
+	ANSWER:
+		OOPS core concepts are;
+		Abstraction
+		Encapsulation
+		Polymorphism
+		Inheritance
+		Composition
+		Association
+		Aggregation
+
+2. What is Abstraction?
+	ANSWER:
+		Abstraction is an OOPS concept to construct the structure of the real world objects. During this construction only the general states and behaviors are taken and more specific states and behaviors are left aside for the implementers.
+
+3.  What is Encapsulation?
+	ANSWER:
+		Encapsulation is an OOPS concept to create and define the permissions and restrictions of an object and its member variables and methods. A very simple example to explain the concept is to make the member variables of a class private and providing public getter and setter methods. Java provides four types of access level modifiers: public, protected, no modifier and private.
+
+4. What is the difference between Abstraction and Encapsulation?
+	ANSWER:
+		“Program to interfaces, not implementations” is the principle for Abstraction and “Encapsulate what varies” is the OO principle for Encapsulation.
+		Abstraction provides a general structure of a class and leaves the details for the implementers. Encapsulation is to create and define the permissions and restrictions of an object and its member variables and methods.
+		Abstraction is implemented in Java using interface and abstract class while Encapsulation is implemented using four types of access level modifiers: public, protected, no modifier and private.
+	
+5. What is Polymorphism?
+	ANSWER:
+		Polymorphism is the occurrence of something in various forms. Java supports various forms of polymorphism like polymorphic reference variables, polymorphic method, polymorphic return types and polymorphic argument types.
+
+6. What is Inheritance?
+	ANSWER:
+		A subclass can inherit the states and behaviors of it’s super class is known as inheritance.
+
+7. What is multiple inheritance?
+	ANSWER:
+		A child class inheriting states and behaviors from multiple parent classes is known as multiple inheritance.
+
+8. What is the diamond problem in inheritance?
+	ANSWER:
+		In case of multiple inheritance, suppose class A has two subclasses B and C, and a class D has two super classes B and C.If a method present in A is overridden by both B and C but not by D then from which class D will inherit that method B or C? This problem is known as diamond problem.
+
+9. Why Java does not support multiple inheritance?
+	ANSWER:
+	Java was designed to be a simple language and multiple inheritance introduces complexities like diamond problem. Inheriting states or behaviors from two different type of classes is a case which in reality very rare and it can be achieved easily through an object association.
+
+10. What is Static Binding and Dynamic Binding?
+	
+	ANSWER:
+		Static or early binding is resolved at compile time. Method overloading is an example of static binding.
+		Dynamic or late or virtual binding is resolved at run time. Method overriding is an example of dynamic binding.
+
+11. What is a Class?
+	ANSWER:
+		A class is the specification or template of an object.
+
+12 What is an Object?
+	
+	ANSWER:
+		Object is instance of class.
+
+	--------------  Java interview questions  -----------
+
+1. What is Runtime Polymorphism?
+
+	ANSWER:
+		Runtime polymorphism or dynamic method dispatch is a process in which a call to an overridden method is resolved at runtime rather than at compile-time.
+		In this process, an overridden method is called through the reference variable of a super class. The 
+
+ 2. What is the difference between abstraction and encapsulation?
+	
+	ASNWER:
+		Abstraction hides the implementation details whereas encapsulation wraps code and data into a single unit.
+
+3. What is abstract class?
+	
+	ANSWER:
+		A class that is declared as abstract is known as abstract class. It needs to be extended and its method implemented. It cannot be instantiated.
+
+ 4. Can there be any abstract method without abstract class?
+		ANSWER:
+		No, if there is any abstract method in a class, that class must be abstract.
+
+5. Can you use abstract and final both with a method?
+	
+	ANSWER:
+		No, because abstract method needs to be overridden whereas you can't override final method.
+
+6. Is it possible to instantiate the abstract class?
+	
+	ANSWER:
+		No, abstract class can never be instantiated.
+7. What is interface?
+	
+	ANSWER:
+		Interface is a blueprint of a class that have static constants and abstract methods.It can be used to achieve fully abstraction and multiple inheritance.
+
+ 8. Can you declare an interface method static?
+
+	ANSWER:
+		No, because methods of an interface is abstract by default, and static and abstract keywords can't be used together.
+
+ 9. Can an Interface be final?
+	ANSWER:
+		No, because its implementation is provided by another class.
+
+ 10 What is marker interface?
+
+	ANSWER:
+		An interface that have no data member and method is known as a marker interface.For example Serializable, Cloneable etc.
+
+ 11. What is difference between abstract class and interface?
+	
+	ANSWER:
+		Abstract class	Interface
+		1)An abstract class can have method body (non-abstract methods).	Interface have only abstract methods.
+		2)An abstract class can have instance variables.	An interface cannot have instance variables.
+		3)An abstract class can have constructor.	Interface cannot have constructor.
+		4)An abstract class can have static methods.	Interface cannot have static methods.
+		5)You can extends one abstract class.	You can implement multiple interfaces.
+	
+12.Can we define private and protected modifiers for variables in interfaces?
+		ANSWER:
+	No, they are implicitly public.
+
+ 13. When can an object reference be cast to an interface reference?
+
+	ANSWER:
+		An object reference can be cast to an interface reference when the object implements the referenced interface.
+		
 ============================= INTERVIEW QUESTIONS =================
 
 1.  Write syntax of implicit wait and explicit wait ? 
@@ -2093,7 +2284,7 @@ QUESTIO:
 	Write a java rogram to get only alphabet from a given string if there are number and string are in the string ?
 
 ANSWER:
-	//
+		//TODO
 
 QUESTION:
 	hoe can we take a screenshot of failed testcase in a framework ?
