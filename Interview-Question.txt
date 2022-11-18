@@ -1997,7 +1997,250 @@ ANSWER:
 	ANSWER:
 		An object reference can be cast to an interface reference when the object implements the referenced interface.
 		
+=> WHAT IS BDD ?
+	-> BDD  testcases likhnr ka 1 parten hotah . jisme hm 1 feature file bnate h jis m 1 formatted way m test case likhe jate h .
+	-. OR agr is feature file ko hm apne selenium test k sath integrate krte h to is file m failed test ka color red or pass ka color gree ho jata h .
+
+
+	---------------- SELENIUM MULTIPLE CHOICE QUESTION: ------------------
+
+Question 1:
+	Which of the following command is used to get all the links present on the page?
+
+ANSWER:
+	List allLinks = driver.findElements(By.xpath("//a"));
+
+Question 2:
+	Which of the following method in selenium is used to terminate the browser or window/tab which is currently having the focus?
+
+Answer:
+	close();
+
+Question 3:
+	When does WebDriver throw ElementNotVisibleException exception?
+
+ANSWER:
+	WHEN driver not find any element.
+
+Question 4:
+	Consider that you want to double click on element or use any key from keyboard using webdriver,Which class will you to use to perform the above operation in selenium?
+
+ANSWER:
+	Actions  class.
+
+Question 5:
+	Which one is not correct type of locator?
+
+ANSWER:
+	DOM.
+
+Question 6:
+	What will be returned for an Element not found by findElements method in selenium?
+
+ANSWER:
+	Return Empty List.
+
+Question 7:
+	How to refresh page without using context click?
+
+ANSWER;
+	driver.navigate().refresh();  ya 
+
+Question 8:
+	Where in a constructor, can you place a call to constructor defined in the super class?
+
+ANSWER:
+	The first statement in the cinstructor  // chid class k constructor ki 1 line m parent class k constructor ko call kr skte h.
+
+QUESTION:
+	Which of the following will close current browser window?
+
+ANSWER:
+	driver.close();
+
+Question 10:
+
+	Which is the most efficient way of identifying an element in selenium?
+
+ANSWER:
+	ID.
+
+Question 11:
+	Implicit wait time is applied to all elements in your script and Explicit wait time is applied only for particular specified element.
+
+ANSWER:
+	TRUE.
+
+Question 12:
+	The following codes both print: Welcome to QAClick
+
+<html>
+	<head>
+		<title>Welcome to QAClick</title>
+	</head>
+	<body>
+	</body>
+</html>
+System.out.println(driver.getTitle());
+
+System.out.println(driver.findElement(By.tagName("title")).getText())
+
+ANSWER:
+	TRUE.
+
+Question 13:
+	Which WebDriver method is used to change focus to an alert, a frame or a browser window?
+
+ANSWER:
+	switchTO();
+
+Question 14:
+Consider the following HTML code snippet
+
+<table>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>4</td>
+	</tr>
+</table>
+
+driver.findElement(By.xpath("//table/tr[1]/td")).getText();
+
+ANSWER:
+	Abouve code is return 1.
+
+Question 15:
+	In webdriver, selectAllOptions() is a valid command.
+
+ANSWER:
+	FLASE.
+
+Question 16:
+Consider the following html snippet
+
+<ul>
+
+<li>Firefox</li>
+
+<li>Google Chrome</li>
+
+<li>Internet Explorer</li>
+
+<li>Opera</li>
+
+<li>Safari</li>
+
+</ul>
+
+Which CSS selector is a valid statement to select Opera?
+
+ANSWER:
+	ul > li:nth-oftype(4);
+
+Question 17:
+	Consider the following code snippet
+
+	WebDriverWait wait = new WebDriverWait(driver, 30); wait.until(ExpectedConditions.presenceOfElementLocated(by));
+
+	This is an example of an implicit wait.
+
+ANSWER:
+	FALSE.
+
+Question 18:
+	In webdriver, which command takes you forward by one page on the browser’s history?
+
+ANSWER:
+	navigate().forword().
+
+Question 19:
+What is the output of the following statement?
+
+<div>
+
+<span id="name">Name 1</span>
+
+<span class="name">Name 2</span>
+
+</div>
+
+driver.findElement(By.cssSelector("#name"));
+
+ANSWER:
+	Output is Name 1
+
+Question 20:
+
+	In webdriver, which method closes the open browser?
+
+ANSWER:
+	close();
+
+Question 21:
+	In webdriver, deselectAll() is a valid command
+
+ANSWER:
+	TRUE.
+
+Question 26:
+	In webdriver, what is the method that counts the number of elements?
+
+ANSWER:
+	driver.findElements(By.ID("id")).size();
+
+Question 27:
+	In webdriver, which of the following is a valid select statement that selects a value from a drop down element?
+
+ANSWER:
+	selectBy.Index()
+	selectByValue()
+	slectByVisibleText();
+
+Question 28:
+	Selenium IDE stands for
+
+ANSWER:
+	Selenium Integrated development Environment.
+
+Question 29:
+	The Selenium can
+
+ANSWER:
+	Only test Web Application.
+
+Question 30:
+	Select the Get command which fetches the inner text of the element that you specify in Web driver Selenium.
+
+ANSWER:
+	getText();
+
+Question 31:
+	Which method is used when you want to verify whether a certain check box, radio button, or option in a drop-down box is selected in Web driver Selenium
+
+ANSWER:
+	isSelected();
+
+Question 32:
+	Which Component is used to run multiple tests simultaneously in different browsers and platforms?
+
+ANSWER:
+	Selenium Grid.
+
+Question 33:
+	On which category below xpath belongs to?
+
+	/html/body/input
+
+ANSWER:
+	Relative path.  // Relative path m hm each tab se ho k jate h like htmk/head/title/body/div
+
+	//https://prnt.sc/96SuI0KEtJfm
 ============================= INTERVIEW QUESTIONS =================
+
 
 1.  Write syntax of implicit wait and explicit wait ? 
 2.  Write syntax of Take screenshot ?
