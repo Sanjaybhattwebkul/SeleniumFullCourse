@@ -1,0 +1,87 @@
+
+	1.  Write syntax of implicit wait and explicit wait ? 
+	2.  Write syntax of Take screenshot ?
+	3.  What is 202 http status code ?
+	4.  Difference between http and https ?
+	5.  Difference between data abstraction [Abstract class]  and encapsulation ?
+	6.  Write a progran to print second Height occoring word in a given string ?
+	7.  How can import data from excel file in selenium ? [Apache POI API ka use kr k]
+	8.  How can you capture the invalid user  and password  message in login test case.
+	9.  How can you create negative testcases for login functionality
+	10. What are depends on testcases give any example. [ @BeforeTest annotation  use krte h iske liye ]
+	11. How can you validate the fadeIn FdeOut messaage using selenium ?
+	12. How can you identify any frame. [ Inspact kr k check kr lenge agr <Iframe> tag hoga to mtlb frame h ya rightClick kr dekh lenge us m frame ka option aa jata h agr frame hoga to.]
+	13. How can you Automate Multi Factor Authentication [MFA] ?  [aerogear java OTP dependancy ka use kr k.]
+	14. How can you handle any submit button if the button is not showing in don.?  [phle page ko scroll krenge jha pr button h vha tk fir click krenge ]
+	15. New feature of selenim4 ?
+    16. What is Upcasting?
+    17. Difference between Interface and class ?
+    18. How can we Take screenshot? and how can take screenshot in fraamework // framework m ITestLISTENER ka use krte h ontestfail method m code likh lete h .
+    19. Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is tthis ]
+    20.Difference between @factory annotation and DataProvider ?	
+    21. Can we run testng.xml file by command promt ?
+    22. Hard assersion and soft assersion difference ?  
+    23. Test case for Cofee machine ?
+    24.  Teall any 1 feature request for flipkart or amazom site ?
+    25.  What are DesiredCapabilities in selenium grid ?
+    26. HOW CAN WEW RUN ONLY FAILED TEST CASE USING TESTNG ?
+	27. Where you use method overloading in selenium ?
+    28. What is preority is testng ?
+    29. How can you change the chrome default download path ?  [ crome m files /data download folders k ander  downpoad hota h use kese change krenge]
+    30. Hhow can get file from your locale system ?
+	31. Difference between Abstract class aand interface ?
+	32. Can class A extends class B C  ?
+    33.	WHAT IS THE OUTPUT OF THE GIVEN CODE ?
+	    public classA
+        {
+		    int i =10;
+	    }
+    	public class B extends A 
+        {
+	    	int i=20;
+	    }
+	    pubic class C
+        {
+    		public void main(Strin[] args) {
+			    A a = new B()
+			    System.out.println(a.i);
+		    }
+	    }
+
+	34. WHAT ISFUNCTION OVERLOADING ?
+	35. WHAT IS FUNCTION OVERRIDING?
+	36. WHAT IS ARRAY ?
+	37. WHAT IS MULTI Dimension ARRAY ?
+	38. Find minimun number from a 3*3 matrix  ?
+	39. Differencr between PUBLIC, PROCTED ,PRIVATE AND DEFAUTL   AccessModifure IN JAVA ?
+	40. What is the means of error Array index out of bound ?
+	41. Tell me some type of exception in java ?
+	42. How many cath block can we write for a try block  for exception handling in java ?
+    43. Why we use finally in java ?
+	44. When Will the finally keyword will not work?
+    45. What is PageFactory ?
+	46. Whta will the flow of execute testcases if all the annotation are applyes on the testNG testscript ? // annotation mtlb [ beforeSuite,beforeclass,before method  ect..]
+	47. What is user story is Ajaild methology ?
+	48. Agr hmre pass 5 user story h or hm 5th user story m kaam kr rhe h to testscript hm kis story tk likh dengr.
+    49. How can we use fina {  }	 block in java ?
+	50. What is pre request in postmen ?
+	51. https code 301 AND  504 , 503 ?
+	52. Write a java rogram to get only alphabet from a given string if there are number and string are in the string ?
+	53. hoe can we take a screenshot of failed testcase in a framework ?
+	54. which methology you are using in project ?
+    56. How can we validate title of the webpage with the help of assertion.
+    57.  what is POM?
+    58. What is abstract class?
+    59. Difference between interface and Abstract class?
+    60. How can we take screenshot explain with Syntax?
+    61. How can we scroll webpage?
+    62. how can we validate broken link?
+    63. How can we handle window based pop up?
+    64. Can we reuse code in POM?
+    65. how can we fill username and password during login over the webpage?
+    66. Why we use switchTo() method??
+    67. In how many ways we can enter value in text box?
+    68. How you will use CICD tool i.e jenkins
+    69. Program to Count any character in string?
+    70. Mere conflict in git?
+    71. Import Excel data in string firm And convert in int. OR how to convert int data of Excel when we are importing by poi api?

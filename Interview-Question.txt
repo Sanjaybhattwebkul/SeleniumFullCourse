@@ -1493,15 +1493,15 @@ ANSWER:
 SELENIUM GRID ARCHITECTURE: https://prnt.sc/B1ASzdfDjUwX
 -> Selenium Grid ko integrate krne k liye phle hm selenium f=grid k jar files download krni hot h 
 2. Fir Grid name se folder bna k us k ander browsers ki executable file  or downloaded jar file ko rakhna hota h.
-3. Fir grid folder k ander ka kr Node ko start krne k liye 1 command run krni hot i . // java -jar downloadJarFile.jar hub
+3. Fir grid folder k ander ka kr Node ko start krne k liye 1 command run krni hot i . // java -jar downloadJarFile.jar hub  [ Is se hmra hub start ho jata h.  : localhost:4444 se check kr skte h]
   * Jis system m testcases hote h hm use Hub bna lete h mtlb base system jha se command rub hongi.
   * Or baki dusre systems ko hm node bolte h , hm node or hub donu 1 hi system m bhi bna skte h .
 For start selenium grid:
-1. java -jar downloadJarFile.jar hub  //  // For start hib  
-2. java -jar downloadedJar.ja  node --detect-driver true  //  start node
+1. java -jar downloadJarFile.jar hub    // For start hib   [ Is se hmra hub start ho jata h.  : localhost:4444 se check kr skte h]
+2. java -jar downloadedJar.ja  node --detect-drivers true  //  start node  [hub system m bhi kr skte h hm node start, ye comand hub vale m bhi run kr skte h]
 3. Jis system  m hme tst case run krne h ya jise node bnana h us m bhi jar grid folder k ander files and executable file download krni hongi.
 3. Fir node system k grid filder m ja kr Ye comand run krni hogi .
-	java -jar downloadedJarFile.jar node --detect--driver true --publish --event tcp://HubSystemKaIP --subscripbe-event tcp//GubSysyemKa DUsra IP
+	java -jar downloadedJarFile.jar node --detect--driver true --publish --events tcp://HubSystemKaIP --subscripbe-events tcp//GubSysyemKa DUsra IP
 	// Is command se hm Node ko hub m regisred krte h 
 	// Hub system k IP jb hm hub m command run krenge to us time phla ip or dusra ip mil jata h 
 
