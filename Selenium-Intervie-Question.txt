@@ -39,6 +39,7 @@ How can you capture the invalid user  and password  message in login test case.
     -> Answer:
         Iske liye hm Flash messa ka screenshot le skte h .
         Ya ItestListener interface ko Listener class m implement kr k . ontestFail method m screenshot lene ka code likh skte h.
+
 How can you create negative testcases for login functionality
 
     // TODO.
