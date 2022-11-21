@@ -1,4 +1,4 @@
-package Selenium.exercise;
+/*package Selenium.exercise;
 
 import java.net.MalformedURLException;
 import java.util.HashMap;
@@ -55,3 +55,4 @@ public class SauceLab {
 	sauceOptions.put("accessKey", System.getenv("SAUCE_ACCESS_KEY"));
 }
 }
+*/
