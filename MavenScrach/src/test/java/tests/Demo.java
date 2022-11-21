@@ -24,6 +24,7 @@ public class Demo {
 		driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("Phone",Keys.ENTER);
 		List<WebElement> allProducts = driver.findElements(By.cssSelector("span[class='a-size-medium a-color-base a-text-normal']"));
 		allProducts.forEach(name->System.out.println(name.getText()));
+		System.out.println("The 16th Products IS = "+ allProducts.get(15).getText());
 		
 	}
 

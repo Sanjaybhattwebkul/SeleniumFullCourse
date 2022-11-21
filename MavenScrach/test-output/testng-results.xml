@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-21T10:07:00 PST" name="Default suite" finished-at="2022-11-21T10:07:21 PST" duration-ms="20220">
+  <suite started-at="2022-11-21T10:16:27 PST" name="Default suite" finished-at="2022-11-21T10:16:51 PST" duration-ms="24313">
     <groups>
     </groups>
-    <test started-at="2022-11-21T10:07:00 PST" name="Default test" finished-at="2022-11-21T10:07:21 PST" duration-ms="20220">
+    <test started-at="2022-11-21T10:16:27 PST" name="Default test" finished-at="2022-11-21T10:16:51 PST" duration-ms="24313">
       <class name="tests.Demo">
-        <test-method signature="GetAllproducts()[pri:0, instance:tests.Demo@2eae8e6e]" started-at="2022-11-21T10:07:00 PST" name="GetAllproducts" finished-at="2022-11-21T10:07:20 PST" duration-ms="19993" status="PASS">
+        <test-method signature="GetAllproducts()[pri:0, instance:tests.Demo@2eae8e6e]" started-at="2022-11-21T10:16:27 PST" name="GetAllproducts" finished-at="2022-11-21T10:16:51 PST" duration-ms="23875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetAllproducts -->
