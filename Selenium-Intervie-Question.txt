@@ -107,7 +107,6 @@ Tell me some type of exception in java ?
 How many cath block can we write for a try block  for exception handling in java ?
 Why we use finally in java ?
 When Will the finally keyword will not work?
-What is PageFactory ?
 Whta will the flow of execute testcases if all the annotation are applyes on the testNG testscript ? // annotation mtlb [ beforeSuite,beforeclass,before method  ect..]
 What is user story is Ajaild methology ?
 Agr hmre pass 5 user story h or hm 5th user story m kaam kr rhe h to testscript hm kis story tk likh dengr.
@@ -119,13 +118,38 @@ How can we take a screenshot of failed testcase in a framework ?
 Which methology you are using in project ?
 How can we validate title of the webpage with the help of assertion.
 What is POM?
+
+    ANSWER:
+    *> Page Object Model (POM) is a design pattern,that creates Object Repository for web UI elements
+    *> The advantage of the model is that it reduces code duplication and improves test maintenance
+
+How Can we reuse code in POM?
+    
+    ANSWER:
+    *> We can write reusable code in a baseTest class and can extends this class wherever needed.
+    *> Like we can create a OpenBrowser function in baseTest class and can reuse it.
+
+What is PageFactory ?
+     
+    ANSWER:
+    *> PageFactory is a class of Selenium WebDriver that provides the implementation of the Page Object Model design pattern.
+    *> Page Factory is a way to initialize the web elements, that you want to interact with within the page object
+    *> PageFactory WebElements ko initialize krne ka trika h, jin elements ko aap POM m use krna chahte h.
+    *> @FinfBy(class='.form') WebElement  button;  // yha p hm button element ko 1 WebElement m initializekr re h ab ise POM m use krenge.
+
+
 What is abstract class?
+   
+    ANSWER:
+    *> A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body).
+    *> Abstract class: is a restricted class that cannot be used to create objects 
+
+    
 Difference between interface and Abstract class?
 How can we take screenshot explain with Syntax?
 How can we scroll webpage?
 How can we validate broken link?
 How can we handle window based pop up?
-Can we reuse code in POM?
 How can we fill username and password during login over the webpage?
 Why we use switchTo() method??
 In how many ways we can enter value in text box?
