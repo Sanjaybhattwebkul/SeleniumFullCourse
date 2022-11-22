@@ -67,14 +67,60 @@ How can you validate the fadeIn FdeOut messaage using selenium ?
          Boolean Display = driver.findElement(By.xpath("path of the element where the flsh message is apparing")).isD
 
 
-How can you identify any frame.
- [ Inspact kr k check kr lenge agr <Iframe> tag hoga to mtlb frame h ya rightClick kr dekh lenge us m frame ka option aa jata h agr frame hoga to.]
-How can you Automate Multi Factor Authentication [MFA] ?  [aerogear java OTP dependancy ka use kr k.]
-How can you handle any submit button if the button is not showing in don.?  [phle page ko scroll krenge jha pr button h vha tk fir click krenge ]
+How can you identify any frame ?
+
+    ANSWER:
+        *> Right-click on the specific element, 
+        *> If you find an option like This Frame, view Frame source or Reload Frame,
+        *> It menas the page includes frames. ...
+
+        *> Similar to the first step, right-click on the page and click on View Page Source.
+
+How can you Automate Multi Factor Authentication [MFA] ? 
+    
+    ANSWER:
+        *> aerogear java OTP dependancy ka use kr k.
+        *> But we will also do the manual test for the Multi fector Authentication.
+
+
+How can you handle any submit button if the button is not showing in don.? 
+
+    ANSWER:
+        *> For this we can scroll the webPage and then click on the button
+        *> phle page ko scroll krenge jha pr button h vha tk fir click krenge.
+        *> JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("window.scrollBy(0,440)");
+
 New feature of selenim4 ?
+    
+    ANSWER:
+        *> Take screenshot of any element.
+	    *> Get height and width of any element
+	    *> Can open multiple application on a single browser at a time // chrome browser  m multiple tabs ya multiple windows open ho jati h
+	    *> Relative locators. 
+	    *> Chrome devtool integration  [CDP ->Chrome devtool potocol  //driver.getDevTool(); is function ka use krte h ]
+	
+
 What is Upcasting?
+
+    ANSWER:
+        *> Upcasting is the typecasting of a child object to a parent object
+        *> mtln jb hm parent class ko child class m extends krte h, or fir jab child class ka object bna re hote h to.
+        *> Child class k object ki typecasting kr dete h .
+        *> Parent p = new Child()  // Yha pr parent() class Child() class m extends h or hm Child() class ka object bna re h or Parent() class ki propery access kr re h , kyu ki hmne paren p = new childid(); likha h.
+        *>  Ye same consept hm WebDriver driver = new ChromeDeriver();  m bhi use krte h.
+
 Difference between Interface and class ?
-How can we Take screenshot? and how can take screenshot in fraamework // framework m ITestLISTENER ka use krte h ontestfail method m code likh lete h .
+
+    ANSWER:
+        *>  interface is a collection of abstract methods
+        *>  A class implements an interface, thereby inheriting the abstract methods of the interface // Class m abstract or non abstract donu type k function hote h .
+
+How can we Take screenshot? and how can take screenshot in fraamework ?
+    
+        ANSWER:
+             // framework m ITestLISTENER ka use krte h ontestfail method m code likh lete h .
+             
 Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is tthis ]
 Difference between @factory annotation and DataProvider ?	
 Can we run testng.xml file by command promt ?
@@ -117,7 +163,6 @@ Tell me some type of exception in java ?
 How many cath block can we write for a try block  for exception handling in java ?
 Why we use finally in java ?
 When Will the finally keyword will not work?
-What is PageFactory ?
 Whta will the flow of execute testcases if all the annotation are applyes on the testNG testscript ? // annotation mtlb [ beforeSuite,beforeclass,before method  ect..]
 What is user story is Ajaild methology ?
 Agr hmre pass 5 user story h or hm 5th user story m kaam kr rhe h to testscript hm kis story tk likh dengr.
@@ -129,13 +174,38 @@ How can we take a screenshot of failed testcase in a framework ?
 Which methology you are using in project ?
 How can we validate title of the webpage with the help of assertion.
 What is POM?
+
+    ANSWER:
+    *> Page Object Model (POM) is a design pattern,that creates Object Repository for web UI elements
+    *> The advantage of the model is that it reduces code duplication and improves test maintenance
+
+How Can we reuse code in POM?
+    
+    ANSWER:
+    *> We can write reusable code in a baseTest class and can extends this class wherever needed.
+    *> Like we can create a OpenBrowser function in baseTest class and can reuse it.
+
+What is PageFactory ?
+     
+    ANSWER:
+    *> PageFactory is a class of Selenium WebDriver that provides the implementation of the Page Object Model design pattern.
+    *> Page Factory is a way to initialize the web elements, that you want to interact with within the page object
+    *> PageFactory WebElements ko initialize krne ka trika h, jin elements ko aap POM m use krna chahte h.
+    *> @FinfBy(class='.form') WebElement  button;  // yha p hm button element ko 1 WebElement m initializekr re h ab ise POM m use krenge.
+
+
 What is abstract class?
+   
+    ANSWER:
+    *> A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body).
+    *> Abstract class: is a restricted class that cannot be used to create objects 
+
+
 Difference between interface and Abstract class?
 How can we take screenshot explain with Syntax?
 How can we scroll webpage?
 How can we validate broken link?
 How can we handle window based pop up?
-Can we reuse code in POM?
 How can we fill username and password during login over the webpage?
 Why we use switchTo() method??
 In how many ways we can enter value in text box?

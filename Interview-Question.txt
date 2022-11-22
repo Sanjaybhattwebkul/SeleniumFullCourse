@@ -20,6 +20,10 @@
 
 	  WebDriver Class hai or ChromeDriver Interface					ChromeDriver Class hai or ChromeDriver Interface
 
+	  *> Yha pr WebDrivere class ChromeDeriver() class m extendshoti h . or hm WebDrivere driver = new ChromeDeriver(); krte h , mtlb hm WebDriver ki properties access kr reh . Or ChromDriver driver =new ChromDriver() krenge to mtlb ChromeDeriver class ki properties access kr re h tabhi esa krne se test only chrome m chlte h .
+	  *> WebDriver() parent class h or is classko sab classess access krti h , like Firefox chrome, edge etc.. tb Webdriver likhne se test sare browser m chlta h .
+	  *> Is consept ko upcasting bhi khte h .
+
 
 Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDriver interface k ander define honge.
 	un sab ko ham webdriver class ka object bana kar  access kr skte h 
