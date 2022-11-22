@@ -58,10 +58,35 @@ How can you validate the fadeIn FdeOut messaage using selenium ?
          Boolean Display = driver.findElement(By.xpath("path of the element where the flsh message is apparing")).isD
 
 
-How can you identify any frame. [ Inspact kr k check kr lenge agr <Iframe> tag hoga to mtlb frame h ya rightClick kr dekh lenge us m frame ka option aa jata h agr frame hoga to.]
-How can you Automate Multi Factor Authentication [MFA] ?  [aerogear java OTP dependancy ka use kr k.]
-How can you handle any submit button if the button is not showing in don.?  [phle page ko scroll krenge jha pr button h vha tk fir click krenge ]
+How can you identify any frame ?
+
+    ANSWER:
+        *> Right-click on the specific element, 
+        *> If you find an option like This Frame, view Frame source or Reload Frame,
+        *> It menas the page includes frames. ...
+
+        *> Similar to the first step, right-click on the page and click on View Page Source.
+
+How can you Automate Multi Factor Authentication [MFA] ? 
+    
+    ANSWER:
+        *> aerogear java OTP dependancy ka use kr k.
+        *> But we will also do the manual test for the Multi fector Authentication.
+
+
+How can you handle any submit button if the button is not showing in don.? 
+
+    ANSWER:
+        *> For this we can scroll the webPage and then click on the button
+        *> phle page ko scroll krenge jha pr button h vha tk fir click krenge.
+        *> JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("window.scrollBy(0,440)");
+
 New feature of selenim4 ?
+    
+    ANSWER:
+        *>
+
 What is Upcasting?
 Difference between Interface and class ?
 How can we Take screenshot? and how can take screenshot in fraamework // framework m ITestLISTENER ka use krte h ontestfail method m code likh lete h .
@@ -144,7 +169,7 @@ What is abstract class?
     *> A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body).
     *> Abstract class: is a restricted class that cannot be used to create objects 
 
-    
+
 Difference between interface and Abstract class?
 How can we take screenshot explain with Syntax?
 How can we scroll webpage?
