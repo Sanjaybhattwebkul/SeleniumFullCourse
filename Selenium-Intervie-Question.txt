@@ -216,3 +216,14 @@ Import Excel data in string firm And convert in int. OR how to convert int data 
 How can we get broken link?
     -> ANSWER:
         * https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/SelinumBesic/src/other/BrokenLink.java
+
+PROGRAM TO SHORT ARRAY TO ACCESDING ORDER?
+    ->
+
+CREATE A FUNCTION WHICH TAKE A ARRAYLIST AND PRINT EACH NUMBER WITH EVEN AND ODD TEXT ?
+
+OVERLOADING AND OVERRIDING?
+*> 
+
+Componenet of http and https ?
+*> 
