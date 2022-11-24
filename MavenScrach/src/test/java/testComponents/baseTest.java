@@ -59,7 +59,7 @@ public class baseTest {
 		//driver.manage().window().maximize();
 		return driver;
 	}
-	
+	 
 	@BeforeMethod(alwaysRun=true)
 	public LandingPage launchApplication() throws IOException {		
 		driver = initlizeBrowser();

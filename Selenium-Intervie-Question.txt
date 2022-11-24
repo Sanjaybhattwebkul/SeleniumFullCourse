@@ -119,23 +119,109 @@ Difference between Interface and class ?
 How can we Take screenshot? and how can take screenshot in fraamework ?
     
         ANSWER:
-             // framework m ITestLISTENER ka use krte h ontestfail method m code likh lete h .
+            TakesScreenshot ss = (TakesScreenshot) driver; //TakesScreenshot IS INTERFACE.
+            File source = ss.getScreenshotAs(OutputType.FILE); //getScreenshotAs Is method of TakesScreenshot interface.
+            File File = new File(System.getProperty("user.dir") + "//Reports//" + testClassNmae + ".png");
+            FileUtils.copyFile(source, File); //copyFile is static method of FileUtils class
+
+		*> // framework m ITestLISTENER ka use krte h ontestfail method m is code ko likh lete h .
              
 Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is tthis ]
+    //
+
+
 Difference between @factory annotation and DataProvider ?	
+    ANSWER:
+        *> @DataProvider gives you the power to run a test method with different sets of data, 
+        *> @Factory gives you the power to run all methods inside a test class with different sets of data.//
+            [ @DataProvider KA USE KR K HM 1 FUNCTION KO MUTLPLE SET OF DATA KO RUN KR SKTE H ]
+            [ @Factory KA USE KR K HM 1 CLASS KO MUTLPLE SET OF DATA KO RUN KR SKTE H ]
+
+        example code: 
+
+            -> https://www.softwaretestingo.com/factory-and-dataprovider-annotation/#:~:text=%40DataProvider%20gives%20you%20the%20power,which%20approach%20fits%20it%20better.
+
 Can we run testng.xml file by command promt ?
+    ANSWEr:
+        *> YES,
+        *>  Step 1 − Create different testing classes having different @Test methods.
+            Step 2 − Compile the class; it will create an out folder in IntelliJ and bin folder in Eclipse.
+            Step 3 − Place all the jar files in the lib folder.
+            Step 4 − Now create the testng. ...
+            Step 5 − Open the cmd.
+
 Hard assersion and soft assersion difference ?  
+
+    ASNWER:
+        *> A Hard Assertion is a type of assertion that throws an exception instantaneously when an assert statement fails
+        *> Soft assersion script execution ko stop nai karta h agr test fail hua to.
+        *> Hard assersion script execution ko stop kr deta h agr test fail hua to.
+
 Test case for Cofee machine ?
-Teall any 1 feature request for flipkart or amazom site ?
+    
+    ANSWER:
+        *> UI scenario – buttons or icons are visible or not.
+        *> UI scenario – Verify that coffee should not leak when not in operation
+        *> Verify the amount of coffee served in single-serving is as per specification
+        *> Verify the input mechanism for coffee ingredients-milk, water, coffee beans/powder, etc
+        *> Negative Test – Check the functioning of the coffee machine when two/multiple buttons are pressed simultaneously
+        *> Negative Test – Check the functioning of coffee machine with a lesser or higher voltage than required
+        *> Negative Test – Check the functioning of the coffee machine if the ingredient container’s capacity is exceeded
+
+Tell any 1 feature request for flipkart or amazom site ?
+
+    ANSWER:
+        *> Amazon prime gamming global.
+        *> integration of amazon mini TV. CONNECT INTO AMAZON prime
+        *> A type of sale like OLX.
+        *> Track your orders throught whatsapp.
+
+
 What are DesiredCapabilities in selenium grid ?
+    ANSWER:
+        *> DesiredCapabilities are a set of key-value pairs encoded as a JSON object. 
+        *> It helps QAs define basic test requirements such as operating systems, browser combinations, browser versions, etc.
+        *> within Selenium test scripts.
+
 HOW CAN WEW RUN ONLY FAILED TEST CASE USING TESTNG ?
+    
+    ANSWER:
+    *>TestNG creates the file testng-failed. xml with all failed test case.
+    *> We can run directly this  testng-failed. xml file
+
 Where you use method overloading in selenium ?
+    *> We all use Implicit Wait to make the page wait for some specified time interval.
+    *> Implicit Wait is the best example of Method Overloading 
+    *> as we can provide different Timestamp or TimeUnit like SECONDS, MINUTES, etc.
+
 What is preority is testng ?
-How can you change the chrome default download path ?  [ crome m files /data download folders k ander  downpoad hota h use kese change krenge]
+
+    ANSWER:
+        *> Syntax:  @Test (priority = 0)
+        *> preority means which test case we want to execute first.
+        *> By default testNG runes the testcases by alphabetical order.
+        *> If we want to run any test first then we can use preority .
+        *> The heighr preority is 0, means the test case with 0 preority will execute first.
+        *> One test method is allowed to have only one test priority in TestNG
+
+How can you change the chrome default download path ?
+    
+    ANSWER:
+      *> [ crome m files /data download folders k ander  downpoad hota h use kese change krenge]
+
 Hhow can get file from your locale system ?
+   
+    ANSWER:
+
+    *> By using exists method of File() class   // File() java ki calss h 
+
 Difference between Abstract class aand interface ?
+    // TODO
+
 Can class A extends class B C  ?
-WHAT IS THE OUTPUT OF THE GIVEN CODE ?
+    //TODO
+
+ WHAT IS THE OUTPUT OF THE GIVEN CODE ?
     public classA
     {
         int i =10;
@@ -147,14 +233,35 @@ WHAT IS THE OUTPUT OF THE GIVEN CODE ?
     pubic class C
     {
         public void main(Strin[] args) {
-            A a = new B()
+            A a = new B() // HERE WE ARE USING  UPCASTING
             System.out.println(a.i);
         }
     }
 
-WHAT ISFUNCTION OVERLOADING ?
+    ANSWER:
+        *> Here we are using upcasting. using properties of class A by creating object of class B
+        *> so output WILL BE 10,
+
+
+WHAT IS FUNCTION OVERLOADING ?
+
+    ANSWER:
+        *> Function Overloading in Java occurs
+        *> When there are functions having the same name but have different numbers of parameters passed to it
+
 WHAT IS FUNCTION OVERRIDING?
+    ANSWER:
+        *> When the method signature (name and parameters) are the same in the superclass and the child class,
+        *> it's called overriding. 
+
+What is polymorphism and example?
+
+    answer:
+        *> Ability of a message to be displayed in more than one form
+
 WHAT IS ARRAY ?
+    *>
+
 WHAT IS MULTI Dimension ARRAY ?
 Find minimun number from a 3*3 matrix  ?
 Differencr between PUBLIC, PROCTED ,PRIVATE AND DEFAUTL   AccessModifure IN JAVA ?
@@ -202,6 +309,23 @@ What is abstract class?
 
 
 Difference between interface and Abstract class?
+
+        ANSWER:
+         *> Abstract class have abstract and nonAbstract type functions, but interface have only abstract type functions.
+         *> We can only declear the function in the interface
+         *> We can declear and define any function in the abstract class. 
+         *> define means function ki body  bhi created h or declear means only function name();
+
+Why we use abstract class and interface?
+
+    ANSWEr:
+        
+        *> Agr hme code ko expend krna h mtlb ki kisi class m feature m koi function or add krna h .to hm abstract class ka use krte h 
+        *> Agr hme Kisi class m number of function fix rkhne h to hm interface ka use krte h ,
+        *> Kyu ki agr hm kisi interface ko implement kr re h to hme interface  k sare functions call krne hote h. 
+        *> Or agr hmne kisi interface m koi function feature m add kr diya h to jha-2 p vo interface call hua h sab jgh us function ko call krna hoga.
+        *> Bu t abstract class m esa ni hota.
+
 How can we take screenshot explain with Syntax?
 How can we scroll webpage?
 How can we validate broken link?
