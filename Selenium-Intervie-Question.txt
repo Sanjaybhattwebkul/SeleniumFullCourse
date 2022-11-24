@@ -127,7 +127,7 @@ How can we Take screenshot? and how can take screenshot in fraamework ?
 		*> // framework m ITestLISTENER ka use krte h ontestfail method m is code ko likh lete h .
              
 Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is tthis ]
-    //
+    //TODO
 
 
 Difference between @factory annotation and DataProvider ?	
@@ -260,16 +260,54 @@ What is polymorphism and example?
         *> Ability of a message to be displayed in more than one form
 
 WHAT IS ARRAY ?
-    *>
+    
+    ANSWER:
+    *> Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+
 
 WHAT IS MULTI Dimension ARRAY ?
+    // TODO
+
 Find minimun number from a 3*3 matrix  ?
+    // TODO
+
+
 Differencr between PUBLIC, PROCTED ,PRIVATE AND DEFAUTL   AccessModifure IN JAVA ?
+
+    ANSWER:
+        *> PUBLIC means we can access the property anywhere simplly create object of clas or inherit the class.
+        *> Protected means only child class can be access the properties.
+        *> Private means we can access the peroperties witih the class and function.
+        *> Default menas we can access the property within a package. 
+
+
 What is the means of error Array index out of bound ?
+
+    ANSWER:
+        *> When we are trying to access the invalid index the array, like the length is 5 and we trying to access 6th index.
+
 Tell me some type of exception in java ?
+
+    ANSWER:
+        *> EXCEPTION E  -> Default exception
+	    *> IndexOutOfBoundsException  -> If array index in invalid
+	    *> ArithematicException  -> Mathematical calcution m jb issu h tb aat h 
+        
 How many cath block can we write for a try block  for exception handling in java ?
+    
+    ANSWER:
+    *> We can write multiple catch block with a try block for exception handling.
+
 Why we use finally in java ?
+
+        ANSWER:
+            *> If we want to run any script for all case either the test is failed or pass in that case we will use finally block // finally{ }
+
 When Will the finally keyword will not work?
+
+    ANSWER:
+        *> Only Wnhen we will forcefully stop the javacompiler
+
 Whta will the flow of execute testcases if all the annotation are applyes on the testNG testscript ? // annotation mtlb [ beforeSuite,beforeclass,before method  ect..]
 What is user story is Ajaild methology ?
 Agr hmre pass 5 user story h or hm 5th user story m kaam kr rhe h to testscript hm kis story tk likh dengr.
@@ -278,8 +316,19 @@ What is pre request in postmen ?
 https code 301 AND  504 , 503 ?
 Write a java rogram to get only alphabet from a given string if there are number and string are in the string ?
 How can we take a screenshot of failed testcase in a framework ?
+
+    ANSWER:
+        *> For this we can implement the ITestLISTENER in our Listener class.
+        *> And Inside the onTestCseFiler() function we can use the function of TakesScreenshot() class. for taking screenshot.
+
 Which methology you are using in project ?
+
+    ANSWER:
+        Ajild methology.
+
 How can we validate title of the webpage with the help of assertion.
+    
+
 What is POM?
 
     ANSWER:
@@ -327,6 +376,9 @@ Why we use abstract class and interface?
         *> Bu t abstract class m esa ni hota.
 
 How can we take screenshot explain with Syntax?
+
+    ANSWER:
+
 How can we scroll webpage?
 How can we validate broken link?
 How can we handle window based pop up?
