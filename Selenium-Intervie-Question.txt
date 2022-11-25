@@ -403,3 +403,12 @@ OVERLOADING AND OVERRIDING?
 
 Componenet of http and https ?
 *> 
+
+Difference between @FindBy and BY in POM ?
+	
+	ANSWER:
+	*> In PageFactory - its only @FindBy or @FindBys finder annotation which is actually an interface.
+	*> There is no '@By' annotation its just By and- 'By' is an abstract class in selenium.
+	*> Both of them used to form object repositories i.e. get the elements locators.
+	*> And the usage of both depends on the way your automation framework has been designed.
+	*> i.e. if you have used PageFactory pattern you will use @FindBy/s and for non pagefactory frameworks you can use By locator method
