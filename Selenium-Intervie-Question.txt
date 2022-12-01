@@ -412,3 +412,13 @@ Difference between @FindBy and BY in POM ?
 	*> Both of them used to form object repositories i.e. get the elements locators.
 	*> And the usage of both depends on the way your automation framework has been designed.
 	*> i.e. if you have used PageFactory pattern you will use @FindBy/s and for non pagefactory frameworks you can use By locator method
+
+*=> AGR HM TESTCASE RUN KRNE K BADBROWSER MANUALLLY COLSE KR DENGE TO KYA ERROR AAYEGI  ?
+
+        ANSWER:
+         *> Error communicating with the remote browser. It may have died
+
+*> Agr hm locator ka path galat likh denge to kya error aayegi ? find elements and findelement m ?
+
+    answer:
+        *> no such element: Unable to locate element  // initElements and initElement donu m same error aayegi.
