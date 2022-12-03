@@ -1,0 +1,25 @@
+===============================[03-ECEMBER-2022]===========================
+QUESTION:
+	What are the software development process in alail methology ?
+
+ANSWER:
+	1. Kanban
+	3. scrum
+	3. bUG tRACKING.
+
+QUESTION: 
+	WHAT IS EPIC  in ajail methology
+
+ANSWER:
+	Epeic is a [module/ Feature] of software which you need to implement. [module means a part of the complete software]
+	Epic are large work items broken down into a set of user stories.
+	EXAMPLE:  A LOGIN MODULE IS A EPIC.
+
+QUESTION:
+	WHAT ARE USER STORIES.?
+
+ANSWER:
+	User story is a small chunk pices of work and thecollection of user story in epic.
+
+EXAMPLE:
+	INPUT BOX, LLOGIN TEXT AND DBDATABSE CONNECTION ARE DIFFERENT-2 STORIES.
