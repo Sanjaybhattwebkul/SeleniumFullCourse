@@ -69,4 +69,134 @@ ANSWER:
 	Backlog menas the userstories which are not developed yet.
 
 QUESTION:
-	WHAT IS BACKLOG GROWMMING ?
+	WHAT IS BACKLOG & GROWMMING ?
+
+ANSWER:
+ 	BACKLOG & GROWMMING m hm acceptance area ko decide krte h .
+	Like: Login page k liye jo requirnments product owner deside krta h
+  	Us m kuchh or feature add krne k liye hm product owner se dicuss krne h. inhi acceptance area ko   BACKLOG & GROWMMING khte h .
+
+	EXAMPLE:
+	 BACKLOG & GROWMMING means user story m sare feature add krna
+		Agr product owner le user story m likha h ki create login page. 
+		Fir hm GROWMMING meeting m login page m validations and responsive UI etc.. add kr denge ise hi BACKLOG & GROWMMING khte h .
+
+QUESTIONS:
+	WHAT IS THE ROLE OF USER scrum MASTER ?
+
+ANSWER:
+	1. Manage/Read all user story.
+	2. Take the points from all  people 
+	3. See what is meaturaty in eam [mtlb ki team m kitne logu ki need h ]
+
+
+QUESTION:
+	WHAT IS SPRINT ?
+
+ANSWER:
+	SPRINT means the timebox for complete planed userstories.
+	Mtlb ki agr mere pass 10 userstories h to hm use 2 sprint m divide kr denge. 
+	15 din ka time sprint A k liye [ 15 din m 5 userstories complete hongi.]
+	15 din ka time sprint B k liye [ 15 din m next 5 userstories complete hongi.]
+	*>	IN JIRA software Manage tool the SPRINT is set of user story.
+
+	*> Phle user stroy create hoti h .
+	*> Fir GROWMMING hoti h .
+	*> Fir sprint create hota 
+	*> The kaam start hota h ..
+
+QUESTION:
+	WHAT IS scrum BOARD ?
+
+ANSWER:
+	scrum board m sare sprint ka sstatus rhtah / TODO , INPROGRESS , DONE.
+
+-> scrum MASTER sare sprint ko manage krta h , mtlb complete work proess [dev/QA] ko manage krta h or team se update letah .
+-> scrum team m  dev or qa donu aate h .
+
+QUESTION:
+	WHAT IS RETORSPECTIVE ?
+ANSWER:
+	RETORSPECTIVE 1 meeting hot ih jo sprinr complete hoen k bad hoti h .
+	Dev, qa lead and scrum master m .
+	is m dekh jata h ki sprint m kn si cheecj thee h kn si cheej m bug aare h or kya improvement honi h .
+
+
+QUESTION:
+	WHAT IS CANBAN ?
+
+ANSWER:
+	CANBAN M  ouser story or sprint nahi hota h .
+	Bcalog , selected for developement, in progress and done only ye step hote h CANBAN bor m 
+
+Question 3:
+	Who decides on sizing of the story?
+
+ANSWER:
+	ALL TEAM MEMBER.
+
+Question 4:
+	What is the unit of measurement used to measure the size of the story?
+
+ANSWER:
+	STORY POINT.
+
+Question 5:
+	What is the typical duration of a sprint?
+
+ANSWER:
+	1-4
+
+Question 6:
+	In the sprint, the measure of the amount of work completed by the agile team is known as:
+
+ANSWER:
+	Velocity graph.
+
+Question 7:
+	Who decides on sequence of priority on backlog items?
+
+ANSWER:
+	Product OWNER
+
+Question 8:
+	On what basis the order of the backlog should be decided?
+
+ANSWER:
+	Value of the item to the business.
+
+Question 9:
+	From the following, Who are part of Sprint planning?
+
+ANSWER:
+	1. QA LEAD.
+	2. scrum MASTER
+	3. PRODUCT OWNER.
+
+Question 10:
+	Can items from product backlog be pulled randomly into the sprint?
+
+ANSWER:
+	NO, IN SPRINT THE STORIES ARE PREORITY BASIS.
+
+Question 12:
+	Who facilitates Sprint Retrospective meeting?
+
+ANSWER:
+	scrum MASTER.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
