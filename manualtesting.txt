@@ -1,6 +1,15 @@
 ===============================[03-ECEMBER-2022]===========================
+
+QUESTION:
+	HOW MANY TEAM MEMBER CAN BE TYPICALLY BE A PART OF AJIL TEAM ?
+
+ANSWER:
+	5-7.
+
 QUESTION:
 	What are the software development process in alail methology ?
+	-- OR --
+	What are the method of ajil Framework ?
 
 ANSWER:
 	1. Kanban
@@ -19,7 +28,45 @@ QUESTION:
 	WHAT ARE USER STORIES.?
 
 ANSWER:
-	User story is a small chunk pices of work and thecollection of user story in epic.
+	User story is a small chunk pices of work and the collection of user story in epic.
 
 EXAMPLE:
 	INPUT BOX, LLOGIN TEXT AND DBDATABSE CONNECTION ARE DIFFERENT-2 STORIES.
+
+QUESTION:
+	What is the difference between epic and user story?
+
+ANSWER:
+	User story is a small chunk pices of work and the collection of user story in epic.
+
+QUESTION:
+Who is responsible to create user stories and decides on acceptance criteria?
+
+ANSWER:
+	PRODUCT OWNER.
+
+QUESTION:
+	WHAT ARE COMPONENTS IN JIRA ?
+
+ANSWER:
+	Components means team who is working in the project.
+	If me have multiple team for software development the we ca create multiple components
+	and assign them the user story / epic.
+
+QUESTION:
+	HOW TO ADD DESCRIPTION IN USER STORY:
+	
+ANSWER:
+
+	In Description box iser story the product owner is write a requirnment of the story.epic.
+	And we will adn a accpetance criteria  section and write the technical rewuirnmnets under their.
+	Like validation, alignments and performance etc...
+
+QUESTION:
+	WHAT IS BACKLOG?
+
+ANSWER:
+	Backlog menas the userstories which are not developed yet.
+
+QUESTION:
+	WHAT IS BACKLOG GROWMMING ?
