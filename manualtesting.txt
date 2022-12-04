@@ -186,9 +186,17 @@ ANSWER:
 	scrum MASTER.
 
 
+QUESTION:
+	WHAT is difference between test sennario and testcase ?
 
+ANSWER:
+	Verify login functionality is test sennario.
+	And inside verify login functionality there can be multiple test cases.
 
+=> JIRA M HM Xray APP ko install krte h , ttest case create krne k liye .
 
+=> Test Plane means kisi project/module k liye kitne test sennario h. mtlb test plane set of test sennario/test case hota h .
+=> Test place QA manager bnata h .
 
 
 
