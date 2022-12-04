@@ -145,7 +145,7 @@ Question 5:
 	What is the typical duration of a sprint?
 
 ANSWER:
-	1-4
+	1-4 weeks
 
 Question 6:
 	In the sprint, the measure of the amount of work completed by the agile team is known as:
