@@ -422,3 +422,39 @@ Difference between @FindBy and BY in POM ?
 
     answer:
         *> no such element: Unable to locate element  // initElements and initElement donu m same error aayegi.
+
+
+--> WHAT IS STLC ? What are the fase of stlc ?
+
+    Reuirnment analysis ->Test Plane -> Testcase developement -> Test environment setup -> Test Excecution ->Test closer
+
+
+    1. Reuirnment analysis -> Understand the complete project.
+    
+    2. Test plane -> Contains all activity related testing, tools, test casees, automation test case, sprints ect..
+                -> kitne tester lgenge test krne m , kn kn se tool use krenge, kn knse test aase bnaege, kitne testcase automate honge ye sab decide hota h is m
+    
+    3. Testcase development -> Test case development m hm requirnment or test casase ki mapping krte h ki every requirnment k liye positive or negative testcase h ya nahi .
+
+    4. Test environment setup -> is m hm code ko dev servr or qa server pr dalte h , code 2 server m upload hota h qa serveer or dev server.
+                              -> Kyu ki dev server m databse change bhi ho skta h to us case m qa ko test run krne m issue aa skta h to hm qa server m bhi code dal dete h
+
+    5. Test execution.  -> Test case ko execute krte h .
+
+    6. Test closer activity ->
+        1. Ensure test completion -> sare test case successfully execute hue ya ni .
+        2. Handover test artifects -> client ko test report handover krnis
+        3. Project Retrospective -> project m koi mistake to ni h , use discuss krna or next time kliye improve krna.
+        4. Archive test work product -> Test project ka record /backup rkhne, feature m agr client ko koi doubt hota
+        h to reference k lie. ya client bolta h ki koi feature kaam ni kr ra h to us k liye hmra pass record rhta h.
+
+QUESTION:
+    What are the issue you face while creating QA environment ?
+
+ANSWER:
+    *> jb project a  m dev-x and dev-y kaam kr re h done ne master branch se clone kr k kaam start kiya h 
+    *> then dev x ne qa server m code push kiya or test krne k liye bol diya.
+    *> fir dev y ne bhi code usi qa environment m code push kiya or test krne ko bol doya, then is case m dev x ka code override ho jayega.
+    *>To is issue se bachne k lye hm multiple qa environment bna lete h.
+
+
