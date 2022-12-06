@@ -457,4 +457,26 @@ ANSWER:
     *> fir dev y ne bhi code usi qa environment m code push kiya or test krne ko bol doya, then is case m dev x ka code override ho jayega.
     *>To is issue se bachne k lye hm multiple qa environment bna lete h.
 
+QUESTION:
+    What should we do if we got any error or bug ?
+
+ANSWER:
+    We should check the browser console and API, is there is any APIbreaking and if still we are getting the bug the report to dev or any tool.
+
+QUESTION:
+    WHAT IS SEVERITY OF BUG ?
+
+ANSWER:
+    Critical -> Supose the customer is not able to check out the product [ functionality is breaking completely ]
+    Major ->  If the Customer is not able to buy only some item or 1-2 item [ here functionality is breaking but not completely ]
+    Minor -> If the item cart item counting if not visible after page refresh [ here functionality is not breaking ]
+
+
+QUESTION:
+    WHAT IS preority ?
+
+ANSWER:
+    preority  means which bugs we need to fix first.
+    If the is any bug related to our brand value. like logo , icons itc then that bug need to fix in height preority.
+
 
