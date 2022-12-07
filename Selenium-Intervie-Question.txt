@@ -479,4 +479,63 @@ ANSWER:
     preority  means which bugs we need to fix first.
     If the is any bug related to our brand value. like logo , icons itc then that bug need to fix in height preority.
 
+QUESTION:
+    WHAT IS SMOKE AND SENETY TESTING ?
 
+ANSWER:
+    SMoke and SENETY testing are almost same.
+    In smoke testing we need to test only very height lavel functionality.
+    We need to do smoke testing after each and every commit. [ mtlb jb bhi master branch m koi code merge hoga tb main main functionality test hogi.]
+
+QUESTION:
+    WHAT IS COMPONENT TESTING ?
+
+ANSWER:
+    Componenet testing means any singlr part/ component of te software.
+    In component test we don't need to test outside of this module/component
+    Mtlb agr hm login component test kr re h to hm only login page ko hi test krenge hme ye nahi dekhnege ki login hone k bad page kha jara h.
+
+QUESTION:
+    What is integration testing ?
+
+ANSWER:
+    integration testing means Test We test the software after merge the multiple component.
+    And if we are testing any component then we will test the releated components as well.
+
+QUESTION:
+    DIFFERENCE BETWEEN VALIDATION AND VERIFICATION ?
+
+ANSWER: 
+    Varification means test/validate the each component of software.
+    Validation means validate/compare the complete software functionality with the business requirement after release . 
+    *> Validation will be after release of the project and VERIFICATION will do before release of project.
+
+
+QUESTION:
+    What is load and strees testing ?
+
+ANSWER:
+    Load testing means we put the various load on out site. and the verify the response time of the application.
+    *> Various load means access the application 10k users at a time.
+    And Stress testing means Put the various load and verify in which place the application is breaking and creashing.
+
+QUESTION:
+    WHAT IS FUNCTIONAL ANF NO FUNCTIONAL TESTING ?
+
+ANSWER:
+    *>Functional testing measn all the testcase which comes on functionality of the application.
+    *> Nonfunctional testing measn the the testcase which not focus on functionality of the applicatoin.
+    like->  load, stress, ui , security, useablity tsting.
+    *> useablity testing means ki application desktop. mobile and tab.  m  responsive h ya ni .
+
+QUESTION:
+    WHAT IS BLACK BOX AND WHITE BOX TESTING ?
+
+ANSWER:
+    WHITE Box :
+        *> White box testing me test the software after knowing the complete functionality, design, implementation of the software.
+            Example:  Unit testing , Integration Testing, 
+
+        *> Blackbox testing means test the software without knowing the software implementation,sedign and functionality of application.
+            Example: Acceptance testing  -> Accepting testing means only the normal testing like login with valid username or pass , its inof.
+                     sysstem testing-> Applicatio is landing or not.
