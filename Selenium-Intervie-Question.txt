@@ -539,3 +539,61 @@ ANSWER:
         *> Blackbox testing means test the software without knowing the software implementation,sedign and functionality of application.
             Example: Acceptance testing  -> Accepting testing means only the normal testing like login with valid username or pass , its inof.
                      sysstem testing-> Applicatio is landing or not.
+Question:
+    if you found the bug, What will you do  that the bug is not introduce again ?
+
+ANSWER:
+    We will add that bug on our regration testcase and then if weill release our project after few days later  then that bug will not introduce.
+
+QUESTION:
+    What will you do if developer will decline your bug .?
+
+ANSWER:
+    We will provide the business document to the developer, and if still he decline then we arrange a meetign with scram master and product manager.
+
+QUESTION:
+    What can be the challanges while doing regration testing ?
+
+ANSWER:
+    proper tedting data -> Means if we are using bank application the if we are testing payment transection then if we have not proper test data then the amount of card will be end asap.'
+    Selection of the test cases for regration test case. because if we not select the regration test carefully then some time any critical case can be skip.
+
+QUESTION:
+    What is different label of testing ?
+
+NASWER:
+    *> Hm isi sequance m testing krte h .
+    1st. Unit Testing - > Test the each and every component saperatly.
+    2nd. Integration testing - > Test the application after merge multiple component 
+    3rd. ASystem testing -> Means the application is working as accepted or not /
+    4th. Acceptance testing -> Means the application is accepted by client and working as a business document.
+
+QUESTION :
+    WHAT ARE DROWBACK OF AGILE framework mehology ?
+Answer:
+    1. As we know that there is fix date of for each sprint and each sprint is maximun 4 week, 
+    *> And in this case we have not much more time to explore the application because of fox time duration.
+
+    2. Frequent change in requirnment means changes can be daily basic so we need to test complete application application dail.
+    3. Document is not fix tht can be changes in any time, 
+
+QUESTION:
+    What is your approch when you have very height lavel related to delicver you application short time ?
+        [Agr project bhut km time m deliver krna h to hm kese testing krengee ] 
+
+ANSWER:
+    We will run the automation test suites and run the unit testing, and only fail test cases manuly
+
+QUESTION :
+    EXAMPLE OF LOW AND HEIGHT SERVERITY BUG :
+
+ANSWER;
+    1. Complany logi  is wrong is height SERVERITY bug ,
+    2. Pproduct image is woring is low serverity bug.
+
+QUESTION :
+    WHAT IS TEST PLANE?
+
+ANSWER:
+    TestPlabe is a document that contain all the scope , aproch resources and outline of the testing project
+    [test plane 1 doocument h jis m hm ye dekhte h ki kn kn si cheej test krni h kha se testing strt krni h or kitne time m complete hogi, or kitne log test krenge] 
