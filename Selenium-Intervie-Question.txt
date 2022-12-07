@@ -596,4 +596,5 @@ QUESTION :
 
 ANSWER:
     TestPlabe is a document that contain all the scope , aproch resources and outline of the testing project
-    [test plane 1 doocument h jis m hm ye dekhte h ki kn kn si cheej test krni h kha se testing strt krni h or kitne time m complete hogi, or kitne log test krenge] 
+    [test plane 1 doocument h jis m hm ye dekhte h ki kn kn si cheej test krni h kha se testing strt krni h or kitne time m complete hogi, or kitne log test krenge]
+    [ Is m hm bug tracking tool ko bhi decide krenge ki knsa tool use krna h bug tracking k liye] 
