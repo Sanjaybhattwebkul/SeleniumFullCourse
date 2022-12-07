@@ -479,4 +479,9 @@ ANSWER:
     preority  means which bugs we need to fix first.
     If the is any bug related to our brand value. like logo , icons itc then that bug need to fix in height preority.
 
+Question:
+	 What will the error if the dependsOn group name is invalid and if any syntax erro?
+
+ANSWER:
+	*>  depends on nonexistent group "Login.adminLogin"
 
