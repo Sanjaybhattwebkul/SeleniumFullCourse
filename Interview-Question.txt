@@ -2546,6 +2546,11 @@ ANSWER:
 	Ajild  methology.
 
 QUESTION:
+	Difference between @FindBy and By  in PageFactory ?
+
+ANSWER:
+	@FindBy -> driver.findElement(By.xpath(""));
+	By -> (By.xpath(""));
 
 
 

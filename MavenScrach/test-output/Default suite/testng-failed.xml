@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.GetCheckboxLabel">
+      <class name="tests.PlaceOrder">
         <methods>
-          <include name="getLabel"/>
+          <include name="OrderHistoryTest"/>
+          <include name="closeBrowser"/>
+          <include name="submitOrder" invocation-numbers="1"/>
+          <include name="launchApplication"/>
         </methods>
-      </class> <!-- tests.GetCheckboxLabel -->
+      </class> <!-- tests.PlaceOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -196,17 +196,254 @@ ANSWER:
 => JIRA M HM Xray APP ko install krte h , ttest case create krne k liye .
 
 => Test Plane means kisi project/module k liye kitne test sennario h. mtlb test plane set of test sennario/test case hota h .
-=> Test place QA manager bnata h .
+=> Test plane QA manager bnata h .
 
 
+--> WHAT IS STLC ? What are the fase of stlc ?
+
+    Reuirnment analysis ->Test Plane -> Testcase developement -> Test environment setup -> Test Excecution ->Test closer
 
 
+    1. Reuirnment analysis -> Understand the complete project.
+    
+    2. Test plane -> Contains all activity related testing, tools, test casees, automation test case, sprints ect..
+                -> kitne tester lgenge test krne m , kn kn se tool use krenge, kn knse test aase bnaege, kitne testcase automate honge ye sab decide hota h is m
+    
+    3. Testcase development -> Test case development m hm requirnment or test casase ki mapping krte h ki every requirnment k liye positive or negative testcase h ya nahi .
+
+    4. Test environment setup -> is m hm code ko dev servr or qa server pr dalte h , code 2 server m upload hota h qa serveer or dev server.
+                              -> Kyu ki dev server m databse change bhi ho skta h to us case m qa ko test run krne m issue aa skta h to hm qa server m bhi code dal dete h
+
+    5. Test execution.  -> Test case ko execute krte h .
+
+    6. Test closer activity ->
+        1. Ensure test completion -> sare test case successfully execute hue ya ni .
+        2. Handover test artifects -> client ko test report handover krnis
+        3. Project Retrospective -> project m koi mistake to ni h , use discuss krna or next time kliye improve krna.
+        4. Archive test work product -> Test project ka record /backup rkhne, feature m agr client ko koi doubt hota
+        h to reference k lie. ya client bolta h ki koi feature kaam ni kr ra h to us k liye hmra pass record rhta h.
+
+QUESTION:
+    What are the issue you face while creating QA environment ?
+
+ANSWER:
+    *> jb project a  m dev-x and dev-y kaam kr re h done ne master branch se clone kr k kaam start kiya h 
+    *> then dev x ne qa server m code push kiya or test krne k liye bol diya.
+    *> fir dev y ne bhi code usi qa environment m code push kiya or test krne ko bol doya, then is case m dev x ka code override ho jayega.
+    *>To is issue se bachne k lye hm multiple qa environment bna lete h.
+
+QUESTION:
+    What should we do if we got any error or bug ?
+
+ANSWER:
+    We should check the browser console and API, is there is any APIbreaking and if still we are getting the bug the report to dev or any tool.
+
+QUESTION:
+    WHAT IS SEVERITY OF BUG ?
+
+ANSWER:
+    Critical -> Supose the customer is not able to check out the product [ functionality is breaking completely ]
+    Major ->  If the Customer is not able to buy only some item or 1-2 item [ here functionality is breaking but not completely ]
+    Minor -> If the item cart item counting if not visible after page refresh [ here functionality is not breaking ]
 
 
+QUESTION:
+    WHAT IS preority ?
+
+ANSWER:
+    preority  means which bugs we need to fix first.
+    If the is any bug related to our brand value. like logo , icons itc then that bug need to fix in height preority.
+
+QUESTION:
+    WHAT IS SMOKE AND SENETY TESTING ?
+
+ANSWER:
+    SMoke and SENETY testing are almost same.
+    In smoke testing we need to test only very height lavel functionality.
+    We need to do smoke testing after each and every commit. [ mtlb jb bhi master branch m koi code merge hoga tb main main functionality test hogi.]
+
+QUESTION:
+    WHAT IS COMPONENT TESTING ?
+
+ANSWER:
+    Componenet testing means any singlr part/ component of te software.
+    In component test we don't need to test outside of this module/component
+    Mtlb agr hm login component test kr re h to hm only login page ko hi test krenge hme ye nahi dekhnege ki login hone k bad page kha jara h.
+
+QUESTION:
+    What is integration testing ?
+
+ANSWER:
+    integration testing means Test We test the software after merge the multiple component.
+    And if we are testing any component then we will test the releated components as well.
+
+QUESTION:
+    DIFFERENCE BETWEEN VALIDATION AND VERIFICATION ?
+
+ANSWER: 
+    Varification means test/validate the each component of software.
+    Validation means validate/compare the complete software functionality with the business requirement after release . 
+    *> Validation will be after release of the project and VERIFICATION will do before release of project.
 
 
+QUESTION:
+    What is load and strees testing ?
+
+ANSWER:
+    Load testing means we put the various load on out site. and the verify the response time of the application.
+    *> Various load means access the application 10k users at a time.
+    And Stress testing means Put the various load and verify in which place the application is breaking and creashing.
+
+QUESTION:
+    WHAT IS FUNCTIONAL ANF NO FUNCTIONAL TESTING ?
+
+ANSWER:
+    *>Functional testing measn all the testcase which comes on functionality of the application.
+    *> Nonfunctional testing measn the the testcase which not focus on functionality of the applicatoin.
+    like->  load, stress, ui , security, useablity tsting.
+    *> useablity testing means ki application desktop. mobile and tab.  m  responsive h ya ni .
+
+QUESTION:
+    WHAT IS BLACK BOX AND WHITE BOX TESTING ?
+
+ANSWER:
+    WHITE Box :
+        *> White box testing me test the software after knowing the complete functionality, design, implementation of the software.
+            Example:  Unit testing , Integration Testing, 
+
+        *> Blackbox testing means test the software without knowing the software implementation,sedign and functionality of application.
+            Example: Acceptance testing  -> Accepting testing means only the normal testing like login with valid username or pass , its inof.
+                     sysstem testing-> Applicatio is landing or not.
+Question:
+    if you found the bug, What will you do  that the bug is not introduce again ?
+
+ANSWER:
+    We will add that bug on our regration testcase and then if weill release our project after few days later  then that bug will not introduce.
+
+QUESTION:
+    What will you do if developer will decline your bug .?
+
+ANSWER:
+    We will provide the business document to the developer, and if still he decline then we arrange a meetign with scram master and product manager.
+
+QUESTION:
+    What can be the challanges while doing regration testing ?
+
+ANSWER:
+    proper tedting data -> Means if we are using bank application the if we are testing payment transection then if we have not proper test data then the amount of card will be end asap.'
+    Selection of the test cases for regration test case. because if we not select the regration test carefully then some time any critical case can be skip.
+
+QUESTION:
+    What is different label of testing ?
+
+NASWER:
+    *> Hm isi sequance m testing krte h .
+    1st. Unit Testing - > Test the each and every component saperatly.
+    2nd. Integration testing - > Test the application after merge multiple component 
+    3rd. ASystem testing -> Means the application is working as accepted or not /
+    4th. Acceptance testing -> Means the application is accepted by client and working as a business document.
+
+QUESTION :
+    WHAT ARE DROWBACK OF AGILE framework mehology ?
+Answer:
+    1. As we know that there is fix date of for each sprint and each sprint is maximun 4 week, 
+    *> And in this case we have not much more time to explore the application because of fox time duration.
+
+    2. Frequent change in requirnment means changes can be daily basic so we need to test complete application application dail.
+    3. Document is not fix tht can be changes in any time, 
+
+QUESTION:
+    What is your approch when you have very height lavel related to delicver you application short time ?
+        [Agr project bhut km time m deliver krna h to hm kese testing krengee ] 
+
+ANSWER:
+    We will run the automation test suites and run the unit testing, and only fail test cases manuly
+
+QUESTION :
+    EXAMPLE OF LOW AND HEIGHT SERVERITY BUG :
+
+ANSWER;
+    1. Complany logi  is wrong is height SERVERITY bug ,
+    2. Pproduct image is woring is low serverity bug.
+
+QUESTION :
+    WHAT IS TEST PLANE?
+
+ANSWER:
+    TestPlabe is a document that contain all the scope , aproch resources and outline of the testing project
+    [test plane 1 doocument h jis m hm ye dekhte h ki kn kn si cheej test krni h kha se testing strt krni h or kitne time m complete hogi, or kitne log test krenge]
+    [ Is m hm bug tracking tool ko bhi decide krenge ki knsa tool use krna h bug tracking k liye] 
 
 
+QUESTION:
+	DIFFERENCE BETWEEN SMOKE AND SENETY TESTING ?
+
+ANSWER:
+	Smoke Testing means -> You will tet some critcal functionality of the software in daily besis
+	SENETY testing means -> You will test the main main functionality of software after each and every ans test that is there is nany new issue occoring by this fix/commit..
+						  -> Smoke testing can be any time because it should be each and every commit..
+
+QUESTION:
+	WHAT IS HUB TESTING ?
+
+ANSWER:
+
+	Hub testing means test the software after knowing the functionality of software.
+
+QUESTION:
+
+	WHAT IS YOUR DAILY ROOTINE IN YOUR OFFICE ?
+
+ANSWER:
+	first i will run my smoke test suites. and the critical functionality of the project and send the update to the team..
+	Then i will check if there is any bug assigned to me after fixed.
+	And after it i will work on my manual and automation testing of my current sprint.
 
 
+QUESION :
+	WHAAT TYPE OF BUGS YOU WILL SELECT FOR REGRATION TEST ?
 
+ANSWER:
+	I will include all the test cases for regration which verify the core functionality of the project.
+	Include the test cases the verify the functionality which implemented currently.
+	Include the test case that very the functionality that have mostly bug. [ jis cheej m hmesa bug aate h use add krenge regration  m]
+
+
+QUESTION:
+	WHAT ARE BUG TRACKING TOOLS ?
+
+ANSWER;
+	GIT, 
+	BUGJILA, -> Introduce by mozilla firefox team.
+	 JIRA...
+
+
+QUESTION:
+	WHAT KIND OF TESTCASE YOU WILL NOT AUTOMATED. ?
+
+ANSWER:
+	THE TEST CASE WHERE IS SYSEM challanges LIKE OTP. MFA.. ect..
+
+QUESTION:
+	DIFFERENCE BETWEEN REGRATION AND RETESTING ?
+
+ANSWER:
+	Regration testing means test complette functionality of application before release.
+	and retesting means test only the part that earlier the developer fixed..
+
+QUESTION:
+	WHAT IS TEST PLANE ?
+
+ANSWER:
+	*> Before test plane you have to knowlegde about the complete application.
+	Test plane is a detiled document about the test strategy , test description, , estemation, scheduled ect..
+	The components of test plane are :
+	1. Objective: what willour goel [ bug free application deliver krna h ]
+	2. Scheduled : kb tk testing complete hogi,
+	3. Scope: kn kn si testing krenge or kn si nahi krenge. [ like security testing nahi krenge or funaional or non functional krenge..]
+	4. Environment: Environment operating system, softwares req,, . mobile devices agr mobile m test krna h to.
+	5. Tools: Kn kn se tools use honge.. [jira , git , selenium, bugjila etc..]
+	6. Resources: kitne log kaam krenge 
+	7. Roles And responsiblity: : kn member kya kaam krenge. 
+	8. Defect management:  bug kn assign krenga dev ko  ya tester ko..
+	
