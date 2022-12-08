@@ -1122,8 +1122,7 @@ QUESTION
 ANSWER:
 	ExtendRport is graphical Representation of result of test casees.
 	
-		---[CONFIGURATION ]  OR STEPS FOR IMPLEMENT -----
-
+		---[CONFIGURATION ]  OR STEPS FOR IMPLEMENT ----
 	1. Sabse phle iski dependancy import hoti h pom.XML file m :
 		LINK:-: https://mvnrepository.com/artifact/com.aventstack/extentreports/5.0.9
 	2. 	ExtendRport bnane k liye hme [ExtentReports OR ExtentSparkReporter ] class ka use krna hota h.
@@ -1133,7 +1132,14 @@ ANSWER:
 	6. Jis test case ki extentReport bnani hoti h us k starting "ExtentReports" class k  " createTest("Test-Name"); " function use krte h ExtentReports class k ovj. ka use kr k.
 	7. or last m ExtentReports() class k obj se flush(); function ko use krteh last test k bad. is se ye pta chl jata h ki ye last test case h
 	
-Example:  https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/ExtentRport/src/test/java/core/ExtentRport/ExtentReportDemo.java
+	--- IMPLEMENET --
+	1. agr hm Ise testng k sath implement kr re h to sabse phle phle hme itest listener ko use krna hotah
+	2. Fix IestListener ko apni testng.xml file m registre krna hota h .Like below.
+		<listeners> <listener class-name="TestNG.Listener"></listener> </listeners>
+	
+	Example:  https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/ExtentRport/src/test/java/core/ExtentRport/ExtentReportDemo.java
+
+
 
 QUESTION:
 	How can impement Extendt with testNG  ITestLISTENER?
