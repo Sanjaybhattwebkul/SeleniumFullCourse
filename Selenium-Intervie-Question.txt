@@ -12,8 +12,7 @@ QUESTION:
     *>  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 QUESTION:
-    Write syntax of Take screenshot ? OR
-    How can we Take screenshot? and how can take screenshot in fraamework ?
+    Write syntax of Take screenshot ? OR how can take screenshot in fraamework ?
 
 ANSWER:
     *> IN our POM frmaework we can implement ITestLISTENER and write this code inside the ontestFail() fucntion.
@@ -150,8 +149,20 @@ QUESTION:
 ANSWER:
     *>  interface is a collection of abstract methods
     *>  A class implements an interface, thereby inheriting the abstract methods of the interface // Class m abstract or non abstract donu type k function hote h .
-  
-Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is tthis ]
+
+QUESTION:
+    How many types of framework we can use us selenium ?
+
+ANSWER:
+    1. POM
+    2. Datafriven framework  -> In this framework we are sending the data from an saperate file name .globalData.properties
+    3. Keyword-driven.-> In this framework we are taking the instructions from the excel file.
+    4.Hybrid Framework -> In this framework we have keyword driven and datadriven both options for script.
+
+QUESTION:
+    Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is tthis ]
+
+ANSWER;
     //TODO
 
 
