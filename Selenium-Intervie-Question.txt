@@ -2,76 +2,98 @@ QUESTION:
     DIFFERENCE BETWEEN Webdriver driver = new ChromeDriver(); AND ChromeDriver driver = new ChromDriver(); 
 
 ANSWER:
-   IF we are using  "ChromeDriver" then we will be only able to invoke and act on the methods that implemented by ChromeDriver class and supported by Chrome Browser only.
-   And If we ate using "Webdriver" that menas we are creating an instance of the WebDriver interface and casting it to ChromeDriver class. 
+    *> IF we are using  "ChromeDriver" then we will be only able to invoke and act on the methods that implemented by ChromeDriver class and supported by Chrome Browser only.
+    *> And If we are using "Webdriver" that menas we are creating an instance of the WebDriver interface and casting it to ChromeDriver class. 
 
-Write syntax of implicit wait and explicit wait ? 
-   
-    -> ANSWER:
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+QUESTION:
+    Write syntax of implicit wait and explicit wait ? 
 
-Write syntax of Take screenshot ?
+ ANSWER:
+    *>  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-    -> ANSWER:
-        TakesScreenshot ss = (TakesScreenshot)driver; // TakesScreenshot Interface h 
-		File source = ss.getScreenshotAs(OutputType.FILE); //getScreenshotAs method h TakesScreenshot interface ka or iska return type FILE h.
-		File File = new File(System.getProperty("user.dir")+"//reports//"+testClassNmae+".png"); // is Dir  m ss save krna h.
-		FileUtils.copyFile(source,File); // Copy ss from drc to destination.
+QUESTION:
+    Write syntax of Take screenshot ? OR
+    How can we Take screenshot? and how can take screenshot in fraamework ?
 
-What is 202 http status code ?
-
-    -> ANSWER:
-        Request accepted.
-
-Difference between http and https ?
-
-    // DOTO
-
-Difference between data abstraction [Abstract class]  and encapsulation ?
-   ANSWER:
-        *> Abstraction is hiding the details and implementation of the code. //implementation of function ko hide krta h .
-        *> Encapsulation is hiding the data and controlling the visibility of the code. // Function m use hone vale data ko hide krta h. and code visiblitty ko controll krtah 
-
-Write a progran to print second Height occoring word in a given string ?
-
-    -> ANSWER:
-        * https://github.com/Sanjaybhattwebkul/bagisto-Automate/blob/master/programming/src/String/Print_Second_Heighest_Occurrence_Word.java 
-
-How can import data from excel file in selenium ? 
+ANSWER:
+    *> IN our POM frmaework we can implement ITestLISTENER and write this code inside the ontestFail() fucntion.
     
-    ANSWER:
-        [Apache POI API ka use kr k]
-        * https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/ExcelDrivern/dataDriven.java
+    TakesScreenshot ss = (TakesScreenshot)driver; // TakesScreenshot Interface h 
+    File source = ss.getScreenshotAs(OutputType.FILE); //getScreenshotAs method h TakesScreenshot interface ka or iska return type FILE h.
+    File File = new File(System.getProperty("user.dir")+"//reports//"+testClassNmae+".png"); // is Dir  m ss save krna h.
+    FileUtils.copyFile(source,File); // Copy ss from source to destination.
 
-How can you capture the invalid user  and password  message in login test case.
+QUESTION:
+    What is 202 http status code ?
 
-    -> Answer:
-        Iske liye hm Flash messa ka screenshot le skte h .
-        Ya ItestListener interface ko Listener class m implement kr k . ontestFail method m screenshot lene ka code likh skte h.
+ANSWER:
+    *> Request accepted.
 
-How can you create negative testcases for login functionality
+QUESTION:
+    Difference between http and https ?
 
-    ANSWER:
-        *> Log in with empty required fields.
-        *> Log in with an invalid email.
-        *> Login with an unregistered email.
-        *> Log in with an invalid password.
-        *> Log in with both email and password invalid.
-        *> Restore a password with an invalid email.
-        *> Restore a password with an unregistered email.
+ANSWER:
+   *> HTTPS is a security-enhanced version of HTTP,Because HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses
 
-What are depends on testcases give any example. [ @BeforeTest annotation  use krte h iske liye ]
 
-    ->ANSER:
-        *> Suppose hmre pass 2 test h registration or  Login. to according to testNG rule phle Login method chleg.
-          Kyu ki test cases alphabetically run hote h .  Or hme phle regisreation vala function run krna h to.
-          To hm Login vle function/test m @depandsOnMethod("registration"); lga denge to, regisreation vala test phle run hoga.
+QUESTION:
+    Difference between data abstraction [Abstract class]  and encapsulation ?
+   
+ANSWER:
+    *> Abstraction is hiding the details and implementation of the code. //implementation of function ko hide krta h .
+    *> Encapsulation is hiding the data and controlling the visibility of the code. // Hm only function ko call krte h. hme complete logic visible nahi hota.
+    *> An abstract class is a type of class in Java that is declared by the abstract keyword, we can not create object ob abstract class.
 
-How can you validate the fadeIn FdeOut messaage using selenium ?
+QUESTION:
+    
+    Write a progran to print second Height occoring word in a given string ?
 
-    -> ANSWER:
-         //isDisplayed() method returns boolean value either True or False
-         Boolean Display = driver.findElement(By.xpath("path of the element where the flsh message is apparing")).isD
+ANSWER:
+
+    *> https://github.com/Sanjaybhattwebkul/bagisto-Automate/blob/master/programming/src/String/Print_Second_Heighest_Occurrence_Word.java 
+
+QUESTION:
+    How can import data from excel file in selenium ? 
+    
+ANSWER:
+    *> By using the Apache POI API.
+    *> https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/ExcelDrivern/dataDriven.java
+
+QUESTION:
+    How can you capture the invalid user  and password  message in login test case.
+
+ANSWER:
+    *> For this wew can take a screenshot of the flash message the is appearing after clicking on login button.
+    *> OR we can implement the ItestListener interface in our Listener class. and inside the ontestFail method we can take screenshot of the warning message.
+
+QUESTION:
+    How can you create negative testcases for login functionality
+
+ANSWER:
+    *> Log in with empty required fields.
+    *> Log in with an invalid email.
+    *> Login with an unregistered email.
+    *> Log in with an invalid password.
+    *> Log in with both email and password invalid.
+    *> Restore a password with an invalid email.
+    *> Restore a password with an unregistered email.
+
+QUESTION:
+    What are depends on testcases give any example. [ @BeforeTest annotation  use krte h iske liye ]
+
+ANSER:
+    *> Suppose we have 2 test 1st is "Registration" ans 2nd is Login. 
+    *> According to testNG rule "Login method" will execute first.
+    *> Because in testNG rule Test cases  are execution "alphabetical order"
+    *>. Here we want to run "Regisreation test first.
+    *> In this canse we can use the @dependsOntMethod("Registration") with "Login" Test.
+
+QUESTION:
+    How can you validate the fadeIn FdeOut messaage using selenium ?
+
+ANSWER:
+    *> We can use the isDesplayed() method for the particular element.
+    *> Boolean Display = driver.findElement(By.xpath("path of the element where the flsh message is apparing")).isDisplayed();
 
 
 How can you identify any frame ?
@@ -83,56 +105,52 @@ How can you identify any frame ?
 
         *> Similar to the first step, right-click on the page and click on View Page Source.
 
-How can you Automate Multi Factor Authentication [MFA] ? 
+QUESTION:
+    How can you Automate Multi Factor Authentication [MFA] ? 
     
-    ANSWER:
-        *> aerogear java OTP dependancy ka use kr k.
-        *> But we will also do the manual test for the Multi fector Authentication.
+ANSWER:
+    *> aerogear java OTP dependancy ka use kr k.
+    *> But we will also do the manual test for the Multi fector Authentication.
 
 
-How can you handle any submit button if the button is not showing in don.? 
+QUESTION:
+    How can you handle any submit button if the button is not showing in DOM.? 
 
-    ANSWER:
-        *> For this we can scroll the webPage and then click on the button
-        *> phle page ko scroll krenge jha pr button h vha tk fir click krenge.
-        *> JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("window.scrollBy(0,440)");
+ANSWER:
+    *> For this we can scroll the webPage and then click on the button
+    *> phle page ko scroll krenge jha pr button h vha tk fir click krenge.
+    *> JavascriptExecutor js = (JavascriptExecutor) driver;
+    *> js.executeScript("window.scrollBy(0,440)");
 
-New feature of selenim4 ?
+QUESTION:
+    New feature of selenim4 ?
     
-    ANSWER:
-        *> Take screenshot of any element.
-	    *> Get height and width of any element
-	    *> Can open multiple application on a single browser at a time // chrome browser  m multiple tabs ya multiple windows open ho jati h
-	    *> Relative locators. 
-	    *> Chrome devtool integration  [CDP ->Chrome devtool potocol  //driver.getDevTool(); is function ka use krte h ]
+ANSWER:
+    *> Take screenshot of any element.
+    *> Get height and width of any element
+    *> Can open multiple application on a single browser at a time // chrome browser  m multiple tabs ya multiple windows open ho jati h
+    *> Relative locators. 
+    *> Chrome devtool integration  [CDP ->Chrome devtool potocol  //driver.getDevTool(); is function ka use krte h ]
 	
 
-What is Upcasting?
+QUESTION:
+    What is Upcasting?
 
-    ANSWER:
-        *> Upcasting is the typecasting of a child object to a parent object
-        *> mtln jb hm parent class ko child class m extends krte h, or fir jab child class ka object bna re hote h to.
-        *> Child class k object ki typecasting kr dete h .
-        *> Parent p = new Child()  // Yha pr parent() class Child() class m extends h or hm Child() class ka object bna re h or Parent() class ki propery access kr re h , kyu ki hmne paren p = new childid(); likha h.
-        *>  Ye same consept hm WebDriver driver = new ChromeDeriver();  m bhi use krte h.
+ANSWER:
+    *> Upcasting is the typecasting of a child object to a parent object
+    *> Means We are using the properties of the parent class by creating the object of the child class. for this we need to typecase the object of the cildclass
+    *> mtln jb hm parent class ko child class m extends krte h, or fir jab child class ka object bna re hote h to.
+    *> Child class k object ki typecasting kr dete h .
+    *> Parent p = new Child()  // Yha pr parent() class Child() class m extends h or hm Child() class ka object bna re h or Parent() class ki propery access kr re h , kyu ki hmne paren p = new childid(); likha h.
+    *>  Ye same consept hm WebDriver driver = new ChromeDeriver();  m bhi use krte h.
 
-Difference between Interface and class ?
+QUESTION:
+    Difference between Interface and class ?
 
-    ANSWER:
-        *>  interface is a collection of abstract methods
-        *>  A class implements an interface, thereby inheriting the abstract methods of the interface // Class m abstract or non abstract donu type k function hote h .
-
-How can we Take screenshot? and how can take screenshot in fraamework ?
-    
-        ANSWER:
-            TakesScreenshot ss = (TakesScreenshot) driver; //TakesScreenshot IS INTERFACE.
-            File source = ss.getScreenshotAs(OutputType.FILE); //getScreenshotAs Is method of TakesScreenshot interface.
-            File File = new File(System.getProperty("user.dir") + "//Reports//" + testClassNmae + ".png");
-            FileUtils.copyFile(source, File); //copyFile is static method of FileUtils class
-
-		*> // framework m ITestLISTENER ka use krte h ontestfail method m is code ko likh lete h .
-             
+ANSWER:
+    *>  interface is a collection of abstract methods
+    *>  A class implements an interface, thereby inheriting the abstract methods of the interface // Class m abstract or non abstract donu type k function hote h .
+  
 Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is tthis ]
     //TODO
 

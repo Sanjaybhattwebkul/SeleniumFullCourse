@@ -2549,7 +2549,7 @@ QUESTION:
 	which methology you are using in project ?
 
 ANSWER:
-	Ajild  methology.
+	Agile  methology.
 
 QUESTION:
 	Difference between @FindBy and By  in PageFactory ?
