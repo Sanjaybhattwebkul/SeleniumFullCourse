@@ -2558,5 +2558,9 @@ ANSWER:
 	@FindBy -> driver.findElement(By.xpath(""));
 	By -> (By.xpath(""));
 
+Question:
+	 What will the error if the dependsOn group name is invalid and if any syntax erro?
 
+ANSWER:
+	*>  depends on nonexistent group "Login.adminLogin"
 

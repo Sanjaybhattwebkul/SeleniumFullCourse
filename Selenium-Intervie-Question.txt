@@ -1,3 +1,10 @@
+QUESTION:
+    DIFFERENCE BETWEEN Webdriver driver = new ChromeDriver(); AND ChromeDriver driver = new ChromDriver(); 
+
+ANSWER:
+   IF we are using  "ChromeDriver" then we will be only able to invoke and act on the methods that implemented by ChromeDriver class and supported by Chrome Browser only.
+   And If we ate using "Webdriver" that menas we are creating an instance of the WebDriver interface and casting it to ChromeDriver class. 
+
 Write syntax of implicit wait and explicit wait ? 
    
     -> ANSWER:
