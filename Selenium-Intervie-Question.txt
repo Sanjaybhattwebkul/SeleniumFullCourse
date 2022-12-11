@@ -163,19 +163,20 @@ QUESTION:
     Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is tthis ]
 
 ANSWER;
-    //TODO
+  LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/exercise/src/main/java/Selenium/exercise/ReversWords.java
 
 
-Difference between @factory annotation and DataProvider ?	
-    ANSWER:
-        *> @DataProvider gives you the power to run a test method with different sets of data, 
-        *> @Factory gives you the power to run all methods inside a test class with different sets of data.//
-            [ @DataProvider KA USE KR K HM 1 FUNCTION KO MUTLPLE SET OF DATA KO RUN KR SKTE H ]
-            [ @Factory KA USE KR K HM 1 CLASS KO MUTLPLE SET OF DATA KO RUN KR SKTE H ]
+QUESTION:
+    Difference between @factory annotation and DataProvider ?	
 
-        example code: 
-
-            -> https://www.softwaretestingo.com/factory-and-dataprovider-annotation/#:~:text=%40DataProvider%20gives%20you%20the%20power,which%20approach%20fits%20it%20better.
+ANSWER:
+    *> @DataProvider gives you the power to run a test method with different sets of data, 
+    *> @Factory gives you the power to run all methods inside a test class with different sets of data.//
+        [ @DataProvider KA USE KR K HM 1 FUNCTION KO MUTLPLE SET OF DATA KO RUN KR SKTE H ]
+        [ @Factory KA USE KR K HM 1 CLASS KO MUTLPLE SET OF DATA KO RUN KR SKTE H ]
+        
+    example code: 
+    -> https://www.softwaretestingo.com/factory-and-dataprovider-annotation/#:~:text=%40DataProvider%20gives%20you%20the%20power,which%20approach%20fits%20it%20better.
 
 Can we run testng.xml file by command promt ?
     ANSWEr:
