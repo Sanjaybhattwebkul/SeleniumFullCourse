@@ -155,9 +155,9 @@ QUESTION:
 
 ANSWER:
     1. POM
-    2. Datafriven framework  -> In this framework we are sending the data from an saperate file name .globalData.properties
+    2. Data-driven framework  -> In this framework we are sending the data from an saperate file name .globalData.properties
     3. Keyword-driven.-> In this framework we are taking the instructions from the excel file.
-    4.Hybrid Framework -> In this framework we have keyword driven and datadriven both options for script.
+    4. Hybrid Framework -> In this framework we have keyword driven and datadriven both options for script.
 
 QUESTION:
     Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is tthis ]
@@ -459,3 +459,8 @@ Difference between @FindBy and BY in POM ?
     answer:
         *> no such element: Unable to locate element  // initElements and initElement donu m same error aayegi.
 
+QUESTION:
+    What are Flaky [फलकी ] testCases ?
+
+ANSWER:
+    *>  The testcases which are getting passed and failed botg, that type of cases called फलकी testcases.

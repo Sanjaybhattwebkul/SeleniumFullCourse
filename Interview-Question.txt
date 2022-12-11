@@ -1455,11 +1455,11 @@ ANSWER:
 
 QUESTION:
 
-	HOW ARE YOU HANDLING THE FLAKY TEST IN FRAMEWORK ?
+	HOW ARE YOU HANDLING THE FLAKY [फलकी] TEST IN FRAMEWORK ?
 
 ANSWER:
 
-	Flaky test mtlb jo 1 time fail ho jate h or second time pass ho jate h .
+	Flaky [फलकी] test mtlb jo 1 time fail ho jate h or second time pass ho jate h .
 	1. iske lye hm IRetryAnalyzer interface ka use krte h .
 	2. Iske liye hm 1 retry.java class bna lete h is m logic likhte h jitni bar rerun krna h uske liye.
 	3. Fir test m "IRetryAnalyzer" [IRetryAnalyzer=retry.class]  helper ka use kr k test ko rerun krte h. 

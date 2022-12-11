@@ -2,8 +2,11 @@ package Selenium.exercise;
 
 import java.util.ArrayList;
 
-public class UniqueNumber {
+import org.testng.annotations.Test;
 
+public class UniqueNumber {
+	
+	@Test
 	public static void main(String[] args) {
 		int a[] ={ 4,5,5,5,4,6,6,9,4}; 
 		// Print unique number from the list- Amazon  
