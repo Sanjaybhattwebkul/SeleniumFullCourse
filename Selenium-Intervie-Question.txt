@@ -1,4 +1,29 @@
 QUESTION:
+    What are OPPS concept ?
+
+ANSWER:
+    1. Abstraction, 
+    2. encapsulation,
+    3. polymorphism,
+    4. and inheritance 
+
+QUESTION:
+    Difference between data abstraction [Abstract class]  and encapsulation ?
+   
+ANSWER:
+    *> We can access the methods of abstract class by using the getter and setter method.
+    *> We can use access modifier for access encapsulation.
+    *> Abstraction is hiding the details and implementation of the code. //implementation of function ko hide krta h .
+    *> Encapsulation is hiding the data and controlling the visibility of the code. // Hm only function ko call krte h. hme complete logic visible nahi hota.
+    *> An abstract class is a type of class in Java that is declared by the abstract keyword, we can not create object ob abstract class.
+
+QUESTION:
+    Which type of challanges you face in selenium.?
+
+ANSWER:
+    CONCURRENCY issue // while using ITestLISTENER  for extent report. passissues are getting failed.
+
+QUESTION:
     DIFFERENCE BETWEEN Webdriver driver = new ChromeDriver(); AND ChromeDriver driver = new ChromDriver(); 
 
 ANSWER:
@@ -35,15 +60,6 @@ QUESTION:
 
 ANSWER:
    *> HTTPS is a security-enhanced version of HTTP,Because HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses
-
-
-QUESTION:
-    Difference between data abstraction [Abstract class]  and encapsulation ?
-   
-ANSWER:
-    *> Abstraction is hiding the details and implementation of the code. //implementation of function ko hide krta h .
-    *> Encapsulation is hiding the data and controlling the visibility of the code. // Hm only function ko call krte h. hme complete logic visible nahi hota.
-    *> An abstract class is a type of class in Java that is declared by the abstract keyword, we can not create object ob abstract class.
 
 QUESTION:
     
@@ -432,10 +448,17 @@ How can we get broken link?
     -> ANSWER:
         * https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/SelinumBesic/src/other/BrokenLink.java
 
-PROGRAM TO SHORT ARRAY TO ACCESDING ORDER?
-    ->
+QUESTION:
+    PROGRAM TO SHORT ARRAY TO ACCESDING ORDER?
 
-CREATE A FUNCTION WHICH TAKE A ARRAYLIST AND PRINT EACH NUMBER WITH EVEN AND ODD TEXT ?
+ANSWER:
+ //
+
+QUESTION:
+    CREATE A FUNCTION WHICH TAKE A ARRAYLIST AND PRINT EACH NUMBER WITH EVEN AND ODD TEXT ?
+
+ANSWER:
+    //
 
 OVERLOADING AND OVERRIDING?
 *> 
@@ -443,9 +466,10 @@ OVERLOADING AND OVERRIDING?
 Componenet of http and https ?
 *> 
 
-Difference between @FindBy and BY in POM ?
+QUESTION:
+    Difference between @FindBy and BY in POM ?
 	
-	ANSWER:
+ANSWER:
 	*> In PageFactory - its only @FindBy or @FindBys finder annotation which is actually an interface.
 	*> There is no '@By' annotation its just By and- 'By' is an abstract class in selenium.
 	*> Both of them used to form object repositories i.e. get the elements locators.

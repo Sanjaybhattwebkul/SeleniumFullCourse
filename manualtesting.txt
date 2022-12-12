@@ -1,6 +1,15 @@
 ===============================[03-ECEMBER-2022]===========================
 
 QUESTION:
+	 What is the scrum ceremonies ?   
+
+ANSWER:
+	1. Sprint Planning.
+	2. Daily Scrum.
+	3. Sprint Review.
+	4. Sprint Retrospective.
+	5. Backlog Refinement.
+QUESTION:
 	HOW MANY TEAM MEMBER CAN BE TYPICALLY BE A PART OF AJIL TEAM ?
 
 ANSWER:
