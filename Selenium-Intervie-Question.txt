@@ -491,3 +491,428 @@ QUESTION:
 
 ANSWER:
     *>  The testcases which are getting passed and failed botg, that type of cases called फलकी testcases.
+
+    
+QUESTION:
+    HOW CAN RIGHT CLICK USING SELENIUM?
+
+ANSWER:
+    *> By using  contextClick method of actions class.
+     [ Actions actions = new Actions(driver);
+     [ actions.contextClick(driver.findElement(By.id("ID"))).perform();
+
+QUESTION:
+	WHOE CAN WE PRESS ANY KEYBOARD KEY IN SELENIUM ?
+
+ANSWER:
+	By using keyDown(key.SHIFT); // SHIFT is key name
+
+============================ [ 22-JUNE 2022 ] ======================================
+
+		-------------- SELENIUM INTERVIEW QUESTIONS - -----------------
+
+QUESTION:
+	 DIFFERENCE BETWEEN   Webdriver driver = new ChromeDriver(); AND ChromeDriver driver = new ChromDriver(); ?
+
+ANSWER:
+	*> If we are using the ChromeDriver driver it means we are invoking and act onlt the which implemented by the ChromeBrowser and Supported By ChromeBrowser;
+	*> If We are using the WebDriveer driver it means we are creating an instance of WebDriver interface and casting it to ChromeDriver class.
+
+
+	   driver object here has the access to the methods				driver object here has the access All the methods of ChromeDrover
+	   Of ChromeDriver which are defined in the WebDriver Interface                  
+	
+		
+	   Iska use kr k ham 1 code ko multiple browser m run kr skte h			 Iska use kr k ham 1 code ko only Chrome m run kr skte h kyu ki hm yha par 
+	    Like: WebDriver driver = new FireFoxDriver();				 ChromeDriver class ko denote kr re hai.	
+		  WebDriver driver = new ChromeDriver();
+
+	  Yha par hm WebDriver Class k methods ko use kr skte hai                         Yha pa only ChromeDriver class k methods ko use kr skte hai. 
+											 or code only chrome m chlega
+
+	  WebDriver Class hai or ChromeDriver Interface					ChromeDriver Class hai or ChromeDriver Interface
+
+	  *> Yha pr WebDrivere class ChromeDeriver() class m extendshoti h . or hm WebDrivere driver = new ChromeDeriver(); krte h , mtlb hm WebDriver ki properties access kr reh . Or ChromDriver driver =new ChromDriver() krenge to mtlb ChromeDeriver class ki properties access kr re h tabhi esa krne se test only chrome m chlte h .
+	  *> WebDriver() parent class h or is classko sab classess access krti h , like Firefox chrome, edge etc.. tb Webdriver likhne se test sare browser m chlta h .
+	  *> Is consept ko upcasting bhi khte h .
+
+
+Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDriver interface k ander define honge.
+	un sab ko ham webdriver class ka object bana kar  access kr skte h 
+
+
+
+QUESTION:
+	  DIFFERENT BETWEEEN driver.close() AND driver.quite();   ?
+
+ANSWER:
+	*> driver.close(); will close the current tab. and driver.quite(); will close the complete browser opened by selenium  automation.
+	
+	-> driver.close(); will close only the current tab.
+	-> driver.quit(); will close all tabs which opened by selenium
+
+QUESTION:
+	WHAT IS Strin IN JAVA ?
+
+ANSWER:
+	*> String is a Object that Represent the sequance of the charactrs.
+
+QUESTION:
+	 HOWMANY WAYS WE CAN DEFINE String?
+
+ANSWER:
+	We can Decleare String in 2 Ways.
+	
+	1. Literal string.  [  String name = "Sanju ji"; ]
+
+	2. Useing new newKeyword  [ String name = new String("Sanju ji"); ]
+
+
+QUESTION:
+
+	DIFFERENT BETWEEN  DEFINE String USING Literal way and USING new keyword ?
+
+ANSWER:
+	*>If we are defineing String Like this [ String name ="Sanju"; ] 
+    *>In this case if we are defining the 2  string variables with the same vale then java will not create 2 different-2 mamory for both variables.
+	   Java will Create Only one memory allocation and denote the value of 1st variable for the 2nd variable.
+
+
+	   
+
+QUESTION:
+	 HOW TO PRINT A GIVEN STRING IN REVERS ORDER ?
+	
+ANSWER:
+	String S = "Selenium";
+
+	**-> for(int i=s.length()-1; i>=0; i--)
+	   {
+		System.out.println(s.charAt(i));
+	   }
+
+
+QUESTION:
+	 DIFFERENT BETWEEN Public void FunctionName()  and Public Static functionName()  ?
+
+ANSWER:
+
+	-> We cal call a STATIC  method without creating a object of the class . 
+	-> we can call a nonStatic function only create a object of the calss .
+
+QUESTION:
+	 WHAT IS MEANS OF element intercepted exception in selenium ?
+
+ANSWER:
+	-> Ye error tb aati h jb hm koi operation perform krte h . or vo page load hone se phle hi perform ho jata h .
+	-> Iske liye hme [ Thread.sleep(1000) ]  ya [ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); ]  ka use krna hota h .
+	-> Is method ka use krne se jb tk page load ni ho jata tb tk selenium koi action persorm ni krega
+
+
+QUESTION:
+	 DIFFERENT BETWEEN implicitlyWait()  AND  Thread.sleep(1000) FUNCTION ? 
+
+ANSWER:
+	-> implilityWaite() tab use kr krte h jab hme kisi object ko page m load hone k liye waite krna ho h.
+	-> Thread.sleep(); tab use krte h jb koi object page m pahle se h or vo show ni hora h . to use show hone tk waite krne k liye ise use krte h 
+
+
+ANSWER:
+	 WHAT IS  REgular expression CSSselector in selenium ?
+	-> We can select the element by some words
+	Example: driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("hello");
+
+	-> button[contains(@class,'btn btn-submit')]  // agr 1 element 2 class h to 1 hi likhni hoti h .
+
+QUESTION:
+	 If WE HAVE 2 SAME BUTTON WITH THE SAME CLASS. HOW DID WE INENTIFY WHICH ONE Y=WE NEED ?
+	<div class="forgot-pwd-btn-conainer">
+		<button class="go-to-login-btn">Go to Login</button>
+		<button class="reset-pwd-btn">Reset Login</button>
+	</div>
+
+ANSWER:
+ -> In this case we need to use indexing of the element
+ -> //div[@class='forgot-pwd-btn-conainer']/button[1]
+
+
+QUESTION:
+	 DIFFERENCE BETWEEN ABSLUTE AND RELATIVE X-PATH ?
+	
+ANSWER:
+	-> Abslute X-path m hm DOM k root se child element ko likhte h one-by-one
+	  * EXAMPLE: /html/head/body/div/h2/p/span
+	  * or is m / ka hi use krte h.
+
+	-> Relative X-path m hm DOM se kisi bhi element ko direct access kr skte  hai.
+	  * EXAMPLE: //Div/p/span
+
+QUESTION:
+	 HOW CAN WE TRAVEL FROM CHIELD TO PARENT LOCTORS ? if we want to find <a> tag and we are in lOGIN  button
+	-> <header>
+			<a href="#">click</a>
+			<div>
+				<button class='btn-lOGIN'>HOME</button>
+				<button class='btn-lOGIN'>PRACTICE</button>
+				<button class='btn-lOGIN'>LOGIN</button>
+			</div>
+		</header>
+	-> WE ARE ON LOGIN BUTTON NOW. 
+	    ->Like: driver.findElement(By.xpath("//header/div/button[3]"))
+
+	*ANSWER*-->driver.findElement(By.xpath("//header/div/button[3]/parent::div/parent::header/a")) 
+
+
+QUESTION:
+	 HOW CAN WE TRAVEL FROM PARENT TO CHIELD LOCTORS ?We want to find Login Button and we are in Home nutton
+	-> <header>
+			<a href="#">click</a>
+			<div>
+				<button class='btn-lOGIN'>Home</button>
+				<button class='btn-lOGIN'>Practice</button>
+				<button class='btn-lOGIN'>LOGIN</button>
+			</div>
+		</header>
+	-> WE ARE ON Home BUTTON NOW. 
+	    ->Like: driver.findElement(By.xpath("//header/div/button[1]"))
+
+*ANSWER*-->
+	 driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[2]")).getText();
+
+
+
+QUESTION:
+	DIFFERENCE BETWEEN driver.get();  AND driver.navigate();  ?
+	
+ANSWER:
+	*> driver. get() is used to navigate particular URL(website) and wait till page load.
+	*> driver. navigate() is used to navigate to particular URL and does not wait to page load.
+	*> driver.get(); can not store the session and cookies. but driver.navigate(); can store session and cookies.
+	*> driver.get(); ye function tab tk action perform nahi karega jab tak complete page load nahi ho jata.
+	*> Jb tak complete page load nahi hoga tab tk waite krta hai bina kisi extra method call kiye.
+	*> driver.navigate(); ye function page open hote hi action perform krna start kr deta h . complate page load hone tk waite nahi krta hai.
+	*> isi liye hm first time jb browser open krte hai to driver.get() ka usse krte hai. 
+
+QUESTION:
+	 What are the new features of Selenium 4.5 ?
+   
+	1. Can take a screenshot of any element.
+	2. Can open multiple applications in a browser at a time.[ multiple windiws and multiple tabs can opened ]
+	3. Relative locators.
+	4. Chrome Dev tools.
+
+QUESTION:
+	 Difference between @factory and @ Dataprovido annotation ?
+
+ANSWER:
+	 *> @DataProvider gives you the power to run a test method with different sets of data, 
+    *> @Factory gives you the power to run all methods inside a test class with different sets of data.//
+
+QUESTION
+ Types of test Annotation in testng ?
+
+	1. KeyWord drivern automation  testing
+	2. Securoty testing.
+	3. Integration.
+	4. Unit Testing.
+	5. SMmoke testing.
+	6  Regration testing
+	7. Performance testing
+
+QUESTION:
+	 How can we switch into the frame ?
+
+ANSWER:
+	driver.switchTo();
+
+QUESTION:
+	  Difference between relative and absolute xPath ?
+
+ANSWER:
+	Absolute Xpath: It uses Complete path from the Root Element to the desire element. 
+	Relative Xpath: You can simply start by referencing the element you want and go from there
+	
+	-> jb hm ABSLUTE xPath  bnate h to hm head element se bottem tk jate h .
+		-> LIKE: head/body/div/div/div/span/b
+
+	-> OR jb hm Relative xPath bnate h tb hm elemt ko middle se bhi target kr skte h 
+		-> Like :  head/div/b
+
+
+QUESTION:
+	 Write a program in JAVA  to count the repeted the similar alpabets in given string ?
+
+ANSWER:
+	*> : https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/SelinumBesic/src/String.java
+
+QUESTION:	
+ Why we use Static  keyword in void main()  function ?
+
+ANSWER:
+	*> The main() method is static so that JVM can invoke it without instantiating the class
+	*.function m  Static lgane se hme class ka object ni bnana padhta hai. direct function call ho jayega
+
+QUESTION:
+	 Difference between findElement  and findElements ?
+	
+ANSWER:
+	*> findElement is used to uniquely identify a web element within the web page.
+ 	*> findElements is used to uniquely identify the list of web elements within the web pag
+	*>. findElement will is use to find Element on the DOM.
+	*>. findElements is use to get the list of the elements in DOM
+
+
+QUESTION:
+	 How can we heighlight any element in selenium ?
+
+ANSWER:
+	*>. By add custom css on element using JavascriptExecutor.
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].setAttribute('style','background: red; border:2px solid blue;')",h1);
+
+QUESTION:
+	 What is the dataDriven framework ?
+
+ANSWER:
+	Send data on runtime using dataProvidor in testNG is call dataDriven framework
+
+
+QUESTION:
+   Difference between hard asssersion and soft assersion ?
+
+ANSWER:
+	*> A Hard Assertion is a type of assertion that throws an exception immediately when an assert statement fails
+	*> Soft Assertions are the type of assertions that do not throw an exception immediately when an assertion fails
+	[
+		Hard assersion m agr hm koi script run krte h to agr koi testCse fail hota h to script ka excution stop ho jata h .
+		Soft assersion m hme script ka output last m milta h ki kitne case pass or kitne fail hue, script ka excution ni rukta hai. 
+	] 
+
+QUESTION:
+	 Can we run the testNg testcases through command promt ?
+
+ANSWER:
+	*> YES
+
+QUESTION:
+	 What is the key component of maven ?
+
+ANSWER:
+	1. maven-dependency-tree  -> means it contains a tree model of maven dependancy in pom.xml file.
+	2. maven-filtering		  -> Components for filtering resources
+	3. maven-invoker	      -> Fires up a Maven build in a new JVM.
+	
+
+QUESTION:
+	Why we use selenium  ?
+
+ANSWER:
+	*> Selenium is an open-source tool that automates web browsers.
+	*> It provides a single interface to u write test scripts in programming languages
+	*> like Ruby, Java, NodeJS, PHP, Perl, Python, and C#, 
+
+
+QUESTION:
+	 What is Parent-Child x-Path ?
+
+ANSWER:
+	*> in this xpath, we need to write the xpath of parent node first and then the xpath of child node.
+	*> "//div[@id='ParentElemet-Ki-Id'] //a[@value='Child-ka-Xpath']"
+	[
+		=>Is m hme phle paren element ka xPath dena hona h then child Element ka xPath
+	  	=> Example: driver.findElement(By.xpath("//div[@id='ParentElemet-Ki-Id'] //a[@value='Child-ka-Xpath']")).click();
+	]
+
+	
+
+QUESTION:
+	 Types of waites in selenium ?
+
+ANSWER:
+
+	-> implicitlyWait
+	-> explicityWaite
+	-> Thread.sleep   // Ye JAVA  ka part h selinum ka ni h ye function
+	->Flueant aite // agr time 20 second ka h to hm fluent wait m 10 pass kr denge to ye every 10 min bad check krega ki elemet visible h ya ni.
+
+QUESTION:
+	Difference Beetween implicitlyWait and ExplicityWaite ?
+
+ANSWER:
+	*> IF we are using implicitly waite then the browser will wait for the same time frame before loading every web element
+	*> The explicitly waite can implement only for specific element.
+
+	-> implicitlyWait  globally declear hota h , 1 bar declear krne se vo complete page k liye work krega
+	-> ExplicityWaite alag-2 elements k liye lgana padhta h .
+
+QUESTION:
+	Difference between Thread.sleep AND  implicitlyWait ?
+
+ANSWER:
+	*> The implicitlyWait will move for next  line of code to execute if it found eny element before the given time duration.
+	*> The thread.sleep will waite for complete time duration  even it found the elemment befor the given timeduration.
+
+	-> Thread.sleep m hm jitna time set krte h vo utne time page tk waite krta h chahe page load m time kam bhi lg ra .
+	-> implilityWaite only utna hi waite krega jitna loading m lgega chahe time hne jada bhi diya h tb bhi.
+	-> implicitlyWait tb page load hone m time lgta h tb waite krta h or thread.sleep agr pagr load hone k bad koi responce ya dynamic data load hota h us time use hota h 
+	
+	
+QUESTION:
+	 Differecne between xPath And cssSelector  ?
+	
+ANSWER:
+	*> In xpath we can travers backword and forword both side.
+	*> But in cssSelector we can oly traver forword. means parent to child.
+
+	-> xPath m hm forword or backword donu way m move kr skte h.  [ fowrod-> parent to child, backword-> child to parent ]
+	-> cssSelector m hm only fordword move krte h mtlb parent to child ?
+
+QUESTION:
+	How can we import excel file into selenium ?
+	
+ANSWER:
+	*> We can import excel file in selenium by Using Apache POI API librery .
+
+QUESTION:
+	 Difference between testNG and Junit ?
+	
+ANSWER:
+	*> We can do only unit testin in Junit. 
+	*> And by using the testNg we can do aprox alltype of testing. 
+
+
+QUESTION:
+	 How can we handel windows based functionality using selenium ?
+
+ANSWER:	
+	*> By using AutoIT tool in windows and for linux we can use the Robot class consept.
+
+
+QUESTION:
+	 TYPES OF Hard Assertion in selenium ?
+
+ANSWER:
+	*> assert.assertTrue();  // accept trur
+	*> assert.assertFalse(); // accept false value.
+	*> assert.assertEquals(); 
+	[
+		1. assertTrue only TRUE result accept rta hai. jese  if($disabled == true) { } //
+	  -> assert.assertTrue(driver.findElement(By.id("checkbox").isSelected()));  // agre ye true hua to TestCase  PASS
+
+		2. assert.assertFalse();  only FALSE result accept rta hai. jese  if($disabled == false) { } //
+		-> assert.assertFalse(driver.findElement(By.id("checkbox").isSelected()));  // agre ye false hua to testCase PASS
+
+		3. assert.assertEquals();  only FALSE result accept rta hai. jese  if($a == $b) { } //
+		-> assert.assertEquals(driver.findElement(By.id("checkbox").isSelected()));  // agre ye equals hua testCase PASS
+
+	]
+	
+
+QUESTION:
+	HOW CAN WE CLICK ON JS  ALERT IN SELENIUM ?
+
+ANSWER:
+	*> by using switchTo().clert(); method. 
+		FOR EXAMPLE: 
+		1 IF we ant to click OK , YES OR CONFIRM ?  //  driver.switchTo.alert().accept();
+		2. IF we ant to click Cancel , No   //  driver.switchTo.alert().dismis();
