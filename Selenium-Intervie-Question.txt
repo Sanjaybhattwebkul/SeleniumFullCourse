@@ -6,6 +6,7 @@ ANSWER:
     2. encapsulation,
     3. polymorphism,
     4. and inheritance 
+Web driver interface searchContax class ko extends krta h .
 
 QUESTION:
     Difference between data abstraction [Abstract class]  and encapsulation ?
