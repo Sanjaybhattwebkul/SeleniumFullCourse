@@ -554,7 +554,7 @@ ANSWER:
 	Next artical means next tab in browser ya next row in exel or any next data  ect 
 
 QUESTION:
-	HOWCAN WE SWITCH INSIDE A Iframe IN SELENIUM?
+	HOW CAN WE SWITCH INSIDE A Iframe IN SELENIUM?
 
 ANSWER:
 	By using switchTo.frame('framePath');  function.
@@ -566,7 +566,7 @@ ANSWER:
 	By using switchTO.defaultContent();
 
 QUESTION:
-	WHO CAN WE PERFORM Drag and Drop action in SELENIUM?
+	HOW CAN WE PERFORM Drag and Drop action in SELENIUM?
 
 ANSWER:
 	By  using dragAndDrop() function of  Actions class. // We need to pass the path of source and destination 
@@ -613,12 +613,6 @@ ANSWER:
 	By its ID,INDEX,webElemet.
 
 QUESTION:
-	How to switch to a specific frame in Selenium?
-
-ANSWER:
-	driver.switchTo.frame(frameId);
-
-QUESTION:
 	Name the Java collection framework used to store window ids.?
 
 ANSWER:
@@ -628,11 +622,6 @@ QUESTION:
 	Differecne between BlackBox And WhiteBox testing?
 
 ANSWER:
-	1. BlackBox testing ko Behavioral Testing. bhi kahte hai.
-	2. BlackBoxtesting m hm software applications k input or output m focus krte h.is m hme code or structure se koi mtlb ni hota.
-	    [ mtlb hm performance testing and loading testing ye sab ni krte only UI of functionality dekhte hai. ]
-
-	1. Whitebox testing m hm software k internalpart ko bhi test krte hai, like performance loading etc.
 
 QUESTION:
 	What are the component of selenium?
@@ -647,50 +636,7 @@ QUESTION:
 	HOW CAN WE COUNT THE LINKS IN THE WEB PAGE?
 
 ANSWER:
-	By using thedriver.findElements(By.tagName("a")).size(); function.
-
-Question :
-	In a web table, which could be valid syntax below to get row count?
-
-ANSWER:
-	driver.findElements(By.cssSelector("table-row").size();
-
-Question:
-	Can we determine the xpath of an element in the fourth column from the xpath of the element in the first column in the same row?
-
-ANSWER:
-	Yes, With the help of following-sibling method. xPath.
-
-Question:
-	Guess the valid syntax below to get the columns in a table with xpath.
-
-ANSWER:
-	List<WebElement> tblCol = driver.findElements(By.xpath("//table[@id='product']/tbody/tr/th"));
-
-Question:
-	How to perform arrow key down operation in Selenium?
-
-ANSWER:
-	driver.findElement(By.id(“text-id”)).sendKeys(Keys.DOWN)
-
-Question:
-	Why Javascript Executor is important in Selenium?
-
-ANSWER:
-	Identifies objects which has hidden elements.
-
-Question:
-	Why Javascript Executor is important in Selenium?
-
-ANSWER:
-	Identifies objects which has hidden elements.
-
-Question1:
-	How to extract value from a field with help of Javascript Executor?
-
-ANSWER:
-	String val = "return document.getElementById(\"hiddentext\").value;";
-	String text=(String) js.executeScript(val);
+	By using the  driver.findElements(By.tagName("a")).size(); function.
 
 QUESTION:
 	How can we handle https SSL certificate in Automate Browser?
@@ -2410,7 +2356,7 @@ ANSWEr:
 	//caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 	//caps.setCapability(CapabilityType.BROWSER_NAME, "chrome");
 
-22. HOW CAN WEW RUN ONLY FAILED TEST CASE USING TESTNG ?
+22. HOW CAN We RUN ONLY FAILED TEST CASE USING TESTNG ?
 	
 ANSWER: Jb hm testng se testcase run krte h to failed tests k liye testOutput k folder k ander 1 testng-gailed.xml file generate hoti h. us m only failed tests hote h . hm direct us file ko run krenge to only failed test run honge.
 
@@ -2453,35 +2399,6 @@ ANSWER:
 	*. Interface ka object ban jata h .
 
 	5. Abstract class ko extends kre h or interface ko implement krte h .
-
-QUESTION:
-	Can class A extends class B C  ?
-
-ANSWER:
-	NO, Because JAVA  is not support the multiple inheritance. we are using interface in the place of multiple inheritance.
-
-QUESTION:
-	WHAT IS THE OUTPUT OF THE GIVEN CODE ?
-
-	public classA{
-		int i =10;
-	}
-
-	public class B extends A {
-		int i=20;
-	}
-	pubic class C{
-		public void main(Strin[] args){
-			A a = new B()
-			System.out.println(a.i);
-		}
-	}
-
-ANSWER:
-
-	10; // kyu ki hm A a = new B() likha h  [A a => Accessing the variables and functions of class A ]
-		// B a = new B(); // is se output m 20 aayega.
-
 
 QUESTION:
 	WHAT ISFUNCTION OVERLOADING ?
@@ -2586,13 +2503,15 @@ QUESTION:
 	 What is PageFactory ?
 
 ANSWER:
+	*> Page Factory is a class provided by Selenium WebDriver to implement the Page Object Model. 
+	*>Page Factory is an optimized way to create object repository in Page Object Model framework concept
 	PageFactory 1 class() hoti h jo Page Object Model design parten ko ko support kri h .
 	iska use kr k  hm webelemrnts ko get kr skte h . Lkie 
 	@FindBy(css='input[name=san']');
 	WebElement inputbox;     // inputbox.sendkey("userName");
 
 Question:
-	Whta will the flow of execute testcases if all the annotation are applyes on the testNG testscript ?
+	What will the flow of execute testcases if all the annotation are applyes on the testNG testscript ?
 	// annotation mtlb [ beforeSuite,beforeclass,before method  ect..]
 
 ANSWER:
@@ -2612,35 +2531,25 @@ ANSWER:
 		3.  after class
 		4.  after suite
 
-QUESTION:
-	What is user story is Ajaild methology ?
-
-ANSWER:
-	Jb koi project banta h to dev team DA team and QAteam 1 schema ready krte h ki kitne din m kya kaam krna h H  is schema ko userStory khte h .
-
-QUESTION:
-	Agr hmre pass 5 user story h or hm 5th user story m kaam kr rhe h to testscript hm kis story tk likh dengr.
-
-QUESTION:
-	4th tk,  kyu ki jis userStory m hm working hote h us m manual testing hoti h or us se 1 phle step tk automation script likhte h.
 
 QUESTION:
 	How can we use fina {  }	 block in java ?
 
 ANSWER:
+*> We can not use the finally  block without the try block.
 	try{ } k bina finally{ }  ko call nahi kr skte h .
 
 QUESTION:
 	What is pre request in postmen ?
 
 ANSWER:
-	// TODO
+	*> Headers , body etc.. are the pre request in post man.
 
 QUESTION:
 	https code 301 AND  504 , 503 ?
 
 ANSWER:
-	// TODO
+	301: 301 Moved Permanently // agr url change ho gya h to. mtlm  phle url ww.webki=ul.com tha ab https://bagisto.in h.
 
 QUESTIO:
 	Write a java rogram to get only alphabet from a given string if there are number and string are in the string ?
@@ -2649,7 +2558,7 @@ ANSWER:
 		//TODO
 
 QUESTION:
-	hoe can we take a screenshot of failed testcase in a framework ?
+	HOW can we take a screenshot of failed testcase in a framework ?
 
 ANSWER:
 	We can implement the ITest Listener interfacce in a java java clas and  inside of ontestFail() method of ITestLISTENER interface we can write the code of task screeshot.
@@ -2672,4 +2581,78 @@ Question:
 
 ANSWER:
 	*>  depends on nonexistent group "Login.adminLogin"
+
+======================================== OTHER =========================
+
+
+Question :
+	In a web table, which could be valid syntax below to get row count?
+
+ANSWER:
+	driver.findElements(By.cssSelector("table-row").size();
+
+Question:
+	Can we determine the xpath of an element in the fourth column from the xpath of the element in the first column in the same row?
+
+ANSWER:
+	Yes, With the help of following-sibling method. xPath.
+
+Question:
+	Guess the valid syntax below to get the columns in a table with xpath.
+
+ANSWER:
+	List<WebElement> tblCol = driver.findElements(By.xpath("//table[@id='product']/tbody/tr/th"));
+
+Question:
+	How to perform arrow key down operation in Selenium?
+
+ANSWER:
+	driver.findElement(By.id(“text-id”)).sendKeys(Keys.DOWN)
+
+Question:
+	Why Javascript Executor is important in Selenium?
+
+ANSWER:
+	Identifies objects which has hidden elements.
+
+Question:
+	Why Javascript Executor is important in Selenium?
+
+ANSWER:
+	Identifies objects which has hidden elements.
+
+Question1:
+	How to extract value from a field with help of Javascript Executor?
+
+ANSWER:
+	String val = "return document.getElementById(\"hiddentext\").value;";
+	String text=(String) js.executeScript(val);
+
+QUESTION:
+	Can class A extends class B C  ?
+
+ANSWER:
+	NO, Because JAVA  is not support the multiple inheritance. we are using interface in the place of multiple inheritance.
+
+QUESTION:
+	WHAT IS THE OUTPUT OF THE GIVEN CODE ?
+
+	public classA{
+		int i =10;
+	}
+
+	public class B extends A {
+		int i=20;
+	}
+	pubic class C{
+		public void main(Strin[] args){
+			A a = new B()
+			System.out.println(a.i);
+		}
+	}
+
+ANSWER:
+
+	10; // kyu ki hm A a = new B() likha h  [A a => Accessing the variables and functions of class A ]
+		// B a = new B(); // is se output m 20 aayega.
 

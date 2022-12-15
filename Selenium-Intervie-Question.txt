@@ -492,7 +492,6 @@ QUESTION:
 
 ANSWER:
     *>  The testcases which are getting passed and failed botg, that type of cases called फलकी testcases.
-<<<<<<< HEAD
 
     
 QUESTION:
@@ -918,5 +917,3 @@ ANSWER:
 		FOR EXAMPLE: 
 		1 IF we ant to click OK , YES OR CONFIRM ?  //  driver.switchTo.alert().accept();
 		2. IF we ant to click Cancel , No   //  driver.switchTo.alert().dismis();
-=======
->>>>>>> 2b4c5506f9da98d96a5fe0e27c6b56453418e808

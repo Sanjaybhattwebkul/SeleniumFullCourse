@@ -323,6 +323,12 @@ ANSWER:
         *> Blackbox testing means test the software without knowing the software implementation,sedign and functionality of application.
             Example: Acceptance testing  -> Accepting testing means only the normal testing like login with valid username or pass , its inof.
                      sysstem testing-> Applicatio is landing or not.
+			[
+				1. BlackBox testing ko Behavioral Testing. bhi kahte hai.
+				2. BlackBoxtesting m hm software applications k input or output m focus krte h.is m hme code or structure se koi mtlb ni hota.
+	    			[ mtlb hm performance testing and loading testing ye sab ni krte only UI of functionality dekhte hai. ]
+				1. Whitebox testing m hm software k internalpart ko bhi test krte hai, like performance loading etc.
+			]
 Question:
     if you found the bug, What will you do  that the bug is not introduce again ?
 
@@ -456,3 +462,8 @@ ANSWER:
 	7. Roles And responsiblity: : kn member kya kaam krenge. 
 	8. Defect management:  bug kn assign krenga dev ko  ya tester ko..
 	
+	QUESTION:
+	Agr hmre pass 5 user story h or hm 5th user story m kaam kr rhe h to testscript hm kis story tk likh dengr.
+
+QUESTION:
+	4th tk,  kyu ki jis userStory m hm working hote h us m manual testing hoti h or us se 1 phle step tk automation script likhte h.
