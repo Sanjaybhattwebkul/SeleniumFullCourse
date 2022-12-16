@@ -467,3 +467,10 @@ ANSWER:
 
 QUESTION:
 	4th tk,  kyu ki jis userStory m hm working hote h us m manual testing hoti h or us se 1 phle step tk automation script likhte h.
+	
+	
+QUESTION:
+	HOW CAN PULL SINGLE FILE FORM MASTER?
+	
+ANSWER:
+	git checkout upstream/master -- filepath
