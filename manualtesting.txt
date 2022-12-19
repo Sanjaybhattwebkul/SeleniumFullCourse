@@ -329,6 +329,23 @@ ANSWER:
 	    			[ mtlb hm performance testing and loading testing ye sab ni krte only UI of functionality dekhte hai. ]
 				1. Whitebox testing m hm software k internalpart ko bhi test krte hai, like performance loading etc.
 			]
+
+QUESTION:
+	WHAT IS ACCEPTANCE TESTING ?
+	
+ANSWER:
+	acceptance testing is a test conducted to determine if the requirements of a specification or contract are met. It may involve chemical tests, physical tests, or performance tests
+
+QUESTION:
+	WHAT IS Alpha and beta testing ?
+	
+ASWER:
+	*> ALFA TESTING RELEASE release se phle hoti h . like a demo bna k hhm check kr skte h. example:  functionality and usability .
+	*> Beta testing release k bad hogi. user end p.  exxample:  usability, functionality, security
+	Alpha Testing is done within the organization, while Beta Testing is done in the user's environment.
+	During Alpha Testing only functionality and usability are tested, while during Beta Testing usability,
+	functionality, security, and reliability are tested to the same depth.
+	
 Question:
     if you found the bug, What will you do  that the bug is not introduce again ?
 
@@ -467,3 +484,5 @@ ANSWER:
 
 QUESTION:
 	4th tk,  kyu ki jis userStory m hm working hote h us m manual testing hoti h or us se 1 phle step tk automation script likhte h.
+	
+	
