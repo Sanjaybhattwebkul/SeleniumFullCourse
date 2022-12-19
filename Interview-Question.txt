@@ -2656,3 +2656,11 @@ ANSWER:
 	10; // kyu ki hm A a = new B() likha h  [A a => Accessing the variables and functions of class A ]
 		// B a = new B(); // is se output m 20 aayega.
 
+
+1. shipping methos, services.
+2. payment method,
+3. catalog. cart
+4. gift messaage
+5. revot points.
+6. configuration.
+
