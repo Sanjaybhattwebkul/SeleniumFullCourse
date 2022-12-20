@@ -485,4 +485,46 @@ ANSWER:
 QUESTION:
 	4th tk,  kyu ki jis userStory m hm working hote h us m manual testing hoti h or us se 1 phle step tk automation script likhte h.
 	
-	
+
+QUESTION:
+  What is Database testing ?
+
+ANSWER:
+  */ Various SQL statements are used to develop the Test cases. 
+  *> The most common SQL statement, which is used to perform DB testing,
+  *> is the Select statement. Apart from this, various DDL, DML, DCL statements can also be used.
+  *> Example − Create, Insert, Select, Update, etc.
+
+   Database testing means test the data of databse, 
+    *> in tha database testing we can do various types of testing
+    *>	Structural testing. -> Need to flow of code if the conditions are working properly or not.
+    *>	Functional testing. -> Functionality of the application
+    *>	Non-functional testing. -> 
+
+WHAT ARE :
+
+     1.  DDL -> Data Defination Language. [ insert, Create query ] 
+     2.  DML -> Data Manipulation Language [ Update, delete, alter query ]
+     3.  DCL -> Data Control Language.  [ Kis user ko kya access dena h db m ]
+     4.  DQL -> Data Query Language.    [ Exception handle, ki agr query theek h to tabhi commit hoga, ]	
+
+
+QUESTION:
+	HOW CAN PULL SINGLE FILE FORM MASTER?
+
+ANSWER:
+	*> git checkout upstream/master -- filepath
+
+QUESTION:
+	API responce CODE ?
+
+ANSWER:
+
+	*> 404 Not Found. This is by far the most common HTTP status code you can get. ...
+	*> 401 Unauthorized. This status code means you haven't yet authenticated against the API. ...
+	*> 403 Forbidden. ...
+	*> 400 Bad Request. ...
+	*> 429 Too Many Requests. ...
+	*> 500 Internal Server Error. ...
+	*> 502 Bad Gateway. ...
+	*> 503 Service Unavailable.
