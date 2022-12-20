@@ -515,16 +515,50 @@ QUESTION:
 ANSWER:
 	*> git checkout upstream/master -- filepath
 
+
+
 QUESTION:
-	API responce CODE ?
+	API responce CODE  OR TYPES OF ERROR?
+
+ANSWER:
+	---- Client-Side Status CodesPermalink    -------
+	*> 404 Not Found. This is by far the most common HTTP status code you can get. ...
+	*> 401 Unauthorized. Means you haven’t yet authenticated against the API
+	*> 403 Forbidden. => Means you don’t have permission to request that URL.You’re authenticated, but the user or role you’re authenticated for isn’t permitted to make the API request.
+	*> 400 Bad Request. => Means the data we are sending in our api call that is incorrect..
+	*> 429 Too Many Requests. => If you’re sending too many requests in a short amount of time, API m limit hoti h ki 1 minute m 1000 requ. handle hongi. agr us se jada req. aayegi to ye error aayegi..
+	
+	--- Server-Side Status CodesPermalink ---
+
+	*> 500 Internal Server Error.=> caused by something related to your API call [agr data galat send kiya ho. ya server side se koi issse h tb.]
+	*> 501 Not ImplementedPermalink  => When the htp method is wrong
+	*> 502 Bad Gateway. => This could be related to a network problem, or simply because the API server crashed, or was down for maintenance.
+	*> 503 Service Unavailable. => Too many API requests were sent and now the API can’t handle any more of them.
+
+QUESTION:
+	TYPES OF METHODS IN POSTMEN ?
 
 ANSWER:
 
-	*> 404 Not Found. This is by far the most common HTTP status code you can get. ...
-	*> 401 Unauthorized. This status code means you haven't yet authenticated against the API. ...
-	*> 403 Forbidden. ...
-	*> 400 Bad Request. ...
-	*> 429 Too Many Requests. ...
-	*> 500 Internal Server Error. ...
-	*> 502 Bad Gateway. ...
-	*> 503 Service Unavailable.
+	1. PATCH   *> PATCH is used to update partial resources. For instance, when you only need to update one field of the resource, PUTting a complete resource representation 
+	2. HEAD    *> HEAD is almost identical to GET, but without the response body. HEAD transfers the status line and the header section only. [ IS M HMRE RESPONSE NAHI MILTA KOI ONLY RESPONSE CODE MIL JTA H.]
+	3. DELETE  *> The DELETE method deletes the specified resource.
+	4. OPTIONS *>  The OPTIONS method describes the communication options for the target resource.
+	5. PUT     *> PUT is used to send data to a server to create/update a resource
+	6. POST    *> A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+	7. GET     *> using GET should only retrieve data and should have no other effect on the data.
+
+QUESTION:
+	WHAT ISGRAPHQL  API:
+
+ANSWER:
+	WE  CAN MANIPULATE THE RESPONCE IN graphQL API. [ agr hm responce m se only name chahiye to hm name parameter send kr skte h to hme only name milega ]
+
+QUESTION :
+	WHAT IS SOAP API:
+
+ANSWER:
+	*> https://stoplight.io/api-types/soap-api
+	*> Shop API m hm 1 xml file bnate h or or us file ko call krte h accordingly.
+	*> XML file   m hi url , data format and meta datarhta h .
+	*> JUst like CURL.
