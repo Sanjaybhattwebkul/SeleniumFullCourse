@@ -194,7 +194,7 @@ QUESTION:
 	4. Chrome Dev tools.
 
 QUESTION:
-	 Difference between @factory and @ Dataprovido annotation ?
+	 Difference between @factory and @ Dataprovidor annotation ?
 
 ANSWER:
 	 *> @DataProvider gives you the power to run a test method with different sets of data, 

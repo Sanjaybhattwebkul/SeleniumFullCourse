@@ -521,6 +521,20 @@ QUESTION:
 	API responce CODE  OR TYPES OF ERROR?
 
 ANSWER:
+
+	100 *> continue 
+	102 *> Switching protocol.
+	200 *> successfully
+	201 -> Request acccpeted  and created.
+	202 -> accepted but not but processing is not completed yet.
+	301 -> Moved Permanent.
+	302 -> Found
+	303 -> Other.
+	304 -> Not Modified.
+	305 -> Use Proxy.
+	306 -> UnUsed
+	307 -> Temmpory Redirected.
+
 	---- Client-Side Status CodesPermalink    -------
 	*> 404 Not Found. This is by far the most common HTTP status code you can get. ...
 	*> 401 Unauthorized. Means you haven’t yet authenticated against the API
@@ -562,3 +576,5 @@ ANSWER:
 	*> Shop API m hm 1 xml file bnate h or or us file ko call krte h accordingly.
 	*> XML file   m hi url , data format and meta datarhta h .
 	*> JUst like CURL.
+
+

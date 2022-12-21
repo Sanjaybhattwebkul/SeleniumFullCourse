@@ -449,19 +449,6 @@ Why we use abstract class and interface?
         *> Or agr hmne kisi interface m koi function feature m add kr diya h to jha-2 p vo interface call hua h sab jgh us function ko call krna hoga.
         *> Bu t abstract class m esa ni hota.
 
-How can we take screenshot explain with Syntax?
-
-    ANSWER:
-
-How can we scroll webpage?
-How can we validate broken link?
-How can we handle window based pop up?
-How can we fill username and password during login over the webpage?
-Why we use switchTo() method??
-In how many ways we can enter value in text box?
-How you will use CICD tool i.e jenkins
-Program to Count any character in string?
-Mere conflict in git?
 Import Excel data in string firm And convert in int. OR how to convert int data of Excel when we are importing by poi api?
 How can we get broken link?
     -> ANSWER:
@@ -526,9 +513,176 @@ QUESTION:
 ANSWER:
 	By using keyDown(key.SHIFT); // SHIFT is key name
 
+
 ============================ [ 22-JUNE 2022 ] ======================================
 
 		-------------- SELENIUM INTERVIEW QUESTIONS - -----------------
+
+    
+QUESTION:
+    . How can we scroll webpage?
+
+ANSWER:
+   JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("wondows.scrollBy(0,520')");
+
+QUESTION:
+    How can we validate broken link?
+
+ANSWER:
+    href = a.getAttribute('href') // a -> driver.findElement(By.tagName(a));
+    HttpURLConnection conn = new URL(href).openConnection();
+    conn.setRequestMethod("HEAD");
+    conn.connect();
+    int res = conn.getResponseCode();
+    if(res>400){
+        // link is broken;
+    }
+
+QUESTION:
+    How can we handle window based pop up?
+
+ANSWER:
+    
+    By using AutoIT tool.
+    And Chrome CDP class.
+
+QUESTION:
+    How  can handle  prompt in windows.
+
+ANSWER:
+    http:-uerName-password@siteUrl.com
+
+QUESTION:
+    Difference Beteen  Array and ArrayList. 
+    
+Answer:
+   *>  Array ka size fix hotah { int[] arr = new int[5]  } 
+    *> Array fast hota h due to fix size.
+    *> ArrayList ka size fix ni hota h 
+    *> arraylist slow hota h i compare to array.
+
+QUESTION:
+    DIFFERENCE BETWEEN . HashMap and HashSet
+
+ANSWER:
+    1. HashSet is an implementation of Set Interface  And HashMap is an implementation of Map Interface
+    2. HashSet does not allow duplicate value.And .HashMap allow the Duplicate values but not not duplicate keys in a Map
+    3. HashSet required 1 Objects during an add operation AND HashMap Requires 2 Object duration add operation.
+
+QUESTION:
+    DIFFERENCE BETWEEN .Final and Static
+
+ANSWER:
+    *> The static keyword means the value is the same for every instance of the class.
+    *> The final keyword means once the variable is assigned a value it can never be changed
+    1> Agr kisi function m static lga diya to us function ko without object k access kr skte h .
+    2> Agr kisi function m final lga diya to use override or overload nahi kr skte or class m final lga h to use extends ni kr skte.
+
+QUESTION:
+     OOPS concept . woth example ?
+
+ANSWER:
+    1. Inheritance -> Extends a class 
+    2. Polymorphism -> Method overloading and riding.
+    3. DataAbsTraction. -> Means abstract class [ data abstraction can implement by abstract class ]
+    4. Encapsulation  -> Like a class.
+
+ANSWER:
+    1.  PUT and POST
+
+ANSWER:
+    PUT -> Create and Update data.
+    POST -> Create Data.
+
+QUESTION:
+    How can use AUTO IT  For upload file.
+
+ANSWER:
+
+    *> HME auto it tool ka use kr 1 .au3 extension vali file bnyenge or is m script likhenge.
+    *> Fir hm ise compile kr lenge kyuki java ka getRuntime() method .exe file ko accept krta h.
+    *> Fir us gile Runtime.getRuntime().exec("exec file ka path"); ka use kr k apni script m call krna hota h
+    *>  
+
+QUESTION:
+   
+    How can we fill username and password during login over the webpage?
+
+ANSWER:
+        http:-uerName-password@siteUrl.com
+
+QUESTION:
+    Why we use switchTo() method??
+
+ANSWER:
+    1. For switch inside a frame. and switch into next windows.
+
+QUESTION:
+     In how many ways we can enter value in text box?
+
+ANSWER:
+    1. By using sendKeys()
+    2. By using JavascriptExecutor();
+
+QUSTION:
+    . How you will use CICD tool i.e jenkins
+
+ANSWER:
+    We can configure the date and time for execute the test case.
+    We need to set the 5 parameter for configure the date and time.
+    *> * * * * * [ 1. minute . 2. hour 3. day 4. month 5. year. ]
+
+11. Program to Count any character in string?
+12. Mere conflict in git?
+
+
+QUESTION:
+	WHAT IS SELENIUM :>
+
+ANSWER:
+	*> Selenium is an open-source tool that automate the browser.
+	*> It provide us a interface to write our test script in programming languages.
+	*> Java, python, php,c#,nodejs etc..
+	
+QUESTION:
+	WHAT IS TESTNG ?
+
+ANSWER:
+
+	*> TestNG is an open-source test automation framework for Java
+	*> The NG in TestNG stands for 'Next Generation
+	*> We can create Groupting, run parallel , create sequancing of the test cases.
+	*> We can get an report of testcases onside the test-utput folder in testng. 
+
+QUESTION:
+
+	WHAT IS MAVEN ?
+
+ANSWER:
+	*> Maven is a popular open-source build tool 
+	*> developed by the Apache Group to build, publish, and deploy several projects at once.
+	*> By using the maven we can run the testcases from out command line interface.
+	*> We can integerate the devops tool like jenkins with maven.
+
+QUESTION:
+	WHAT IS EXTENT REPORT?
+
+ANSWER:
+	*> Extent Reports is an open-source reporting library
+	*> It provides a pictorial representation of the test results
+	*> It can be integrated with major testing fabrics like  TestNG, JUnit, NUnit
+	*> It can be customized as required. It allows the users to attach screenshots and logs in the test report for a detailed summary of the tests
+
+QUESTION:
+	 Difference between testNG and Junit ?
+	
+ANSWER:
+	*> We can do only unit testin in Junit. 
+	*> And by using the testNg we can do aprox alltype of testing. 
+
+
+
 
 QUESTION:
 	 DIFFERENCE BETWEEN   Webdriver driver = new ChromeDriver(); AND ChromeDriver driver = new ChromDriver(); ?
