@@ -610,7 +610,16 @@ QUESTION:
     How can we fill username and password during login over the webpage?
 
 ANSWER:
-        http:-uerName-password@siteUrl.com
+        https: //uerName:password@siteUrl.com
+
+QUESTION:
+    HOW CAN WE HANDLE THE BROWSER ALERTS/NOTIFICATION?
+
+ANSWER:
+
+    WE CAN HANDLE BY USNIG THE ChromeOptions(); class
+    *> ChromeOptions options = new ChromeOptions();
+    *> options.addArguments("--disable-notifications");
 
 QUESTION:
     Why we use switchTo() method??
