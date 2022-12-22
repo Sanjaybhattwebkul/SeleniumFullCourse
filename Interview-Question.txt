@@ -2364,15 +2364,25 @@ ANSWER: Jb hm testng se testcase run krte h to failed tests k liye testOutput k 
 ANSWER: 1. implicit waite -> kyu ki hm isme different-2 methods pass kr skte h . [ same method with different-2 parameter.]
 	2. AAction class [ is m bhi different-2 parameter pass hote h according to usr need .
 	
-24. What is preority is testng ?
-answer: Mtlb ki hm phle kis test ko run krna chahte h . jis ko preority jada denge vo phle chlega , agr kisi testcase ki  preority 0 h to vo phle chlega..
+QUESTION:
+ What is preority is testng ?
 
-25. How can you change the chrome default download path ?  [ crome m files /data download folders k ander  downpoad hota h use kese change krenge]
-Answer:  by useing setExprementalOpton() method  of chromeOptions class.
+answer:
+	*>  Mtlb ki hm phle kis test ko run krna chahte h .
+	*> jis ko preority jada denge vo phle chlega , agr kisi testcase ki  preority 0 h to vo phle chlega..
+
+QUESTION:
+	. How can you change the chrome default download path ?  [ crome m files /data download folders k ander  downpoad hota h use kese change krenge]
+
+ANSWER:
+
+	*>  by useing setExprementalOpton() method  of chromeOptions class.
 	
-26. Hhow can get file from your locale system ?
-Answer:
-	By using exists method of File() class   // File() java ki calss h 
+QUESTION:
+	 Hhow can get file from your locale system ?
+ANSWER:
+:
+	*> By using exists method of File() class   // File() java ki calss h 
 
 
 QUESTIONS:
@@ -2657,10 +2667,4 @@ ANSWER:
 		// B a = new B(); // is se output m 20 aayega.
 
 
-1. shipping methos, services.
-2. payment method,
-3. catalog. cart
-4. gift messaage
-5. revot points.
-6. configuration.
 
