@@ -627,6 +627,37 @@ QUESTION:
 ANSWER:
     1. For switch inside a frame. and switch into next windows.
 
+
+QUESTION:
+  What's the difference between functions getClass() and getAttribute(“class”) in Selenium?
+
+ANSWER:
+    *> he simple difference is that, getClass() returns the XPath of the webelement. 
+    *> Whereas, getAttribute("class") will return the value of the class attribute within the <div> tags.
+    *> Look at the code below to understand this concept better
+   
+    ``````````````````````
+    WebElement ele = driver.findElement(By.xpath(".//*[@id='next']"));
+    String a = ele.getAttribute("class");
+    System.out.println(a);
+    string b = ele.getClass();
+    System.out.println(b);
+
+    ``````````````````````````````````
+    *> Then, a will return: "rc-button rc-button-submit". Whereas, b will return: ".//*[@id='next']"
+
+QUESTION:
+   What's the difference between Actions and Action in Selenium?
+
+ANSWER:
+    Action Interface represents a single user-interaction action.
+    *> iF WE WANT TO SEND VALUE IN CAPS. ON ANY INPUT BOX THEN we will use Actions class and Action interface.
+    *> Actions class ka object bna k hm action interface k function call krte h . jo ki Actions class m implement h.
+    *> .perform() in method of action interface and .build() method is of Actions class
+    *> actions.keyDown(element,   Keys.SHIFT).sendKeys(“Text_In_UpperCase”).keyUp(Keys.SHIFT).build().perform();
+    *> Hm sare actions ko .build() ka use kr k store krte h . build action type ka object return krta h . 
+    *> And last m hm action interface k .perform() method ko call kr k action ko execute krte h.
+
 QUESTION:
      In how many ways we can enter value in text box?
 
