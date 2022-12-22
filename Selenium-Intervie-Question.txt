@@ -35,7 +35,8 @@ QUESTION:
     Write syntax of implicit wait and explicit wait ? 
 
  ANSWER:
-    *>  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    *>  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));   // implicitwaitimplicitlyWait.
+
     *>  WebDriverWait wait = new WebDriverWait(driver,30);
     *>  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")));   
 
@@ -657,13 +658,14 @@ ANSWER:
 
 QUESTION:
 
-	WHAT IS MAVEN ?
+	WHAT IS MAVEN ? WHY SHOUL WE USE MAVEN ?
 
 ANSWER:
-	*> Maven is a popular open-source build tool 
-	*> developed by the Apache Group to build, publish, and deploy several projects at once.
+	*> Maven is a popular open-source software project management and build manaement tool
+    *> Maven is a centrlize repository where we can find all the dependancies for selenim. anad can import in our pom.xml file.
+    *> By using the maven we no need to import the Jar files we can direct add dependancy in pom.xml file.
 	*> By using the maven we can run the testcases from out command line interface.
-	*> We can integerate the devops tool like jenkins with maven.
+	*> We can integerate the CI tool like jenkins with maven.
 
 QUESTION:
 	WHAT IS EXTENT REPORT?
@@ -681,6 +683,59 @@ ANSWER:
 	*> We can do only unit testin in Junit. 
 	*> And by using the testNg we can do aprox alltype of testing. 
 
+QUSTION:
+    SYNTAX OF EXPLICITLY WAIT ?
+
+ANSWER:
+    WebDriverWait wait = new WebDriverWait(driver,10)
+    wait.until(ExpectedCondition.visiblityOfElementLocated("xpath"));
+
+QUESTION?
+    SYNTAX OF TAKESCREENSHOT ?
+
+ANSWER:
+
+    TakesScreenshot ss = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    FileUtils.copyFile(ss,new File("ss.png"));
+
+QUESTION:
+
+    SYNTAX OF GETWINDOWHANDLERS ?
+
+ANSWER:
+
+    Set<String> window = driver.getWindowHandlers();
+    Itrator it = window.Itrator;
+    it.next;
+
+QUESTION:
+    SYNTAX OF BROKEN LINK?
+
+ANSWER:
+    HttpURLConnection conn = new URL().openConnection();
+    conn.setRequestMethod("Hed");
+    conn.connnect();
+    int responce = conn.getResponseCode();
+    if(responce>400) ? "broken true" : "Broken false"
+
+QUESTION?
+    DIFFERENCE BETWEEN getClass()  and getAttribute("class")  ?
+
+ANSWER:
+    *> getClass  will return the xpath of the element.
+    *> getAttribute("class") will return the class name of element.
+
+ANSWER:
+    Difference between getWindowHandles() and getWindowHandle() ?
+
+ANSWER:
+    *> getWindowHandles() store all the open windows.
+    *> getWindowHandle()  store only current focus window.
+
+    Set<String> windows = driver.getWindowHandles(); //[parentid,childid,subchildId]
+    java.util.Iterator<String> it=windows.iterator();
+    String parentId = it.next();
+    driver.switchTo().window(childId);
 
 
 

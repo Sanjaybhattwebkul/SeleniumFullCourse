@@ -1691,32 +1691,6 @@ ANSWER:
 
 
 ================= HTTP RESONCE CODE =================
-
-	
-200 -> Successfull request
-201 -> Successfull request and data creted
-202 -> request has bess acccepted for process and process is not completed
-204 -> Empty responsible
-
-400 -> Bad request
-401 -> Unautorize access
-403 -> Forbdden OR access denei.
-404 -> Page not foound / Data not found
-
-500 -> IInternel server error
-503 -> Service unavailable
-
-
-=> WHAT IS MAVEN ? WHY SHOUL WE USE MAVEN ?
-	1. Maven Apache maven is a software project management and build manaement tool.
-	2. Apache maven m 1 centrlize repository hoti h jaha se hm sari sependancy download kr skte h .
-	3. Pache MAVEN KA USE KR K HM KISI BHI CI TOOL ko integrate kr skte h . like  Jenkins.
-		[ Bina maven k jenkins intergrate nahi kr skte h , jenkins m hm maven ki commands deni hoti h  test run krne k liye.]
-
-	4. Maven ka use krne se hme Jar files import nahi krne hot i  h  . hm POM.xml m dependancy dal dete h fir project ko jo bhi access krega us k system m dependancy automatic download ho jati h use alag se download nahi krni hoti h .
-		[ Agr hm maven ka use nahi krenge to hme jar files download krni  hogi. or hmre project koi or access kr rah to use bhi jar import krni hot i h.]
-
-
 QUESTION:
 	WHAT IS GROUPID IS MAVEN ? <GroupID> selenium.io.ori....</GroupID>
 
@@ -2339,9 +2313,6 @@ ANSWER:
 17. Can we run testng.xml file by command promt ?
 	// YES    [ Phle apne project k jar files ka path do cmd m fir enter press k testng file ka path]
 
-18. Hard assersion and soft assersion difference ?
-	/// agr kisis test m hard assersion lga h or test fail ho gya to program ka execution ruk jata h with error
-	// agr kisis test m soft assersion lga h or test fail ho gya to selenium us test k liye error through kr  baki k test run kr dega.
 
 19. Test case for Cofee machine ?
 20.  Teall any 1 feature request for flipkart or amazom site ?
@@ -2358,7 +2329,7 @@ ANSWEr:
 
 22. HOW CAN We RUN ONLY FAILED TEST CASE USING TESTNG ?
 	
-ANSWER: Jb hm testng se testcase run krte h to failed tests k liye testOutput k folder k ander 1 testng-gailed.xml file generate hoti h. us m only failed tests hote h . hm direct us file ko run krenge to only failed test run honge.
+ANSWER: Jb hm testng se testcase run krte h to failed tests k liye testOutput k folder k ander 1 testng-failed.xml file generate hoti h. us m only failed tests hote h . hm direct us file ko run krenge to only failed test run honge.
 
 23. Where you use method overloading in selenium ?
 ANSWER: 1. implicit waite -> kyu ki hm isme different-2 methods pass kr skte h . [ same method with different-2 parameter.]
@@ -2395,8 +2366,6 @@ ANSWER:
 	*. Interface m abstract keywors ka use nahi hota.
 
 	4. Abstract class ka object nahi banta hai.
-
-	*. Interface ka object ban jata h .
 
 	5. Abstract class ko extends kre h or interface ko implement krte h .
 
