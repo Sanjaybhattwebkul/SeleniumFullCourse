@@ -321,14 +321,6 @@ ANSWER:
 	*> Like CUCUMBER. ,Specflow, Testsigma etc.
 
 QUESTION:
-	How to restore the deleted finle in gitRepo ?
-
-ANSWER:
-	*> git restore file.text
-	*> git restore --stage --worktree file.text
-
-
-QUESTION:
 	 What is Parent-Child x-Path ?
 
 ANSWER:

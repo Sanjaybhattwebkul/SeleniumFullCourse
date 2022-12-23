@@ -578,3 +578,10 @@ ANSWER:
 	*> JUst like CURL.
 
 
+
+QUESTION:
+	How to restore the deleted finle in gitRepo ?
+
+ANSWER:
+	*> git restore file.text
+	*> git restore --stage --worktree file.text
