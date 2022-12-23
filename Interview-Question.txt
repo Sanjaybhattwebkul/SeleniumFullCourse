@@ -304,6 +304,30 @@ ANSWER:
 	*> like Ruby, Java, NodeJS, PHP, Perl, Python, and C#, 
 
 
+QUESTION :
+	WHAT IS HYBRID FRAMEWORK ?
+
+ANSWER:
+	Hybrid framework means use the test data and test  keyword are in external file.
+	*> Like: dataDriven frameword -> test data fron json file. of hashmap and object..
+	*> Keyword driven dramework -> Test data from excel file. text file etc...
+
+QUESTION:
+	WHAT IS Behaviour Driven Frameworks:
+
+ANSWER:
+	Means test case are write in s simple language like in englist.
+	*> The test case are easy to understand. for non tech person. like , BDE, product owner etc.
+	*> Like CUCUMBER. ,Specflow, Testsigma etc.
+
+QUESTION:
+	How to restore the deleted finle in gitRepo ?
+
+ANSWER:
+	*> git restore file.text
+	*> git restore --stage --worktree file.text
+
+
 QUESTION:
 	 What is Parent-Child x-Path ?
 
@@ -1778,138 +1802,6 @@ QUESTION:
 ANSWER:
 	mvn compile.
 
-
-QUESTION :
-	WHOW CAN WE PRINT THE DATE IN JAVA?
-
-ANSWER:
-	Date d = new date();
-	System.out.println(d.toStrin()) // Print date in string format
-	SimpleDateFormatter df = new SimpleDateFormatter("M/d/Y") 
-	System.out.println(df.toString())  // Print in month/date/year  format
-
-*> Hm calendar class ka use kr bhi date,time print kr skte h .
-calendar cal = calendar.getInstance() // (cal.DAY_OF_MONTH) // Print date of current month
-
-
-QUESTION:
-	TYPES OF CONSTRUCTOR IN JAVA ?
-ANSWER:
-1. Default CONSTRUCTOR  // without any parameter.
-2. Parameterised constructor  // With multiple paramenter.
-
-	_. By default  'default'  constructor call hota h.
-	or java construct same name as class hota h .
-
-QUESTION:
-	WHAT IS SUPER keyword in java ?
-
-ANSWER:
-	SUPER keyword parent class k function ya varialbe ko refere krta h .
-	Agr hm kisi function ya variable k aage SUPER lga dete h to jo class us m xtends ho rahi h us classka function ya varialbe call hoga .
-
-QUESTION:
-	WHAT IS THIS keyword in java ?
-
-ANSWER:
-	this keyword current object ko refer krta h . [This keyword refer to curent object]
-	And current objct scope in class albe.
-	[
-		Mtlb age kisi function k ander 1  Int A variale h  or same int A class label pr bhi h 
-		Agr hme class label k int A ko function k ander call krna h to hm this.A likhenge. or function k ander vale A ko call krna h to simple a likhenge
-	]
-
-QUESTION:
-	If i have 2 variable A and B, 1st is in globle and 2nd is locale varialbe. How can i print sum of A and B ?
-
-ANSWER:
-	int c = (a+this.b);  // this.b isi liye likha kyu ki b globle variable h
-	System.out.println(c);
-
-QUESTION:
-	HOW CAN WE ASSIGN THE VALUES TO OUR GLOBLE/INSTANCE VARIABLE?
-
-ANSWER:
-	this.varialbeName = value;
-
-QUESTION:
-	WHAT ARE THE INSTANCE VARIALBE?
-
-ANSWER:
-	INSTANCE ARIALBE global variable hote h . jinki values changes ho skti h 
-	[ like int A define h globally. or mne 1 constructor bnaya with parameter. ab jitni bar construct call hoge hm utni bar constructor m alag alag value send kr skte h as a argument or ]
-	[ Or construct k ander this.A = argumentKaName // ye likh k varible ki value change ho jayegi]
-
-QUESTION:
-	WHAT ARE STATIC VARIABLE ?
-
-ANSWER:
-		Static vvariable class variable hote h . jinki value change nahi hoti. vo class label khi bhi access ho skte h .
-
-QUESTION:
-	WHAT ARE STATIC METHODS ?
-
-ANSWER;
-	Static methods ko hm bina object create kiye hi call kr skte h.
-	Static methos m hm only static variables call kr skte h // mtlb static methods only static variables accept krte h
-
-QUESTION:
-	WHAT IS STATIC BLOCK ?
-
-ANSWER:
-	Static block k ader hm multiple static variablesdefine kr skte h .
-
-	static {
-		i=0;
-		city="sanju"
-	}
-
-
-QUESTION:
-	WHAT IS FINAL KEYWORD ?
-
-ANSWER:
-	Besically te final keyword is ristricting the access of functions and varialbe, class ect..
-	if we mark any calss as final then we are not able to extends that class in nother class.
-	If we are mark any variable final then we are not able to change that variables values.
-	If we mark any function as final then we are not able to overload and override that method.
-
-QUESTION:
-	What are collections in java ?
-
-ANSWER:
-	collection in java are a framework that framework contains different classes and interfaces.
-	1. HashMap  -> map interface ko implement krta h ,   2. ArrayList -> List Interface ko implement krta h   3. Set
-
-
-QUESTION:
-	Difference between ARRAY AND ArrayList ?
-
-ANSWER:
-	ArrayList ka size dynamic hota h  or array ka size static hota h . mtlb array bnate time hme array ka size define krna padhta hai. and arraylist bnate time hme arraylist ka size nahi define krna padhta.
-	example:
-		ArrayList<Strin> ar = new ArrayList<String>();
-		int[] a = new int[5];	
-
-QUESTIONS:
-	HOW CAN REMOVE/ADD ANY EEMENT IN 1 INDEX OF ARRAYLIST ?
-
-ANSWER:
-	array.add(1,"value");   // for remove -> array.remote(1); // check if value -> array.contains("value");
-
-QUESTIO:
-	WHAT IS ITRATOR INJAVA ? HOW ITRATOR HELP TO TRAVER TO SET INTERFACE ?
-
-ANSWE:
-	itrator 1 1 java ka interface h jiska use kr k hm arraylist ki each every index m travera kr skte h .
-	Iterator<Sring> i = arraylist.itrator; // here we are creating object of itrator interface.
-	i.next(); // iska use kr k hm array ki 0 index ko rint kr skte h .
-	i.next(); // 1 index of arralist.
-	i.next(); // 2 index of arralist    [ i.next() kr hm every index ko print kr skte h]
-	AGR Hme complete array ko print krna h to hm ise loop m dal denge.
-	while(i.hasNext()){
-		System.print(i.next());
-	}
 
 
 QUESTIO:

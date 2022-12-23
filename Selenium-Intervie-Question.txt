@@ -554,48 +554,6 @@ ANSWER:
     http:-uerName-password@siteUrl.com
 
 QUESTION:
-    Difference Beteen  Array and ArrayList. 
-    
-Answer:
-   *>  Array ka size fix hotah { int[] arr = new int[5]  } 
-    *> Array fast hota h due to fix size.
-    *> ArrayList ka size fix ni hota h 
-    *> arraylist slow hota h i compare to array.
-
-QUESTION:
-    DIFFERENCE BETWEEN . HashMap and HashSet
-
-ANSWER:
-    1. HashSet is an implementation of Set Interface  And HashMap is an implementation of Map Interface
-    2. HashSet does not allow duplicate value.And .HashMap allow the Duplicate values but not not duplicate keys in a Map
-    3. HashSet required 1 Objects during an add operation AND HashMap Requires 2 Object duration add operation.
-
-QUESTION:
-    DIFFERENCE BETWEEN .Final and Static
-
-ANSWER:
-    *> The static keyword means the value is the same for every instance of the class.
-    *> The final keyword means once the variable is assigned a value it can never be changed
-    1> Agr kisi function m static lga diya to us function ko without object k access kr skte h .
-    2> Agr kisi function m final lga diya to use override or overload nahi kr skte or class m final lga h to use extends ni kr skte.
-
-QUESTION:
-     OOPS concept . woth example ?
-
-ANSWER:
-    1. Inheritance -> Extends a class 
-    2. Polymorphism -> Method overloading and riding.
-    3. DataAbsTraction. -> Means abstract class [ data abstraction can implement by abstract class ]
-    4. Encapsulation  -> Like a class.
-
-ANSWER:
-    1.  PUT and POST
-
-ANSWER:
-    PUT -> Create and Update data.
-    POST -> Create Data.
-
-QUESTION:
     How can use AUTO IT  For upload file.
 
 ANSWER:
