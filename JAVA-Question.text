@@ -24,7 +24,7 @@ ANSWER:
 	1. HashMap  is non synchronized  and HashTable is synchronized 
 	// mtlb 1 HashMap ko hm 1 bar m 1 multiple programs se access kr skte h . or HashTable ko 1 bar 1 hi program se access kr skte h .
 	
-	2. HashMap m hm null  valuse bhi dal skte h or HashTable m Null key/valuse nahi dal skte h . 
+	2. HashMap m hm null  valuseor null key bhi dal skte h or HashTable m Null key/valuse nahi dal skte h . 
 
 	3. HashMap m hm Itrator a use kr skte h or HashTable m hm itrator kause kr skte h is m vector ka use krte h jo ki enumerator interface ko implement krta h
 
@@ -205,3 +205,9 @@ QUESTIONS:
 
 ANSWER:
 	array.add(1,"value");   // for remove -> array.remote(1); // check if value -> array.contains("value");
+
+
+1. JAVA 
+2. Selenioum  strong
+3. OOPS.
+4. 
