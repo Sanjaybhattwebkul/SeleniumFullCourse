@@ -14,6 +14,7 @@ public class PrintAlphabetOnly {
 		System.out.println(str);
 	}
 	
+	
 	/*
 	 * Print only numbers in string 
 	 */
