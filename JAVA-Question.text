@@ -11,8 +11,13 @@ QUESTION:
 	What is HashMap ?
 
 ANSWER:
-	HashMap m data key and values k pare m hota h .
-	Agr hme HashMap k sath  itrator user krna h to iske liye .Map.Entery obj = (Map.Entry)hamp.next()  // class ka use krna hota h .
+	*> Hashmap is a collection of java. and it is besic implemention of Map interface.
+	*> We can store the data in the form of KEY- AND VALUES in Hashmap.
+	*> It just like a associative array.
+	*> Hahmap can store null key and values. [single null key and multiple numm values.]
+	*> We need to use Map.Entry  if we are trying to itrate the our Hashmap.
+
+	*> Agr hme HashMap k sath  itrator user krna h to iske liye .Map.Entery obj = (Map.Entry)hamp.next()  // class ka use krna hota h .
 	Itrator hsmp = sn.itrator;  // sn HashMap ka name h 
 	.Map.Entery obj = (Map.Entry)hamp.next()
 	obj.getKey()  // is se krry mil jati h 
@@ -70,6 +75,24 @@ ANSWER:
     2. Polymorphism -> Method overloading and riding.
     3. DataAbsTraction. -> Means abstract class [ data abstraction can implement by abstract class ]
     4. Encapsulation  -> Like a class.
+
+QUESTION:
+    Difference between data abstraction [Abstract class]  and encapsulation ?
+   
+ANSWER:
+    *> We can access the methods of abstract class by using the getter and setter method.
+    *> We can use access modifier for access encapsulation.
+    *> Abstraction is hiding the details and implementation of the code. //implementation of function ko hide krta h .
+    *> Encapsulation is hiding the data and controlling the visibility of the code. // Hm only function ko call krte h. hme complete logic visible nahi hota.
+    *> An abstract class is a type of class in Java that is declared by the abstract keyword, we can not create object ob abstract class.
+
+QUESTION:
+    Difference between Abstract class aand interface ?
+
+ANSWER:
+    *> The Abstract class and Interface both are used to have abstraction.
+    *> An abstract class contains an abstract keyword on the declaration whereas an Interface is a sketch that is used to implement a class.
+    *> We can create only non implemented methods in a interface and we create implemented and non implemented methods in abstract class
 
 ANSWER:
     1.  PUT and POST
@@ -206,8 +229,139 @@ QUESTIONS:
 ANSWER:
 	array.add(1,"value");   // for remove -> array.remote(1); // check if value -> array.contains("value");
 
+QUESTION:
+    Hhow can get file from your locale system ?
+   
+ANSWER:
+    *> By using exists method of File() class   // File() java ki calss h 
 
-1. JAVA 
-2. Selenioum  strong
-3. OOPS.
-4. 
+
+QUESTION:
+
+WHAT IS FUNCTION OVERLOADING ?
+
+ANSWER:
+        *> Function Overloading in Java occurs
+        *> When there are functions having the same name but have different numbers of parameters passed to it
+
+QUESTION:
+    WHAT IS FUNCTION OVERRIDING?
+
+ANSWER:
+        *> When the method signature (name and parameters) are the same in the superclass and the child class,
+        *> it's called overriding. 
+
+QUESTION:
+    What is polymorphism and example?
+
+ANSWER:
+
+    *> Ability of a message to be displayed in more than one form
+
+QUESTION:
+    WHAT IS ARRAY ?
+
+ANSWER:
+    *> Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+
+
+QUESTION:
+    WHAT IS MULTI Dimension ARRAY ?
+
+ANSWER:
+    1. ARRAY INTO ARRAY.
+
+
+
+QUESTION:
+    How can we use fina {  }	 block in java ?
+
+ANSWER:
+    *> With a try block we can use final block. Final blok will execute in all case.
+
+QUESTION:
+    What is pre request in postmen ?
+
+ANSWER:
+    *> Means meta data. body form data , raw data etc..
+
+QUESTIOIN:
+    https code 301 AND  504 , 503 ?
+
+ANSWER:
+    503 Service Unavailable. => Too many API requests were sent and now the API can’t handle any more of them.
+    5.4  GETWAY TIMEOUT.
+    3.1 Moved pramanent.
+
+
+QUESTION:
+    Find minimun number from a 3*3 matrix  ?
+    
+ANSWER:
+    // TODO
+
+
+QUESTION:
+    Differencr between PUBLIC, PROCTED ,PRIVATE AND DEFAUTL   AccessModifure IN JAVA ?
+
+ANSWER:
+        *> PUBLIC means we can access the property anywhere simplly create object of clas or inherit the class.
+        *> Protected means only child class can be access the properties.
+        *> Private means we can access the peroperties witih the class and function.
+        *> Default menas we can access the property within a package. 
+
+
+QUESTION:
+    What is the means of error Array index out of bound ?
+
+ANSWER:
+        *> When we are trying to access the invalid index the array, like the length is 5 and we trying to access 6th index.
+
+QUESTION:
+
+Tell me some type of exception in java ?
+
+ANSWER:
+        *> EXCEPTION E  -> Default exception
+	    *> IndexOutOfBoundsException  -> If array index in invalid
+	    *> ArithematicException  -> Mathematical calcution m jb issu h tb aat h 
+        
+QUESTION:
+    How many cath block can we write for a try block  for exception handling in java ?
+    
+ANSWER:
+    *> We can write multiple catch block with a try block for exception handling.
+
+QUESTION:
+    Why we use finally in java ?
+
+ANSWER:
+            *> If we want to run any script for all case either the test is failed or pass in that case we will use finally block // finally{ }
+
+QUESTION:
+    When Will the finally keyword will not work?
+
+ANSWER:
+    *> Only Wnhen we will forcefully stop the javacompiler
+
+QUESTION:
+ 	WHAT IS THE OUTPUT OF THE GIVEN CODE ?
+    public classA
+    {
+        int i =10;
+    }
+    public class B extends A 
+    {
+        int i=20;
+    }
+    pubic class C
+    {
+        public void main(Strin[] args) {
+            A a = new B() // HERE WE ARE USING  UPCASTING
+            System.out.println(a.i);
+        }
+    }
+
+ANSWER:
+	*> Here we are using upcasting. using properties of class A by creating object of class B
+	*> so output WILL BE 10,
