@@ -3,6 +3,9 @@ public class MatrixInterview {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/* 2 4 5
+		   3 2 10
+		   1 2 0   */
 		int abc[][]={‌{2,4,5},{3,2,10},{1,2,0}};
 		int min=abc[0][0];
 		int mincoloumn = 0;
