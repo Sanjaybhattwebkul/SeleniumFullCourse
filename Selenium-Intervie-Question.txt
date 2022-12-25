@@ -63,13 +63,6 @@ QUESTION:
 ANSWER:
    *> HTTPS is a security-enhanced version of HTTP,Because HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses
 
-QUESTION:
-    
-    Write a progran to print second Height occoring word in a given string ?
-
-ANSWER:
-
-    *> https://github.com/Sanjaybhattwebkul/bagisto-Automate/blob/master/programming/src/String/Print_Second_Heighest_Occurrence_Word.java 
 
 QUESTION:
     How can import data from excel file in selenium ? 
