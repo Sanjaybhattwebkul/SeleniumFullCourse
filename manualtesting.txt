@@ -479,6 +479,7 @@ ANSWER:
 	7. Roles And responsiblity: : kn member kya kaam krenge. 
 	8. Defect management:  bug kn assign krenga dev ko  ya tester ko..
 	
+<<<<<<< HEAD
 	QUESTION:
 	Agr hmre pass 5 user story h or hm 5th user story m kaam kr rhe h to testscript hm kis story tk likh dengr.
 
@@ -486,6 +487,8 @@ QUESTION:
 	4th tk,  kyu ki jis userStory m hm working hote h us m manual testing hoti h or us se 1 phle step tk automation script likhte h.
 	
 
+=======
+>>>>>>> cb530b16d3a7bb179a1ef7f0bba54d4d77abd066
 QUESTION:
   What is Database testing ?
 
@@ -494,12 +497,17 @@ ANSWER:
   *> The most common SQL statement, which is used to perform DB testing,
   *> is the Select statement. Apart from this, various DDL, DML, DCL statements can also be used.
   *> Example − Create, Insert, Select, Update, etc.
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> cb530b16d3a7bb179a1ef7f0bba54d4d77abd066
    Database testing means test the data of databse, 
     *> in tha database testing we can do various types of testing
     *>	Structural testing. -> Need to flow of code if the conditions are working properly or not.
     *>	Functional testing. -> Functionality of the application
     *>	Non-functional testing. -> 
+<<<<<<< HEAD
 
 WHAT ARE :
 
@@ -585,3 +593,13 @@ QUESTION:
 ANSWER:
 	*> git restore file.text
 	*> git restore --stage --worktree file.text
+=======
+	
+WHAT ARE :
+	
+     1.  DDL -> Data Defination Language. [ insert, Create query ] 
+     2.  DML -> Data Manipulation Language [ Update, delete, alter query ]
+     3.  DCL -> Data Control Language.  [ Kis user ko kya access dena h db m ]
+     4.  DQL -> Data Query Language.    [ Exception handle, ki agr query theek h to tabhi commit hoga, ]
+	
+>>>>>>> cb530b16d3a7bb179a1ef7f0bba54d4d77abd066
