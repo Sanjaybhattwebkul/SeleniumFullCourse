@@ -353,6 +353,26 @@ ANSWER:
     *> https://github.com/Sanjaybhattwebkul/bagisto-Automate/blob/master/programming/src/String/Print_Second_Heighest_Occurrence_Word.java 
 
 
+
+QUESTION:
+    Write a java rogram to get only alphabet from a given string if there are number and string are in the string ?
+
+ANSWER:
+    // replace all numbers from string. str.replaceAll("[0-9]",""); and print the string.
+
+
+QUESTION:
+    CREATE A FUNCTION WHICH TAKE A ARRAYLIST AND PRINT EACH NUMBER WITH EVEN AND ODD TEXT ?
+
+ANSWER:
+    //
+
+QUESTION:
+    PROGRAM TO SHORT ARRAY TO ACCESDING ORDER?
+
+ANSWER:
+ //
+
 QUESTION:
  	WHAT IS THE OUTPUT OF THE GIVEN CODE ?
     public classA

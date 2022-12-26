@@ -278,26 +278,9 @@ QUESTION:
     Whta will the flow of execute testcases if all the annotation are applyes on the testNG testscript ? // annotation mtlb [ beforeSuite,beforeclass,before method  ect..]
 
 ANSWER:
-    //
-
-QUESTION:
-    What is user story is Ajaild methology ?
-
-ANSWER:
-        //
-
-
-QUESTION:
-    Agr hmre pass 5 user story h or hm 5th user story m kaam kr rhe h to testscript hm kis story tk likh dengr.
-
-
-
-QUESTION:
-    Write a java rogram to get only alphabet from a given string if there are number and string are in the string ?
-
-ANSWER:
-//
-
+    1. Pre Condition.
+    2. Test.
+    3. Post Condition.
 
 QUESTION:
     How can we take a screenshot of failed testcase in a framework ?
@@ -366,22 +349,10 @@ How can we get broken link?
         * https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/SelinumBesic/src/other/BrokenLink.java
 
 QUESTION:
-    PROGRAM TO SHORT ARRAY TO ACCESDING ORDER?
+    Componenet of http and https ?
 
 ANSWER:
- //
-
-QUESTION:
-    CREATE A FUNCTION WHICH TAKE A ARRAYLIST AND PRINT EACH NUMBER WITH EVEN AND ODD TEXT ?
-
-ANSWER:
-    //
-
-OVERLOADING AND OVERRIDING?
-*> 
-
-Componenet of http and https ?
-*> 
+    *> 
 
 QUESTION:
     Difference between @FindBy and BY in POM ?
@@ -423,6 +394,21 @@ QUESTION:
 
 ANSWER:
 	By using keyDown(key.SHIFT); // SHIFT is key name
+
+QUESTION:
+    WRITE SOM MAVEN COMMANDS:
+
+ANSWER:
+
+   *> 1. mvn clean -> This command cleans the maven project by deleting the target directory.
+   *> 2. mvn compiler:compile -> This command compiles the java source classes of the maven project
+   *> 3. mvn compile -> It’s used to compile the source Java classes of the project.
+   *> 3. mvn compiler:testCompile -> This command compiles the test classes of the maven project.
+   *> 4. mvn package -> This command builds the maven project and packages them into a JAR, WAR, etc
+   *> 5. mvn install -> This command builds the maven project and installs the project files (JAR, WAR, pom.xml, etc) to the local repository.
+   *> 6. mvn deploy  -> This command is used to deploy the artifact to the remote repository. The remote repository should be configured properly in the project pom.xml file distributionManagement tag.
+   *> 7. mvn validate -> This command validates the maven project that everything is correct and all the necessary information is available.
+   *> 8. mvn dependency:tree -> This command generates the dependency tree of the maven project.
 
 
 ============================ [ 22-JUNE 2022 ] ======================================
