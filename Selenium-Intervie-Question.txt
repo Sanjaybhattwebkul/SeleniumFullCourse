@@ -938,6 +938,15 @@ ANSWER:
 	2. maven-filtering		  -> Components for filtering resources
 	3. maven-invoker	      -> Fires up a Maven build in a new JVM.
 	
+QUESTION:
+    WHAT ARE MAVEN LIFECYCLE ?
+
+ANSWER:
+
+*> There are three built-in build lifecycles:
+    1. default -> handles your project deployment.
+    2. clean   -> handles project cleaning.
+    3. site.   -> handles the creation of your project's web site.
 
 QUESTION:
 	Why we use selenium  ?
