@@ -374,6 +374,25 @@ ANSWER:
  //
 
 QUESTION:
+    Find second height salary from employee
+
+ANSWER:
+
+    /* Print only 1 record if */    
+    => select salary from employee order by desc limit 1,1
+
+    /* It will print all the records if there are multiple  records with second heighest salary */   
+    => select * from employee where salary = (select salary from employee order by desc limit 1,1);
+
+QUESTION:
+    WIRTE A PROGRAM FOR PRINT OCCORING OF EACH CHARACTER IN STRING WITHOUT USING HASHMAP ?
+
+ANSWER:
+
+
+
+
+QUESTION:
  	WHAT IS THE OUTPUT OF THE GIVEN CODE ?
     public classA
     {
