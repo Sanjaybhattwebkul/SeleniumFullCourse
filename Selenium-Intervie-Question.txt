@@ -581,7 +581,7 @@ QUSTION:
     SYNTAX OF EXPLICITLY WAIT ?
 
 ANSWER:
-    WebDriverWait wait = new WebDriverWait(driver,10)
+    WebDriverWait wait = new WebDriverWait(driver,driver,Duration.ofSeconds(10))
     wait.until(ExpectedCondition.visiblityOfElementLocated("xpath"));
 
 QUESTION?
@@ -589,7 +589,7 @@ QUESTION?
 
 ANSWER:
 
-    TakesScreenshot ss = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    File ss = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
     FileUtils.copyFile(ss,new File("ss.png"));
 
 QUESTION:
