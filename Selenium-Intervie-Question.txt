@@ -934,6 +934,7 @@ QUESTION:
 	 What is the key component of maven ?
 
 ANSWER:
+
 	1. maven-dependency-tree  -> means it contains a tree model of maven dependancy in pom.xml file.
 	2. maven-filtering		  -> Components for filtering resources
 	3. maven-invoker	      -> Fires up a Maven build in a new JVM.
