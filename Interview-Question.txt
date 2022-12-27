@@ -608,6 +608,12 @@ ANSWER:
 	Actions a = new Actions(driver)
 	a.moveToElement (driver.findElement(By.id(“name”))).click().keyDown(Keys.SHIFT).sendKeys(“Hello”).build().
 	
+NOTE:
+
+*> Actoins a = new Actions(driber);
+*> a.keyDown(keys.SHIFT).sendKeys("sanju"); -> Mtlb ki shift key press kr k rkhega fir value enter hogi.
+*> a.(Keys.chord(Keys.SHIFT + Keys.CONTROL + "s")  -> Mtlb ki 1 sath multiple keys press hongi. Like : CTRL+S  OR CTRL+SHIFT+S
+
 QUESTION:
 	Which method is used to store multiple child windows in Selenium?
 

@@ -509,7 +509,7 @@ ANSWER:
     *> iF WE WANT TO SEND VALUE IN CAPS. ON ANY INPUT BOX THEN we will use Actions class and Action interface.
     *> Actions class ka object bna k hm action interface k function call krte h . jo ki Actions class m implement h.
     *> .perform() in method of action interface and .build() method is of Actions class
-    *> actions.keyDown(element,   Keys.SHIFT).sendKeys(“Text_In_UpperCase”).keyUp(Keys.SHIFT).build().perform();
+    *> actions.keyDown(element,eys.SHIFT).sendKeys(“Text_In_UpperCase”).keyUp(Keys.SHIFT).build().perform();
     *> Hm sare actions ko .build() ka use kr k store krte h . build action type ka object return krta h . 
     *> And last m hm action interface k .perform() method ko call kr k action ko execute krte h.
 
