@@ -619,7 +619,7 @@ ANSWER:
     *> getClass  will return the xpath of the element.
     *> getAttribute("class") will return the class name of element.
 
-ANSWER:
+QUESTION:
     Difference between getWindowHandles() and getWindowHandle() ?
 
 ANSWER:
@@ -632,6 +632,12 @@ ANSWER:
     driver.switchTo().window(childId);
 
 
+QUESTION:
+	HOW CAN BYPASS SSL Certificate in Selenium ?
+
+ANSWER:
+	*> Using the setAcceptInsecureCerts() method to pass parameter as False
+	*> options.setAcceptInsecureCerts(false)
 
 QUESTION:
 	 DIFFERENCE BETWEEN   Webdriver driver = new ChromeDriver(); AND ChromeDriver driver = new ChromDriver(); ?
