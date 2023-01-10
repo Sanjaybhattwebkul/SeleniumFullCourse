@@ -23,7 +23,7 @@ QUESTION:
 ANSWER:
 	1. Kanban
 	3. scrum
-	3. bUG tRACKING.
+	3. Bug Tracking.
 
 QUESTION: 
 	WHAT IS EPIC  in ajail methology
@@ -49,7 +49,7 @@ ANSWER:
 	User story is a small chunk pices of work and the collection of user story in epic.
 
 QUESTION:
-Who is responsible to create user stories and decides on acceptance criteria?
+	Who is responsible to create user stories and decides on acceptance criteria?
 
 ANSWER:
 	PRODUCT OWNER.
@@ -96,7 +96,7 @@ QUESTIONS:
 ANSWER:
 	1. Manage/Read all user story.
 	2. Take the points from all  people 
-	3. See what is meaturaty in eam [mtlb ki team m kitne logu ki need h ]
+	3. See what is meaturaty in team [mtlb ki team m kitne logu ki need h ]
 
 
 QUESTION:
@@ -239,7 +239,7 @@ ANSWER:
     *> jb project a  m dev-x and dev-y kaam kr re h done ne master branch se clone kr k kaam start kiya h 
     *> then dev x ne qa server m code push kiya or test krne k liye bol diya.
     *> fir dev y ne bhi code usi qa environment m code push kiya or test krne ko bol doya, then is case m dev x ka code override ho jayega.
-    *>To is issue se bachne k lye hm multiple qa environment bna lete h.
+    *> To is issue se bachne k lye hm multiple qa environment bna lete h.
 
 QUESTION:
     What should we do if we got any error or bug ?
@@ -275,7 +275,7 @@ QUESTION:
     WHAT IS COMPONENT TESTING ?
 
 ANSWER:
-    Componenet testing means any singlr part/ component of te software.
+    Componenet testing means any single part/ component of te software.
     In component test we don't need to test outside of this module/component
     Mtlb agr hm login component test kr re h to hm only login page ko hi test krenge hme ye nahi dekhnege ki login hone k bad page kha jara h.
 
@@ -307,7 +307,7 @@ QUESTION:
     WHAT IS FUNCTIONAL ANF NO FUNCTIONAL TESTING ?
 
 ANSWER:
-    *>Functional testing measn all the testcase which comes on functionality of the application.
+    *> Functional testing measn all the testcase which comes on functionality of the application.
     *> Nonfunctional testing measn the the testcase which not focus on functionality of the applicatoin.
     like->  load, stress, ui , security, useablity tsting.
     *> useablity testing means ki application desktop. mobile and tab.  m  responsive h ya ni .
@@ -320,15 +320,15 @@ ANSWER:
         *> White box testing me test the software after knowing the complete functionality, design, implementation of the software.
             Example:  Unit testing , Integration Testing, 
 
-        *> Blackbox testing means test the software without knowing the software implementation,sedign and functionality of application.
+        *> Blackbox testing means test the software without knowing the software implementation,Design and functionality of application.
             Example: Acceptance testing  -> Accepting testing means only the normal testing like login with valid username or pass , its inof.
-                     sysstem testing-> Applicatio is landing or not.
-			[
-				1. BlackBox testing ko Behavioral Testing. bhi kahte hai.
-				2. BlackBoxtesting m hm software applications k input or output m focus krte h.is m hme code or structure se koi mtlb ni hota.
-	    			[ mtlb hm performance testing and loading testing ye sab ni krte only UI of functionality dekhte hai. ]
-				1. Whitebox testing m hm software k internalpart ko bhi test krte hai, like performance loading etc.
-			]
+                system testing-> Applicatio is landing or not.
+				[
+					1. BlackBox testing ko Behavioral Testing. bhi kahte hai.
+					2. BlackBoxtesting m hm software applications k input or output m focus krte h.is m hme code or structure se koi mtlb ni hota.
+						[ mtlb hm performance testing and loading testing ye sab ni krte only UI of functionality dekhte hai. ]
+					1. Whitebox testing m hm software k internalpart ko bhi test krte hai, like performance loading etc.
+				]
 
 QUESTION:
 	WHAT IS ACCEPTANCE TESTING ?
@@ -447,7 +447,7 @@ QUESTION:
 ANSWER;
 	GIT, 
 	BUGJILA, -> Introduce by mozilla firefox team.
-	 JIRA...
+	JIRA...
 
 
 QUESTION:
@@ -479,16 +479,6 @@ ANSWER:
 	7. Roles And responsiblity: : kn member kya kaam krenge. 
 	8. Defect management:  bug kn assign krenga dev ko  ya tester ko..
 	
-<<<<<<< HEAD
-	QUESTION:
-	Agr hmre pass 5 user story h or hm 5th user story m kaam kr rhe h to testscript hm kis story tk likh dengr.
-
-QUESTION:
-	4th tk,  kyu ki jis userStory m hm working hote h us m manual testing hoti h or us se 1 phle step tk automation script likhte h.
-	
-
-=======
->>>>>>> cb530b16d3a7bb179a1ef7f0bba54d4d77abd066
 QUESTION:
   What is Database testing ?
 
@@ -497,17 +487,12 @@ ANSWER:
   *> The most common SQL statement, which is used to perform DB testing,
   *> is the Select statement. Apart from this, various DDL, DML, DCL statements can also be used.
   *> Example − Create, Insert, Select, Update, etc.
-<<<<<<< HEAD
-
-=======
   
->>>>>>> cb530b16d3a7bb179a1ef7f0bba54d4d77abd066
    Database testing means test the data of databse, 
     *> in tha database testing we can do various types of testing
     *>	Structural testing. -> Need to flow of code if the conditions are working properly or not.
     *>	Functional testing. -> Functionality of the application
     *>	Non-functional testing. -> 
-<<<<<<< HEAD
 
 WHAT ARE :
 
@@ -570,8 +555,21 @@ ANSWER:
 	6. POST    *> A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
 	7. GET     *> using GET should only retrieve data and should have no other effect on the data.
 
+QUESTION: 
+	API PERFORMANCE METRIX:
+ 
+ ANSWER:
+	
+	*> Is m api ki detailsa hoti h 
+	1. Service/API name     -> Api ka neme.
+	2. response TIme.       -> kitna time m response aara h .
+	3. avrage response time -> avrage time of api responce [ hit same api mutiple times and calculate avg. time. ]
+	4. Service request 	 -> .  status code
+	6. Datacount 			  -> record and fields [ record -> jb data update/insert hota h, fields m jb data get krte h]
+
+
 QUESTION:
-	WHAT ISGRAPHQL  API:
+	WHAT IS GRAPHQL  API:
 
 ANSWER:
 	WE  CAN MANIPULATE THE RESPONCE IN graphQL API. [ agr hm responce m se only name chahiye to hm name parameter send kr skte h to hme only name milega ]
@@ -593,13 +591,3 @@ QUESTION:
 ANSWER:
 	*> git restore file.text
 	*> git restore --stage --worktree file.text
-=======
-	
-WHAT ARE :
-	
-     1.  DDL -> Data Defination Language. [ insert, Create query ] 
-     2.  DML -> Data Manipulation Language [ Update, delete, alter query ]
-     3.  DCL -> Data Control Language.  [ Kis user ko kya access dena h db m ]
-     4.  DQL -> Data Query Language.    [ Exception handle, ki agr query theek h to tabhi commit hoga, ]
-	
->>>>>>> cb530b16d3a7bb179a1ef7f0bba54d4d77abd066
