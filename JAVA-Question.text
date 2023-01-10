@@ -50,7 +50,7 @@ ANSWER:
 
 
 QUESTION:
-    Difference Beteen  Array and ArrayList. 
+    Difference Between  Array and ArrayList. 
     
 Answer:
    *>  Array ka size fix hotah { int[] arr = new int[5]  } 
@@ -343,6 +343,7 @@ QUESTION:
 
 ANSWER:
     *> Only Wnhen we will forcefully stop the javacompiler
+
 
 QUESTION:
     

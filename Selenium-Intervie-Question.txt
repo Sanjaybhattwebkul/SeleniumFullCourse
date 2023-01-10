@@ -389,6 +389,24 @@ ANSWER:
      [ Actions actions = new Actions(driver);
      [ actions.contextClick(driver.findElement(By.id("ID"))).perform();
 
+QUESTION :
+    Methods of Action Class ?
+
+ANSWER:
+    doubleClick():   -> Performs double click on the element
+    clickAndHold():  -> Performs long click on the mouse without releasing it
+    dragAndDrop():   -> Drags the element from one point and drops to another
+    moveToElement(): -> Shifts the mouse pointer to the center of the element
+    contextClick():  -> Performs right-click on the mouse
+
+    Keyboard Actions  in Selenium:
+
+    sendKeys(): -> Sends a series of keys to the element
+    keyUp():    -> Performs key release
+    keyDown():  -> Performs keypress without release
+
+=> FOR PRESS MULTIPLE KEYS WE USE KEY.CHORD-> sendKeys(Keys.chord(Keys.SHIFT + Keys.CONTROL + "s")
+
 QUESTION:
 	WHOE CAN WE PRESS ANY KEYBOARD KEY IN SELENIUM ?
 
@@ -581,7 +599,7 @@ QUSTION:
     SYNTAX OF EXPLICITLY WAIT ?
 
 ANSWER:
-    WebDriverWait wait = new WebDriverWait(driver,driver,Duration.ofSeconds(10))
+    WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10))
     wait.until(ExpectedCondition.visiblityOfElementLocated("xpath"));
 
 QUESTION?
@@ -611,6 +629,7 @@ ANSWER:
     conn.connnect();
     int responce = conn.getResponseCode();
     if(responce>400) ? "broken true" : "Broken false"
+
 
 QUESTION?
     DIFFERENCE BETWEEN getClass()  and getAttribute("class")  ?
