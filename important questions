@@ -1,0 +1,34 @@
+1. does vaja support call by reference ?
+    *> No
+
+2. CAN WE INHERIT FINAL AND STAIC CALSS ?
+  *> no
+
+3. waites is selenium /
+    //
+
+4. latest versiob
+    4.7
+
+5. locators in selenium .
+    //
+
+6. how can run test parallel mode.
+     parallet =test in testng.xml file
+
+7. how can run single test in multiple times.
+    //invocationCount
+
+9. SQL JOINS
+
+10. implicit andexplict difference
+
+11. driver.navigate functions 
+        // driver.navigate().back(); forword.  refresh. 
+12. what is xpath ?
+
+13. scrum cermonies ?
+
+14. new features of selenium ?
+
+15. 

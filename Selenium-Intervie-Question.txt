@@ -1,10 +1,17 @@
+QUESTION:
+    browseer stack and cross browser testing
+
+ANSWER:
+    //
+
 *> Web driver interface searchContax class ko extends krta h .
 
 QUESTION:
     Which type of challanges you face in selenium.?
 
 ANSWER:
-    CONCURRENCY issue // while using ITestLISTENER  for extent report. passissues are getting failed.
+    CONCURRENCY issue iske liye hm ThreadLocal ka use krte h 
+    // while using ITestLISTENER  for extent report. passissues are getting failed.
 
 QUESTION:
     DIFFERENCE BETWEEN Webdriver driver = new ChromeDriver(); AND ChromeDriver driver = new ChromDriver(); 
@@ -28,28 +35,28 @@ QUESTION:
 ANSWER:
     *> IN our POM frmaework we can implement ITestLISTENER and write this code inside the ontestFail() fucntion.
     
-    TakesScreenshot ss = (TakesScreenshot)driver; // TakesScreenshot Interface h 
-    File source = ss.getScreenshotAs(OutputType.FILE); //getScreenshotAs method h TakesScreenshot interface ka or iska return type FILE h.
-    File File = new File(System.getProperty("user.dir")+"//reports//"+testClassNmae+".png"); // is Dir  m ss save krna h.
-    FileUtils.copyFile(source,File); // Copy ss from source to destination.
+    TakesScreenshot ss = ((TakesScreenshot)drover).getScreenshotAs(OutputType.FILE); 
+    FileUtils.copyFile(ss,new File("ss.png"));
 
-
+    // TakesScreenshot Interface h getScreenshotAs method h TakesScreenshot interface ka or iska return type FILE h
+   
+  
 QUESTION:
     HOW can we get broken link in selenium ?
 
 ANSWER:
     List<WebElement> links=driver.findElements(By.cssSelector("li[class='gf-li'] a"));
-		SoftAssert a=new SoftAssert();		
-		for(WebElement link: links) {
-			String url=link.getAttribute("href");
-			HttpURLConnection conn=(HttpURLConnection)new URL(url).openConnection();
-			conn.setRequestMethod("HEAD");
-			conn.connect();
-			int resp=conn.getResponseCode();
-			a.assertEquals(resp<400,"The link with Text"+link.getText()+"is broken with code"+resp);			
-		}
-        
-		a.assertAll();
+    SoftAssert a=new SoftAssert();		
+    for(WebElement link: links) {
+        String url=link.getAttribute("href");
+        HttpURLConnection conn=(HttpURLConnection)new URL(url).openConnection();
+        conn.setRequestMethod("HEAD");
+        conn.connect();
+        int resp=conn.getResponseCode();
+        a.assertEquals(resp<400,"The link with Text"+link.getText()+"is broken with code"+resp);			
+    }
+    
+    a.assertAll();
 
 QUESTION:
     What is 202 http status code ?
@@ -139,7 +146,7 @@ QUESTION:
     
 ANSWER:
     *> Take screenshot of any element.
-    *> Get height and width of any element
+    *> Get height and width of any element  [ element.getSize(); output => (10,30)]
     *> Can open multiple application on a single browser at a time // chrome browser  m multiple tabs ya multiple windows open ho jati h
     *> Relative locators. 
     *> Chrome devtool integration  [CDP ->Chrome devtool potocol  //driver.getDevTool(); is function ka use krte h ]
@@ -185,8 +192,8 @@ QUESTION:
 ANSWER:
     *> @DataProvider gives you the power to run a test method with different sets of data, 
     *> @Factory gives you the power to run all methods inside a test class with different sets of data.//
-        [ @DataProvider KA USE KR K HM 1 FUNCTION KO MUTLPLE SET OF DATA KO RUN KR SKTE H ]
-        [ @Factory KA USE KR K HM 1 CLASS KO MUTLPLE SET OF DATA KO RUN KR SKTE H ]
+        [ @DataProvider KA USE KR K HM 1 FUNCTION KO MUTLPLE SET OF DATA K SATH RUN KR SKTE H ]
+        [ @Factory KA USE KR K HM 1 CLASS KO MUTLPLE SET OF DATA K SATH RUN KR SKTE H ]
         
     example code: 
     -> https://www.softwaretestingo.com/factory-and-dataprovider-annotation/#:~:text=%40DataProvider%20gives%20you%20the%20power,which%20approach%20fits%20it%20better.
