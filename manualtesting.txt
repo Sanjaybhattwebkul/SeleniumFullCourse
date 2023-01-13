@@ -67,7 +67,7 @@ QUESTION:
 	
 ANSWER:
 
-	In Description box iser story the product owner is write a requirnment of the story.epic.
+	In Description box is user story the product owner is write a requirnment of the story.epic.
 	And we will adn a accpetance criteria  section and write the technical rewuirnmnets under their.
 	Like validation, alignments and performance etc...
 
@@ -275,9 +275,16 @@ QUESTION:
     WHAT IS COMPONENT TESTING ?
 
 ANSWER:
-    Componenet testing means any single part/ component of te software.
-    In component test we don't need to test outside of this module/component
-    Mtlb agr hm login component test kr re h to hm only login page ko hi test krenge hme ye nahi dekhnege ki login hone k bad page kha jara h.
+    1. Requirement analysis.
+	2. Test planning.
+	3. Test case design and development.
+	4. Test environment setup.
+	5. Test execution.
+	6. Test cycle closure.
+
+	*> Componenet testing means any single part/ component of te software.
+	*> In component test we don't need to test outside of this module/component
+	*> Mtlb agr hm login component test kr re h to hm only login page ko hi test krenge hme ye nahi dekhnege ki login hone k bad page kha jara h.
 
 QUESTION:
     What is integration testing ?
