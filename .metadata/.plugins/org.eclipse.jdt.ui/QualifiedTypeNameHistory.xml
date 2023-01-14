@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="AbstractComponenets.AbstractComponent"/>
     <fullyQualifiedTypeName name="seleium.MavenScrach.orderPage"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="com.google.common.collect.Multiset.Entry"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="test.Second"/>
 </qualifiedTypeNameHistroy>

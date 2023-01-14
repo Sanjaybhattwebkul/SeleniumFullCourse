@@ -31,4 +31,17 @@
 
 14. new features of selenium ?
 
-15. 
+15. scrll windown till any element visible ?
+    
+    JavaScriptExecutor js (JavaScriptExecutor) driver();
+    js.executeScript("argument[0].scrollToView();",element);
+
+
+Set<Itrator>windows = windows.getWindowHandlers();
+Itrator<String> it = windows Itrator();
+if(it.hasNext()) {
+    
+}
+
+
+
