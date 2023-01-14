@@ -31,6 +31,7 @@
 
 14. new features of selenium ?
 
+<<<<<<< HEAD
 15. scrll windown till any element visible ?
     
     JavaScriptExecutor js (JavaScriptExecutor) driver();
@@ -45,3 +46,22 @@ if(it.hasNext()) {
 
 
 
+=======
+15. What is tale-element-exceptions-in-selenium 
+    // agr hme 10 sec ka waite lgaya h or element 10 sec tk bhi ni mila to ye error aayegi.
+
+16. Explain selenium architecture ?
+
+17. how does webfriver work in background explain.
+
+18 . Difference between LinkList And ArrayList ?
+   // https://www.javatpoint.com/difference-between-arraylist-and-linkedlist
+   1.  ArrayList is better for storing and accessing data. && LinkedList is better for manipulating data.
+   2.  An ArrayList class can act as a list only because it implements List only. && LinkedList class can act as a list and queue
+   3. The memory location for the elements of an ArrayList is contiguous. && The location for the elements of a linked list is not contagious.
+   4.  ArrayList internally uses a dynamic array to store the elements.  &&  LinkedList internally uses a doubly linked list to store the elements.
+   5. 
+      *> Generally, when an ArrayList is initialized, a default capacity of 10 is assigned to the ArrayList.
+      *> There is no case of default capacity in a LinkedList. In LinkedList, an empty list is created when a LinkedList is initialized.
+  
+>>>>>>> b81165088a6c5ce2cc7b8d428684b2c20f68b46d
