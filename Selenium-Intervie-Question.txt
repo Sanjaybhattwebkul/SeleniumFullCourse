@@ -13,7 +13,7 @@ QUESTION:
     Which type of challanges you face in selenium.?
 
 ANSWER:
-    CONCURRENCY issue iske liye hm ThreadLocal ka use krte h 
+    CONCURRENCY issue [ ise fix krne k liye hm ThreadLocal ka use krte h 
     // while using ITestLISTENER  for extent report. passissues are getting failed.
 
 QUESTION:
