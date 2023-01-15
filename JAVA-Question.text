@@ -1,3 +1,10 @@
+QUESTION:
+    CORE COMPONENET OF JAVA ?
+
+ANSWER:
+    1. JVM -> java virtual machine. [ it convert our byteCode into machinecode]
+    2. JDK. -> Java development kit  [ combination of JRE and developemet tool for java]
+    3. JRE. -> all require lib for java.
 
 QUESTIO:
 	NAME OF ANY 2 INTERFACE OF JAVA?
