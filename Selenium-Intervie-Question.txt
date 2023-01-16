@@ -377,12 +377,12 @@ ANSWER:
 *=> AGR HM TESTCASE RUN KRNE K BADBROWSER MANUALLLY COLSE KR DENGE TO KYA ERROR AAYEGI  ?
 
         ANSWER:
-         *> Error communicating with the remote browser. It may have died
+         *>  no such window: target window already closed
 
 *> Agr hm locator ka path galat likh denge to kya error aayegi ? find elements and findelement m ?
 
     answer:
-        *> no such element: Unable to locate element  // initElements and initElement donu m same error aayegi.
+        *> no such element: Unable to locate element  // findElements and findElement donu m same error aayegi.
 
 QUESTION:
     What are Flaky [फलकी ] testCases ?
