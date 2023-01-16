@@ -31,9 +31,19 @@
 
 14. new features of selenium ?
 
-15. What is tale-element-exceptions-in-selenium 
+15. What is stale-element-exceptions-in-selenium 
     // agr hme 10 sec ka waite lgaya h or element 10 sec tk bhi ni mila to ye error aayegi.
+    // jb koi dom m available h or waite lgane k bad bhi visible ni h to us case m ye error aati h
 
 16. Explain selenium architecture ?
+
+    *> Phle hm apne test script ko kisi bhi language m likhete h . 
+    *> jb hm test ko run krte h tb  to complete code phle json format m convert hota h .
+    *> and fir JSON format code browser driver [http protocol] ko send hota h.
+    *> Fir browser driver actual browser m actions proform krta h .
+    *> Action perform hone k bad browser  browser-driver ko kuchh output return krtah 
+    *> browser-driver use json m conver kr k selenium ko send krtah fir vo hme console m dikh jata h .
+
+
 
 17. how does webfriver work in background explain.
