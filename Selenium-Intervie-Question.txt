@@ -2,7 +2,10 @@ QUESTION:
     browseer stack and cross browser testing
 
 ANSWER:
-    //
+    *> rowseerStack Websites और APPS के लिए online mobile testing के लिए manual और automation option प्रदान करता है। 
+    *> BrowserStack Live testing के लिए 3000+ डिवाइस-ब्राउज़र-OS संयोजन प्रदान करता है।
+    *> इसका मतलब है कि मोबाइल उपकरणों पर वेबसाइटों का परीक्षण करते समय,
+    *> QA अपनी website चलाने के लिए नवीनतम और पुराने उपकरणों की एक विस्तृत श्रृंखला से चुन सकता है
 
 *> Web driver interface searchContax class ko extends krta h .
 
@@ -10,7 +13,7 @@ QUESTION:
     Which type of challanges you face in selenium.?
 
 ANSWER:
-    CONCURRENCY issue iske liye hm ThreadLocal ka use krte h 
+    CONCURRENCY issue [ ise fix krne k liye hm ThreadLocal ka use krte h 
     // while using ITestLISTENER  for extent report. passissues are getting failed.
 
 QUESTION:
@@ -645,7 +648,7 @@ ANSWER:
     *> getClass  will return the xpath of the element.
     *> getAttribute("class") will return the class name of element.
 
-ANSWER:
+QUESTION:
     Difference between getWindowHandles() and getWindowHandle() ?
 
 ANSWER:
@@ -658,6 +661,12 @@ ANSWER:
     driver.switchTo().window(childId);
 
 
+QUESTION:
+	HOW CAN BYPASS SSL Certificate in Selenium ?
+
+ANSWER:
+	*> Using the setAcceptInsecureCerts() method to pass parameter as False
+	*> options.setAcceptInsecureCerts(false)
 
 QUESTION:
 	 DIFFERENCE BETWEEN   Webdriver driver = new ChromeDriver(); AND ChromeDriver driver = new ChromDriver(); ?
