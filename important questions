@@ -25,32 +25,49 @@
 
 11. driver.navigate functions 
         // driver.navigate().back(); forword.  refresh. 
+
 12. what is xpath ?
 
 13. scrum cermonies ?
 
+    1. Sprint Planning.
+	2. Daily Scrum.
+	3. Sprint Review.
+	4. Sprint Retrospective.
+	5. Backlog Refinement.
+
+    
 14. new features of selenium ?
 
-<<<<<<< HEAD
+
 15. scrll windown till any element visible ?
     
     JavaScriptExecutor js (JavaScriptExecutor) driver();
     js.executeScript("argument[0].scrollToView();",element);
 
+16. How to handle multiple windows.
+    *> 
+        Set<Itrator>windows = windows.getWindowHandlers();
+        Itrator<String> it = windows Itrator();
+        if(it.hasNext()) {
+            Strin parent  = it.next;
+            driver.switchTo().window(parent);   
+        }
 
-Set<Itrator>windows = windows.getWindowHandlers();
-Itrator<String> it = windows Itrator();
-if(it.hasNext()) {
-    
-}
 
-
-
-=======
-15. What is tale-element-exceptions-in-selenium 
+17. What is tale-element-exceptions-in-selenium 
     // agr hme 10 sec ka waite lgaya h or element 10 sec tk bhi ni mila to ye error aayegi.
+    // jb koi dom m available h or waite lgane k bad bhi visible ni h to us case m ye error aati h
 
 16. Explain selenium architecture ?
+
+    *> jb hm test ko run krte h tb  to complete code phle json format m convert hota h .
+    *> and fir JSON format code browser driver [http protocol] ko send hota h.
+    *> Fir browser driver actual browser m actions proform krta h .
+    *> Action perform hone k bad browser  browser-driver ko kuchh output return krtah 
+    *> browser-driver use json m conver kr k selenium ko send krtah fir vo hme console m dikh jata h .
+
+
 
 17. how does webfriver work in background explain.
 
@@ -64,4 +81,4 @@ if(it.hasNext()) {
       *> Generally, when an ArrayList is initialized, a default capacity of 10 is assigned to the ArrayList.
       *> There is no case of default capacity in a LinkedList. In LinkedList, an empty list is created when a LinkedList is initialized.
   
->>>>>>> b81165088a6c5ce2cc7b8d428684b2c20f68b46d
+
