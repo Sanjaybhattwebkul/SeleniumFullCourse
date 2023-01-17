@@ -1,3 +1,5 @@
+0. WHICH FRAMEWORK ARE YOU USING ?
+    //We are using Hybrid framework IN selenium
 1. does vaja support call by reference ?
     *> No
 
@@ -55,14 +57,14 @@
         }
 
 
-17. What is tale-element-exceptions-in-selenium 
+17. What is stale-element-exceptions-in-selenium 
     // agr hme 10 sec ka waite lgaya h or element 10 sec tk bhi ni mila to ye error aayegi.
     // jb koi dom m available h or waite lgane k bad bhi visible ni h to us case m ye error aati h
 
 16. Explain selenium architecture ?
 
     *> jb hm test ko run krte h tb  to complete code phle json format m convert hota h .
-    *> and fir JSON format code browser driver [http protocol] ko send hota h.
+    *> and fir JSON formatted code browser-driver [http protocol] ko send hota h.
     *> Fir browser driver actual browser m actions proform krta h .
     *> Action perform hone k bad browser  browser-driver ko kuchh output return krtah 
     *> browser-driver use json m conver kr k selenium ko send krtah fir vo hme console m dikh jata h .
@@ -72,13 +74,46 @@
 17. how does webfriver work in background explain.
 
 18 . Difference between LinkList And ArrayList ?
+
    // https://www.javatpoint.com/difference-between-arraylist-and-linkedlist
-   1.  ArrayList is better for storing and accessing data. && LinkedList is better for manipulating data.
+
+   1.  The memory location for the elements of an ArrayList is contiguous. && The location for the elements of a        linkedlist is not contagious.
    2.  An ArrayList class can act as a list only because it implements List only. && LinkedList class can act as a list and queue
-   3. The memory location for the elements of an ArrayList is contiguous. && The location for the elements of a linked list is not contagious.
+   3. ArrayList is better for storing and accessing data. && LinkedList is better for manipulating data.
    4.  ArrayList internally uses a dynamic array to store the elements.  &&  LinkedList internally uses a doubly linked list to store the elements.
    5. 
       *> Generally, when an ArrayList is initialized, a default capacity of 10 is assigned to the ArrayList.
       *> There is no case of default capacity in a LinkedList. In LinkedList, an empty list is created when a LinkedList is initialized.
   
 
+19. What is latest version cucumber ?
+    //7.9.0
+
+20. What are hooks in cucumber ?
+    *> Why Cucumber Hooks? Hooks are blocks of code that run before or after each scenario in the Cucumber execution 
+    *> cycle. This allows us to manage the code workflow better and helps to reduce code redundancy. Hooks can be defined 
+    *> anywhere in the project or step definition layers using the methods @Before and @After.
+
+21. What is test senerio and senerio outline in cucubmer ?
+    *> In Gherkin language, scenario outline is the keyword which is used to run the same scenario multiple times. 
+    *> In cucumber Each feature contains the required number of tests to test the feature. Each test is named as a Scenario.
+
+22. What are providors in cucumber ?
+
+    // Parameterization using Excel Files
+        **APACHE POI API**
+
+    // Parameterization using Json
+        *** for JSON *** *** USING jackson-databind  ***
+        List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir")+/"resource/");
+        return data[][] = {{data.get(0)}};
+
+    // Parameterization using XML  -> textng.XML file se 
+      *> <parameter name="searchKey" alue="India" />
+      *> @Test  ->  @Parameters("searchKey") ->  function(Sting searchKey)
+
+23. How can get data from excel and JOSN write the main logic and library ?
+
+    *** for JSON *** *** USING jackson-databind  ***
+    List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir")+/"resource/");
+    return data[][] = {{data.get(0)}};

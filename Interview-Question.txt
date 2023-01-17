@@ -129,7 +129,7 @@ ANSWER:
 
 
 QUESTION:
-	 DIFFERENCE BETWEEN ABSLUTE AND RELATIVE X-PATH ?
+	DIFFERENCE BETWEEN ABSLUTE AND RELATIVE X-PATH ?
 	
 ANSWER:
 	-> Abslute X-path m hm DOM k root se child element ko likhte h one-by-one
@@ -313,7 +313,7 @@ ANSWER:
 	*> Keyword driven dramework -> Test data from excel file. text file etc...
 
 QUESTION:
-	WHAT IS Behaviour Driven Frameworks:
+	WHAT IS Behaviour Data Driven (BDD) Frameworks:
 
 ANSWER:
 	Means test case are write in s simple language like in englist.
