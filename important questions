@@ -1,3 +1,5 @@
+0. WHICH FRAMEWORK ARE YOU USING ?
+    //We are using Hybrid framework IN selenium
 1. does vaja support call by reference ?
     *> No
 
@@ -97,8 +99,21 @@
     *> In cucumber Each feature contains the required number of tests to test the feature. Each test is named as a Scenario.
 
 22. What are providors in cucumber ?
-     // 
+
+    // Parameterization using Excel Files
+        **APACHE POI API**
+
+    // Parameterization using Json
+        *** for JSON *** *** USING jackson-databind  ***
+        List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir")+/"resource/");
+        return data[][] = {{data.get(0)}};
+
+    // Parameterization using XML  -> textng.XML file se 
+      *> <parameter name="searchKey" alue="India" />
+      *> @Test  ->  @Parameters("searchKey") ->  function(Sting searchKey)
+
 23. How can get data from excel and JOSN write the main logic and library ?
+
     *** for JSON *** *** USING jackson-databind  ***
     List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir")+/"resource/");
     return data[][] = {{data.get(0)}};
