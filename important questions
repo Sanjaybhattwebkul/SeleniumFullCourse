@@ -84,3 +84,16 @@
       *> There is no case of default capacity in a LinkedList. In LinkedList, an empty list is created when a LinkedList is initialized.
   
 
+19. What is latest version cucumber ?
+    //7.9.0
+
+20. What are hooks in cucumber ?
+    //
+
+21. What is test senerio and senerio outline in cucubmer ?
+ //
+
+22. What are providors in cucumber ?
+     // 
+23. How can get data from excel and JOSN write the main logic and library ?
+    //
