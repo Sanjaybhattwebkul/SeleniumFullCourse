@@ -172,7 +172,7 @@ ANSWER:
 	collection in java are a framework that framework contains different classes and interfaces.
 	1. HashMap  -> map interface ko implement krta h ,  
 	2. ArrayList -> List Interface ko implement krta h  
-	3. Set -> set Interface ko implement krta h.
+	3. HashSet -> set Interface ko implement krta h.
 
 
 QUESTION:
