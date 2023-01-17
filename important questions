@@ -88,12 +88,17 @@
     //7.9.0
 
 20. What are hooks in cucumber ?
-    //
+    *> Why Cucumber Hooks? Hooks are blocks of code that run before or after each scenario in the Cucumber execution 
+    *> cycle. This allows us to manage the code workflow better and helps to reduce code redundancy. Hooks can be defined 
+    *> anywhere in the project or step definition layers using the methods @Before and @After.
 
 21. What is test senerio and senerio outline in cucubmer ?
- //
+    *> In Gherkin language, scenario outline is the keyword which is used to run the same scenario multiple times. 
+    *> In cucumber Each feature contains the required number of tests to test the feature. Each test is named as a Scenario.
 
 22. What are providors in cucumber ?
      // 
 23. How can get data from excel and JOSN write the main logic and library ?
-    //
+    *** for JSON *** *** USING jackson-databind  ***
+    List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir")+/"resource/");
+    return data[][] = {{data.get(0)}};
