@@ -102,11 +102,20 @@
 
     // Parameterization using Excel Files
         **APACHE POI API**
+        FileInputStream fis = new FileInputStream("demodata.Bagisto-TestCase.xls");
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+        int sheets = workbook.getNumberOfSheets(); 
 
     // Parameterization using Json
         *** for JSON *** *** USING jackson-databind  ***
-        List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir")+/"resource/");
-        return data[][] = {{data.get(0)}};
+       // read json file to string
+		String jsonContent = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
+		// String to HashMap- using ackson-databind
+		ObjectMapper mapper = new ObjectMapper();
+		List<HashMap<String, String>> data = mapper.readValue(jsonContent,
+				new TypeReference<List<HashMap<String, String>>>() {
+				});
+		return data;
 
     // Parameterization using XML  -> textng.XML file se 
       *> <parameter name="searchKey" alue="India" />
@@ -115,5 +124,12 @@
 23. How can get data from excel and JOSN write the main logic and library ?
 
     *** for JSON *** *** USING jackson-databind  ***
-    List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir")+/"resource/");
-    return data[][] = {{data.get(0)}};
+   // read json file to string
+		String jsonContent = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
+		// String to HashMap- using ackson-databind
+		ObjectMapper mapper = new ObjectMapper();
+		List<HashMap<String, String>> data = mapper.readValue(jsonContent,
+				new TypeReference<List<HashMap<String, String>>>() {
+				});
+		return data;
+
