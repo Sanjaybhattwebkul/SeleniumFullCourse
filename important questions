@@ -105,8 +105,11 @@
         FileInputStream fis = new FileInputStream("demodata.Bagisto-TestCase.xls");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
         int sheets = workbook.getNumberOfSheets(); 
-
+         *> https://github.com/Sanjaybhattwebkul/bagisto-automation-framework/blob/master/automationFramework/src/test/java/ExcelDriven/getExcelData.java
+        
+        
     // Parameterization using Json
+
         *** for JSON *** *** USING jackson-databind  ***
        // read json file to string
 		String jsonContent = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
