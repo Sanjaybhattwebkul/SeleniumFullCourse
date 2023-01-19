@@ -1090,3 +1090,21 @@ QUATION:
 ANSWER:
     *> This command cleans the maven project by deleting the target directory
 
+
+------ CUCUMBER .FEATURE FILEEXAMPLE ---------------
+
+
+@userflow
+Feature: Registration, Login and MyAccount
+
+  @regression @testing
+  Scenario: Verify Login Functionality
+    Given I am on the homepage
+    And I should see "Sign in" link
+    When I follow "Sign in" link
+    And I fill "email address" with "goswami.tarun77@gmail.com"
+    And I fill "password" with "tarun@123"
+    And I click "sign in" button
+    Then I should see "My Account" Heading
+    And I should see "my account" link
+    But I should not see "Login" Heading
