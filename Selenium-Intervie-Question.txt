@@ -2,7 +2,7 @@ QUESTION:
     browseer stack and cross browser testing
 
 ANSWER:
-    *> rowseerStack Websites और APPS के लिए online mobile testing के लिए manual और automation option प्रदान करता है। 
+    *> BrowseerStack Websites और APPS के लिए online mobile testing के लिए manual और automation option प्रदान करता है। 
     *> BrowserStack Live testing के लिए 3000+ डिवाइस-ब्राउज़र-OS संयोजन प्रदान करता है।
     *> इसका मतलब है कि मोबाइल उपकरणों पर वेबसाइटों का परीक्षण करते समय,
     *> QA अपनी website चलाने के लिए नवीनतम और पुराने उपकरणों की एक विस्तृत श्रृंखला से चुन सकता है
@@ -28,7 +28,7 @@ QUESTION:
 
  ANSWER:
     *>  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));   // implicitwaitimplicitlyWait.
-
+    
     *>  WebDriverWait wait = new WebDriverWait(driver,30);
     *>  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")));   
 
@@ -389,7 +389,7 @@ QUESTION:
 
 ANSWER:
     *>  The testcases which are getting passed and failed botg, that type of cases called फलकी testcases.
-
+ 
     
 QUESTION:
     HOW CAN RIGHT CLICK USING SELENIUM?
