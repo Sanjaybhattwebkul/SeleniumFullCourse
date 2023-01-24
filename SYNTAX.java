@@ -9,11 +9,19 @@ driver.findElement(By.xpath("//input[@name='email']/parent::div/button[1]"));
 
 // @Parent To child Xpath
 driver.findELement(By.xpath("//p[contains(@class='email')]/span[2]  //h1[@class='cls']"));
-
 //@Abslute xpath
 driver.findElement(By.xpath("/html/head/body/div/p"));
 
+/// @css selector
+System.out.println(driver.findElement(By.cssSelector("form p")).getText()); //parentTag ChildTag
+System.out.println(driver.findElement(By.cssSelector("p.error")).getText());  //tagName.className
+
 driver.manage().timeOutes().implicitlyWait(Durations.Ofseconds(10));
+driver.manage().timeouts().implicitlyWait(10,timeouts.MINUTES);
+WebDriverWait wait = new WebDriverWait(driver);
+wait.until(ExpectedCondition.visiblityOfElementLocated(driver.findElement(By.xpath("//div[@class='name']"))));
+driver.findElement(By.cssSelector("div[id='name'] :nth-child(1)"));
+
 
 driver.findElemen(By.tagName("p")).click();
 driver.findElemen(By.className("class")).click();
