@@ -420,7 +420,7 @@ QUESTION:
 	HOW CAN WE CLICK ON JS  ALERT IN SELENIUM ?
 
 ANSWER:
-	*> by using switchTo().clert(); method. 
+	*> by using switchTo().alert(); method. 
 		FOR EXAMPLE: 
 		1 IF we ant to click OK , YES OR CONFIRM ?  //  driver.switchTo.alert().accept();
 		2. IF we ant to click Cancel , No   //  driver.switchTo.alert().dismis();

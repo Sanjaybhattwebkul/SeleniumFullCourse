@@ -108,7 +108,11 @@
         int sheets = workbook.getNumberOfSheets(); 
          *> https://github.com/Sanjaybhattwebkul/bagisto-automation-framework/blob/master/automationFramework/src/test/java/ExcelDriven/getExcelData.java
         
+<<<<<<< HEAD
+
+=======
         
+>>>>>>> upstream/master
     // Parameterization using Json
 
         *** for JSON *** *** USING jackson-databind  ***
@@ -135,3 +139,26 @@
 				new TypeReference<List<HashMap<String, String>>>() {
 				});
 		return data;
+
+
+24. Types of xpath ins selenium ?
+
+25. Relative and abslute xpath difference ?
+
+26. Name of locators in slenium ?
+
+27. SQL joins  what is LEFT and INNER JOIN ?
+
+28. Sprint Retrospective. ?
+
+29. regrassion and smoke testing ?
+
+30. WAterfall and agile difference ?
+
+31. API Status code ?
+
+32. Types of locators in selenium ?
+
+
+Tpye
+

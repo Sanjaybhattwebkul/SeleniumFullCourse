@@ -2,7 +2,7 @@ QUESTION:
     browseer stack and cross browser testing
 
 ANSWER:
-    *> rowseerStack Websites और APPS के लिए online mobile testing के लिए manual और automation option प्रदान करता है। 
+    *> BrowseerStack Websites और APPS के लिए online mobile testing के लिए manual और automation option प्रदान करता है। 
     *> BrowserStack Live testing के लिए 3000+ डिवाइस-ब्राउज़र-OS संयोजन प्रदान करता है।
     *> इसका मतलब है कि मोबाइल उपकरणों पर वेबसाइटों का परीक्षण करते समय,
     *> QA अपनी website चलाने के लिए नवीनतम और पुराने उपकरणों की एक विस्तृत श्रृंखला से चुन सकता है
@@ -28,7 +28,7 @@ QUESTION:
 
  ANSWER:
     *>  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));   // implicitwaitimplicitlyWait.
-
+    
     *>  WebDriverWait wait = new WebDriverWait(driver,30);
     *>  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")));   
 
@@ -101,7 +101,7 @@ ANSWER:
     *> Restore a password with an unregistered email.
 
 QUESTION:
-    What are depends on testcases give any example. [ @BeforeTest annotation  use krte h iske liye ]
+    What are depends on testcases give any example. [ @dependsOntMethod annotation  use krte h iske liye ]
 
 ANSER:
     *> Suppose we have 2 test 1st is "Registration" ans 2nd is Login. 
@@ -300,43 +300,53 @@ QUESTION:
         *> For this we can implement the ITestLISTENER in our Listener class.
         *> And Inside the onTestCseFiler() function we can use the function of TakesScreenshot() class. for taking screenshot.
 
-Which methology you are using in project ?
+QUESTION:
+    Which methology you are using in project ?
 
-    ANSWER:
+ANSWER:
         Ajild methology.
 
-How can we validate title of the webpage with the help of assertion.
-    
+QUESTION:
+    How can we validate title of the webpage with the help of assertion.
 
-What is POM?
+ANSWER:
+    String title = driver.getTitle();
+    assert.AssertEquals(title,"homePage");
 
-    ANSWER:
+QUESTION:
+    What is POM?
+
+ANSWER:
     *> Page Object Model (POM) is a design pattern,that creates Object Repository for web UI elements
     *> The advantage of the model is that it reduces code duplication and improves test maintenance
 
-How Can we reuse code in POM?
+QUESTION:
+    How Can we reuse code in POM?
     
-    ANSWER:
+ANSWER:
     *> We can write reusable code in a baseTest class and can extends this class wherever needed.
     *> Like we can create a OpenBrowser function in baseTest class and can reuse it.
 
-What is PageFactory ?
+QUESTION:
+    What is PageFactory ?
      
-    ANSWER:
+ANSWER:
     *> PageFactory is a class of Selenium WebDriver that provides the implementation of the Page Object Model design pattern.
     *> Page Factory is a way to initialize the web elements, that you want to interact with within the page object
     *> PageFactory WebElements ko initialize krne ka trika h, jin elements ko aap POM m use krna chahte h.
     *> @FinfBy(class='.form') WebElement  button;  // yha p hm button element ko 1 WebElement m initializekr re h ab ise POM m use krenge.
 
 
-What is abstract class?
+QUESTION:
+    What is abstract class?
    
-    ANSWER:
+ANSWER:
     *> A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body).
     *> Abstract class: is a restricted class that cannot be used to create objects 
 
 
-Difference between interface and Abstract class?
+QUESTION:
+    Difference between interface and Abstract class?
 
         ANSWER:
          *> Abstract class have abstract and nonAbstract type functions, but interface have only abstract type functions.
@@ -344,7 +354,8 @@ Difference between interface and Abstract class?
          *> We can declear and define any function in the abstract class. 
          *> define means function ki body  bhi created h or declear means only function name();
 
-Why we use abstract class and interface?
+QUESTION:
+    Why we use abstract class and interface?
 
     ANSWEr:
         
@@ -363,7 +374,13 @@ QUESTION:
     Componenet of http and https ?
 
 ANSWER:
-    *> 
+    *> The Web server. ...
+    *> Proxies. ...
+    *> HTTP is simple. ...
+    *> HTTP is extensible. ...
+    *> HTTP is stateless, but not sessionless. ...
+    *> HTTP and connections. ...
+    *> Requests.
 
 QUESTION:
     Difference between @FindBy and BY in POM ?
@@ -377,20 +394,21 @@ ANSWER:
 
 *=> AGR HM TESTCASE RUN KRNE K BADBROWSER MANUALLLY COLSE KR DENGE TO KYA ERROR AAYEGI  ?
 
-        ANSWER:
-         *>  no such window: target window already closed
+    ANSWER:
+     *>  no such window: target window already closed
 
-*> Agr hm locator ka path galat likh denge to kya error aayegi ? find elements and findelement m ?
+QUESTION:
+    Agr hm locator ka path galat likh denge to kya error aayegi ? find elements and findelement m ?
 
-    answer:
-        *> no such element: Unable to locate element  // findElements and findElement donu m same error aayegi.
+answer:
+    *> no such element: Unable to locate element  // findElements and findElement donu m same error aayegi.
 
 QUESTION:
     What are Flaky [फलकी ] testCases ?
 
 ANSWER:
     *>  The testcases which are getting passed and failed botg, that type of cases called फलकी testcases.
-
+ 
     
 QUESTION:
     HOW CAN RIGHT CLICK USING SELENIUM?
@@ -410,7 +428,11 @@ ANSWER:
     moveToElement(): -> Shifts the mouse pointer to the center of the element
     contextClick():  -> Performs right-click on the mouse
 
-    Keyboard Actions  in Selenium:
+QUESTION:
+
+    Keyboard Actions  in Selenium:?
+
+ANSWER:
 
     sendKeys(): -> Sends a series of keys to the element
     keyUp():    -> Performs key release
@@ -423,6 +445,7 @@ QUESTION:
 
 ANSWER:
 	By using keyDown(key.SHIFT); // SHIFT is key name
+    driver.findElement(By.id("name")).sendKeys("name",Keys.SHIFT);
 
 QUESTION:
     WRITE SOM MAVEN COMMANDS:
@@ -446,7 +469,7 @@ ANSWER:
 
     
 QUESTION:
-    . How can we scroll webpage?
+    How can we scroll webpage?
 
 ANSWER:
    JavascriptExecutor js=(JavascriptExecutor)driver;
@@ -595,6 +618,7 @@ QUESTION:
 	WHAT IS EXTENT REPORT?
 
 ANSWER:
+    *> iske liye extentreports  library ka use krte h .
 	*> Extent Reports is an open-source reporting library
 	*> It provides a pictorial representation of the test results
 	*> It can be integrated with major testing fabrics like  TestNG, JUnit, NUnit
