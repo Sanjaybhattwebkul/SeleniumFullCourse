@@ -1,0 +1,14 @@
+=============================[09-FEB2023] ========================
+
+QUESTION:
+    WHAT IS CUCUMBER ?
+
+ANSWER:
+     Behaviour-Driven Development (BDD) is a Development apporach. it a enhanced comunication between texh and 
+     Non-tech team. Because we are creating a common document in ghrkin language for all teams.[dev,qa,bde].
+
+QUESTION:
+    WHAT IS CUCUMBER?
+
+ANSWER:
+    CUCUMBER  is a framework that support the Behaviour-Driven Development (BDD). 

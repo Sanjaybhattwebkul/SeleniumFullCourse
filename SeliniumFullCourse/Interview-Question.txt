@@ -1,0 +1,2532 @@
+	
+============================ [ 22-JUNE 2022 ] ======================================
+
+		-------------- SELENIUM INTERVIEW QUESTIONS - -----------------
+
+QUESTION:
+	 DIFFERENCE BETWEEN   Webdriver driver = new ChromeDriver(); AND ChromeDriver driver = new ChromDriver(); ?
+
+ANSWER:
+	*> If we are using the ChromeDriver driver it means we are invoking and act onlt the which implemented by the ChromeBrowser and Supported By ChromeBrowser;
+	*> If We are using the WebDriveer driver it means we are creating an instance of WebDriver interface and casting it to ChromeDriver class.
+
+
+	   driver object here has the access to the methods				driver object here has the access All the methods of ChromeDrover
+	   Of ChromeDriver which are defined in the WebDriver Interface                  
+	
+		
+	   Iska use kr k ham 1 code ko multiple browser m run kr skte h			 Iska use kr k ham 1 code ko only Chrome m run kr skte h kyu ki hm yha par 
+	    Like: WebDriver driver = new FireFoxDriver();				 ChromeDriver class ko denote kr re hai.	
+		  WebDriver driver = new ChromeDriver();
+
+	  Yha par hm WebDriver Class k methods ko use kr skte hai                         Yha pa only ChromeDriver class k methods ko use kr skte hai. 
+											 or code only chrome m chlega
+
+	  WebDriver Class hai or ChromeDriver Interface					ChromeDriver Class hai or ChromeDriver Interface
+
+	  *> Yha pr WebDrivere class ChromeDeriver() class m extendshoti h . or hm WebDrivere driver = new ChromeDeriver(); krte h , mtlb hm WebDriver ki properties access kr reh . Or ChromDriver driver =new ChromDriver() krenge to mtlb ChromeDeriver class ki properties access kr re h tabhi esa krne se test only chrome m chlte h .
+	  *> WebDriver() parent class h or is classko sab classess access krti h , like Firefox chrome, edge etc.. tb Webdriver likhne se test sare browser m chlta h .
+	  *> Is consept ko upcasting bhi khte h .
+
+
+Note:  Webdriver driver = new ChromeDriver()  isme  jitne bhi function ChromeDriver interface k ander define honge.
+	un sab ko ham webdriver class ka object bana kar  access kr skte h 
+
+
+
+QUESTION:
+	  DIFFERENT BETWEEEN driver.close() AND driver.quite();   ?
+
+ANSWER:
+	*> driver.close(); will close the current tab. and driver.quite(); will close the complete browser opened by selenium  automation.
+	
+	-> driver.close(); will close only the current tab.
+	-> driver.quit(); will close all tabs which opened by selenium
+
+QUESTION:
+	WHAT IS Strin IN JAVA ?
+
+ANSWER:
+	*> String is a Object that Represent the sequance of the charactrs.
+
+QUESTION:
+	 HOWMANY WAYS WE CAN DEFINE String?
+
+ANSWER:
+	We can Decleare String in 2 Ways.
+	
+	1. Literal string.  [  String name = "Sanju ji"; ]
+
+	2. Useing new newKeyword  [ String name = new String("Sanju ji"); ]
+
+
+QUESTION:
+
+	DIFFERENT BETWEEN  DEFINE String USING Literal way and USING new keyword ?
+
+ANSWER:
+	*>If we are defineing String Like this [ String name ="Sanju"; ] 
+    *>In this case if we are defining the 2  string variables with the same vale then java will not create 2 different-2 mamory for both variables.
+	   Java will Create Only one memory allocation and denote the value of 1st variable for the 2nd variable.
+
+
+	   
+
+QUESTION:
+	 HOW TO PRINT A GIVEN STRING IN REVERS ORDER ?
+	
+ANSWER:
+	String S = "Selenium";
+
+	**-> for(int i=s.length()-1; i>=0; i--)
+	   {
+		System.out.println(s.charAt(i));
+	   }
+
+
+QUESTION:
+	 DIFFERENT BETWEEN Public void FunctionName()  and Public Static functionName()  ?
+
+ANSWER:
+
+	-> We cal call a STATIC  method without creating a object of the class . 
+	-> we can call a nonStatic function only create a object of the calss .
+
+QUESTION:
+	 WHAT IS MEANS OF element intercepted exception in selenium ?
+
+ANSWER:
+	-> Ye error tb aati h jb hm koi operation perform krte h . or vo page load hone se phle hi perform ho jata h .
+	-> Iske liye hme [ Thread.sleep(1000) ]  ya [ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); ]  ka use krna hota h .
+	-> Is method ka use krne se jb tk page load ni ho jata tb tk selenium koi action persorm ni krega
+
+
+QUESTION:
+	 DIFFERENT BETWEEN implicitlyWait()  AND  Thread.sleep(1000) FUNCTION ? 
+
+ANSWER:
+	-> implilityWaite() tab use kr krte h jab hme kisi object ko page m load hone k liye waite krna ho h.
+	-> Thread.sleep(); tab use krte h jb koi object page m pahle se h or vo show ni hora h . to use show hone tk waite krne k liye ise use krte h 
+
+
+ANSWER:
+	 WHAT IS  REgular expression CSSselector in selenium ?
+	-> We can select the element by some words
+	Example: driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("hello");
+
+	-> button[contains(@class,'btn btn-submit')]  // agr 1 element 2 class h to 1 hi likhni hoti h .
+
+QUESTION:
+	 If WE HAVE 2 SAME BUTTON WITH THE SAME CLASS. HOW DID WE INENTIFY WHICH ONE Y=WE NEED ?
+	<div class="forgot-pwd-btn-conainer">
+		<button class="go-to-login-btn">Go to Login</button>
+		<button class="reset-pwd-btn">Reset Login</button>
+	</div>
+
+ANSWER:
+ -> In this case we need to use indexing of the element
+ -> //div[@class='forgot-pwd-btn-conainer']/button[1]
+
+
+QUESTION:
+	DIFFERENCE BETWEEN ABSLUTE AND RELATIVE X-PATH ?
+	
+ANSWER:
+	-> Abslute X-path m hm DOM k root se child element ko likhte h one-by-one
+	  * EXAMPLE: /html/head/body/div/h2/p/span
+	  * or is m / ka hi use krte h.
+
+	-> Relative X-path m hm DOM se kisi bhi element ko direct access kr skte  hai.
+	  * EXAMPLE: //Div/p/span
+
+QUESTION:
+	 HOW CAN WE TRAVEL FROM CHIELD TO PARENT LOCTORS ? if we want to find <a> tag and we are in lOGIN  button
+	-> <header>
+			<a href="#">click</a>
+			<div>
+				<button class='btn-lOGIN'>HOME</button>
+				<button class='btn-lOGIN'>PRACTICE</button>
+				<button class='btn-lOGIN'>LOGIN</button>
+			</div>
+		</header>
+	-> WE ARE ON LOGIN BUTTON NOW. 
+	    ->Like: driver.findElement(By.xpath("//header/div/button[3]"))
+
+	*ANSWER*-->driver.findElement(By.xpath("//header/div/button[3]/parent::div/parent::header/a")) 
+
+
+QUESTION:
+	 HOW CAN WE TRAVEL FROM PARENT TO CHIELD LOCTORS ?We want to find Login Button and we are in Home nutton
+	-> <header>
+			<a href="#">click</a>
+			<div>
+				<button class='btn-lOGIN'>Home</button>
+				<button class='btn-lOGIN'>Practice</button>
+				<button class='btn-lOGIN'>LOGIN</button>
+			</div>
+		</header>
+	-> WE ARE ON Home BUTTON NOW. 
+	    ->Like: driver.findElement(By.xpath("//header/div/button[1]"))
+
+*ANSWER*-->
+	 driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[2]")).getText();
+
+
+
+QUESTION:
+	DIFFERENCE BETWEEN driver.get();  AND driver.navigate();  ?
+	
+ANSWER:
+	*> driver. get() is used to navigate particular URL(website) and wait till page load.
+	*> driver. navigate() is used to navigate to particular URL and does not wait to page load.
+	*> driver.get(); can not store the session and cookies. but driver.navigate(); can store session and cookies.
+	*> driver.get(); ye function tab tk action perform nahi karega jab tak complete page load nahi ho jata.
+	*> Jb tak complete page load nahi hoga tab tk waite krta hai bina kisi extra method call kiye.
+	*> driver.navigate(); ye function page open hote hi action perform krna start kr deta h . complate page load hone tk waite nahi krta hai.
+	*> isi liye hm first time jb browser open krte hai to driver.get() ka usse krte hai. 
+
+QUESTION:
+	 What are the new features of Selenium 4.5 ?
+   
+	1. Can take a screenshot of any element.
+	2. Can open multiple applications in a browser at a time.[ multiple windiws and multiple tabs can opened ]
+	3. Relative locators.
+	4. Chrome Dev tools.
+
+QUESTION:
+	 Difference between @factory and @ Dataprovidor annotation ?
+
+ANSWER:
+	 *> @DataProvider gives you the power to run a test method with different sets of data, 
+    *> @Factory gives you the power to run all methods inside a test class with different sets of data.//
+
+QUESTION
+ Types of test Annotation in testng ?
+
+	1. KeyWord drivern automation  testing
+	2. Securoty testing.
+	3. Integration.
+	4. Unit Testing.
+	5. SMmoke testing.
+	6  Regration testing
+	7. Performance testing
+
+QUESTION:
+	 How can we switch into the frame ?
+
+ANSWER:
+	driver.switchTo();
+
+QUESTION:
+	  Difference between relative and absolute xPath ?
+
+ANSWER:
+	Absolute Xpath: It uses Complete path from the Root Element to the desire element. 
+	Relative Xpath: You can simply start by referencing the element you want and go from there
+	
+	-> jb hm ABSLUTE xPath  bnate h to hm head element se bottem tk jate h .
+		-> LIKE: head/body/div/div/div/span/b
+
+	-> OR jb hm Relative xPath bnate h tb hm elemt ko middle se bhi target kr skte h 
+		-> Like :  head/div/b
+
+
+QUESTION:
+	 Write a program in JAVA  to count the repeted the similar alpabets in given string ?
+
+ANSWER:
+	*> : https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/SelinumBesic/src/String.java
+
+QUESTION:	
+ Why we use Static  keyword in void main()  function ?
+
+ANSWER:
+	*> The main() method is static so that JVM can invoke it without instantiating the class
+	*.function m  Static lgane se hme class ka object ni bnana padhta hai. direct function call ho jayega
+
+QUESTION:
+	 Difference between findElement  and findElements ?
+	
+ANSWER:
+	*> findElement is used to uniquely identify a web element within the web page.
+ 	*> findElements is used to uniquely identify the list of web elements within the web pag
+	*>. findElement will is use to find Element on the DOM.
+	*>. findElements is use to get the list of the elements in DOM
+
+
+QUESTION:
+	 How can we heighlight any element in selenium ?
+
+ANSWER:
+	*>. By add custom css on element using JavascriptExecutor.
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].setAttribute('style','background: red; border:2px solid blue;')",h1);
+
+QUESTION:
+	 What is the dataDriven framework ?
+
+ANSWER:
+	Send data on runtime using dataProvidor in testNG is call dataDriven framework
+
+
+QUESTION:
+   Difference between hard asssersion and soft assersion ?
+
+ANSWER:
+	*> A Hard Assertion is a type of assertion that throws an exception immediately when an assert statement fails
+	*> Soft Assertions are the type of assertions that do not throw an exception immediately when an assertion fails
+	[
+		Hard assersion m agr hm koi script run krte h to agr koi testCse fail hota h to script ka excution stop ho jata h .
+		Soft assersion m hme script ka output last m milta h ki kitne case pass or kitne fail hue, script ka excution ni rukta hai. 
+	] 
+
+QUESTION:
+	 Can we run the testNg testcases through command promt ?
+
+ANSWER:
+	*> YES
+
+QUESTION:
+	 What is the key component of maven ?
+
+ANSWER:
+	1. maven-dependency-tree  -> means it contains a tree model of maven dependancy in pom.xml file.
+	2. maven-filtering		  -> Components for filtering resources
+	3. maven-invoker	      -> Fires up a Maven build in a new JVM.
+	
+
+QUESTION:
+	Why we use selenium  ?
+
+ANSWER:
+	*> Selenium is an open-source tool that automates web browsers.
+	*> It provides a single interface to u write test scripts in programming languages
+	*> like Ruby, Java, NodeJS, PHP, Perl, Python, and C#, 
+
+
+QUESTION :
+	WHAT IS HYBRID FRAMEWORK ?
+
+ANSWER:
+	Hybrid framework means use the test data and test  keyword are in external file.
+	*> Like: dataDriven frameword -> test data fron json file. of hashmap and object..
+	*> Keyword driven dramework -> Test data from excel file. text file etc...
+
+QUESTION:
+	WHAT IS Behaviour Data Driven (BDD) Frameworks:
+
+ANSWER:
+	Means test case are write in s simple language like in englist.
+	*> The test case are easy to understand. for non tech person. like , BDE, product owner etc.
+	*> Like CUCUMBER. ,Specflow, Testsigma etc.
+
+QUESTION:
+	 What is Parent-Child x-Path ?
+
+ANSWER:
+	*> in this xpath, we need to write the xpath of parent node first and then the xpath of child node.
+	*> "//div[@id='ParentElemet-Ki-Id'] //a[@value='Child-ka-Xpath']"
+	[
+		=>Is m hme phle paren element ka xPath dena hona h then child Element ka xPath
+	  	=> Example: driver.findElement(By.xpath("//div[@id='ParentElemet-Ki-Id'] //a[@value='Child-ka-Xpath']")).click();
+	]
+
+	
+
+QUESTION:
+	 Types of waites in selenium ?
+
+ANSWER:
+
+	-> implicitlyWait
+	-> explicityWaite
+	-> Thread.sleep   // Ye JAVA  ka part h selinum ka ni h ye function
+	->Flueant aite // agr time 20 second ka h to hm fluent wait m 10 pass kr denge to ye every 10 min bad check krega ki elemet visible h ya ni.
+
+QUESTION:
+	Difference Beetween implicitlyWait and ExplicityWaite ?
+
+ANSWER:
+	*> IF we are using implicitly waite then the browser will wait for the same time frame before loading every web element
+	*> The explicitly waite can implement only for specific element.
+
+	-> implicitlyWait  globally declear hota h , 1 bar declear krne se vo complete page k liye work krega
+	-> ExplicityWaite alag-2 elements k liye lgana padhta h .
+
+QUESTION:
+	Difference between Thread.sleep AND  implicitlyWait ?
+
+ANSWER:
+	*> The implicitlyWait will move for next  line of code to execute if it found eny element before the given time duration.
+	*> The thread.sleep will waite for complete time duration  even it found the elemment befor the given timeduration.
+
+	-> Thread.sleep m hm jitna time set krte h vo utne time page tk waite krta h chahe page load m time kam bhi lg ra .
+	-> implilityWaite only utna hi waite krega jitna loading m lgega chahe time hne jada bhi diya h tb bhi.
+	-> implicitlyWait tb page load hone m time lgta h tb waite krta h or thread.sleep agr pagr load hone k bad koi responce ya dynamic data load hota h us time use hota h 
+	
+	
+QUESTION:
+	 Differecne between xPath And cssSelector  ?
+	
+ANSWER:
+	*> In xpath we can travers backword and forword both side.
+	*> But in cssSelector we can oly traver forword. means parent to child.
+
+	-> xPath m hm forword or backword donu way m move kr skte h.  [ fowrod-> parent to child, backword-> child to parent ]
+	-> cssSelector m hm only fordword move krte h mtlb parent to child ?
+
+QUESTION:
+	How can we import excel file into selenium ?
+	
+ANSWER:
+	*> We can import excel file in selenium by Using Apache POI API librery .
+
+QUESTION:
+	 Difference between testNG and Junit ?
+	
+ANSWER:
+	*> We can do only unit testin in Junit. 
+	*> And by using the testNg we can do aprox alltype of testing. 
+
+
+QUESTION:
+	 How can we handel windows based functionality using selenium ?
+
+ANSWER:	
+	*> By using AutoIT tool in windows and for linux we can use the Robot class consept.
+
+
+QUESTION:
+	 TYPES OF Hard Assertion in selenium ?
+
+ANSWER:
+	*> assert.assertTrue();  // accept trur
+	*> assert.assertFalse(); // accept false value.
+	*> assert.assertEquals(); 
+	[
+		1. assertTrue only TRUE result accept rta hai. jese  if($disabled == true) { } //
+	  -> assert.assertTrue(driver.findElement(By.id("checkbox").isSelected()));  // agre ye true hua to TestCase  PASS
+
+		2. assert.assertFalse();  only FALSE result accept rta hai. jese  if($disabled == false) { } //
+		-> assert.assertFalse(driver.findElement(By.id("checkbox").isSelected()));  // agre ye false hua to testCase PASS
+
+		3. assert.assertEquals();  only FALSE result accept rta hai. jese  if($a == $b) { } //
+		-> assert.assertEquals(driver.findElement(By.id("checkbox").isSelected()));  // agre ye equals hua testCase PASS
+
+	]
+	
+
+QUESTION:
+	HOW CAN WE CLICK ON JS  ALERT IN SELENIUM ?
+
+ANSWER:
+	*> by using switchTo().clert(); method. 
+		FOR EXAMPLE: 
+		1 IF we ant to click OK , YES OR CONFIRM ?  //  driver.switchTo.alert().accept();
+		2. IF we ant to click Cancel , No   //  driver.switchTo.alert().dismis();
+
+Question 1:
+	In order to identify static dropdowns, what class and methods are used in Selenium Web Driver?
+
+ANSWER:
+	CLASS :  select
+	METHOD: deselectByVisibleText , deselectByindex   Etc.
+
+Question 2:
+	In a webpage, if there are three elements with same xpath value,
+ 	how do we explicitly identify the third element on the page with the help of index. Let us consider,
+  	the matching xpath be //input[@name=’Selenium’]
+
+ANSWER: (//input[@name=’Selenium’])[3]
+
+Question 3:
+	How do count number of checkboxes on a webpage?
+
+ANSWER: driver.findElements(By.cssSelector(“input[type=’checkbox’]”)).size();
+
+Question 4:
+	How do we capture the message visible on the alerts?
+
+ANSWER: 
+	(driver.switchTo().alert().getText()
+
+Question 5:
+	Identify the method used in Selenium WebDriver to get the status of the radio buttons or checkboxes (selected or not).
+
+ANSWER: 
+	By usine isSelected();  method.
+
+Question 6:
+	Identify the method used in Selenium WebDriver to verify the presence of a web element within the web page.
+
+ANSWER:
+	By using isDesplayed(); method.
+
+Question 7:
+	What is the return type of the isEnabled () method?
+
+ANSWER:
+	Boolean; 
+
+Question 8:
+	How to handle chrome browser notifications in selenium ?
+
+ANSWER
+	By using ChromeOptions() CLASS.
+	EXAMPLE: 
+		ChromeOptions o = new ChromeOptions();
+		o.addArguments("--disable-notifications");
+
+Question :
+	WHAT IS FLUENT WAITE IN SELENIUM ?
+
+ANSWER:
+	1. Fluent waite find the webElemet in repeatly on regular interval of time  until the timeout or till the object found.
+	2. Fluent waite hm time k sath 1 pooling time bhi pass krte h , for Example hm tome 30sec or polling time 3sec  diya h to 
+	   . selenium har 3sec bad element ko found krega. 30sec tk.
+	
+	3. Fluent waite Waite_interface ko use krta h . or implecit or explict wate WebDriver interface ko use krte h .
+
+	SYNTAX: 
+	 	Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+       	.withTimeout(Duration.ofSeconds(30s))
+       	.pollingEvery(Duration.ofSeconds(5s))
+       	.ignoring(NoSuchElementException.class);
+
+	1. Waite interface h Or FluentWaite class hai.
+	2. poolingEvery  mtlb ki selenium har 5sec bad webelement ko find krega
+	3. ignoring  mtlb agr 30sec se phle NoSuchElementException ki exception ayegi to selenium  use ignor krega  
+
+	Example code: https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/support/ui/FluentWait.html
+	VIDEO NO. 84
+
+Question 1:
+How to achieve synchronization in Selenium WebDriver?
+.
+ANSWER: implicit and Explict waite
+
+Question 2:
+Identify the incorrect statement about implicit wait in Selenium WebDriver.
+
+ANSWER:
+	If the maximum implicit wait time is 10 seconds, the web driver waits for the entire 10 seconds even if the object is available at the 3rd sec.
+
+Question 4:
+	Identify the correct syntax for declaring implicit wait in Selenium WebDriver.
+
+Answer:
+	driver.manage().timeouts().implictlyWait(5,TimeUnit.MILLISECONDS)
+
+
+Question 5:
+	Which class is responsible to achieve explicit wait in Selenium WebDriver?
+
+ANSWER
+		WebDriverWait w = new WebDriverWait(driver,5)
+
+Question 6:
+	Identify the incorrect method to implement explicit wait in Selenium WebDriver.
+
+ANSWER:
+	frameToBeAvailable
+
+QUESTION:
+	 How can we handle mouse/keyboard events in selenium ?
+
+ANSWER:
+	By using the actions class?  // Actions a = new Actions();  // a.functionName();
+
+QUESTION:
+	WHOE CAN WE PRESS ANY KEYBOARD KEY IN SELENIUM ?
+
+ANSWER:
+	By using keyDown(key.SHIFT); // SHIFT is key name
+
+QUESTION:
+	HOW CAN RIGHTCLICK ON ANY ELEMENT IN SELENIUM ?
+
+ANSWER:
+	By using contexClick(); method actions class.
+
+Question:
+	How can we handle multiple windows/tabs in selenium?
+
+ANSWER:
+	By using getWindowHandles(); method.
+	1. getWindowHandles(); ki help se hm 1 tab/window se dusre window/tab m shotch kr skte h .
+	2. Iske liye hme iterator(); function ka use krna hota hai.
+	3. iterator(); function hme sari chile window ki id deeta hai.
+	4. iterator() class ka object bna k hm obj.next(); function se hm next tab/windos m switch kr skte hai.
+  VIDEO NO. 88 in udemy
+
+QUESTION:
+	WHAT ARE iterator()  ?
+
+ANSWER:
+
+	*> By using the itrator method we can travers the next artical.
+	
+	iterator class ka use kr k hm next artical ko read kr skte h. 
+	Next artical means next tab in browser ya next row in exel or any next data  ect 
+
+QUESTION:
+	HOW CAN WE SWITCH INSIDE A Iframe IN SELENIUM?
+
+ANSWER:
+	By using switchTo.frame('framePath');  function.
+
+QUESTION:
+	HOW CAN WE Go OUTSIDE OF THE Iframe IN SELENIUM ?
+
+ANSWER:
+	By using switchTO.defaultContent();
+
+QUESTION:
+	HOW CAN WE PERFORM Drag and Drop action in SELENIUM?
+
+ANSWER:
+	By  using dragAndDrop() function of  Actions class. // We need to pass the path of source and destination 
+	Example: actionObject.dragAndDrop(sourcePath,targetPath).build.perform();
+
+QUESTION:
+	Which class is responsible for the performing mouse and keyboard interactions with Selenium?
+
+ANSWER:
+	Actions.
+
+QUESTION:
+	How to perform right click with the help of actions class in Selenium?
+
+ANSWER:
+	Actions a = new Actions(driver)
+	a.moveToElement (driver.findElement(By.id(“name”))).contextClick().build().perform()
+
+QUESTION:
+	How to enter text ‘Hello’ in capital letters help of actions class in Selenium?
+
+ANSWER:
+	Actions a = new Actions(driver)
+	a.moveToElement (driver.findElement(By.id(“name”))).click().keyDown(Keys.SHIFT).sendKeys(“Hello”).build().
+	
+NOTE:
+
+*> Actoins a = new Actions(driber);
+*> a.keyDown(keys.SHIFT).sendKeys("sanju"); -> Mtlb ki shift key press kr k rkhega fir value enter hogi.
+*> a.(Keys.chord(Keys.SHIFT + Keys.CONTROL + "s")  -> Mtlb ki 1 sath multiple keys press hongi. Like : CTRL+S  OR CTRL+SHIFT+S
+
+QUESTION:
+	Which method is used to store multiple child windows in Selenium?
+
+ANSWER:
+	getWindowHandles();
+
+QUESTION:
+	How to navigate to the parent window when there are multiple windows?
+
+ANSWER:
+	Set<String> windows = driver.getWindowHandles(); //[parentid,childid,subchildId]
+		java.util.Iterator<String> it=windows.iterator();
+		String parentId = it.next();
+		driver.switchTo().window(parentId);
+QUESTION:
+	How can we identify frames in Selenium?
+
+ANSWER:
+	By its ID,INDEX,webElemet.
+
+QUESTION:
+	Name the Java collection framework used to store window ids.?
+
+ANSWER:
+	set.
+
+QUESTION:
+	Differecne between BlackBox And WhiteBox testing?
+
+ANSWER:
+
+QUESTION:
+	What are the component of selenium?
+	
+ANSWER:
+	1. selinum IDE.
+	2. SELENIUM WEBdriver.
+	3. selenium rce.
+	4. selenium grid.
+
+QUESTION:
+	HOW CAN WE COUNT THE LINKS IN THE WEB PAGE?
+
+ANSWER:
+	By using the  driver.findElements(By.tagName("a")).size(); function.
+
+QUESTION:
+	How can we handle https SSL certificate in Automate Browser?
+
+ANSWER:
+	By using the ChromeOptions class.  ChromeOptions option = new ChromeOptions();
+
+VIDEO N0. 104:->
+=> ChromeOption class se hm chrome k behivior ko change kr skte h [ chrome browser behivior ko customize kr skte h ]
+	1. Windows popUp disable
+	2. ByPass SSL // unsecure URL
+	3. Set proxt
+	4. Download path set [ ki file download hone k bad kha p save hogi ]
+	5. Download extensions
+
+QUESTION:
+	 What is regular expression ?
+
+ANSWER:
+	input[name*='pas'] // jb hm is type ka Locator use krte h  to ise regular exresiion khte h  [regular expression locator m mtlb * ka use hoga]
+
+QUESTION:
+	WOH CAN WE DELETE COOKIES OF BROWSER ?
+
+ANSWER:
+	By using [ driver.manage().deleteAllCookies(); ]
+
+QUESTION :
+	HOW CAN HIT URL AND GET STATUS CODE OF THE SAME?
+
+ANSWER:
+	By using HttpURLconnection() method.
+
+Question 1:
+	Name the class to customize the Chrome browser.?
+
+ANSWER:
+	By iseing ChromeOptions(). class. 
+
+Question 1:
+	Identify the method to maximize the browser window.
+
+ANSWER:
+	driver.manage().window().maximize(); 
+
+Question :
+	How to delete cookies in Selenium Web Driver?
+	
+ANSWER:
+	1. driver.manage().deleteCookieNamed(“sessionId”)
+	2. driver.manage().deleteAllCookies() 
+
+Question :
+	How to capture screenshots with Selenium Web driver?
+	
+ANSWER:
+	File s = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	FileUtils.copyFile(s, new File (“C:\\Users\\Screenshots\\screenshot.png”));
+
+Question :
+	How to identify broken links in Selenium Webdriver?
+
+ANSWER:
+	Get Status codes of links to decide if they are broken
+
+@ => WHAT IS JAVA STREAM ?
+   
+    -> JAVA stream m helper function hote h. jin ka use kr k hm looping consept ko avoide kr skte h.
+     > jese map(); filter(); etc.
+	-> Agar hme kisi elemtnts m loop chalana  h to hm java stream ka use kr Without loop k bhi logic likh skte h .
+	SYNTAX:
+		List<WebElement> rows = driver.findElements(By.xpath("//tr/td[1]"));
+	  	price = rows.stream().map(s.s->getText).collect(Collectors.toList());
+
+		{
+			* Is code m hm rows m jitne bhi element aa rhe hai un sab ko map kr k every element ka price list m store kr rhe hai . 
+			* rows m jitne bhi element aa rhe h vo sab s m store ho rhe h fir hm us element ka text list m store kr rhe hai.
+
+
+		}
+			
+
+QUESTION:
+	 WHAT ARE Relative Locators IN SELENIUM ?
+
+ANSWER:
+	1. Relative Locators Selenium 4 m introduce hue the.
+	2. Relative locators tb use hote h jb kisi element k tagName k alava koi or attribute ni hota h. 
+	  -> is case m hme element ka path search krna thoda hard hota h to hm Relative Locators ka use kr lete h .
+	3. Relative locators Only tagName k sath kaam krta h .
+	4. Relative Locators m 4 function hote h. 1. above, 2. blew, 3.toRightOf, 4. toLeftOf.
+
+	Syntax:
+
+	WebElement nameEditBox =driver.findElement(By.cssSelector("[name='name']")); // find the name input field.
+	System.out.println(driver.findElement(with(By.tagName("label")).above(nameEditBox)).getText());//find label which is above the name inputBox
+		
+QUESTION:
+	HOW CAN GET Height and Width of element ?
+
+ANSWER:
+	WebElement name = driver.findElements(By.className("name"));
+	name.getRect().getDimension().getHeight();
+
+
+=> WHAT IS TESTNG ?
+	-> testNG 1 automation framework h jiks use kr k hm testCses ko handle kr skte h. ( ki knsa tes case kb run krna h .ya kitne test case run krne ki tne ni krne h ye sab .)
+	-> TestNG m testcase testng.xml file se run hote h .
+
+** => testng.xml file info
+	-> <suite name="Suite">   is tag k ander set of packages hote h . iske ander multiple packages hote h.
+	-> <test thread-count="5" name="Test"> is tag k ander multiple class hoti h.
+	-> <class name="TestNG.test">  iske ander methods ko include or exclude krte h .
+
+
+QUESTION ?
+	WHAT ARE TESTNG Annotation ?
+	1. @BeforeTest  -> jis function m ye annotation lgega vo function xml suite k test se phle run hoga. 
+	2. @AfterTest  -> jis function m ye annotation lgega vo function xml suite k test k bad run hoga. 
+	3. @beforesuite -> jis function m ye annotation lgega vo function suite se phle run hoga
+	4. @aftersuite  -> jis function m ye annotation lgega vo function suite suite k bad run hoga.
+	5. @beforeclass  -> jis function m ye annotation lgega vo function us class k sabhi functions se phle run hoga.
+	6. @afterclass  -> jis function m ye annotation lgega vo function us class k sabhi functions k bad run hoga. 
+	7. @aftermethod -> jis function m ye annotation lgega vo function us class k every function k bad run hoga. [ har functionk bad run hoga ]
+	8. @beforemethod -> jis function m ye annotation lgega vo function us class k every function se phle run hoga. [ har functionkse phle run hoga ]
+	9. @Test -> ye annotation class m alfabetic order m run hote h .
+	 
+QUESTIONS :
+	What are testng xml label annotation ?
+
+ANSWER:
+	1. @beforesuite.
+	2. @aftersuite.
+	1. @beforetest.
+	2. @aftertest
+
+QUESTIONS :
+	What are class label annotation ?
+
+ANSWER:
+	1. @beforeclass.
+	2. @afterclass
+
+QUESTIONS :
+	What are method label annotation ?
+
+ANSWER:
+	1. @beforemethod.
+	2. @aftermethod
+
+QUESTION:
+	Difference between @beforeMethod and @beforeClass annotation ?
+
+ANSWER:
+	@beforeClass annotation jis function m lgega vo  function class m sabs phle run hoga
+	@beforemethod annotation jis function m lgega vo function sabhi function k run hone se phle run hoga , 
+	   LIKE :  1-method-annotation then functionOne , methon-annotation then functionTwo .....
+
+=> Agr hmare pass 1000 test case h or hme 10 function run krne h to kese krenge ?
+	1.  grouping kr dete  h testcases ki .
+	
+	1.	Function k upar ye aayega ->
+			*syntax: @test({"loginGroup"}) 
+	2.	Or testNg.xml file m use define krna hoga jis group ko run krna h ya ni krna h .->
+	   		* <groups><run><include name =”Login”/></run>
+
+=> TYPES OF ANNOTATION HELPER FUNCTION IN TESTNG ?
+ANSWER:
+    1. timeout =500
+    2. enabled = false
+    3. depandsonMethod({"method", "method"});
+
+
+1* depandsOnMethod	 :
+	if we have method A and method B . and we are trying to excute method A  and method A is depends on method B in this case we will
+	Use depandsOnMethod over method A. then the testNG excute method B first. we can pass multiple methods inside the depandsOnMethod
+	liek:  depandsonMethod({"method", "method"});
+
+
+2* enabled	 :
+	if we want to skip ant particular methos while running testng.xml file in that case we will use enabled helper function.
+	LIKE:  disable=true  or  disable=false;
+
+
+2* timeOut	 :
+	if we want to waite some time before execute any method in that case we will use @timeout=400 over that function.
+
+QUESTION:
+	 What is parameterization in TESTNG ?
+
+ANSWER:
+	if we want to set any global variables, then we can set that on our testng.xml file. 
+	LIKE : <parameter name="URL" value="https://www.facebook.com/"/>
+	ANd can access this URL variable on any function of suite. 
+	before function use this keyword:   @Parameters({ "URL" })   and accessit as a argument. 
+
+	*. <parameter/>  ko hm suite , test ya class  kisi base p bhi set kr skte hai. 
+
+
+QUESTION.:
+	 Agr hme kisi test case m multiple set of test data send krna h to kese kr kste h ?
+
+ANSWER:
+
+	testNG DataProvider ka use kr k , or  testng.xml file se bhi send kr skte h .
+	LIKE:  login test case m multiple userName or Password k sath test krna h to DataProvider annotation  ka use kr k  send krte hai.
+
+Question:
+	Parameterization kite type se kr skte hai ?
+
+ANSWER:
+
+	1. DataProvider 2.  testNG.xml 
+
+QUESTION:
+
+	Parameterization DataProvider ka use kr k kite type se kr skte h ?
+
+ANSWER:
+	1. agr data small amount h to array bna k send kr dete h /
+	2. agr data midium h amount m h to HashMap [ array]  ka use kr skte h.
+	3. agr data larg amount m h mtlb bhut jada  data hai to json format m send krte h . [ json ki file bna k use call krte h]
+
+QUESTION:
+	WHAT ARE LISTENER IN testNG ?
+
+ANSWER:
+	* jb hm kisi testcase ko run krte h or hm testcase k execute hone pr koi action perform krna chahte hai to hm LITENER ka use krte hai.
+	* ITestLISTENER ka use krne k liye hm ITestLISTENER  interface ko apni class m implement kr k uske function ko implement krte hai.
+	* ITestLISTENER  i interface hota h usme sare function define hote h or hm unko apne according implement krte h .
+	* Like agr testCase fail hua to uska screenshot lena pass hone pr koi message dena ECT. 
+	* ITestLISTENER k ande 1. onTestCsePass 2. onTestCseFiler 3. onTestCseSkip  ect ye sab function hote h .
+	* ITestLISTENER  ko use krne k liye use testNG.xml file m regester krna hota h . below code <suite k neeche aayega *
+	<listeners>
+		<listener class-name="TestNG.Listener"></listener>
+	</listeners>
+
+* . NOTE :  Agr imterface k methods ni milte h to . rightClick on listeners.java file  and click on source-> overridemethods.
+
+Questionh :
+	Whow can we run testCases paralllely using testNG?
+
+ANSWER:
+	1. iske liye mne testNG.xml file m <suite> tag m define knra hota h ki kitne methods parallely run krne h or parrally test run krna h ya class.
+	   *   <suite name="Suite" paralllel="test" thread-count="6"> // test k 6-6 method parallely run honge.
+
+	2. Hm class base pr bhi testCases ko paarallel run kr skte hai.
+	   *	<suite name="Suite" paralllel="test" thread-count="6">
+
+------------------------------  TESTNG  QUESTIONS ----------------------------
+
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 2:
+	
+	Identify the incorrect statement about TestNG.
+
+Answer:
+	TestNg allowes a single test from a single class file.
+
+Question 3:
+	
+	If there are three test cases in a class, method having @BeforeMethod annotation shall be executed how many times?
+
+Answer:
+	three times.
+
+Question 4:
+
+Which helper attribute skips a particular test from execution in TestNG?
+
+Answer:
+	* enabled.
+
+Question 5:
+
+	How to retrieve a global variable defined in the TestNG xml (xml code snippet given below) to the test method?
+
+Answer:
+	@Parameters({ "URL" })
+	@Test
+	public static void demo1(String siteURL) {
+		System.out.println("Admin login  ONE parameter="+siteURL);
+	}
+
+Question 6:
+
+	How many ways test methods can be run in parallel mode using TestNG?
+
+Answer:
+	* Tests  label  *  class label.
+
+Question 7:
+
+		How to achieve parameterization with multiple data sets with multiple combinations in TestNG?
+
+Answer:
+	@DataProvider
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+	
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+	
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+	
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+
+Question 1:
+
+How to run tests with TestNG framework?
+
+Answer:
+	@Test annotation followed by method name.
+	
+QUESTION:
+	WHAT IS PAGE OBJECT MODEL ?
+	OR
+	WHAT IS POM [Page Object Model] ?
+
+ANSWER:
+	 "Page object model" 1 'methology' hai , is  m hm sabhi locators k liye differenct class bna lete h or in class ko hm "Page object classes" kahte hai.
+	 "Page object classes" ko hm reuse kr skte hai. or "page object methology" use krne se maintance problem resolve hoti h .
+	 "Maintanance problem"  mtlb agr hm 1 hi class m sare locators lihk de to un m changes krne h kaafi issues aate hai. hme locators find krne m problem hoti h .
+
+* => "Page object class" m hm 'driver.findElement(By.id("userID"));'   ko hm PageFactory ka use kr k likh skte h .
+	-> @PageFactory 1 type ka annotation hota hai. 
+	-> Syntax: @FindBy(id="userId"); // is ka mtlb [ driver.findElement(By.id("userID")) hi hota hai. ]
+	->  @FindBy(id="userId"); iske liye hme  @PageFactory m driver pass krna hota h. kyu ki is syntax  m driver khi ni h .
+	-> PageFactory.initElements(driver,driverValue) ->
+	// ye syntax hm construct k ander krte hai. kyu ki driver ki value hm duri class se pass krte hai or contructor m likhne se class ka koi bhi @PageFactory call hone se phle use driver initilize hoga. 
+
+Question:
+	CAN WE APPLY @PageFactory WITH WebElement.findElement. like this ?
+
+ANSWER:
+	NO, it is not possible.
+
+QUESTION:
+	HOW CAN DISABLE WINDOWS ALERT/NOTIFICATIONS USING SELENIUM ?
+
+ANSWER:
+	By using addArgument(); method of chromeOptions class.
+	SYNTAX: 
+
+		ChromeOptions option=new ChromeOptions();
+		option.addArguments("--disable-notifications");
+
+Question:
+	How can we change browserNameon run time.?
+
+ANSWER:
+	1*. Uske liye hmne 1 " .properties " extensions ki file bnani hoti h . like : "GlobalData.properties".
+	2*. Fir us file ko "Basetest class"  m access kr lete hai [ prop.load(filesName); : ka use kr k ]. "Properties();" class ka object bna k 
+	3*. Fir us file ko FileInputStream m convert krna hota hai.  kyu ki "prop.load()" function "FileInputStream" ko accept krta h .
+	4*. prop.getProperty("browser"); ka use kr k browser ka name get kr lete h .
+	5*. baseTest class ko hm  mainTest class  m extends kr lete h .
+
+QUESTION:
+	How can we un tests PAARALLELY?
+
+ANSWER:
+	Iske liye hmne "testng.xml" file m. <suite> tag  m [ parallel="test" ]  lihkna hoga. [ise likhne se jitne testCse honge utne browser 1sath open ho jayenge ]
+	Agr hm chahte h ki 1 bar 2 ya3 browser hi open ho . to uske liye hm [ thread-count="3"  ]de skte h . <suite> tag m 
+	
+=> Agr hmne test cases ki grouping ki or kuchh methods m @BeforeMethod lga h to to vha p " alwaysRun=true" krna hotah.
+   @beforeTest/@beforeMethods vale test ki grouping ni krte h is case m .
+
+=> JB hme gunction bnate time data ka pta nahi hota h ki kis type ka data return hoga. tb hm data type "object" lete hai.
+   -> Kyu ki "object" data type  sare type k data ko accpet krta hai.
+
+=> 'DataProvidor' ka use kr k hm testcase ko multiple sest of data k sath test kr skte hai.
+	EXAMPLE: 
+	@DataProvider
+	public Object[][] getTestData(){
+		
+		return new Object[][] {{"tom@example.com","Tom@1234","ZARA COAT 3"},{"sanjay@qa.com","Admin@123","ADIDAS ORIGINAL"}};
+	}
+
+	Access data ->  public void submitOrder(String email,String password,String productName) {
+		/// logic
+	 }
+
+=> Jab hmate pass data jada hota h to hm Object se send nahi karte h kyuki object m jitne data hota h un sab ko
+	-> access krne k liye function m utne hi argument pass krne hote h . line no. 1042 m example h. 
+-> jada data send krne k liye hm HashMap ka use krte h .HashMap 1 array hota h JAVA M 
+	Example:
+		public Object[][] getTestData() {
+		HashMap<String,String> map = new HashMap<String,String>();
+		map.put("email","tom@example.com");
+		map.put("password","Tom@123");
+		
+		HashMap<String,String> map1 = new HashMap<String,String>();
+		map1.put("email","sanjay@qa.com");
+		map1.put("password","Admin@123");
+		
+		return new Object[][] {{map},{map1}};
+	}
+
+-> For access : HashMap<String,String> input
+		1. input.get("email); 2. input.get("password);, input.get("productName");
+
+QUESTION:
+	HOW CAN WE SEND DATA USING JSONN FILE ?
+
+ANSWER:
+	iske liye below steps follow krne ohhte hai .
+	
+	1. Phle hm 1 json file m sara testData likh lete hai.
+	2. Phle hm JSON data ko string m convert krenge. "FileUtils.readFileToString()" ka use kr k.
+	 Like: String jsonContent = 	FileUtils.readFileToString(new File(filePath),StandardCharsets.UTF_8);
+
+	2. Fir String ko HashMap convert krenge "Jackson Databind" ka use kr k.
+	   *. iske liye phle iski dependancy add krenge POM.XML file m  maven repo. se.
+			[https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.13.4]
+		-> iske liye phle "ObjectMapper()" class ka object bnayenge.
+		   -:  ObjectMapper mapper = new ObjectMapper();
+		List<HashMap<String, String>> data = mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>() {
+	    });
+	3.  return data; [ ye data variable hme alag alag HashMap return krega like: //{map, map}  fir ise retun kr ]	
+
+QUESTION:
+	DIFFERENCE BETWEEEN "Assert" and "verify" comand ?
+
+ANSWER:
+	Assert : Jb bhi kois test case fail hoga to sctipt ka execution ruk jayega  
+	Verify : Jb bhi kois test case fail hoga to script ka execution ni rukega.
+
+QUESTION:
+	Difference Beetween "Final" and "Static" key ?
+
+ANSWER:
+
+QUESTION:
+	How many tools we can use with selenium ?
+
+ANSWER:
+	1. github
+	2. Jankins
+	3. Quabernet
+	4. testNG  ECT.............
+
+
+QUESTION
+	WHAT IS ExtendRport?
+
+ANSWER:
+	ExtendRport is graphical Representation of result of test casees.
+	
+		---[CONFIGURATION ]  OR STEPS FOR IMPLEMENT ----
+	1. Sabse phle iski dependancy import hoti h pom.XML file m :
+		LINK:-: https://mvnrepository.com/artifact/com.aventstack/extentreports/5.0.9
+	2. 	ExtendRport bnane k liye hme [ExtentReports OR ExtentSparkReporter ] class ka use krna hota h.
+	3. ExtentSparkReporter() is class se hm reprtName or page title set krte h .
+	4. ExtentReports() is class se main report generate hoti h. IS m hm  "ExtentSparkReporter" class ka obj as a parameter pass krte h. jise ki hm reprtName or page title get ke skte hai.
+	5. ExtentReports() se hm tester ka name bhi set kr skte hai.
+	6. Jis test case ki extentReport bnani hoti h us k starting "ExtentReports" class k  " createTest("Test-Name"); " function use krte h ExtentReports class k ovj. ka use kr k.
+	7. or last m ExtentReports() class k obj se flush(); function ko use krteh last test k bad. is se ye pta chl jata h ki ye last test case h
+	
+	--- IMPLEMENET --
+	1. agr hm Ise testng k sath implement kr re h to sabse phle phle hme itest listener ko use krna hotah
+	2. Fix IestListener ko apni testng.xml file m registre krna hota h .Like below.
+		<listeners> <listener class-name="TestNG.Listener"></listener> </listeners>
+	
+	Example:  https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/ExtentRport/src/test/java/core/ExtentRport/ExtentReportDemo.java
+
+
+
+QUESTION:
+	How can impement Extendt with testNG  ITestLISTENER?
+
+ANSWER:
+	1. Sabse ple hm 1 class bna lenge jiske ander 1 static function bnayenge jis m ectentReport bnane ka code hoga.
+		Or is function m hm ExtentReports() Class ka object return krengge. kyu ki hm is object ko listeners m get krte h.
+	EXAMPLE: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/main/java/resources/ExtentReporterNG.java
+
+	2. Fir hm 1 Class or bnayenge is m ITestLISTENER  interface ko implement kr lenge. 
+	  ITestLISTENER interface m sare function hote h like :onTestStart() ,onTestSuccess()... ect..
+	
+	3. Fir hm onTestStart() function m ExtentReports k abject ko get kr k createTest() function ka use kr report bna lenge.
+
+		EXAMPLE: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/testComponents/Listeners.java#L18
+
+
+--> WHAT ARE CONCURRENCY ISSUES  ?
+	* Jb Hm Listeners ka use kr k extentReport bnate h or testCases ko parallely run krte h to . 
+	-> TestCase ki report kbhi kabhi wrong aati h jo pass hota h vo fail show hota h or jo fail vo pass.
+	-> KYU ki hm Hm extentreports ka 1 object get krte h listeners.java class m . m listeners m multiple testcase 
+	->  sat h aate h . jb 1 test casee executehora h tb 2nd bhi aa jata h to extentReport confuse ho jati h
+	-> ki knsa pass h or knsa fail kyuki object ki valuchange ho jati h . kyu ki object onTest Start m get krte h
+	-> hm. jb tk 1st test case onFinish() vale function m pahuchta h tb tk object 2nd test case ko assign ho jata h
+	-> to extenet report ko lgta h ki 2nd vala fail ho gya kyu ki usi time 2nd testcase OntestStart() function m
+	->  hota h or use extentReport ka object assign ho jata h
+	-> Is type k issue ko hi Cuncurrency issue khte h.
+
+* Is problem ko fix krne k liye hm ThreadLocal() ka use krte h .
+-> Iska use kr k hm hr 1 test case ko 1 usique ID dete h or fir listener sare function usi ID k throught execute hote h.
+-> Ab  Listener m jo case phle aayega use uski ID milegi or vo fir 2nd vale ko uski ID or usi ID se baki listener k function execute hoge.
+Example:
+-> SeleniumFrameworkDesign\src\test\java\rahulshettyacademy\TestComponents\Listeners.java  [IS M H ]
+ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>(); //Thread safe	test = extent.createTest(result.getMethod().getMethodName());
+extentTest.set(test);//unique thread id(ErrorValidationTest)->test
+
+
+QUESTION:
+	HOW TO RERUN THEFAILED TEST CASE:
+
+ANSWER:
+	By implement the "IRetryAnalyzer" interface.
+
+	1. hm 1 calss retry.java name se bna lenge. or Is class m IRetryAnalyzer interface ko implement kr lenge. 
+	2. isme retry() function hota h jo testcase ko rerun krta h . 
+	3. jb tk ye funtion true return krega tk tk test case rerun hoga.
+	4. ByDefault isme false return hota h .
+	5. Hm if condition lga k jitni bar test case rerun krana h utni bar true return kra denge.
+	6. Fir jis test case ko rerun krana h us m [ retryAnalyzer=Retry.class]  lga denge.
+
+	EXAMPLE:
+		LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/testComponents/Retry.java
+		LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/seleium/MavenScrach/ErrorValidationsTest.java#L14
+
+
+=> Why we use MAVEN ?
+-> Maven se hm test cases ko command se run kr skte h .
+
+QUESTION:
+	HOW CAN WE RUN TESTCASE USING COMMAND:
+
+	1. sabse phle hme apne system maven install krna hota h :
+	
+	  link: https://www.qamadness.com/knowledge-base/how-to-install-maven-and-configure-environment-variables/
+
+	2. USKE BAD POM.XML file m dependancy add krni hoti h .
+		LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/pom.xml#L19-L37
+		LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/pom.xml#L15-L16
+		
+	3. fir local system m project k root m ja kr . command run ni krni hoti h .
+	
+	 1. Agr sare test case 1 sath run krne h to 
+	 	-> mvn test
+	2. Agr koi perticula testNG file run krni h to 
+		-> mvn test -PPrifileName [JO name <id><ProfileName<id> m hota h vo vala]
+
+QUESTION:
+	HOW CAN WE INTEGRATE JENKINS ?
+
+ANSWER:
+	1. 1st install jenkins on your system
+	    [ https://www.jenkins.io/download/ ]  Yha se Generic java package ko download kro 
+		Fir downloaded file ki location m ja kr comd open kro
+		java -jar jenkins.war -httpPort-8080   ye command run kro
+		fir browser m localhost::8080 hit kro
+
+QUESTION:
+	 Method overloading function in selenium ?
+
+ANSWER:
+	frame.  kyu ki hm hm frame m multiple way se value send kr skte h [ indexing , frame name or WebElement  k througt]
+
+
+QUESTION:
+	How can you run testCase in headless mode ?
+
+ANSWER:
+	ChromeOptions options = new ChromeOptions();
+	options.addArguments("headless");
+	driver = new ChromeDriver(options);
+
+QUESTION:
+	HOW CAN YOU RUN TESTCASE IN FULLSCREEN  size ?
+
+ANSWER:
+	driver.manage().window().setSize(new Dimension(1440,900));//full screen
+
+QUESTION:
+	HOW CAN SCHEDULE THE TESCASE RUN USING JENKINS?
+
+ANSWER:
+	. Iake liye kenkins m configure k ander build trigger m setting krni hoti h 
+	1. click on build priodically
+	2. Add five  as ***** [minutes hours date month weekday {15 6 31 12 1} => mtlb monday 31 december 6:15 bj test run hoga ]
+	3. Agr hme in 5 values m se koi value pass ni krni h to hm vha 8 hi rhne dete h . 
+	4. Agr time k sath koi minutes ni h to hm [ H 6 => mtlb 6bj build bnegi]  ese likhte h . agr hm only 6 likh denge to jimkins use date samajh skta h to hm H lga dete h . [H->hours]
+	5. Find screenshot for 5 arguments for time scheduling :	https://prnt.sc/iB-Z269_VugG
+
+
+--------------- CUCUMBER ----------
+
+QUESTION :
+	WHAT IS CUCUMBER ?
+
+ANSWER:
+	Cucumber is one BDD framework which help us to design test Automation framework.
+
+	*  Cucumber m hm vo sari cheej kr skte h jo testNG k through krte h . like : grouping, retry,  reports, runne, files ect.
+
+******** HOW CAN INTEGRATE CUCUMBER **************
+	1. POM.xml m dependancy add krni h.
+	2. scr/test/java  k ander 1 new package bnana h fir us m featur file banegi [ feature file m testcase likhe hote h.]
+	3. Fir 1 or package bnayenge stepDefination ka uske ander feature file m jo test case the uski script likhenge.
+	4. Fir Jha pr featur file h vhi pr 1 TestNGRunner.java class bnayenge. [ yr file POM.XML m call hogi]
+	5. Fir POM.xml m testNGRunner.java class ki profiling krenge.
+
+=> CUCUMBER INTEGRATE Krne k liye sabse phle POM.XML file m cucumber dependancy use krni hoti h maven repository se.
+	EXAMPLE:  <include>**/TestNGTestRunner.java</include> [**/ mtlb project m jhap bhi "TestNGTestRunner.java" class hogi use use krega ]
+	LINK : https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/SeleniumFrameworkDesign/pom.xml#L29-L41
+
+
+=> Cucumber test ko maven command/jenkins se run krne k liye  POM.XML m profili m <suiteXmlFiles> ki jgh <include> ka use krte h
+	LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/SeleniumFrameworkDesign/pom.xml#L29-L41
+
+
+=> keywords used in gerkin language are :
+	1. scenario 
+	2. feature
+	3. feature file
+	4. scenario outline
+	5. step defination.
+
+
+QUESTION:
+	WHAT IS SCENARIO IN CUCUMBER ?
+
+ANSWER:
+	In cucumber testcases represeented as scenario.
+	 [jb hm cucumber use krte h to Test case ko scenario bolte h , or te test case Gherkin language m likhe hote h . ]
+ 		* Gherkin m test case in steps m likha jata h . 
+			0 . scenario:  Add pruduct to cart.
+			1. given : Pre condition -> customer should be on products list page
+			2. When : Action ->  When click on add to cart button.
+			3. Then :  Product should be added to cart.
+
+QUESTION:
+	What is feature in cucumber?
+
+ANSWER:
+	Test caase ko feature bolte h cucumber m .
+
+QUESTION:
+	Whatis feature filte in cucumber?
+
+ANSWER:
+	Cucumber m 1 file hoti h, .feature extendion ki jis file m sare scenario/testcase likhte hai.
+
+QUESTION:
+	Waht is Scenarion OutLine ?
+
+ANSWER:
+	Jb hm testCas m data parameterization use krte h to use scenarion Outline bolte h .
+	Mtlb ki 1 test ko multiple set of data k sath run krna h to testOutline keyword ka use krte h .
+
+QUESTION:
+	What is stepDefination ?
+
+ANSWER:
+	StepDefination 1 java class hoti h jis m hm scenarios/testcase ki script likhte h .
+	> StepDefination file ko hm  "TIDI"  extenstion ka use kr bhi create kr skte h. 
+
+QUESTION:
+	What runner should use for run cucumber feature file ?
+
+ANSWER:
+	I is depends on our assersion. if we are using testNg assersion in out project then we will use testNG runner.
+	And if we are using the Junit assersion then we will use Junit runner.
+
+************************ SELENIUM FRAMEWORK INTERVIEWQUESTION ******************
+
+ALL QUESTIONS : https://prnt.sc/EYVq0_wMB3-k
+
+QUESTION:
+
+What design parten you used for design a framework ?
+
+ANSWER:
+	POM [Page Object Model]  design parten  and PageFactory is the subset of POM.
+
+Question:
+	What is PageFactory ?
+
+ANSWER:
+	PageFactory is is class by which we can initilize the elements. like @FindBy(css='.className');
+
+Question:
+	How can create object in POM ?
+
+ANSWER:
+	Is m hm objects  action method m hin= bna k return kra dete h .
+	Like: 
+
+QUESTION:
+	How can you use PageFactory for list Products ?
+
+ANSWER:
+	We will use findElements  not findElement. // phle find elements lga k list nikal lenge fir us m loop lga k print kr skte h data.
+
+QUESTION:
+	What are reusable methods in selenium OR How can reuse the methods in selenium ?
+ANSWER:
+	Selenium m  hmre pass 2 types k reusable methods hote h .
+ 	1. Selenium core method [predefined methods ] in ko abstract class m bna k use kr lete h .
+ 	2. Custome testMetod jo hme all testCase m use krne hote h , inko m Base test m likhte h .
+
+
+QUESTION:
+	HOW can you use TestData from external file in selenium ?
+
+Answer:
+	By useing the @DataProvider.  data DataProvider HashMap or object data parten krta h  accept krta h 
+	1. Hm testData k liye 1 json file bna skte h or use DataProvider ka use kr k test m pass kr skte h .
+	2. JSON data ko "Jackson DataBind" class ka use kr k HashMap m convert krte h fir use test m pass krte h .
+
+QUESTIONS:
+	Do you user Interface in selenium ?
+
+ANSWER:
+	YES, 1. WebDriver 2. ITestLISTENER 3. IRetryAnalyzer
+	1 ITestLISTENER ko is liye use krte h kyu ki isko use krne hm testcase ko handle kr skte h .
+	Like : agr hm testcase failhone pr ss lena h to iske liye listener  ki need hoti h .
+
+Question:
+	Where did you use encapsulation in selenium ?
+
+ANSWER:
+	In PageFactory elements. 
+	Example:
+		@FindBy(CSS='className')
+		Private WebElement submit; // encapsulation
+
+	1. Hmne PageFactory element ko private bna diya ab jo bhi is class ko inherite krega vo only methonds ko access kr payega.
+	   submit WebElement element ko access ni kr payega. hmne submit WebElement ko hinde kr diya.
+	   [ encapsulation ka example hota h ki methods 1 class m bna lo or fir us calss ko inherite kr object se onmy method call kr lo . method ka logic hide rhega.]		
+
+QUESTION:
+	Do your framework support  run parallel test ? How can you write Thread safe code ?
+
+ANSWER:
+	Yes, Our framework support parallely run test. 
+	For Thread safe code . hm ThreadLocale class ka use krte h .
+	Thread Safe code hm tb use krte h jb all testCase ki 1 single extent report bnate h . 
+	Thread safe m hm every object ko unique Thread Id dete h . getter and setter methods ka use kr k. Jis se object overide nahi hote or CONCURRENCY issue nii ata h .
+	1. Hm pom.xml file m every class ko 1 saperate <test> k ander likhte hai. or <suite> m Parallel="Test> kilh dete h .
+
+QUESTION:
+	HOW CAN YOU SOLVE CONCURRENCY ISSUE ? 
+
+ANSWER:
+	By uing ThreadLocale method. 
+	CONCURRENCY issue tb aata h jb hm every test case ki a sigle report bnate h parallely run rk k to ItestListener class m WhentestStart method.
+	Variable ki value override ho jati h . fir ThreadLocale class ka use kr k variable ko saparaly identifiy kra dete h.
+
+
+Question:
+	Do you have static keywords in your framework. ?
+
+ANSWER:
+	Yes we can mark static only  thoes varialbes which are common for all test case. like Properties object [Properties object se .properties file ko read krte h ] 
+	1. HME driver object ko static nahi mark krna hota h kyu ki agr driver ko static mark kr denge to every test case k liye smae driver kaam krege or test cases m issue aayenge
+	2. Agr driver object static mark kr denge to Cuncurrency issue aayega.
+
+QUESTION:
+	How are you sending the global properties to your test at run time ?
+
+ANSWER:
+
+	1. By using the Properties() class. properties class kisi bhi ecternal file ko read kr skti h . 
+	Hm 1 .properties file bna lete h or us m global dataset kr lete . like browserName, URL, timeOut waite ect. 
+	2. Hm MAVEN  terminal se bhi global dataa send kr skte h . Like mvn test -Dbrowser=chrome.
+	Or maven se send kiye hue variable ko deriver.getProperty() class se access kr lete h .
+
+QUESTION:
+	What is mechanism you use to run only selected set of tests in your framework ?
+
+ANSWER:
+	For this we can use testNg groups helper ka use krte h . [groups= {"Purchase"} ]
+	1. Hm @Test m group name define ke dete h 
+	2. Fie testNg.xml file m <groups> tag k ander only usi group ko class krte h jisko run krna h .
+		<groups><run><include name="groupName"/></run></groups>
+
+	3. POM.xml file m testng.xml file ki alag profiling kr dete h .
+
+QUESTION:
+
+	HOW ARE YOU HANDLING THE FLAKY [फलकी] TEST IN FRAMEWORK ?
+
+ANSWER:
+
+	Flaky [फलकी] test mtlb jo 1 time fail ho jate h or second time pass ho jate h .
+	1. iske lye hm IRetryAnalyzer interface ka use krte h .
+	2. Iske liye hm 1 retry.java class bna lete h is m logic likhte h jitni bar rerun krna h uske liye.
+	3. Fir test m "IRetryAnalyzer" [IRetryAnalyzer=retry.class]  helper ka use kr k test ko rerun krte h. 
+
+QUESTION:
+	Does your framework takes screenhot on test fail ? How do you implementthis ?
+
+ANSWER:
+	Yes we can take screenshot for failer test,
+	1. Ike liye hm "ItestListener" interface ka use krte h .
+	2. ItestListener k "onTestCseFiler" function k ander "TakesScreenshot" class ka use kr k screenshot lete h .
+
+QUESTION:
+	MAKE A SeleniumFrameworkDesign DIGRAM ?
+
+
+ANSWE:
+	Please gothrough this screenshot :   https://prnt.sc/mv2oYQZ3Ecwn
+
+QUESTION:
+	HOw can get data from excel sheet ?
+
+Answer:
+	By using apache POI API. 
+	Iske liye hme pom.xml file m maven repository se  "poi" or "poi-ooxml" dependancy add krni hoti h 
+	Apacche POI API m 1 "XSSFWorkBook"  class hoti h uska use krte h ecel sheet ko access krne k liye.
+
+
+** > COMPLETE CODE FOR GET DATA FROM EXCEL :  https://prnt.sc/ZybXTD1b0E7g
+** > https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/MavenScrach/src/test/java/ExcelDrivern/dataDriven.java
+
+
+	============ **************** SELENIUM GRID STARTED ********************
+
+QUESTION:
+	What is selenium grid?
+
+ANSWER:
+	Selenium grid is a smat proxy server that is used to run test cases PAARALLELY on different-2 machines.
+
+SELENIUM GRID ARCHITECTURE: https://prnt.sc/B1ASzdfDjUwX
+-> Selenium Grid ko integrate krne k liye phle hm selenium f=grid k jar files download krni hot h 
+2. Fir Grid name se folder bna k us k ander browsers ki executable file  or downloaded jar file ko rakhna hota h.
+3. Fir grid folder k ander ka kr Node ko start krne k liye 1 command run krni hot i . // java -jar downloadJarFile.jar hub  [ Is se hmra hub start ho jata h.  : localhost:4444 se check kr skte h]
+  * Jis system m testcases hote h hm use Hub bna lete h mtlb base system jha se command rub hongi.
+  * Or baki dusre systems ko hm node bolte h , hm node or hub donu 1 hi system m bhi bna skte h .
+For start selenium grid:
+1. java -jar downloadJarFile.jar hub    // For start hib   [ Is se hmra hub start ho jata h.  : localhost:4444 se check kr skte h]
+2. java -jar downloadedJar.ja  node --detect-drivers true  //  start node  [hub system m bhi kr skte h hm node start, ye comand hub vale m bhi run kr skte h]
+3. Jis system  m hme tst case run krne h ya jise node bnana h us m bhi jar grid folder k ander files and executable file download krni hongi.
+3. Fir node system k grid filder m ja kr Ye comand run krni hogi .
+	java -jar downloadedJarFile.jar node --detect--driver true --publish --events tcp://HubSystemKaIP --subscripbe-events tcp//GubSysyemKa DUsra IP
+	// Is command se hm Node ko hub m regisred krte h 
+	// Hub system k IP jb hm hub m command run krenge to us time phla ip or dusra ip mil jata h 
+
+=> Selenium m HUB ,NODE OR Selenium code sab alag alag system  m ho skte h 
+		> Selenium codde k throught hm hub ko call krte h or hub se nodescall hoti h.
+
+=> Selenium Grid m hm new ChromeDeriver()  ki jgh new RemoteWebDrivr() class ko use kre h kyu ki yha p test  another system m run hota h.
+ ->  RemoteWebDrivr(HUB-URL,browser-capabilities) // 2 arguments accept krta h .
+       [ Url mtlb hmra IP and  capabilities mtlb browser settings like browser name , sslsccepr true ect..]
+
+******************** CHOMEDEVTOOLS *****************
+
+=>structure : https://prnt.sc/BckKtgYjT_of
+
+WHAT IS CHROMEDEVTOOL:  inspect the DOM . and all the tabs on insept asre part of CHROMEDEVTOOL.
+What is CDP : Chrome DevTool Protocol.
+
+QUESTION:
+	HOW CAN YOU EMULATE YOUR INTERNET SPEEED USUNIG SELENIUM ?  // internet speed kese check kr skte h .ya kese control kr skye h ?
+
+ANSWER:
+	By using selenium dev tools . 
+	// iske liye  chrome dev tool ka latency method ka use krte h , is method se hme pta chljata h ki page lad hone m kitna time lg rah. fir hm us hisab se waites lga lete h .
+QUESTION:
+	What is frequenty issue ?
+	
+ANSWER:
+	Internet speed km hone ki vjh se aate . jb page load hone m tme lgta h or test case phle execute ho jata h .
+
+QUESTION:
+	Is it possible to localization test by CDP ?
+
+ANSWER:
+	YES.
+
+// driver.findElement(By.LinkText("clickme")).click() // kisi <a> tag  m click krne k liye.
+
+> Afr hmre pass 1 search bob h withoout search button k to hm value search kr k search kese krenge .?
+	> drive.findElement(By.name("q")).sendKeys("peorductName",Keys.ENTER);
+
+
+QUESTION:
+	Agr browser m ulr hit krte hi usename or password ka alert box aata h to use kese handle krenge CDP M  ?  // how to halde Browser authentication ?
+
+ANSWER:
+	By using uriPridicate  method.
+
+QUESTION:
+	HOW TO PRINT THE CONSOLE ERRORS USING SELENIUM ?
+
+NSWER:
+   By using [ LogEntries entrydriver.manage.logs.get(logType=BROWSER); ]
+	EXAMPLE: https://prnt.sc/4s2IR48z-0Ug
+
+
+
+====> HOW TO CONNECT MYSQL DATABSE IN SENELIUN JAVA ?
+	By using the my sql connector jar files:   > 
+	1. First Download the jar files : https://dbschema.com/jdbc-driver/MySql.html
+	2. And import this on your project
+
+
+=====================  AUTO IT START =================
+QUESTION:
+	HOW TO SETUP AUTOIT ?
+
+ANSWER:
+
+	*. AUTOIT  use krne k liye phle hme autoIT download krna hota h .
+		DOWNLOAD LINK:  https://www.autoitscript.com/site/autoit/downloads/
+	*. Fir hme auto it m script likhni hoti h.jo action hme perform krna hota h uske liye. [ Like agr hme file upload krni h to uske liye]	 
+	*. C:\Program Files (x86)\AutoIt3\SciTE[ is location m code likhte h. SciTE.exe  file hoti ]
+	*. Auto it se hm file upload system ko bhi automate kr skte h .
+
+QUESTION:
+	HOW CAN YOU UPLOAD FILE USING AUTOIT TOOL ?
+
+ANSWER:
+	Au3Info_x64.exe file ka use kr k hm, file upload k liye jo window open hoti us input ka path nikal skte h .
+	* Au3Info_x64.exe ko open krenge to findup tool ko drag and drop kr k opened window n k input box m le jana hotah .
+	*. esa kr k hm us input box k , title clas and instance mil jata h .
+	*. fir hm autoIT k editer m us k liye script likhte h .
+	*. ControlFocus("title","text","Instance"); // is method ka use krte h file upload k krne k liye.
+	*. title-> title , text->optional, instance->class+Instance [ like class1 ]
+	*. Fir hme script file ko same k us m right click kr k use compile krna hota h . [compile script]
+	*. Fir 1 exe file generate hogi . us file ko hm apne test script m use krenge
+	*. Runtime.getRuntime().exec("exec file ka path");  // is method se Autoit ki script ko call krte h . ye jaa ka function h .
+	*. JB auto it script ko use kr k hm test run kte h to us time mose ka use ni krna h otherwise auto it kaam ni krta h . auto it confuse ho jata h .
+	
+=> COMPLETE CODE OF AUTOIT :
+	*. https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/AutoITCode.txt
+
+
+
+QUESTION:
+	AUTO IT  se windown base alert kese handle honge? agr alert m uerName or Password send alert m send krna h to kese hoga?
+
+ANSWER:
+
+	Url m https:/   k  bad userName:Password@google.com   is type se dedenge. 
+	example: http://userName:Password@URL
+
+=========================== RUN TEST CASE IN  SAUCELABS  [CLOUD] ====================
+
+=> PHLE  iske liye configuration krni hoti h :
+1.  https://wiki.saucelabs.com/display/DOCS/Platform+Configurator#/
+
+2.  https://wiki.saucelabs.com/display/DOCS/Getting+Started+with+Selenium+for+Automated+Website+Testing
+
+
+
+
+================= HTTP RESONCE CODE =================
+QUESTION:
+	WHAT IS GROUPID IS MAVEN ? <GroupID> selenium.io.ori....</GroupID>
+
+ANSWER:
+	GroupID hmre selenium project ko uniquely identify krti h .  // hm pom.xml m dependancy dalte h to us m group id hoti h, group id se hme ye pta chl jata h ki hn si dependancy download krni h
+	ArtifectID group id ki sub child hoti h . us se ye pta chlta h ki hme kn si jar download krni h  
+	ArtifectID ka name hi hota h . vo hi  Project ka name bhi hota h  
+
+=> MAVEN KO USE KRNE K  LIYE HME HME. MAVEN SOR DEPENDANCY KO POM.XML FILE M DALNA HOTA H . <plugin></plugin>
+
+=>Maven se test ko run krne k liye hme apni file ke name k last m Test lgana complesary h like . loginTest.java.
+	[ Mave algorithem  m  ye define g  agr file k name k last m Tes nahi hoga to maven us filse ko run nahi kregea]
+	maven.apache.org/surefire/maven-surefire-plugin/  yha se testng or maven ki dependancies mil jati h
+
+=> MAVEN M hm test case ki profiling bhi kr skte h. testng.xml file  or profile m ander test file ka name hota h.. [ fir commands se jis test ko run krna chahte h us profile ka name send kr denge command m .]
+=> mvn -Dtest=loginTest test  // IF we want to run only 1 single test file.
+
+
+**************** MAVEN QUESTIONS ***************
+
+QUESTION:
+	1. Identify the correct statement about Maven.
+
+ANSWER:
+	*. build manaement tool ffor java framework.
+	*. repository for getting the dependancies for java framework.
+	*. can be integrate with CI tool  easily Like: jenkins
+
+
+QUESTION:
+	2. Which plugin helps to execute test cases from test folder in Maven project?
+
+ANSWER:
+	*. Surefire plugin
+
+QUESTION :
+	3. Suppose your test suite contains Regression and Sanity test cases having two profiles in pom.xml. Each of them is integrated with TestNG and having separate TestNG xml file. How will you trigger only the Sanity test cases?
+
+ANSWER:
+	*. mvn test -PSanity 
+
+QUESTION :
+	4. Once Maven reads the pom.xml, first were does it search for the dependencies?
+
+ANSWER:
+	*. Local repository.
+
+QUESTION:
+	5. Suppose we want to publish our project in Maven, what is the mandatory piece of information that is needed for doing that?
+
+ANSWER:
+	*. GroupID
+	*. ArtifectID
+	*. Version
+
+QUESTION:
+	6. Which maven command does the compilation and identifies if there are any syntax errors in the code?
+
+ANSWER:
+	mvn compile.
+
+
+
+QUESTIO:
+	NAME OF ANY 2 INTERFACE OF JAVA?
+
+ANSWER:
+	1. set , itrator.
+=> list interface duplcate values ko accept krta h or set interface Duplicate value ko accept krta h . 
+	=> set m order sequance hota h or List m order sequance nahi hota. [ order of elements fix nahi hota]
+
+QUESTION:
+	What is HashMap ?
+
+ANSWER:
+	HashMap m data key and values k pare m hota h .
+	Agr hme HashMap k sath  itrator user krna h to iske liye .Map.Entery obj = (Map.Entry)hamp.next()  // class ka use krna hota h .
+	Itrator hsmp = sn.itrator;  // sn HashMap ka name h 
+	.Map.Entery obj = (Map.Entry)hamp.next()
+	obj.getKey()  // is se krry mil jati h 
+
+QUESTION;
+	Difference between HashMap and HashTable ?
+
+ANSWER:
+	1. HashMap  is non synchronized  and HashTable is synchronized 
+	// mtlb 1 HashMap ko hm 1 bar m 1 multiple programs se access kr skte h . or HashTable ko 1 bar 1 hi program se access kr skte h .
+	
+	2. HashMap m hm null key ot valuse bhi dal skte h oe HashTable m Null key/valuse nahi dal skte h . 
+
+	3. HashMap m hm Itrator a use kr skte h or HashTable m hm itrator kause kr skte h is m vector ka use krte h jo ki enumerator interface ko implement krta h
+
+
+	---------  OOPS Interview questions  --------
+
+1. What are the core concepts of OOPS?
+	ANSWER:
+		OOPS core concepts are;
+		Abstraction
+		Encapsulation
+		Polymorphism
+		Inheritance
+		Composition
+		Association
+		Aggregation
+
+2. What is Abstraction?
+	ANSWER:
+		Abstraction is an OOPS concept to construct the structure of the real world objects. During this construction only the general states and behaviors are taken and more specific states and behaviors are left aside for the implementers.
+
+3.  What is Encapsulation?
+	ANSWER:
+		Encapsulation is an OOPS concept to create and define the permissions and restrictions of an object and its member variables and methods. A very simple example to explain the concept is to make the member variables of a class private and providing public getter and setter methods. Java provides four types of access level modifiers: public, protected, no modifier and private.
+
+5. What is Polymorphism?
+	ANSWER:
+		Polymorphism is the occurrence of something in various forms. Java supports various forms of polymorphism like polymorphic reference variables, polymorphic method, polymorphic return types and polymorphic argument types.
+
+6. What is Inheritance?
+	ANSWER:
+		A subclass can inherit the states and behaviors of it’s super class is known as inheritance.
+
+7. What is multiple inheritance?
+	ANSWER:
+		A child class inheriting states and behaviors from multiple parent classes is known as multiple inheritance.
+
+8. What is the diamond problem in inheritance?
+	ANSWER:
+		In case of multiple inheritance, suppose class A has two subclasses B and C, and a class D has two super classes B and C.If a method present in A is overridden by both B and C but not by D then from which class D will inherit that method B or C? This problem is known as diamond problem.
+
+9. Why Java does not support multiple inheritance?
+	ANSWER:
+	Java was designed to be a simple language and multiple inheritance introduces complexities like diamond problem. Inheriting states or behaviors from two different type of classes is a case which in reality very rare and it can be achieved easily through an object association.
+
+10. What is Static Binding and Dynamic Binding?
+	
+	ANSWER:
+		Static or early binding is resolved at compile time. Method overloading is an example of static binding.
+		Dynamic or late or virtual binding is resolved at run time. Method overriding is an example of dynamic binding.
+
+11. What is a Class?
+	ANSWER:
+		A class is the specification or template of an object.
+
+12 What is an Object?
+	
+	ANSWER:
+		Object is instance of class.
+
+	--------------  Java interview questions  -----------
+
+1. What is Runtime Polymorphism?
+
+	ANSWER:
+		Runtime polymorphism or dynamic method dispatch is a process in which a call to an overridden method is resolved at runtime rather than at compile-time.
+		In this process, an overridden method is called through the reference variable of a super class. The 
+
+3. What is abstract class?
+	
+	ANSWER:
+		A class that is declared as abstract is known as abstract class. It needs to be extended and its method implemented. It cannot be instantiated.
+
+ 4. Can there be any abstract method without abstract class?
+		ANSWER:
+		No, if there is any abstract method in a class, that class must be abstract.
+
+5. Can you use abstract and final both with a method?
+	
+	ANSWER:
+		No, because abstract method needs to be overridden whereas you can't override final method.
+
+6. Is it possible to instantiate the abstract class?
+	
+	ANSWER:
+		No, abstract class can never be instantiated.
+7. What is interface?
+	
+	ANSWER:
+		Interface is a blueprint of a class that have static constants and abstract methods.It can be used to achieve fully abstraction and multiple inheritance.
+
+ 8. Can you declare an interface method static?
+
+	ANSWER:
+		No, because methods of an interface is abstract by default, and static and abstract keywords can't be used together.
+
+ 9. Can an Interface be final?
+	ANSWER:
+		No, because its implementation is provided by another class.
+
+ 10 What is marker interface?
+
+	ANSWER:
+		An interface that have no data member and method is known as a marker interface.For example Serializable, Cloneable etc.
+
+ 11. What is difference between abstract class and interface?
+	
+	ANSWER:
+		Abstract class	Interface
+		1)An abstract class can have method body (non-abstract methods).	Interface have only abstract methods.
+		2)An abstract class can have instance variables.	An interface cannot have instance variables.
+		3)An abstract class can have constructor.	Interface cannot have constructor.
+		4)An abstract class can have static methods.	Interface cannot have static methods.
+		5)You can extends one abstract class.	You can implement multiple interfaces.
+	
+12.Can we define private and protected modifiers for variables in interfaces?
+		ANSWER:
+	No, they are implicitly public.
+
+ 13. When can an object reference be cast to an interface reference?
+
+	ANSWER:
+		An object reference can be cast to an interface reference when the object implements the referenced interface.
+		
+=> WHAT IS BDD ?
+	-> BDD  testcases likhnr ka 1 parten hotah . jisme hm 1 feature file bnate h jis m 1 formatted way m test case likhe jate h .
+	-. OR agr is feature file ko hm apne selenium test k sath integrate krte h to is file m failed test ka color red or pass ka color gree ho jata h .
+
+
+	---------------- SELENIUM MULTIPLE CHOICE QUESTION: ------------------
+
+Question 1:
+	Which of the following command is used to get all the links present on the page?
+
+ANSWER:
+	List allLinks = driver.findElements(By.xpath("//a"));
+
+Question 2:
+	Which of the following method in selenium is used to terminate the browser or window/tab which is currently having the focus?
+
+Answer:
+	close();
+
+Question 3:
+	When does WebDriver throw ElementNotVisibleException exception?
+
+ANSWER:
+	WHEN driver not find any element.
+
+Question 4:
+	Consider that you want to double click on element or use any key from keyboard using webdriver,Which class will you to use to perform the above operation in selenium?
+
+ANSWER:
+	Actions  class.
+
+Question 5:
+	Which one is not correct type of locator?
+
+ANSWER:
+	DOM.
+
+Question 6:
+	What will be returned for an Element not found by findElements method in selenium?
+
+ANSWER:
+	Return Empty List.
+
+Question 7:
+	How to refresh page without using context click?
+
+ANSWER;
+	driver.navigate().refresh();  ya 
+
+Question 8:
+	Where in a constructor, can you place a call to constructor defined in the super class?
+
+ANSWER:
+	The first statement in the cinstructor  // chid class k constructor ki 1 line m parent class k constructor ko call kr skte h.
+
+QUESTION:
+	Which of the following will close current browser window?
+
+ANSWER:
+	driver.close();
+
+Question 10:
+
+	Which is the most efficient way of identifying an element in selenium?
+
+ANSWER:
+	ID.
+
+Question 11:
+	Implicit wait time is applied to all elements in your script and Explicit wait time is applied only for particular specified element.
+
+ANSWER:
+	TRUE.
+
+Question 12:
+	The following codes both print: Welcome to QAClick
+
+<html>
+	<head>
+		<title>Welcome to QAClick</title>
+	</head>
+	<body>
+	</body>
+</html>
+System.out.println(driver.getTitle());
+
+System.out.println(driver.findElement(By.tagName("title")).getText())
+
+ANSWER:
+	TRUE.
+
+Question 13:
+	Which WebDriver method is used to change focus to an alert, a frame or a browser window?
+
+ANSWER:
+	switchTO();
+
+Question 14:
+Consider the following HTML code snippet
+
+<table>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>4</td>
+	</tr>
+</table>
+
+driver.findElement(By.xpath("//table/tr[1]/td")).getText();
+
+ANSWER:
+	Abouve code is return 1.
+
+Question 15:
+	In webdriver, selectAllOptions() is a valid command.
+
+ANSWER:
+	FLASE.
+
+Question 16:
+Consider the following html snippet
+
+<ul>
+
+<li>Firefox</li>
+
+<li>Google Chrome</li>
+
+<li>Internet Explorer</li>
+
+<li>Opera</li>
+
+<li>Safari</li>
+
+</ul>
+
+Which CSS selector is a valid statement to select Opera?
+
+ANSWER:
+	ul > li:nth-oftype(4);
+
+Question 17:
+	Consider the following code snippet
+
+	WebDriverWait wait = new WebDriverWait(driver, 30); wait.until(ExpectedConditions.presenceOfElementLocated(by));
+
+	This is an example of an implicit wait.
+
+ANSWER:
+	FALSE.
+
+Question 18:
+	In webdriver, which command takes you forward by one page on the browser’s history?
+
+ANSWER:
+	navigate().forword().
+
+Question 19:
+What is the output of the following statement?
+
+<div>
+
+<span id="name">Name 1</span>
+
+<span class="name">Name 2</span>
+
+</div>
+
+driver.findElement(By.cssSelector("#name"));
+
+ANSWER:
+	Output is Name 1
+
+Question 20:
+
+	In webdriver, which method closes the open browser?
+
+ANSWER:
+	close();
+
+Question 21:
+	In webdriver, deselectAll() is a valid command
+
+ANSWER:
+	TRUE.
+
+Question 26:
+	In webdriver, what is the method that counts the number of elements?
+
+ANSWER:
+	driver.findElements(By.ID("id")).size();
+
+Question 27:
+	In webdriver, which of the following is a valid select statement that selects a value from a drop down element?
+
+ANSWER:
+	selectBy.Index()
+	selectByValue()
+	slectByVisibleText();
+
+Question 28:
+	Selenium IDE stands for
+
+ANSWER:
+	Selenium Integrated development Environment.
+
+Question 29:
+	The Selenium can
+
+ANSWER:
+	Only test Web Application.
+
+Question 30:
+	Select the Get command which fetches the inner text of the element that you specify in Web driver Selenium.
+
+ANSWER:
+	getText();
+
+Question 31:
+	Which method is used when you want to verify whether a certain check box, radio button, or option in a drop-down box is selected in Web driver Selenium
+
+ANSWER:
+	isSelected();
+
+Question 32:
+	Which Component is used to run multiple tests simultaneously in different browsers and platforms?
+
+ANSWER:
+	Selenium Grid.
+
+Question 33:
+	On which category below xpath belongs to?
+
+	/html/body/input
+
+ANSWER:
+	Relative path.  // Relative path m hm each tab se ho k jate h like htmk/head/title/body/div
+
+	//https://prnt.sc/96SuI0KEtJfm
+============================= INTERVIEW QUESTIONS =================
+
+
+1.  Write syntax of implicit wait and explicit wait ? 
+2.  Write syntax of Take screenshot ?
+3.  What is 202 http status code ?
+4.  Difference between http and https ?
+5.  Difference between data abstraction [Abstract class]  and encapsulation ?
+6.  Write a progran to print second Height occoring word in a given string ?
+7.  How can import data from excel file in selenium ? [Apache POI API ka use kr k]
+8.  How can you capture the invalid user  and password  message in login test case.
+9.  How can you create negative testcases for login functionality
+10. What are depends on testcases give any example. [ @BeforeTest annotation  use krte h iske liye ]
+11. How can you validate the fadeIn FdeOut messaage using selenium ?
+12. How can you identify any frame. [ Inspact kr k check kr lenge agr <Iframe> tag hoga to mtlb frame h ya rightClick kr dekh lenge us m frame ka option aa jata h agr frame hoga to.]
+13. How can you Automate Multi Factor Authentication [MFA] ?  [aerogear java OTP dependancy ka use kr k.]
+14. How can you handle any submit button if the button is not showing in don.?  [phle page ko scroll krenge jha pr button h vha tk fir click krenge ]
+15. New feature of selenim4 ?
+	1. Take screenshot of any element.
+	2. Get height and width of any element
+	3. Can open multiple application on a single browser at a time
+		// chrome browser  m multiple tabs ya multiple windows open ho jati h
+	4. Relative locators. 
+	5. Chrome devtool integration  [CDP ->Chrome devtool potocol  //driver.getDevTool(); is function ka use krte h ]
+	6.
+
+16. Difference between @factory annotation and DataProvider ?
+	1. DataProvider every Test[function] ko each set of data k satn alag alag run krta h .
+		[ agr hmre pass 2 userName or password h to DataProvider every function ko 2 bar run krega. ]	
+	2. factory annotation  each set of data k sath complete class ko run krta h 
+		[ agr hmre pass 2 userName or password h to factory annotation only us class ko 2 bar run krega.]
+
+17. Can we run testng.xml file by command promt ?
+	// YES    [ Phle apne project k jar files ka path do cmd m fir enter press k testng file ka path]
+
+
+19. Test case for Cofee machine ?
+20.  Teall any 1 feature request for flipkart or amazom site ?
+
+21.  What are DesiredCapabilities in selenium grid ?
+
+ANSWEr:
+	DesiredCapabilities class ka use kr k hm , BROWSER_NAME, ACCEPT_SSL_CERTS, SYSTEM Plateform  ect set kr skte h  for a node system.
+	DesiredCapabilities caps = new DesiredCapabilities();
+	 //caps.setBrowserName("chrome");
+	//caps.setPlatform(Platform.);
+	//caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+	//caps.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+
+22. HOW CAN We RUN ONLY FAILED TEST CASE USING TESTNG ?
+	
+ANSWER: Jb hm testng se testcase run krte h to failed tests k liye testOutput k folder k ander 1 testng-failed.xml file generate hoti h. us m only failed tests hote h . hm direct us file ko run krenge to only failed test run honge.
+
+23. Where you use method overloading in selenium ?
+ANSWER: 1. implicit waite -> kyu ki hm isme different-2 methods pass kr skte h . [ same method with different-2 parameter.]
+	2. AAction class [ is m bhi different-2 parameter pass hote h according to usr need .
+	
+QUESTION:
+ What is preority is testng ?
+
+answer:
+	*>  Mtlb ki hm phle kis test ko run krna chahte h .
+	*> jis ko preority jada denge vo phle chlega , agr kisi testcase ki  preority 0 h to vo phle chlega..
+
+QUESTION:
+	. How can you change the chrome default download path ?  [ crome m files /data download folders k ander  downpoad hota h use kese change krenge]
+
+ANSWER:
+
+	*>  by useing setExprementalOpton() method  of chromeOptions class.
+	
+QUESTION:
+	 Hhow can get file from your locale system ?
+ANSWER:
+:
+	*> By using exists method of File() class   // File() java ki calss h 
+
+
+QUESTIONS:
+	Difference between Abstract class aand interface ?
+
+ANSWER:
+
+	1. Abstract class hm abstract function or normal function donu bna skte h .
+		[ Mtlb function ko only define bhi kr skte h or function ko implement bhi kr skte h .]
+	
+	*> Interface m  hm function ko only define kr skte hai. implement ni kr skte.
+
+	2. Interface m variabs on functions PUBLIC hone chahiye.
+
+	*> Abstract calss m variables or function PUBLIC or Private kuchh bhi ho skte h .
+
+	3. Abstract class m atleast 1 function abstract hona chahiye. // mtlb function m abstract keyword use ho.
+		= public abstract void main(){ }  // like this.
+
+	*. Interface m abstract keywors ka use nahi hota.
+
+	4. Abstract class ka object nahi banta hai.
+
+	5. Abstract class ko extends kre h or interface ko implement krte h .
+
+QUESTION:
+	WHAT ISFUNCTION OVERLOADING ?
+
+ANSWER:
+		Function overloading is same functoin name with different paarameter or different datatype 
+			[Mtlb function name sameho unke ander logic alag alag hoga. or number of argumenr or datatype of argument bhi alag alag hoga.]
+
+QUESTION:
+	WHAT IS FUNCTION OVERRIDING?
+
+ANSWER:
+	Function overriding m same function name with same number of argument and data typr of argument hote h .
+	Agr koi function class A m h or class A Class B m extends h, Hmne same vo hi function class B m bhi bnaya h to object bnane pr jo logic class B k method m likha h vo kaam krega.
+
+QUESTION:
+	WHAT IS ARRAY ?
+
+ANSWER:
+	A container that store multiple values of same datatypes.
+	int[] a = new int[5]; // 5 size of array h. or int data type of values in a Arrat.
+	a[0] =1;  // add value on a integer array
+
+	inrt[] a = {1,2,3,4,5,50}; // phle value assign hogi fir mamory allocate hogi.
+	int[] a = new int[5]; // phle memory allocate hogi fir value assign hogi.
+
+QUESTION :
+	WHAT IS MULTI Dimension ARRAY ?
+
+ANSWER:
+	Array into array . // in the form of rows and column.
+	Example 1:
+		int a[][] = new int[2][3]; // is array m 2 rows or 3 column h .
+		1 2 4
+		2 3 5
+
+	Example2:
+		int a[][] = {{1,2,3,4},{2,4,5,6}}
+
+QUESTION:
+	Find minimun number from a 3*3 matrix  ?
+
+ANSWER:
+	LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/Core-java/src/MatrixInterview.java
+
+QUESTION:
+	Differencr between PUBLIC, PROCTED ,PRIVATE AND DEFAUTL   AccessModifure IN JAVA ?
+
+ANSWER:
+	 Public -> Can accesss any package 
+	 Protected -> Can access only child class  by extends the parent class [ agr class A m koi variable Protected h to use class B m access  krne k liye phle Class A ko extends krna padekga]
+	 Default -> Can access only within The package  [package k ander khi bhi access kr skte h ]
+	 Private -> Only access in the class 
+
+	QUESTION:
+
+		What is the means of error Array index out of bound ?
+
+	ANSWER:
+		Array m se hm jis index ko access kr rhe h vo index array m h hi nahi .
+		[ Mtlb array m total 5 index h or hm 6th index ko aaccess kr re h ]
+
+QUESTION :
+	Tell me some type of exception in java ?
+
+ANSWER:
+	1. EXCEPTION E  -> Default exception
+	2. IndexOutOfBoundsException  -> If array index in invalid
+	3. ArithematicException  -> Mathematical calcution m jb issu h tb aat h 
+
+	QUESTION:
+		How many cath block can we write for a try block  for exception handling in java ?
+
+	ANSWER:
+		We can write multiple catch block for a try bloc in a function 
+
+QUESTION:
+	Why we use finally in java ?
+
+ANSWER:
+	finally tb use krte h jb hm koi action perform krana hi ho, chahe test fail ho ya pass.
+	Jese hm script run hone k bad brodser close rate h , chate test case fail ho ya pass .
+	finally  keyword only try pr catch k sath kaam krta h .
+	EXAMPLE:
+	try{
+		//run script
+	} catch{
+		// error if failed
+	}
+	finally{ 
+		// driver.close();
+	 }
+
+Question:
+	When Will the finally keyword will not work?
+
+Answer:
+	Only in that case when will stop the jvm execution forcefully.
+	[ Mtlb jb tk hm script k execution ko manually stop nahi krte h , eclips se ]
+
+QUESTION:
+	 What is PageFactory ?
+
+ANSWER:
+	*> Page Factory is a class provided by Selenium WebDriver to implement the Page Object Model. 
+	*>Page Factory is an optimized way to create object repository in Page Object Model framework concept
+	PageFactory 1 class() hoti h jo Page Object Model design parten ko ko support kri h .
+	iska use kr k  hm webelemrnts ko get kr skte h . Lkie 
+	@FindBy(css='input[name=san']');
+	WebElement inputbox;     // inputbox.sendkey("userName");
+
+Question:
+	What will the flow of execute testcases if all the annotation are applyes on the testNG testscript ?
+	// annotation mtlb [ beforeSuite,beforeclass,before method  ect..]
+
+ANSWER:
+	TestNg m 3 type ki annotation hoti h .
+	1. PreCondition annotation // @BeforeMethod ect..
+	2. Testannotayion  @TEST ...  ect
+	3. Post Condition annotation// @AfterTest .. ect..
+	
+	Phle pre annotation conditions run hongi.
+		1. Before suite
+		2. Before class
+		3. Before test
+		4. Before method
+	Fir post annotation conditions run hongi.
+		1.  after method
+		2.  after test
+		3.  after class
+		4.  after suite
+
+
+QUESTION:
+	How can we use fina {  }	 block in java ?
+
+ANSWER:
+*> We can not use the finally  block without the try block.
+	try{ } k bina finally{ }  ko call nahi kr skte h .
+
+QUESTION:
+	What is pre request in postmen ?
+
+ANSWER:
+	*> Headers , body etc.. are the pre request in post man.
+
+QUESTION:
+	https code 301 AND  504 , 503 ?
+
+ANSWER:
+	301: 301 Moved Permanently // agr url change ho gya h to. mtlm  phle url ww.webki=ul.com tha ab https://bagisto.in h.
+
+QUESTIO:
+	Write a java rogram to get only alphabet from a given string if there are number and string are in the string ?
+
+ANSWER:
+		//TODO
+
+QUESTION:
+	HOW can we take a screenshot of failed testcase in a framework ?
+
+ANSWER:
+	We can implement the ITest Listener interfacce in a java java clas and  inside of ontestFail() method of ITestLISTENER interface we can write the code of task screeshot.
+
+QUESTION:
+	which methology you are using in project ?
+
+ANSWER:
+	Agile  methology.
+
+QUESTION:
+	Difference between @FindBy and By  in PageFactory ?
+
+ANSWER:
+	@FindBy -> driver.findElement(By.xpath(""));
+	By -> (By.xpath(""));
+
+Question:
+	 What will the error if the dependsOn group name is invalid and if any syntax erro?
+
+ANSWER:
+	*>  depends on nonexistent group "Login.adminLogin"
+
+======================================== OTHER =========================
+
+
+Question :
+	In a web table, which could be valid syntax below to get row count?
+
+ANSWER:
+	driver.findElements(By.cssSelector("table-row").size();
+
+Question:
+	Can we determine the xpath of an element in the fourth column from the xpath of the element in the first column in the same row?
+
+ANSWER:
+	Yes, With the help of following-sibling method. xPath.
+
+Question:
+	Guess the valid syntax below to get the columns in a table with xpath.
+
+ANSWER:
+	List<WebElement> tblCol = driver.findElements(By.xpath("//table[@id='product']/tbody/tr/th"));
+
+Question:
+	How to perform arrow key down operation in Selenium?
+
+ANSWER:
+	driver.findElement(By.id(“text-id”)).sendKeys(Keys.DOWN)
+
+Question:
+	Why Javascript Executor is important in Selenium?
+
+ANSWER:
+	Identifies objects which has hidden elements.
+
+Question:
+	Why Javascript Executor is important in Selenium?
+
+ANSWER:
+	Identifies objects which has hidden elements.
+
+Question1:
+	How to extract value from a field with help of Javascript Executor?
+
+ANSWER:
+	String val = "return document.getElementById(\"hiddentext\").value;";
+	String text=(String) js.executeScript(val);
+
+QUESTION:
+	Can class A extends class B C  ?
+
+ANSWER:
+	NO, Because JAVA  is not support the multiple inheritance. we are using interface in the place of multiple inheritance.
+
+QUESTION:
+	WHAT IS THE OUTPUT OF THE GIVEN CODE ?
+
+	public classA{
+		int i =10;
+	}
+
+	public class B extends A {
+		int i=20;
+	}
+	pubic class C{
+		public void main(Strin[] args){
+			A a = new B()
+			System.out.println(a.i);
+		}
+	}
+
+ANSWER:
+
+	10; // kyu ki hm A a = new B() likha h  [A a => Accessing the variables and functions of class A ]
+		// B a = new B(); // is se output m 20 aayega.
+
+
+
+
+
+

@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.PlaceOrder">
+      <class name="tests.Demo">
         <methods>
-          <include name="OrderHistoryTest"/>
-          <include name="closeBrowser"/>
-          <include name="submitOrder" invocation-numbers="1"/>
-          <include name="launchApplication"/>
+          <include name="GetAllproducts"/>
         </methods>
-      </class> <!-- tests.PlaceOrder -->
+      </class> <!-- tests.Demo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -297,8 +297,8 @@ QUESTIOIN:
 
 ANSWER:
     503 Service Unavailable. => Too many API requests were sent and now the API can’t handle any more of them.
-    5.4  GETWAY TIMEOUT.
-    3.1 Moved pramanent.
+    504  GETWAY TIMEOUT.
+    301 Moved pramanent.
 
 
 QUESTION:
