@@ -1,6 +1,6 @@
 0. WHICH FRAMEWORK ARE YOU USING ?
     //We are using Hybrid framework IN selenium
-1. does vaja support call by reference ?
+1. does java support call by reference ?
     *> No
 
 2. CAN WE INHERIT FINAL AND STAIC CALSS ?
@@ -77,9 +77,9 @@
 
    // https://www.javatpoint.com/difference-between-arraylist-and-linkedlist
 
-   1.  The memory location for the elements of an ArrayList is contiguous. && The location for the elements of a        linkedlist is not contagious.
+   1.  The memory location for the elements of an ArrayList is contiguous. && The location for the elements of a linkedlist is not contagious.
    2.  An ArrayList class can act as a list only because it implements List only. && LinkedList class can act as a list and queue
-   3. ArrayList is better for storing and accessing data. && LinkedList is better for manipulating data.
+   3.  ArrayList is better for storing and accessing data. && LinkedList is better for manipulating data.
    4.  ArrayList internally uses a dynamic array to store the elements.  &&  LinkedList internally uses a doubly linked list to store the elements.
    5. 
       *> Generally, when an ArrayList is initialized, a default capacity of 10 is assigned to the ArrayList.
@@ -107,11 +107,6 @@
         int sheets = workbook.getNumberOfSheets(); 
          *> https://github.com/Sanjaybhattwebkul/bagisto-automation-framework/blob/master/automationFramework/src/test/java/ExcelDriven/getExcelData.java
         
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> upstream/master
     // Parameterization using Json
 
         *** for JSON *** *** USING jackson-databind  ***
@@ -159,6 +154,15 @@
 
 32. Types of locators in selenium ?
 
+33. How can verify broken image in selenium ?
 
-Tpye
+24. Types of assertion in selenium?
+25. Difference between waitFor and softassertion  & verify and hard assertion ?
+    > Verify or Soft Asserts will report the errors at the end of the test. Simply put, tests will not be aborted if any condition is not met
+    > Tests will continue to run in case of verification until the last test is executed, even if assert conditions are not met.
+   
+    > Selenium Assertions can be of three types: “assert”, “verify”, and ” waitFor”. When an “assert” fails, the test is aborted. When a “verify” fails, the test will continue execution, logging the failure
+    > A “waitFor” command waits for some condition to become true.
+
+
 

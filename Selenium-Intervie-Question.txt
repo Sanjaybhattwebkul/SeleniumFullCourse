@@ -1055,20 +1055,24 @@ ANSWER:
 	*> In xpath we can travers backword and forword both side.
 	*> But in cssSelector we can oly traver forword. means parent to child.
 
-	-> xPath m hm forword or backword donu way m move kr skte h.  [ fowrod-> parent to child, backword-> child to parent ]
-	-> cssSelector m hm only fordword move krte h mtlb parent to child ?
+	-> driver.findElement(By.xpath("//div[@class='className']/Parent:: //div[@id='id']")) // CHILD TO PARENT XPATH
+    -> driver.findElement(By.xpath("//*[@type='submit' OR @name='btnReset']")); // Search element using AND,OR in the xpath
+    -> driver.findElement(By.xpath("//div[@class='myCls']/div[2]/a")).click();  // PARENT TO CHILD CSS SELECTOR
+
+    
 
 QUESTION:
 	How can we import excel file into selenium ?
 	
 ANSWER:
 	*> We can import excel file in selenium by Using Apache POI API librery .
+      > XSSFWorkbook()  class is used for the same.
 
 QUESTION:
 	 Difference between testNG and Junit ?
 	
 ANSWER:
-	*> We can do only unit testin in Junit. 
+	*> We can do only unit testing in Junit. 
 	*> And by using the testNg we can do aprox alltype of testing. 
 
 
@@ -1105,7 +1109,7 @@ QUESTION:
 ANSWER:
 	*> by using switchTo().clert(); method. 
 		FOR EXAMPLE: 
-		1 IF we ant to click OK , YES OR CONFIRM ?  //  driver.switchTo.alert().accept();
+		1.  IF we ant to click OK , YES OR CONFIRM ?  //  driver.switchTo.alert().accept();
 		2. IF we ant to click Cancel , No   //  driver.switchTo.alert().dismis();
 
 QUATION:
