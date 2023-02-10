@@ -402,7 +402,7 @@ QUESTION :
     EXAMPLE OF LOW AND HEIGHT SERVERITY BUG :
 
 ANSWER;
-    1. Complany logi  is wrong is height SERVERITY bug ,
+    1. Complany logo  is wrong is height SERVERITY bug ,
     2. Pproduct image is woring is low serverity bug.
 
 QUESTION:

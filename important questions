@@ -50,7 +50,7 @@
 
 16. How to handle multiple windows.
     *> 
-        Set<Itrator>windows = windows.getWindowHandlers();
+        Set<String>windows = windows.getWindowHandlers();
         Itrator<String> it = windows Itrator();
         if(it.hasNext()) {
             Strin parent  = it.next;
@@ -108,11 +108,8 @@
         int sheets = workbook.getNumberOfSheets(); 
          *> https://github.com/Sanjaybhattwebkul/bagisto-automation-framework/blob/master/automationFramework/src/test/java/ExcelDriven/getExcelData.java
         
-<<<<<<< HEAD
 
-=======
         
->>>>>>> upstream/master
     // Parameterization using Json
 
         *** for JSON *** *** USING jackson-databind  ***
