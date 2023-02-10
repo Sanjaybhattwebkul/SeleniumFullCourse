@@ -126,7 +126,11 @@ ANSWER:
 QUESTION:
 	WHAT IS RETORSPECTIVE ?
 ANSWER:
+<<<<<<< HEAD
+	RETORSPECTIVE 1 meeting hotin h jo sprinr complete hoen k bad hoti h .
+=======
 	RETORSPECTIVE 1 meeting hoti h jo sprinr complete hoen k bad hoti h .
+>>>>>>> 5e71b2b028ad6bba136835f01dde34dbfb24632a
 	Dev, qa lead and scrum master m .
 	is m dekh jata h ki sprint m kn si cheecj thee h kn si cheej m bug aare h or kya improvement honi h .
 
@@ -478,6 +482,7 @@ ANSWER:
 	8. Defect management:  bug kn assign krenga dev ko  ya tester ko..
 	[test plane 1 doocument h jis m hm ye dekhte h ki kn kn si cheej test krni h kha se testing strt krni h or kitne time m complete hogi, or kitne log test krenge]
     [ Is m hm bug tracking tool ko bhi decide krenge ki knsa tool use krna h bug tracking k liye] 
+
 QUESTION:
   What is Database testing ?
 

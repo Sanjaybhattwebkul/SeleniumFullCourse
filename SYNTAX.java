@@ -30,6 +30,8 @@ driver.findElemen(By.id("idname")).click();
 
 
 
+
+
 WebDriverWait wait = new WebDriverWait(driver,30);
 wait.until(ExpectedCondition.visiblityOfElementLocated(driver.findElement(By.xpath("div[class='class']"))));
 
