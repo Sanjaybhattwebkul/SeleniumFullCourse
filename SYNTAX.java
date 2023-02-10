@@ -19,7 +19,7 @@ System.out.println(driver.findElement(By.cssSelector("p.error")).getText());  //
 driver.manage().timeOutes().implicitlyWait(Durations.Ofseconds(10));
 driver.manage().timeouts().implicitlyWait(10,timeouts.MINUTES);
 WebDriverWait wait = new WebDriverWait(driver);
-wait.until(ExpectedCondition.visiblityOfElementLocated(driver.findElement(By.xpath("//div[@class='name']"))));
+wait.until(ExpectedCondition.visiblityOfElementLocated(By.xpath("//div[@class='name']")));
 driver.findElement(By.cssSelector("div[id='name'] :nth-child(1)"));
 
 
