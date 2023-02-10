@@ -265,6 +265,7 @@ ANSWER:
     *> We all use Implicit Wait to make the page wait for some specified time interval.
     *> Implicit Wait is the best example of Method Overloading 
     *> as we can provide different Timestamp or TimeUnit like SECONDS, MINUTES, etc.
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 QUESTION:
     What is preority is testng ?
@@ -575,6 +576,7 @@ QUSTION:
     . How you will use CICD tool i.e jenkins
 
 ANSWER:
+*>  Create jenkins freestyle project pipeline
     We can configure the date and time for execute the test case.
     We need to set the 5 parameter for configure the date and time.
     *> * * * * * [ 1. minute . 2. hour 3. day 4. month 5. year. ]
@@ -914,10 +916,10 @@ ANSWER:
 	Relative Xpath: You can simply start by referencing the element you want and go from there
 	
 	-> jb hm ABSLUTE xPath  bnate h to hm head element se bottem tk jate h .
-		-> LIKE: head/body/div/div/div/span/b
+		-> LIKE: /head/body/div/div/div/span/b
 
 	-> OR jb hm Relative xPath bnate h tb hm elemt ko middle se bhi target kr skte h 
-		-> Like :  head/div/b
+		-> Like :  //head/div/b
 
 
 QUESTION:

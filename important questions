@@ -40,6 +40,7 @@
 
     
 14. new features of selenium ?
+    //WebElement email = driver.findElement(with(By.tagName("input")).above(passwordField));
 
 
 15. scrll windown till any element visible ?
@@ -126,9 +127,8 @@
 23. How can get data from excel and JOSN write the main logic and library ?
 
     *** for JSON *** *** USING jackson-databind  ***
-   // read json file to string
+
 		String jsonContent = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
-		// String to HashMap- using ackson-databind
 		ObjectMapper mapper = new ObjectMapper();
 		List<HashMap<String, String>> data = mapper.readValue(jsonContent,
 				new TypeReference<List<HashMap<String, String>>>() {
