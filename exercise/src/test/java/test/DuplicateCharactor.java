@@ -8,8 +8,9 @@ public class DuplicateCharactor {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		removeDuplicate();
-		missingNumber();
+		//removeDuplicate();
+		//missingNumber();
+		test();
 		// getDuplicateCharactor();
 
 	}
@@ -70,4 +71,18 @@ public class DuplicateCharactor {
 		System.out.println(total);
 	}
 
+	public static void test()
+	{
+		int[] arr = {1,2,4,5};
+		for(int i=1; i<arr.length; i++) {
+			int prevNumber = arr[0];
+			if(prevNumber+1 == arr[i]) {
+				
+			}else {
+				System.out.println(arr[i]);
+			}
+			
+		}
+	}
+	
 }
