@@ -1,19 +1,10 @@
 package test;
-/*
-public class RevString {
 
-	public static void main(String[] args) {
-		
-
-	}
-
-}
-*/
 import java.io.*;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map.Entry;
+
 public class PublicisSapient {
    public static void main(String[] args) throws IOException {
 	  
