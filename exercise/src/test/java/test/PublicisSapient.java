@@ -1,15 +1,28 @@
 package test;
 
 import java.io.*;
+import java.time.Duration;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map.Entry;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class PublicisSapient {
    public static void main(String[] args) throws IOException {
-	  
-	   // Read file and get string from file
-	   File file = new File(System.getProperty("user.dir")+"/String.text"); 
+	   WebDriver driver = new ChromeDriver();
+	   dynamicDropDown(driver);
+	   
+	   getMostRepeatedWord("String.text");
+	}
+   
+   public static void getMostRepeatedWord(String filePath) throws IOException
+   {
+	   File file = new File(System.getProperty("user.dir")+"/"+filePath); 
 	   BufferedReader br  = new BufferedReader(new FileReader(file));
 	   String[] str  = br.readLine().split(" ");
 	   HashMap<String,Integer> map = new HashMap<String,Integer>();
@@ -50,7 +63,21 @@ public class PublicisSapient {
 	   } else {
 		  System.out.println(word);
 	   }
-	   
    }
+   
+   public static void dynamicDropDown(WebDriver driver)
+	{
+		driver.get("https://www.zoopla.co.uk/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));		
+		driver.findElement(By.xpath("//input[contains(@id,'downshift-')]")).sendKeys("s");		
+		List<WebElement> resultContainer = driver.findElements(By.xpath("//ul[contains(@id,'downshift-')]/li/span[2]"));		
+		System.out.println(resultContainer.size());		
+		for(int i=0; i < resultContainer.size(); i++) {
+			String Text = resultContainer.get(i).getText();
+			System.out.println(Text);
+			
+		}
+	}
+	
 
 }
