@@ -1138,3 +1138,14 @@ Feature: Registration, Login and MyAccount
     Then I should see "My Account" Heading
     And I should see "my account" link
     But I should not see "Login" Heading
+
+QUESTION:
+    @FindBy  @@FindAll  and @FindBys  DIFFFERENCE ?
+
+ANSWER:
+    
+    @FindBy   : Strore webElement and we can give only one conditions
+    
+    @FindBys : When the required WebElement objects need to match all of the given criteria use @FindBys annotation
+
+    @FindAll : When required WebElement objects need to match at least one of the given criteria use @FindAll annotation

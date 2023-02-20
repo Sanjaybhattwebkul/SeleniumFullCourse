@@ -82,6 +82,7 @@ ANSWER:
             Ex:- @CucumberOptions(
 		        features="src/test/java/features",
 		        glue="stepDefinition", stepNotifications = true)
+
             glue is a parameter that gives the path of your step definition file.
             For run our test Runner file with TestNG we need to extends one file which name:- AbstractTestNGCucumberTests.
 
@@ -89,8 +90,12 @@ QUESTION:
     Difference between Junit Runner & TestNg Runner:-
     
 ANSWER:
-    1. In Junit Runner we have to use @RunWith annotation for run our features file where as in TestNG Runner there is no need to use @RunWith annotation.
-    2. In TestNg runner we have to extends AbstractTestNGCucumberTests class where in Junit there is no need to extends it.
+    1. In Junit Runner we have to use @RunWith annotation for run our features file 
+        where as in TestNG Runner there is no need to use @RunWith annotation.
+
+    2. In TestNg runner we have to extends AbstractTestNGCucumberTests class 
+        where in Junit there is no need to extends it.
+        
         ( Agar hum cucumber me kuch “ ” me likhte h to use cucumber manta h ki ye dynamic h.)
         Ex:- “John” & “1234”
 
@@ -111,14 +116,14 @@ ANSWER:
    
     Parameterization k liye  hme :- Scenario Outline use krna hota h. Parameterization k liye hm Examples:  keyword use krte h jese:
         Examples:
-        |username|password|
-        |user1         |Pass1       |
-        |user2         |Pass2       |
-        |user3         |Pass3       |
+        |  username      |  password    |
+        |  user1         |  Pass1       |
+        |  user2         |  Pass2       |
+        |  user3         |  Pass3       |
 
 *> Tagging Feature to control Test Cases in Cucumber:
 
-        Maanlo hmar feature file me bahut saare testcases h lkin hme kuch testcases hi run krne h bss to uske liye hm tagging feature ka use krte h....
+        Maanlo hmar feature file me bahut saare testcases h lkin hme kuch testcases hi run krne h bss, to uske liye hm tagging feature ka use krte h....
         Ese case hm feature file k andr jkr @RegTest or @SmokeTest add kr denge phir hm apni testRunner file me jkr @CucumberOptions k andr glue tags k andr likh denge ki:
     
     glue=”stepDefinitions”, tags=”@SmokeTest or @RegTest” isse ye dono trigger ho jayenge or agr hm ek ek lgayenge to kvl ek hi trigger hoga.
@@ -134,29 +139,45 @@ ANSWER:
 
     Imp: Hooks and Background ek sath use nhi kr skte h.
         Difference between Background and Hooks:
-        Ques: What Keyword is used if you want to Parameterize the Test with multiple Data combinations?
-            Example
-            Ques: Which feature helps us to data feed into scenario?
-            DataTable
-    Ques:  What Pre requiste feature can be used if you have multiple scenarios in cucumber feature file where each scenario lands on different portals?
-        Hooks with Tag
-        Ques:  Which feature helps us to run only selected scenarios instead of complete feature file?
-        Tagging
-        Generating reports of cucumber scenarios:
-        Agr hme cucumber me testcases ki report bnani ho to uske liye hm @CucumberOptions me ek keyword add kr dete h jiska naam h pretty.
-            Syntax:
-                @CucumberOptions(
-                Features=”src/test/java/features”,
-                glue=”stepDefinitions”,tags=”@PortalTest”,
-                plugin={“pretty”,”html:target/cucumber.html”}
-                For Json File:- plugin={“pretty”,”json:target/cucumber.json”}
-                For Junit file:- plugin={“pretty”,junit:target/cucumber.xml}
-            )
+        
+    QUESTION: What Keyword is used if you want to Parameterize the Test with multiple Data combinations?
+        
+        ANSWER:   Example
+
+    ANSWER: Which feature helps us to data feed into scenario?
+        
+        ANSWER: DataTable
+    
+    QUESTION:  What Pre requiste feature can be used if you have multiple scenarios in cucumber feature file where each scenario lands on different portals?
+    
+    ANSWER:    Hooks with Tag
+
+    QUESTION:  Which feature helps us to run only selected scenarios instead of complete feature file?
+
+    ANSWER:   Tagging
+
+=> Generating reports of cucumber scenarios:
+
+    Agr hme cucumber me testcases ki report bnani ho to uske liye hm @CucumberOptions me ek keyword add kr dete h jiska naam h pretty.
+    Syntax:
+        @CucumberOptions(
+        Features=”src/test/java/features”,
+        glue=”stepDefinitions”,tags=”@PortalTest”,
+        plugin={“pretty”,”html:target/cucumber.html”}
+        For Json File:- plugin={“pretty”,”json:target/cucumber.json”}
+        For Junit file:- plugin={“pretty”,junit:target/cucumber.xml}
+    )
         
         Importance of dryRun and tags attribute in cucumber?
+
         Importance of monochrome attribute in cucumber?
+
         Importance of strict attribute in cucumber?
+
         How we have addressed common problems with cucumber features?
+
         What is Cucumber dependency Injection?
+
         It is done by pico-container.
+        
         What is single responsibility Principle and loosely coupled classes?

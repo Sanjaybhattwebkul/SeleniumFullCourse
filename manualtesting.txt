@@ -126,11 +126,7 @@ ANSWER:
 QUESTION:
 	WHAT IS RETORSPECTIVE ?
 ANSWER:
-<<<<<<< HEAD
-	RETORSPECTIVE 1 meeting hotin h jo sprinr complete hoen k bad hoti h .
-=======
 	RETORSPECTIVE 1 meeting hoti h jo sprinr complete hoen k bad hoti h .
->>>>>>> 5e71b2b028ad6bba136835f01dde34dbfb24632a
 	Dev, qa lead and scrum master m .
 	is m dekh jata h ki sprint m kn si cheecj thee h kn si cheej m bug aare h or kya improvement honi h .
 
@@ -139,7 +135,7 @@ QUESTION:
 	WHAT IS CANBAN ?
 
 ANSWER:
-	CANBAN M  ouser story or sprint nahi hota h .
+	CANBAN M user story or sprint nahi hota h .
 	Bcalog , selected for developement, in progress and done only ye step hote h CANBAN bor m 
 
 Question 3:
@@ -533,6 +529,7 @@ ANSWER:
 	307 -> Temmpory Redirected.
 
 	---- Client-Side Status CodesPermalink    -------
+	
 	*> 404 Not Found. This is by far the most common HTTP status code you can get. ...
 	*> 401 Unauthorized. Means you haven’t yet authenticated against the API
 	*> 403 Forbidden. => Means you don’t have permission to request that URL.You’re authenticated, but the user or role you’re authenticated for isn’t permitted to make the API request.

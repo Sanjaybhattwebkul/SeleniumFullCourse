@@ -28,12 +28,8 @@ driver.findElemen(By.className("class")).click();
 driver.findElemen(By.name("email")).click();
 driver.findElemen(By.id("idname")).click();
 
-
-
-
-
 WebDriverWait wait = new WebDriverWait(driver,30);
-wait.until(ExpectedCondition.visiblityOfElementLocated(driver.findElement(By.xpath("div[class='class']"))));
+wait.until(ExpectedCondition.visiblityOfElementLocated(By.xpath("div[class='class']")));
 
 TakesScreenshot ss = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 FileUtils.copyFIle(ss, new File("sc.png"));
@@ -75,3 +71,7 @@ ChromeOptions chromeOption = new ChromeOptions();
 chromeOption.setAcceptInsecureCerts(true);
 
 
+ChromeOption oprion = new ChromeOption()
+option.setAcceptInsureCerts(true)
+
+option.addArgument("--disabled-notifications");
