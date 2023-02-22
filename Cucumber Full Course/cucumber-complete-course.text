@@ -1,6 +1,9 @@
-What is BDD?
+QUESTION:
+    What is BDD?
 
-BDD is one of the development approach involves the usage of common language that enhances communication between various tech and non-tech teams. Tests are more user-focused and based on the System’s behavior. In BDD, “ Given-When-Then” is the proposed approach for writing test cases.
+ANSWER:
+    Behaviour-Driven Development (BDD) is a Development apporach. it a enhanced comunication between texh and 
+    Non-tech team. Because we are creating a common document in ghrkin language for all teams.[dev,qa,bde].
 
 Given: I am at the landing Page of Ecommerce application.
 
