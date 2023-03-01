@@ -542,6 +542,7 @@ ANSWER:
 	*> 501 Not ImplementedPermalink  => When the htp method is wrong
 	*> 502 Bad Gateway. => This could be related to a network problem, or simply because the API server crashed, or was down for maintenance.
 	*> 503 Service Unavailable. => Too many API requests were sent and now the API can’t handle any more of them.
+	*> 504 Getway time out
 
 QUESTION:
 	TYPES OF METHODS IN POSTMEN ?
