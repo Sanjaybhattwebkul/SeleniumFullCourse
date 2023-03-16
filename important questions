@@ -10,7 +10,7 @@
     //
 
 4. latest versiob
-    4.8
+    4.8.1
 
 5. locators in selenium .
     //
@@ -19,7 +19,7 @@
      parallet =test in testng.xml file
 
 7. how can run single test in multiple times.
-    //invocationCount
+  *> invocationCount
 
 9. SQL JOINS
 
