@@ -1,7 +1,12 @@
 =============================[09-FEB2023] ========================
+Question:
+    Which framework you are using ?
 
+ANSWER: 
+    TestNg.
+    
 QUESTION:
-    WHAT IS CUCUMBER ?
+    WHAT IS BDD ?
 
 ANSWER:
      Behaviour-Driven Development (BDD) is a Development apporach. it a enhanced comunication between texh and 
@@ -12,3 +17,49 @@ QUESTION:
 
 ANSWER:
     CUCUMBER  is a framework that support the Behaviour-Driven Development (BDD). 
+
+question:
+    What is GHERKIN ?
+
+ANSWER:
+    GHERKIN  1 language hoti h , ya 1 format hota h software k Behaviour ko define krne ka /.
+
+
+QUESTION;
+    WHAT IS FEATURE FILE ?
+
+ANSWER:
+    FEATURE FILE IS  JUST LIKE A TEST SUIT. IT CONTAINS MULTIPLE SENARIO /
+
+QUESTION :
+    ARCHITURE ?  HOW CUCUMBER WORKS IN BACKGROUND ?
+
+ANSWER:
+    Jb CUCUMBER test run hota h to vo vo given ,when and then ko find krta h fir in keywords ko stepDefination
+    filse m search krta h . fir test ko run krta h .
+
+
+NOTE: Tidy Gherkin  Chrome ka extension h . is se stepdefination file generate kr skte h. [ VIDEO NO. 12]
+
+=> Hme .feature file m jo bhi keywords use kiye hote h . vo sab stepdefination file m bhi use krne hote h 
+  function k sath @Given   is trh se.  @Given ,@When,@Then ye sab function k sath use krne hote h. tabhi 
+  stepdefination file ka code execute hota h .
+
+Example :
+
+    @Given("^ goto login page$")
+    public function loginUser() {
+
+    }
+
+=> There should be one mapping line for each gherkin line.
+  [ Mtlb ki  @given k liye multiple function ni ho skte h ..feature file ka Given keywords stepdefination 
+    k @given se map rhta h to 1 given k liye 1 hi  @Given hoga
+    ]
+
+QUESTION:
+    WHAT IS DIFFERENCE BETWEEN JUNITTESTRUNNER AND TENTNGTESTRUNNER ?
+
+ANSWER:
+    *> TestNgTestRunner m hme AbstractTestngCucumberTests  extends krna hota h 
+    *> Or junit m @RunWith(Cucumber.class)  ka use krte h 
