@@ -10,7 +10,7 @@
     //
 
 4. latest versiob
-    4.7
+    4.8
 
 5. locators in selenium .
     //
@@ -157,6 +157,7 @@
 33. How can verify broken image in selenium ?
 
 24. Types of assertion in selenium?
+
 25. Difference between waitFor and softassertion  & verify and hard assertion ?
     > Verify or Soft Asserts will report the errors at the end of the test. Simply put, tests will not be aborted if any condition is not met
     > Tests will continue to run in case of verification until the last test is executed, even if assert conditions are not met.
@@ -164,5 +165,21 @@
     > Selenium Assertions can be of three types: “assert”, “verify”, and ” waitFor”. When an “assert” fails, the test is aborted. When a “verify” fails, the test will continue execution, logging the failure
     > A “waitFor” command waits for some condition to become true.
 
+26 > Return type of getWindowHandlers ?
+     :  Set;
+
+27 does java support call by reference ?
+    
+    > NO
 
 
+28 Types of Exceptions in selenium?
+
+    NoSuchWindowException.
+    NoSuchFrameException.
+    NoSuchElementException.
+    NoAlertPresentException.
+    InvalidSelectorException.
+    TimeoutException.
+    ElementNotVisibleException.
+    ElementNotSelectableException.
