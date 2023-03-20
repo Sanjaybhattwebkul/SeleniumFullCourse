@@ -156,9 +156,20 @@
 
 33. How can verify broken image in selenium ?
 
+    WEbElement img = driver.findElements(By.tagName("img"));
+    HttpClient client = HttpClientBuilder.create().build();
+    HttpGet request = new HttpGet(img.getAttribute("src"));
+    HttpResponse response = client.execute(request);
+    /* For valid images, the HttpStatus will be 200 */
+    if (response.getStatusLine().getStatusCode() != 200)
+    {
+        System.out.println(img.getAttribute("outerHTML") + " is broken.");
+       
+    }
+
 24. Types of assertion in selenium?
 
-25. Difference between waitFor and softassertion  & verify and hard assertion ?
+25. Difference between waitFor and softAssertion  & verify and hardAssertion ?
     > Verify or Soft Asserts will report the errors at the end of the test. Simply put, tests will not be aborted if any condition is not met
     > Tests will continue to run in case of verification until the last test is executed, even if assert conditions are not met.
    

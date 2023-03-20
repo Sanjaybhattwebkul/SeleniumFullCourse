@@ -18,6 +18,7 @@ System.out.println(driver.findElement(By.cssSelector("p.error")).getText());  //
 
 driver.manage().timeOutes().implicitlyWait(Durations.Ofseconds(10));
 driver.manage().timeouts().implicitlyWait(10,timeouts.MINUTES);
+
 WebDriverWait wait = new WebDriverWait(driver);
 wait.until(ExpectedCondition.visiblityOfElementLocated(By.xpath("//div[@class='name']")));
 driver.findElement(By.cssSelector("div[id='name'] :nth-child(1)"));
@@ -75,3 +76,5 @@ ChromeOption oprion = new ChromeOption()
 option.setAcceptInsureCerts(true)
 
 option.addArgument("--disabled-notifications");
+
+
