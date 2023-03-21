@@ -10,7 +10,7 @@
     //
 
 4. latest versiob
-    4.8
+    4.8.1
 
 5. locators in selenium .
     //
@@ -19,7 +19,7 @@
      parallet =test in testng.xml file
 
 7. how can run single test in multiple times.
-    //invocationCount
+  *> invocationCount
 
 9. SQL JOINS
 
@@ -121,7 +121,7 @@
 		return data;
 
     // Parameterization using XML  -> textng.XML file se 
-      *> <parameter name="searchKey" alue="India" />
+      *> <parameter name="searchKey" value="India" />
       *> @Test  ->  @Parameters("searchKey") ->  function(Sting searchKey)
 
 23. How can get data from excel and JOSN write the main logic and library ?
@@ -156,13 +156,71 @@
 
 33. How can verify broken image in selenium ?
 
+    WEbElement img = driver.findElements(By.tagName("img"));
+    HttpClient client = HttpClientBuilder.create().build();
+    HttpGet request = new HttpGet(img.getAttribute("src"));
+    HttpResponse response = client.execute(request);
+    /* For valid images, the HttpStatus will be 200 */
+    if (response.getStatusLine().getStatusCode() != 200)
+    {
+        System.out.println(img.getAttribute("outerHTML") + " is broken.");
+       
+    }
+
 24. Types of assertion in selenium?
-25. Difference between waitFor and softassertion  & verify and hard assertion ?
+
+25. Difference between waitFor and softAssertion  & verify and hardAssertion ?
     > Verify or Soft Asserts will report the errors at the end of the test. Simply put, tests will not be aborted if any condition is not met
     > Tests will continue to run in case of verification until the last test is executed, even if assert conditions are not met.
    
     > Selenium Assertions can be of three types: “assert”, “verify”, and ” waitFor”. When an “assert” fails, the test is aborted. When a “verify” fails, the test will continue execution, logging the failure
     > A “waitFor” command waits for some condition to become true.
 
+26 > Return type of getWindowHandlers ?
+     :  Set;
+
+27 does java support call by reference ?
+    
+    > NO
 
 
+28 Types of Exceptions in selenium?
+
+    NoSuchWindowException.
+    NoSuchFrameException.
+    NoSuchElementException.
+    NoAlertPresentException.
+    InvalidSelectorException.
+    TimeoutException.
+    ElementNotVisibleException.
+    ElementNotSelectableException.
+
+
+29  what is Is-A relationship and Has-A relationship in java ?
+
+  => In Java, we can reuse our code using an Is-A relationship or using a Has-A relationship.
+  => An Is-A relationship is also known as inheritance and a Has-A relationship is also known as composition in Java.
+
+30 How can disable any test case in testNG?
+  -> if we want to skip ant particular methos while running testng.xml file in that case we will use enabled helper function.
+	*> @Test( enabled=false )  @Test( enabled=true )
+
+    => Agr hmne test cases ki grouping ki or kuchh methods m @BeforeMethod lga h to to vha p " alwaysRun=true" krna hotah.
+    @beforeTest/@beforeMethods vale test ki grouping ni krte h is case m .
+
+31:  What is maven flow ?
+
+  *> mvn compile
+  *> mvn test
+  *> mvn build
+
+
+32 what is regular expression in cucumber?
+
+33  what is step defination file ?
+
+34  what is defect and latent
+
+35. example of high servrety and height preority ?
+
+36. finaly , finalize and final keyword in java ?

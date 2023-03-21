@@ -1126,7 +1126,8 @@ ANSWER:
 	Iske liye hmne "testng.xml" file m. <suite> tag  m [ parallel="test" ]  lihkna hoga. [ise likhne se jitne testCse honge utne browser 1sath open ho jayenge ]
 	Agr hm chahte h ki 1 bar 2 ya3 browser hi open ho . to uske liye hm [ thread-count="3"  ]de skte h . <suite> tag m 
 	
-=> Agr hmne test cases ki grouping ki or kuchh methods m @BeforeMethod lga h to to vha p " alwaysRun=true" krna hotah.
+=> Agr hmne test cases ki grouping ki or kuchh methods m @BeforeMethod lga h 
+to to vha p " alwaysRun=true" krna hotah.
    @beforeTest/@beforeMethods vale test ki grouping ni krte h is case m .
 
 => JB hme gunction bnate time data ka pta nahi hota h ki kis type ka data return hoga. tb hm data type "object" lete hai.

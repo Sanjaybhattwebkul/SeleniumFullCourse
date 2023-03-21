@@ -1,6 +1,9 @@
-What is BDD?
+QUESTION:
+    What is BDD?
 
-BDD is one of the development approach involves the usage of common language that enhances communication between various tech and non-tech teams. Tests are more user-focused and based on the System’s behavior. In BDD, “ Given-When-Then” is the proposed approach for writing test cases.
+ANSWER:
+    Behaviour-Driven Development (BDD) is a Development apporach. it a enhanced comunication between texh and 
+    Non-tech team. Because we are creating a common document in ghrkin language for all teams.[dev,qa,bde].
 
 Given: I am at the landing Page of Ecommerce application.
 
@@ -168,16 +171,54 @@ ANSWER:
         For Junit file:- plugin={“pretty”,junit:target/cucumber.xml}
     )
         
-        Importance of dryRun and tags attribute in cucumber?
+QUESTION:
+    Importance of dryRun and tags attribute in cucumber?
 
-        Importance of monochrome attribute in cucumber?
+ANSWER:
+    *> Cucumber dry run is used for compilation of the Step Definition and Feature files and to verify the compilation errors.
+    *> In case the value of dry run is set to true, Cucumber will verify individual steps in the Feature file 
+    *> and the implementation code of steps in Feature file within the Step Definition file.
+    *> A dry run parameter is a part of the @CucumberOptions which is used to configure the test settings.
 
-        Importance of strict attribute in cucumber?
+ QUESTION:
+    Importance of monochrome attribute in cucumber?
 
-        How we have addressed common problems with cucumber features?
+ANSWER:
+    *> When monochrome value set to true, 
+    *> It will make console output for the Cucumber test much more readable and remove any unreadable character.
 
-        What is Cucumber dependency Injection?
+QUESTION:
+    Importance of strict attribute in cucumber?
 
-        It is done by pico-container.
-        
-        What is single responsibility Principle and loosely coupled classes?
+ANSWER:
+ *> if Strict option is set to true then at execution time if cucumber encounters any undefined/pending steps 
+ *> then cucumber does fails the execution and undefined steps are marked as fail and BUILD is FAILURE
+
+QUESTION:
+    How we have addressed common problems with cucumber features?
+
+ANSWER:
+    //
+
+QUESTION:
+    What is Cucumber dependency Injection?
+
+ANSWER:
+    In Cucumber, if we want to share the state between multiple-step definition files, 
+    we will need to use dependency injection (DI). 
+    *> Jese hmre pass  2 feature file h or donu k testCase same browser m run hone h. to 1 comman file bna lenge us m 
+    *> Webdrive broser ko assign kr lenge fir us file ko donu feature files k stepDefination file m hooks ka use kr k use kr lenge.
+    ==> https://qaautomation.expert/2022/04/14/dependency-injection-in-cucumber-using-pico-container/#:~:text=In%20Cucumber%2C%20if%20we%20want,is%20recommended%20to%20use%20PicoContainer.
+
+QUESTION:
+    It is done by pico-container.
+
+ANSWER:
+    
+*> By using Pico container we can share the states between the steps in a single feature or multiple feature file.
+
+QUESTION:
+    What is single responsibility Principle and loosely coupled classes?
+
+ANSWER:
+    ///
