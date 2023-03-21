@@ -216,6 +216,9 @@
 
 
 32 what is regular expression in cucumber?
+  *> We can parameterize texts by using  regular expression that can be used repeatedly.
+  *> @Given("^I add product (.+) to Cart$")  ^ and $ is regular expression helper
+  *> this code will used is setp defination file
 
 33  what is step defination file ?
 
@@ -224,3 +227,13 @@
 35. example of high servrety and height preority ?
 
 36. finaly , finalize and final keyword in java ?
+    *> final is the keyword and access modifier
+    *> finally is the block in Java Exception Handling
+    *> finalize is the method in Java which is used to perform clean up processing just before object is garbage collected.
+
+37. what are  getter and setter in java ?
+    *> The get method returns the variable value, and the set method sets the value.
+    
+38. Why we can not use WebDriver driver = new WebDriver ?
+    *> We can not create object of interface.
+
