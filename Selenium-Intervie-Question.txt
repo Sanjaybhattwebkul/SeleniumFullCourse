@@ -183,13 +183,6 @@ ANSWER:
     4. Hybrid Framework -> In this framework we have keyword driven and datadriven both options for script.
 
 QUESTION:
-    Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is tthis ]
-
-ANSWER;
-  LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/exercise/src/main/java/Selenium/exercise/ReversWords.java
-
-
-QUESTION:
     Difference between @factory annotation and DataProvider ?	
 
 ANSWER:
@@ -336,15 +329,6 @@ ANSWER:
     *> PageFactory WebElements ko initialize krne ka trika h, jin elements ko aap POM m use krna chahte h.
     *> @FinfBy(class='.form') WebElement  button;  // yha p hm button element ko 1 WebElement m initializekr re h ab ise POM m use krenge.
 
-
-QUESTION:
-    What is abstract class?
-   
-ANSWER:
-    *> A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body).
-    *> Abstract class: is a restricted class that cannot be used to create objects 
-
-
 QUESTION:
     Difference between interface and Abstract class?
 
@@ -353,17 +337,6 @@ QUESTION:
          *> We can only declear the function in the interface
          *> We can declear and define any function in the abstract class. 
          *> define means function ki body  bhi created h or declear means only function name();
-
-QUESTION:
-    Why we use abstract class and interface?
-
-    ANSWEr:
-        
-        *> Agr hme code ko expend krna h mtlb ki kisi class m feature m koi function or add krna h .to hm abstract class ka use krte h 
-        *> Agr hme Kisi class m number of function fix rkhne h to hm interface ka use krte h ,
-        *> Kyu ki agr hm kisi interface ko implement kr re h to hme interface  k sare functions call krne hote h. 
-        *> Or agr hmne kisi interface m koi function feature m add kr diya h to jha-2 p vo interface call hua h sab jgh us function ko call krna hoga.
-        *> Bu t abstract class m esa ni hota.
 
 Import Excel data in string firm And convert in int. OR how to convert int data of Excel when we are importing by poi api?
 How can we get broken link?
@@ -392,7 +365,7 @@ ANSWER:
 	*> And the usage of both depends on the way your automation framework has been designed.
 	*> i.e. if you have used PageFactory pattern you will use @FindBy/s and for non pagefactory frameworks you can use By locator method
 
-*=> AGR HM TESTCASE RUN KRNE K BADBROWSER MANUALLLY COLSE KR DENGE TO KYA ERROR AAYEGI  ?
+*=> AGR HM TESTCASE RUN KRNE K BAD BROWSER MANUALLLY COLSE KR DENGE TO KYA ERROR AAYEGI  ?
 
     ANSWER:
      *>  no such window: target window already closed
@@ -489,14 +462,6 @@ ANSWER:
     }
 
 QUESTION:
-    How can we handle window based pop up?
-
-ANSWER:
-    
-    By using AutoIT tool.
-    And Chrome CDP class.
-
-QUESTION:
     How  can handle  prompt in windows.
 
 ANSWER:
@@ -528,6 +493,17 @@ ANSWER:
     *> ChromeOptions options = new ChromeOptions();
     *> options.addArguments("--disable-notifications");
 
+
+
+QUESTION:
+    How can we handle window based pop up?
+
+ANSWER:
+    
+    By using AutoIT tool.
+    And Chrome CDP class.
+
+
 QUESTION:
     Why we use switchTo() method??
 
@@ -539,7 +515,7 @@ QUESTION:
   What's the difference between functions getClass() and getAttribute(“class”) in Selenium?
 
 ANSWER:
-    *> he simple difference is that, getClass() returns the XPath of the webelement. 
+    *> the simple difference is that, getClass() returns the XPath of the webelement. 
     *> Whereas, getAttribute("class") will return the value of the class attribute within the <div> tags.
     *> Look at the code below to understand this concept better
    
@@ -605,7 +581,7 @@ ANSWER:
 
 QUESTION:
 
-	WHAT IS MAVEN ? WHY SHOUL WE USE MAVEN ?
+	WHAT IS MAVEN ? WHY SHOULD WE USE MAVEN ?
 
 ANSWER:
 	*> Maven is a popular open-source software project management and build manaement tool

@@ -78,3 +78,44 @@ option.setAcceptInsureCerts(true)
 option.addArgument("--disabled-notifications");
 
 
+
+
+
+------------------------------------
+
+
+HTTPURLConnection conn = new URL(url).openConnection();
+conn.setRequestMethod("HEAD");
+conn.connect();
+if(conn.getResponseCOde > 400) {
+    broken Link
+}
+
+
+SoftAssert as  = new SoftAssert();
+//code
+as.assertAll();
+
+------------- APACHE POI  ------------
+FileInputStream file = new FileInputStream("file.xls");
+XSSFWorkBook sheet = new XSSFWorkBook();
+int sheets =  sheet.getNumberOfSheet();
+
+
+String jsonContent = fileUtils.readFilrTostring(new file("filepath.json"))
+ObjectMapper map = new ObjectMapper();
+  map.readValue(jsonContent);
+
+
+
+JavaScriptExecutor js = (JavaScriptExecutor)driver;
+js.executeScript(windows.scrollby(0,120));
+
+
+Actions action = new Actions(driver);
+action.contaxClick(WebElement).perform();
+
+driver.findELement(By.xpath("//div[@class='cls']")).sendKeys(key.chor(keys.SHIFT+"S"))
+
+
+

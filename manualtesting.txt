@@ -379,7 +379,7 @@ NASWER:
     *> Hm isi sequance m testing krte h .
     1st. Unit Testing - > Test the each and every component saperatly.
     2nd. Integration testing - > Test the application after merge multiple component 
-    3rd. ASystem testing -> Means the application is working as accepted or not /
+    3rd. System testing -> Means the application is working as accepted or not /
     4th. Acceptance testing -> Means the application is accepted by client and working as a business document.
 
 QUESTION :
@@ -403,7 +403,7 @@ QUESTION :
 
 ANSWER;
     1. Complany logo  is wrong is height SERVERITY bug ,
-    2. Pproduct image is woring is low serverity bug.
+    2. Product image is woring is low serverity bug.
 
 QUESTION:
 	DIFFERENCE BETWEEN SMOKE AND SENETY TESTING ?
