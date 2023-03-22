@@ -1,4 +1,4 @@
-0. WHICH FRAMEWORK ARE YOU USING ?
+0. WHICH FRAMEWORK ARE YOU USING ?  !Important
     //We are using Hybrid framework IN selenium
 1. does java support call by reference ?
     *> No
@@ -221,10 +221,17 @@
   *> this code will used is setp defination file
 
 33  what is step defination file ?
+    *> Step Definition  1 method hota h jo  Gherkin steps ko link krta h .
+    *> A Step Definition is a method with an expression that links it to one or more Gherkin steps
+
 
 34  what is defect and latent
+    *> Agr koi bug development face m dev. ko milta h to use defect bolte h 
+    *> Or agr koi bug project release hone k kaafi time bad milta h to use latent
+
 
 35. example of high servrety and height preority ?
+
 
 36. finaly , finalize and final keyword in java ?
     *> final is the keyword and access modifier
