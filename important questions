@@ -1,4 +1,4 @@
-0. WHICH FRAMEWORK ARE YOU USING ?
+0. WHICH FRAMEWORK ARE YOU USING ?  !Important
     //We are using Hybrid framework IN selenium
 1. does java support call by reference ?
     *> No
@@ -221,10 +221,17 @@
   *> this code will used is setp defination file
 
 33  what is step defination file ?
+    *> Step Definition  1 method hota h jo  Gherkin steps ko link krta h .
+    *> A Step Definition is a method with an expression that links it to one or more Gherkin steps
+
 
 34  what is defect and latent
+    *> Agr koi bug development face m dev. ko milta h to use defect bolte h 
+    *> Or agr koi bug project release hone k kaafi time bad milta h to use latent
+
 
 35. example of high servrety and height preority ?
+
 
 36. finaly , finalize and final keyword in java ?
     *> final is the keyword and access modifier
@@ -237,3 +244,24 @@
 38. Why we can not use WebDriver driver = new WebDriver ?
     *> We can not create object of interface.
 
+39. through and throughs in java ?
+    	
+        We are allowed to throw only one exception at a time i.e. we cannot throw multiple exceptions
+        
+        We can declare multiple exceptions using throws keyword
+       
+        Example of throw : 
+       
+            if (num < 1) {  
+                throw new ArithmeticException("\nNumber is negative, cannot calculate square");  
+            } 
+       
+       Example of throws : 
+        public void Createproduct() throws IOException, InterruptedException { // }
+
+
+40. How do you handle if XPath is changing dynamically?
+    *> Look for any other attribute which Is not changing every time
+    *> We can use absolute xpath (full xpath)
+    *> We can use starts-with function
+    *> We can use contains function
