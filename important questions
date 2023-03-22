@@ -244,3 +244,24 @@
 38. Why we can not use WebDriver driver = new WebDriver ?
     *> We can not create object of interface.
 
+39. through and throughs in java ?
+    	
+        We are allowed to throw only one exception at a time i.e. we cannot throw multiple exceptions
+        
+        We can declare multiple exceptions using throws keyword
+       
+        Example of throw : 
+       
+            if (num < 1) {  
+                throw new ArithmeticException("\nNumber is negative, cannot calculate square");  
+            } 
+       
+       Example of throws : 
+        public void Createproduct() throws IOException, InterruptedException { // }
+
+
+40. How do you handle if XPath is changing dynamically?
+    *> Look for any other attribute which Is not changing every time
+    *> We can use absolute xpath (full xpath)
+    *> We can use starts-with function
+    *> We can use contains function
