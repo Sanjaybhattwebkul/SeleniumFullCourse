@@ -421,3 +421,27 @@ QUESTION:
 ANSWER:
 	*> Here we are using upcasting. using properties of class A by creating object of class B
 	*> so output WILL BE 10,
+
+QUESTION:
+    Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is tthis ]
+
+ANSWER;
+  LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/exercise/src/main/java/Selenium/exercise/ReversWords.java
+
+QUESTION:
+    What is abstract class?
+   
+ANSWER:
+    *> A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body).
+    *> Abstract class: is a restricted class that cannot be used to create objects 
+    
+QUESTION:
+    Why we use abstract class and interface?
+
+    ANSWEr:
+        
+        *> Agr hme code ko expend krna h mtlb ki kisi class m feature m koi function or add krna h .to hm abstract class ka use krte h 
+        *> Agr hme Kisi class m number of function fix rkhne h to hm interface ka use krte h ,
+        *> Kyu ki agr hm kisi interface ko implement kr re h to hme interface  k sare functions call krne hote h. 
+        *> Or agr hmne kisi interface m koi function feature m add kr diya h to jha-2 p vo interface call hua h sab jgh us function ko call krna hoga.
+        *> Bu t abstract class m esa ni hota.
