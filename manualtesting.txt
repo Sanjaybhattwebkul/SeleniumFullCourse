@@ -346,6 +346,13 @@ ANSWER:
 QUESTION:
 	WHAT IS Alpha and beta testing ?
 	
+QUESTION:
+	What is  Component testing ?
+
+ANSWER:
+   Component testing is done after unit testing. means testing each webpage individually
+
+
 ASWER:
 	*> ALFA TESTING  release se phle hoti h . like a demo bna k hhm check kr skte h. example:  functionality and usability .
 	*> BETA  TESTING release k bad hogi. user end p.  exxample:  usability, functionality, security
@@ -381,6 +388,19 @@ NASWER:
     2nd. Integration testing - > Test the application after merge multiple component 
     3rd. System testing -> Means the application is working as accepted or not /
     4th. Acceptance testing -> Means the application is accepted by client and working as a business document.
+
+ System testing :
+
+	System testing user point of view se ki jati h complete software ki.
+	System testing integration testing k bad hi hoti h 
+	System testing black-box testing  ka part h , is m hme internal code knowledge ki need ni hoti h.
+
+Usability  testing :
+
+  	*> Usability  testing  m  the end-user m focused  kiya jata h . ki application user friendly h ya ni. 
+ 	*> use krne m kitna easy ui h .
+
+ => User Testing  mtlb jo feature applicationm h vo user ki need h ya ni.
 
 QUESTION :
     WHAT ARE DROWBACK OF AGILE framework mehology ?
