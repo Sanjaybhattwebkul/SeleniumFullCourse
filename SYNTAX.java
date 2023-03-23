@@ -111,6 +111,9 @@ ObjectMapper map = new ObjectMapper();
 JavaScriptExecutor js = (JavaScriptExecutor)driver;
 js.executeScript(windows.scrollby(0,120));
 
+JavaScriptExecutor js = (JavaScriptExecutor) driver;
+js.executeScript("agrument[0].scrolllToview()",Element);
+
 
 Actions action = new Actions(driver);
 action.contaxClick(WebElement).perform();
