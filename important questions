@@ -264,3 +264,15 @@
     *> We can use absolute xpath (full xpath)
     *> We can use starts-with function
     *> We can use contains function
+
+41. How can run only 1 test if we have multiple testcase ?
+    *> we can include that test inside the calss of testng.xml file
+    *> <include name="methodName" />
+
+42. end to end testing and unit testing difference ?
+  *> End-to-end testing is a type of testing that verifies the entire software application from start to finish, 
+  *> including all the systems, components, and integrations involved in the application's workflow.
+
+  *> Unit testing is testing the smallest testable unit of an application. 
+  *> It is done during the coding phase by the developers
+
