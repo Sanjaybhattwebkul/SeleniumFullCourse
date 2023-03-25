@@ -46,7 +46,7 @@
 
 15. scrll windown till any element visible ?
     
-    JavaScriptExecutor js (JavaScriptExecutor) driver();
+    JavaScriptExecutor js =  (JavaScriptExecutor) driver();
     js.executeScript("argument[0].scrollToView();",element);
 
 16. How to handle multiple windows.
@@ -215,7 +215,7 @@
 
 
 32 what is regular expression in cucumber?
-  *> We can parameterize texts by using  regular expression that can be used repeatedly.
+  *> We can parameterize tests by using  regular expression that can be used repeatedly.
   *> @Given("^I add product (.+) to Cart$")  ^ and $ is regular expression helper
   *> this code will used is setp defination file
 
@@ -235,7 +235,10 @@
 36. finaly , finalize and final keyword in java ?
     *> final is the keyword and access modifier
     *> finally is the block in Java Exception Handling
-    *> finalize is the method in Java which is used to perform clean up processing just before object is garbage collected.
+    *> finalize() method in Java is a method of the Object class that is used to perform cleanup activity 
+    *> before destroying any object. [
+        Mtlb jb hm kisi obj ko descroy krte h to us obj hi cache ko clean krne k liye use hota h 
+    ]
 
 37. what are  getter and setter in java ?
     *> The get method returns the variable value, and the set method sets the value.
@@ -276,3 +279,12 @@
   *> Unit testing is testing the smallest testable unit of an application. 
   *> It is done during the coding phase by the developers
 
+43. cucumber options ?
+
+44. dry runner
+45. how can click on + icon for open new tab. 
+46. how can open incoginato wondow.
+    *> ChromeOptions option = new ChromeOptions();
+    option.addArguments("incognito");
+    
+47. 

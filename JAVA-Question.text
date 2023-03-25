@@ -240,9 +240,12 @@ QUESTION:
     Hhow can get file from your locale system ?
    
 ANSWER:
-    *> By using exists method of File() class   // File() java ki calss h 
+    *> By using BufferedReader() class   // File() java ki calss h 
 
-
+    File file = new File("//home//users//sanjay.bhatt//www//html//Bagisto-Automation//file.text");
+    BufferedReader br = new BufferedReader(new FileReader(file));
+    String str = br.readLine();
+    *> Or  By using exists method of File() class   // File() java ki calss h 
 QUESTION:
 
 WHAT IS FUNCTION OVERLOADING ?

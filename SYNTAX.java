@@ -19,7 +19,7 @@ System.out.println(driver.findElement(By.cssSelector("p.error")).getText());  //
 driver.manage().timeOutes().implicitlyWait(Durations.Ofseconds(10));
 driver.manage().timeouts().implicitlyWait(10,timeouts.MINUTES);
 
-WebDriverWait wait = new WebDriverWait(driver);
+WebDriverWait wait = new WebDriverWait(driver,10);
 wait.until(ExpectedCondition.visiblityOfElementLocated(By.xpath("//div[@class='name']")));
 driver.findElement(By.cssSelector("div[id='name'] :nth-child(1)"));
 
@@ -29,8 +29,6 @@ driver.findElemen(By.className("class")).click();
 driver.findElemen(By.name("email")).click();
 driver.findElemen(By.id("idname")).click();
 
-WebDriverWait wait = new WebDriverWait(driver,30);
-wait.until(ExpectedCondition.visiblityOfElementLocated(By.xpath("div[class='class']")));
 
 TakesScreenshot ss = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 FileUtils.copyFIle(ss, new File("sc.png"));

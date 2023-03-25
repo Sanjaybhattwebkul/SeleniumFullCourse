@@ -67,10 +67,7 @@ QUESTION:
 ANSWER:
 	*>If we are defineing String Like this [ String name ="Sanju"; ] 
     *>In this case if we are defining the 2  string variables with the same vale then java will not create 2 different-2 mamory for both variables.
-	   Java will Create Only one memory allocation and denote the value of 1st variable for the 2nd variable.
-
-
-	   
+	   Java will Create Only one memory allocation and denote the value of 1st variable for the 2nd variable   
 
 QUESTION:
 	 HOW TO PRINT A GIVEN STRING IN REVERS ORDER ?
@@ -215,7 +212,7 @@ QUESTION:
 	 How can we switch into the frame ?
 
 ANSWER:
-	driver.switchTo();
+	driver.switchTo().frame("frameId");
 
 QUESTION:
 	  Difference between relative and absolute xPath ?

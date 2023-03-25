@@ -6,6 +6,14 @@ ANSWER:
     TestNg.
     
 QUESTION:
+
+    Dependencies for Cucumber Project:
+    
+ANSWER:
+    Cucumber JVM: Java
+    Cucumber JVM: JUnit
+    
+QUESTION:
     WHAT IS BDD ?
 
 ANSWER:
