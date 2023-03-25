@@ -60,16 +60,16 @@ if(str1.equals(str2)){
 
 Class A{
     A()
-{
-    System.out.println("Inside A");
-}
+    {
+        System.out.println("Inside A");
+    }
 }
  
 Class B extends A{
     B()
-{
-    System.out.println("Inside B");
-}
+    {
+        System.out.println("Inside B");
+    }
  
     public static void main(String args[]) {
     A a = new A();
