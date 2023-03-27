@@ -283,6 +283,9 @@
 
 44. dry runner
 45. how can click on + icon for open new tab. 
+
+  *> driver.switchTo().newWindow(WindowType.TAB); [ Introduce in selenium 4.0]
+
 46. how can open incoginato wondow.
     *> ChromeOptions option = new ChromeOptions();
     option.addArguments("incognito");
