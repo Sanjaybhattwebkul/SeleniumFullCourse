@@ -393,7 +393,7 @@ ANSWER:
     => select salary from employee order by desc limit 1,1
 
     /* It will print all the records if there are multiple  records with second heighest salary */   
-    => select * from employee where salary = (select salary from employee order by desc limit 1,1);
+    => select * from employee where salary = (select salary from employee order by salary desc limit 1,1);
 
 QUESTION:
     WIRTE A PROGRAM FOR PRINT OCCORING OF EACH CHARACTER IN STRING WITHOUT USING HASHMAP ?
@@ -426,7 +426,7 @@ ANSWER:
 	*> so output WILL BE 10,
 
 QUESTION:
-    Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is tthis ]
+    Program Reverse words not character in string? Like: [ this is selenium <-> Selenium is this ]
 
 ANSWER;
   LINK: https://github.com/SanjuDeveloper/SeleniumFullCourse/blob/master/exercise/src/main/java/Selenium/exercise/ReversWords.java
@@ -447,4 +447,4 @@ QUESTION:
         *> Agr hme Kisi class m number of function fix rkhne h to hm interface ka use krte h ,
         *> Kyu ki agr hm kisi interface ko implement kr re h to hme interface  k sare functions call krne hote h. 
         *> Or agr hmne kisi interface m koi function feature m add kr diya h to jha-2 p vo interface call hua h sab jgh us function ko call krna hoga.
-        *> Bu t abstract class m esa ni hota.
+        *> But abstract class m esa ni hota.
