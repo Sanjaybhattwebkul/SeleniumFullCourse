@@ -16,3 +16,59 @@
 
 3. Can we change tes plan OR test strategy ?
     > test strategy is static document so that can not be changes and test plan can be changed because this is dynamic Documents
+
+4. What is your roles and responsiblity ? and how your deviding your time.?
+    *> First let me go with roles and responsiblity. 1st when the sprint planing is complete. i will see my assigned story.
+    *> And Then will uunderstat  the requirnments and discuss with BDE if any dounts.
+    *1> And the move for test planing and test design according to preority basis. 
+    *> And if i will foujnd any issue then i will reverify that from my end, and  the report to the dev.
+    *> And after the fix i will retest the issue and close the user story if all bugs are fixed.
+    ///
+    AND FOR TIME. I AM GIVING 50% time to my testing activity. 20% tak to my jouniours and 20 on my sskill improement  and 10% on client meetings.
+
+
+5. What will you do if requirnments are continuesly changing ?
+    *> In that case we will do the testing and focus on project quality  
+    *> but  I will  arrange a meeting with team lead and maanager and product owner and discuss the consern
+    *> And the take time according to the changes
+
+6. How will you  decide the test estimation? 
+    *> I wil understand the complaxity and then deside the time for user stroies.
+    *> And i will devide my time sccordingly. and we can creae sub-task as well
+    *> And i will also decide the time according to testing type. because if there security and load testing 
+    *> Requird the then this testing will take time so we need to divide time according to testing type also
+
+
+7. Which tools are you using? what are advantage and disadvantage of these tools ?
+    >
+
+8. The release of project is already happened. and the client found the critical issue. wht will you do ?
+
+    *> The client found issue means the issue is not replicated.  so if the issue is reproduceable then we
+    *> will  report to dev and get fixed that and report to client accordingly.
+    *> And we will add that test in our regrassion test 
+    *> and if the issue is not reproducable then we can arrange a meeting with the client.
+
+9. What will you do if you do not have any knowledge of the prject? what  will your test Test strategy ?
+  *> First as a tester i have some knowledge. and after that i will start from explority tesying. 
+  *> Then i will cordinate with the BDE/BA and make a document for heigh lavel test senarios.
+  *> And the i will gothrough the raised bugs. and will strt the testing from our end.
+
+
+10. What is you approach of writtingtest cases  ?
+    *> We will metch positive and negative test for all requirnments.
+    *>We will use multiple test data for test cases.
+    *> We will take care of business requirnments
+
+11. What is requirnment receivability metrix ?
+    *> When the test cases are design the the " requirnment receivability metrix" [RTM]. comes to the   picture.
+    *> Means we will check the testcases are covering the requirnments or not.
+    *> RTM means mapping  between requirnments and test case.
+
+12. What will you do if you joniurs are not out or mark. and you also new in project?
+    *> I will communicate with him as a friendly nature and i will motivate him, that why we are here,
+    *> And what is our respoiblity and i will approch him. i will ask hee is intrested or not for that project.
+    *> IF not the talk to management and help him to move on next project.
+
+
+
