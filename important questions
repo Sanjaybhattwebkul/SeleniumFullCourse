@@ -8,19 +8,23 @@
   *> no
 
 3. waites is selenium /
-    // 
+    Implicitly
+    Explicit
+    FluentWait
+    thread.sleep(10); [java function]
 
 4. latest versiob
     4.8.1
 
 5. locators in selenium .
-    //
+    Used for Get the elements fomr DOM.
+    // ID, name,ClassName, TagName,Xpath,CssSelector,ListText, PatialList,.....
 
 6. how can run test parallel mode.
-     parallet =test in testng.xml file
+     parallet =test in testng.xml file OR we can use selenium Grid as well.
 
 7. how can run single test in multiple times.
-  *> invocationCount
+  *> @Test(invocationCount=1);
 
 9. SQL JOINS
 
@@ -28,8 +32,10 @@
 
 11. driver.navigate functions 
         // driver.navigate().back(); forword.  refresh. 
+        // browser history ko store krta h 
 
 12. what is xpath ?
+*> A type of locator
 
 13. scrum cermonies ?
 
@@ -41,7 +47,12 @@
 
     
 14. new features of selenium ?
-    //WebElement email = driver.findElement(with(By.tagName("input")).above(passwordField));
+    1. Relative Locators //WebElement email = driver.findElement(with(By.tagName("input")).above(passwordField));
+    2. Handle multiple windows.
+    3. CDP [Chrome Developer tool]
+    4. Screenshot
+    5. Height or widhth of element [element.getSize();]
+
 
 
 15. scrll windown till any element visible ?
@@ -87,7 +98,7 @@
   
 
 19. What is latest version cucumber ?
-    //7.9.0
+    //7.11.2
 
 20. What are hooks in cucumber ?
     *> Why Cucumber Hooks? Hooks are blocks of code that run before or after each scenario in the Cucumber execution cycle. 
