@@ -1,4 +1,4 @@
-1. Tell me about your self ?
+1. Tell me about your self ?  What is your day to day activity ?
     *> 
 
 2. What is Test plane and Test strategy?
@@ -70,5 +70,23 @@
     *> And what is our respoiblity and i will approch him. i will ask hee is intrested or not for that project.
     *> IF not the talk to management and help him to move on next project.
 
+13. What will you do if you are stuck in testing because of testing data. you havd not test data.?
+  *> I cordinate with the respective dev. and  will take help of myn team leand and scrum master.
+
+14. What is difference between script and exploreity testing ?
+    *> exploreity testing means explore the project if you don't know ablout the project flow.
+    *> Script testing ispart of automation testing. means if we need to do maintainance on automation script
+    *> Then we will do the script testing.
+
+15. How you will define the quality  ?
+
+    *> Quality is like users needed actually. Let me take a example. suppose we are using the whatsapp application.
+    *> So we are expacting the this sould be secure and  end-to-end encrypeted. and this is fast and robost. and 
+    *> There should be a option to individual chet and froup chet and calling as well so these feature i am execting 
+    *> And these feature are defining the feature of the project.
 
 
+16. What will you if you 3 project and same deadline for all ? how you will manage ?
+    *> I Will test the very height lavel senario of all 3 applications.
+    *> And report to my manager that i  have done only height lavel testing because complete testing is not possible at same time.
+    *> Becausein in future if the issues are found the manager will alreay aware about there.
