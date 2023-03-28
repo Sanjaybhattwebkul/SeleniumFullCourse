@@ -1,0 +1,18 @@
+1. Tell me about your self ?
+    *> 
+
+2. What is Test plane and Test strategy?
+    
+    *> Test strategy is a set of guide line how test will design and determine and how testing needs to be done.   
+    *> TestStrategy should be same for all projects.
+    *> Test plan is BRS document
+
+    *> Test Plan will be based on Test Strategy
+    *> Test Plan is a document that describes the scope, objective,Tools, Resources Environmentand.
+    *> Test plan is SRS  document.
+
+    *> SRS-> software requirements specification
+    *> BRS-> Business Requirements Specification
+
+3. Can we change tes plan OR test strategy ?
+    > test strategy is static document so that can not be changes and test plan can be changed because this is dynamic Documents
